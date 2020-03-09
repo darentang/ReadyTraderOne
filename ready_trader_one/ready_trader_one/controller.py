@@ -18,7 +18,7 @@ from .util import create_datagram_endpoint
 
 
 # The delay between starting the server and opening the market
-MARKET_OPEN_DELAY_SECONDS = 20.0
+MARKET_OPEN_DELAY_SECONDS = 5.0
 
 
 class Controller(IController, ITradeListener, ITaskListener):
@@ -62,6 +62,7 @@ class Controller(IController, ITradeListener, ITaskListener):
                                 instrument["TickSize"])
         self.competitors[name] = competitor
 
+        print("%s is ready" % name)
         self.logger.info("'%s' is ready!", name)
 
         if self.start_time != 0.0:
@@ -160,6 +161,8 @@ class Controller(IController, ITradeListener, ITaskListener):
             await create_datagram_endpoint(self.event_loop, lambda: self.info_channel,
                                            remote_addr=(info["Host"], info["Port"]), family=socket.AF_INET,
                                            interface=info["Interface"])
+        print("Starting Traders...")
+        print(f"Wait for {MARKET_OPEN_DELAY_SECONDS} seconds")
 
         self.market_events.start()
         self.match_events.start()
@@ -167,6 +170,8 @@ class Controller(IController, ITradeListener, ITaskListener):
         # Give the auto-traders time to start up and connect
         await asyncio.sleep(MARKET_OPEN_DELAY_SECONDS)
         server.close()
+
+        print("Ready")
 
         self.logger.info("market open")
         self.start_time = self.event_loop.time()

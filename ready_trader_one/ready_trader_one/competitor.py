@@ -165,8 +165,9 @@ class Competitor(ICompetitor, IOrderListener):
         if price % self.tick_size != 0:
             self.send_error(now, client_order_id, b"price is not a multiple of tick size")
             return
-
+            
         if len(self.orders) == self.order_count_limit:
+            print(len(self.orders))
             self.send_error(now, client_order_id, b"order rejected: active order count limit breached")
             return
 

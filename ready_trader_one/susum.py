@@ -10,19 +10,20 @@ import numpy as np
 class Constants:
     GAMMA = 0.01
     KAPPA = 2
-    ETA = - 0.005
-    MAX_ORDER = 50
+    ETA = - 0.05
+    MAX_ORDER = 10
     DEFAULT_T = 0.25
     MAX_VOLUME = 100
     TIME_OUT = 1.0
-    UPDATE = 1.0
+    UPDATE = 0.2
+
 
 class AutoTrader(BaseAutoTrader):
     def __init__(self, loop: asyncio.AbstractEventLoop):
         """Initialise a new instance of the AutoTrader class."""
         super(AutoTrader, self).__init__(loop)
         self.order_ids = itertools.count(1)
-        self.ask_id = self.ask_price = self.bid_id = self.bid_price = 0
+        self.ask_price = self.bid_price = 0
         self.constants = Constants
 
         # Set sufficiently large T
@@ -30,7 +31,6 @@ class AutoTrader(BaseAutoTrader):
         self.start_time = self.event_loop.time()
 
         # initialise times
-        self.execution_time = self.start_time
         self.quote_time = self.start_time
 
         # initialise positions
@@ -45,13 +45,17 @@ class AutoTrader(BaseAutoTrader):
             Instrument.FUTURE: []
         }
 
-        # whether existing quotes have been places
-        self.quoted = False
+        # the active quotes right now, contains order ids
+        self.active_quotes = {
+            "bids": [],
+            "asks": []
+        }
+
+        self.execution_time = self.start_time
 
         # bid prices
         self.bid_price = self.ask_price = 0
 
-        self.wait = False
 
     def on_error_message(self, client_order_id: int, error_message: bytes) -> None:
         """Called when the exchange detects an error.
@@ -74,10 +78,19 @@ class AutoTrader(BaseAutoTrader):
         
         return 0
 
+    def pricing(self, midpoint, elapsed_time):
+        sigma = self.get_sigma(self.history[Instrument.ETF])
+        q = self.etf_position
+        r = midpoint - q * self.constants.GAMMA * sigma ** 2 * (self.T - elapsed_time)
+        spread = self.constants.GAMMA * sigma ** 2 * (self.T - elapsed_time) + np.log(1 + self.constants.GAMMA / self.constants.KAPPA)
+        bid_price = r - spread / 2
+        ask_price = r + spread / 2 
+        self.logger.info("%d, %d, %s",bid_price, ask_price, bid_price < ask_price)
+        return int(bid_price - bid_price % 100), int(ask_price - ask_price % 100)
 
     def inventory(self):
         q = self.etf_position
-        remaining_volume = np.min((self.constants.MAX_ORDER, self.constants.MAX_VOLUME - np.abs(q)))
+        remaining_volume = min((self.constants.MAX_ORDER, 1.8*self.constants.MAX_VOLUME - abs(q)))
         opposing_volume = self.constants.MAX_ORDER
         if q < 0:
             bid = opposing_volume
@@ -85,8 +98,6 @@ class AutoTrader(BaseAutoTrader):
         else:
             bid = remaining_volume * np.exp(self.constants.ETA * q)
             ask = opposing_volume
-
-        
         return int(bid), int(ask)
     
     def get_time(self):
@@ -117,27 +128,30 @@ class AutoTrader(BaseAutoTrader):
         # multiple of tick size (100 cents)
         bid_price -= bid_price % 100
         ask_price -= ask_price % 100 
+
         bid_price = int(bid_price)
         ask_price = int(ask_price)
 
-        placed = False
+        bid_volume = int(bid_volume)
+        ask_volume = int(ask_volume)
 
-        if bid_volume > 0 and bid_price > 0:
-            placed = True
-            self.bid_id = next(self.order_ids)
-            self.send_insert_order(self.bid_id, Side.BUY, bid_price, bid_volume, Lifespan.GOOD_FOR_DAY)
+        bid_id = next(self.order_ids)
+        ask_id = next(self.order_ids)
 
-        if ask_volume > 0 and ask_price > 0:
-            placed = True
-            self.ask_id = next(self.order_ids)
-            self.send_insert_order(self.ask_id, Side.SELL, ask_price, ask_volume, Lifespan.GOOD_FOR_DAY)
-        
-        # if nothing has been done
-        if not placed:
-            return
+        self.active_quotes["bids"].append(bid_id)
+        self.active_quotes["asks"].append(ask_id)
 
+        if self.bid_volume > 0 and self.bid_price > 0:
+            self.send_insert_order(bid_id, Side.BUY, bid_price, bid_volume, Lifespan.GOOD_FOR_DAY)
+        if self.ask_volume > 0 and self.ask_price > 0:
+            self.send_insert_order(ask_id, Side.SELL, ask_price, ask_volume, Lifespan.GOOD_FOR_DAY)
         self.quote_time = self.get_time()
-        self.logger.info("Placing quotes (%d, %d). Bid: %d @ $%d, Ask: %d @ $%d", self.bid_id, self.ask_id, bid_volume, bid_price / 100, ask_volume, ask_price / 100)
+        self.logger.info("Placing quotes (%d, %d). Bid: %d @ $%d, Ask: %d @ $%d", bid_id, ask_id, bid_volume, bid_price / 100, ask_volume, ask_price / 100)
+
+    def cancel(self, ids):
+        for i in ids:
+            self.send_cancel_order(i)
+            self.logger.info("Cancelling bid %d", i)
 
     def on_order_book_update_message(self, instrument: int, sequence_number: int, ask_prices: List[int],
                                      ask_volumes: List[int], bid_prices: List[int], bid_volumes: List[int]) -> None:
@@ -173,57 +187,33 @@ class AutoTrader(BaseAutoTrader):
         
         self.history[instrument].append((elapsed_time, midpoint))
 
+        bid_queue = self.active_quotes["bids"]
+        ask_queue = self.active_quotes["asks"]
+
         if instrument == Instrument.FUTURE:
             # if no order in book
-            if self.bid_id == 0 and self.ask_id == 0:
-                print("Quoting 2")
+            if len(bid_queue) == 0 and len(ask_queue) == 0:
                 # set to best bid and ask
                 self.bid_price, self.ask_price = best_bid, best_ask
 
                 # get volume
                 self.bid_volume, self.ask_volume = self.inventory()
 
-                # send quote
-                self.quote()
-            # if one order in book
-            elif ( (self.bid_id != 0) ^ (self.ask_id != 0) ):
-                print("Quoting 1")
-                self.bid_price, self.ask_price = best_bid, best_ask
+                # self.bid_volume, self.ask_volume = 2 * self.bid_volume, 2 * self.ask_volume
 
-                # buy is not fufilled
-                if self.bid_id != 0:
-                    self.send_cancel_order(self.bid_id)
-                    self.logger.info("Cancelling bid %d", self.bid_id)
-                    
-                    half_spread = (best_ask - best_bid) * 0.5
-                    self.bid_price -= half_spread
-                    self.ask_price = self.bid_price + half_spread
-                    self.bid_id = 0
+                # send double-decker quotes
+                self.quote(bid_volume=0.8*self.bid_volume, ask_volume=0.8*self.ask_volume)
+                self.quote(bid_price=self.bid_price-100, ask_price=self.ask_price+100, bid_volume=0.2*self.bid_volume, ask_volume=0.2*self.ask_volume)
 
-                # sell is not fufilled
-                else:
-                    self.send_cancel_order(self.ask_id)
-                    self.logger.info("Cancelling ask %d", self.ask_id)
-
-                    half_spread = (best_ask - best_bid) * 0.5
-                    self.bid_price = self.ask_price - half_spread
-                    self.ask_price += half_spread
-                    self.ask_id = 0
-                self.execution_time = elapsed_time
-
-
-
-                self.bid_volume, self.ask_volume = self.inventory()
-                self.quote()
 
             # if two orders in book and timeout
-            elif (self.bid_id != 0 and self.ask_id != 0) and elapsed_time - self.quote_time > self.constants.UPDATE:
-                self.send_cancel_order(self.bid_id)
-                self.send_cancel_order(self.ask_id)
-                self.logger.info("Timeout, cancelling bid %d and ask %d", self.bid_id, self.ask_id)
+            elif (len(ask_queue) != 0 and len(bid_queue) != 0) and elapsed_time - self.quote_time > self.constants.UPDATE:
+                self.cancel(bid_queue)
+                self.cancel(ask_queue)
+                self.logger.info("Timeout")
                 
 
-
+        # print(self.active_quotes)
 
         # print(f"{elapsed_time:.2f} sec has elapsed")
 
@@ -238,17 +228,21 @@ class AutoTrader(BaseAutoTrader):
         If an order is cancelled its remaining volume will be zero.
         """
 
-        elapsed_time = self.get_time()
+        self.logger.info("Order %d filled (%d / %d)", client_order_id, fill_volume, fill_volume + remaining_volume)
 
+        # on completing an order
         if remaining_volume == 0:
-            self.logger.info("Order %d cancelled", client_order_id)
-            if client_order_id == self.bid_id:
-                self.bid_id = 0
-            elif client_order_id == self.ask_id:
-                self.ask_id = 0
-        else:
-            self.logger.info("Order %d filled (%d / %d)", client_order_id, fill_volume, fill_volume + remaining_volume)
+            if client_order_id in self.active_quotes['bids']:
+                self.active_quotes['bids'].remove(client_order_id)
             
+            if client_order_id in self.active_quotes['asks']:
+                self.active_quotes['asks'].remove(client_order_id)
+
+            if self.get_time() - self.execution_time > self.constants.TIME_OUT:
+                self.cancel(self.active_quotes['bids'])
+                self.cancel(self.active_quotes['asks'])
+    
+            self.execution_time = self.get_time()    
 
 
     def on_position_change_message(self, future_position: int, etf_position: int) -> None:
@@ -270,39 +264,6 @@ class AutoTrader(BaseAutoTrader):
         traded at that price since the last trade ticks message.
         """
         pass
-
-class KalmanFilter:
-    def __init__(self, R, Q, X0):
-        self.R = R
-        self.Q = Q
-        self.X = X0
-        self.P = self.R.copy()
-        self.H = np.array([1, 0])
-        self.K = np.zeros(2)
-        self.t = 0
-
-    def gamma(self, t):
-        return np.array([0.5 * (t - self.t) ** 2, (t - self.t)])
-        
-    def A(self, t):
-        return np.array([[1, t - self.t], [0, 1]])
-    
-    def predict(self, t):
-        # state vector 
-        self.X = self.A(t) @ self.X
-        self.P = self.A(t) @ self.P @ self.A(t).T + self.gamma(t) @ self.Q @ self.gamma(t).T
-
-    def update(self, z, t):
-        self.K = self.P @ self.H.T @ np.linalg.inv(self.H @ self.P @ self.H.T + self.R)
-        self.X = self.X + self.K @ (z - self.H @ self.X)
-        self.P = (np.identity(2) - self.K @ self.H) @ self.P
-        self.t = t
-
-    def cov(self, sigma1, sigma2):
-        cov_matrix = np.outer([sigma1, sigma2], [sigma1, sigma2])
-        return np.diag(np.diag(cov_matrix))
-
-
 
 
     

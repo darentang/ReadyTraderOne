@@ -91,12 +91,12 @@ def markov_transitions(name, info):
 def get_inventory_volatility(competitors, info):
     for name, data in competitors.items():
         position = data['events']['EtfPosition']
-        info[name]['Volatility'] = dict(std=np.round(np.std(position), 2))
+        info[name]['InventoryControl'] = dict(avg=np.round(np.mean(position), 2), std=np.round(np.std(position), 2))
 
 info = defaultdict(lambda: dict())
 
 get_profit_loss(competitors, info)
-get_liquidity(competitors, info, 0.1)
+get_liquidity(competitors, info, 0.8)
 get_inventory_volatility(competitors, info)
 
 with open("analysis.json", "w") as fp:

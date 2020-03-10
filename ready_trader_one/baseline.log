@@ -1,4 +1,2 @@
-2020-03-10 20:42:28,956 [INFO   ] [APP] baseline started with arguments={run.py}
-2020-03-10 20:42:28,956 [INFO   ] [APP] configuration={"Execution":{"Host":"127.0.0.1","Port":12345},"Information":{"AllowBroadcast":false,"Interface":"0.0.0.0","ListenAddress":"239.255.1.1","Port":12346},"TeamName":"Baseline","Secret":"12345"}
-2020-03-10 20:44:37,472 [INFO   ] [APP] SIGINT signal received - shutting down...
-2020-03-10 20:44:37,472 [INFO   ] [APP] closing event loop
+2020-03-11 01:26:28,509 [INFO   ] [APP] baseline started with arguments={run.py}
+2020-03-11 01:26:28,509 [INFO   ] [APP] configuration={"Execution":{"Host":"127.0.0.1","Port":12345},"Information":{"AllowBroadcast":false,"Interface":"0.0.0.0","ListenAddress":"239.255.1.1","Port":12346},"TeamName":"Baseline","Secret":"12345"}

@@ -26,18 +26,17 @@ def animate(i):
         position = competitor_data["EtfPosition"]
         t = competitor_data["Time"]
         ax1.plot(t, profit_and_loss, label=competitor)
-        ax3.plot(t, position, label=competitor)
+        ax2.plot(t, position, label=competitor)
     ax1.legend()
     ax1.set_title("Profit/Loss")
     
-    ax3.legend()
-    ax3.set_title("Position")
-
-    ax2.plot(time, etf_price, label="ETF Last Traded Price")
-    ax2.plot(time, future_price, label="Future Last Traded Price")
-    
     ax2.legend()
-    ax2.set_title("Prices")
+    ax2.set_title("Position")
+
+    ax3.plot(time, etf_price, label="ETF Last Traded Price")
+    ax3.plot(time, future_price, label="Future Last Traded Price")
+    ax3.legend()
+    ax3.set_title("Prices")
 
 A = animation.FuncAnimation(fig, animate, interval=1000)
 

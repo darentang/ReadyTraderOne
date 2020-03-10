@@ -1,44 +1,80 @@
+"""
+Evaluation of models
+"""
 import pandas as pd
+import numpy as np
+import networkx as nx
+from networkx.drawing.nx_agraph import to_agraph 
+
 import matplotlib.pyplot as plt
-import matplotlib.animation as animation
+from collections import defaultdict
 
 filename = "ready_trader_one/match_events.csv"
 
-fig = plt.figure(figsize=(20,20))
-ax1 = fig.add_subplot(311)
-ax2 = fig.add_subplot(312)
-ax3 = fig.add_subplot(313)
+df = pd.read_csv(filename)
+bots = df["Competitor"]
 
-def animate(i):
-    ax1.clear()
-    ax2.clear()
-    ax3.clear()
-    df = pd.read_csv(filename)
+# stores dataframe for each competitor
+competitors = dict()
 
-    time = df["Time"]
-    etf_price = df["EtfPrice"].fillna(method="bfill")
-    future_price = df["FuturePrice"].fillna(method="bfill")
+for bot in bots.unique():
+    competitors[bot] = dict(events=df.query(f"Competitor == '{bot}'"))
+     
 
-    competitors = df["Competitor"].unique()
-    for competitor in competitors:
-        competitor_data = df.query(f"Competitor == '{competitor}'")
-        profit_and_loss = competitor_data["ProfitLoss"]
-        position = competitor_data["EtfPosition"]
-        t = competitor_data["Time"]
-        ax1.plot(t, profit_and_loss, label=competitor)
-        ax3.plot(t, position, label=competitor)
-    ax1.legend()
-    ax1.set_title("Profit/Loss")
-    
-    ax3.legend()
-    ax3.set_title("Position")
+def get_profit_loss(competitors, info):
+    for name, data in competitors.items():
+        profit_loss = data['events']['ProfitLoss']
+        info[name]['PnL'] = dict(last=profit_loss.iloc[-1], avg=np.mean(profit_loss), std=np.std(profit_loss))
 
-    ax2.plot(time, etf_price, label="ETF Last Traded Price")
-    ax2.plot(time, future_price, label="Future Last Traded Price")
-    
-    ax2.legend()
-    ax2.set_title("Prices")
+def get_liquidity(competitors, info):
+    # Keywords for each event
+    keywords = [["Insert", "Ammend", "Cancel"], ["Tick"], ["Fill", "Hedge"]]
+    # Measure how much of the stocks is filled and how fast it is filled
+    for name, data in competitors.items():
+        # transition probabilities (Quoting, Waiting, Spread)
+        transitions = np.zeros((3, 3))
+        operations = data['events']['Operation']
+        for state, next_state in zip(operations, operations.iloc[1:]):
+            if next_state == "Hedge" or state == next_state == "Insert": continue
+            
+            state_idx = list(i for i, item in enumerate(keywords) if state in item)
+            next_state_idx = list(i for i, item in enumerate(keywords) if next_state in item)
 
-A = animation.FuncAnimation(fig, animate, interval=1000)
+            transitions[state_idx, next_state_idx] += 1
 
-plt.show()
+        transitions = transitions / np.sum(transitions, axis=0)
+        
+        info[name]['Liquidity'] = dict(transitions=transitions)
+        
+def markov_transitions(name, info):
+    transition = info[name]["Liquidity"]["transitions"]
+    G = nx.MultiDiGraph()
+    edge_labels = {}
+    states = ["Quoting", "Waiting", "Fill"]
+    for i, state in enumerate(states):
+        for j, next_state in enumerate(states):
+            prob = transition[i][j]
+            if prob <= 0:
+                continue
+            G.add_edge(state, next_state, weight=prob, label=f"{prob:.02f}")
+            edge_labels[(state, next_state)] = f"{prob:.02f}"
+
+    G.graph['edge'] = {'arrowsize': '0.6', 'splines': 'curved'}
+    G.graph['graph'] = {'scale': '3'}
+
+    A = to_agraph(G) 
+    A.layout('dot')                                                                 
+    A.draw(f"img/{name}_transition.png") 
+
+def get_inventory_volatility(competitors, info):
+    for name, data in competitors.items():
+        position = data['events']['Position']
+        info[name]['Volatility'] = dict(std=np.std(position))
+
+info = defaultdict(lambda: dict())
+
+get_profit_loss(competitors, info)
+get_liquidity(competitors, info)
+
+
+print(info)

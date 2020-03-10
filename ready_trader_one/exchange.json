@@ -31,8 +31,8 @@
     "PositionLimit": 100
   },
   "Traders": {
-    "TraderOne": "secret",
-    "ExampleOne": "qwerty",
-    "ExampleTwo": "12345"
+    "TraderOne": "12345",
+    "Baseline": "12345",
+    "DynamicInventory": "abcde"
   }
 }

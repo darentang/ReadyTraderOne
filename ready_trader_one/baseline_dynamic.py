@@ -120,6 +120,44 @@ class AutoTrader(BaseAutoTrader):
                 self.send_cancel_order(self.bid_id)
                 self.send_cancel_order(self.ask_id)
                 self.logger.info("Timeout, cancelling bid %d and ask %d", self.bid_id, self.ask_id)
+
+            # ALEC: New Strategy - If one order is fulfilled, cancel the other and send new bid and ask which are half spread above and below the fulfilled price
+            elif self.bid_id == 0 and self.ask_id != 0:
+                self.send_cancel_order(self.ask_id)
+                self.logger.info("Bid has been fulfilled, cancelling Ask")
+                half_spread = (best_ask - best_bid)/2
+                # New Bid and Ask prices are above and below the already fulfilled bid price
+                bid_price -= half_spread
+                ask_price = bid_price + half_spread
+
+                # Place the New Orders as Usual
+                bid_volume, ask_volume = self.inventory()
+                self.bid_id = next(self.order_ids)
+                self.ask_id = next(self.order_ids)
+                self.send_insert_order(self.bid_id, Side.BUY, bid_price, bid_volume, Lifespan.GOOD_FOR_DAY)
+                self.send_insert_order(self.ask_id, Side.SELL, ask_price, ask_volume, Lifespan.GOOD_FOR_DAY)
+                self.quote_time = elapsed_time
+                self.logger.info("Placing quotes (%d, %d). Bid: %d @ $%d, Ask: %d @ $%d", self.bid_id, self.ask_id,
+                                 bid_volume, bid_price / 100, ask_volume, ask_price / 100)
+
+            elif self.bid_id != 0 and self.ask_id == 0:
+                self.send_cancel_order(self.bid_id)
+                self.logger.info("Ask has been fulfilled, cancelling Bid")
+                half_spread = (best_ask - best_bid) / 2
+                bid_price = ask_price - half_spread
+                ask_price += half_spread
+
+                # Place the New Orders as Usual
+                bid_volume, ask_volume = self.inventory()
+                self.bid_id = next(self.order_ids)
+                self.ask_id = next(self.order_ids)
+                self.send_insert_order(self.bid_id, Side.BUY, bid_price, bid_volume, Lifespan.GOOD_FOR_DAY)
+                self.send_insert_order(self.ask_id, Side.SELL, ask_price, ask_volume, Lifespan.GOOD_FOR_DAY)
+                self.quote_time = elapsed_time
+                self.logger.info("Placing quotes (%d, %d). Bid: %d @ $%d, Ask: %d @ $%d", self.bid_id, self.ask_id,
+                                 bid_volume, bid_price / 100, ask_volume, ask_price / 100)
+
+
                 
 
 

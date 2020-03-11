@@ -269,5 +269,5 @@ class AutoTrader(BaseAutoTrader):
         Each trade tick is a pair containing a price and the number of lots
         traded at that price since the last trade ticks message.
         """
-        print(trade_ticks)
-
+        # print(trade_ticks)
+        pass

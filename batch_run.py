@@ -1,9 +1,17 @@
 import json
 from collections import namedtuple
 import os
+import subprocess
+import time
 
-cwd = os.getcwd()
+def send_command(command, timer=None):
+    p = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
+    (output, err) = p.communicate()
+    print(output)
+    p_status = p.wait()
 
+working_directory = os.getcwd()
+directory = "/home/darentang/projects/readytraderone/ready_trader_one/"
 
 Session = namedtuple('Session', ['day', 'bots', 'speed'])
 
@@ -15,29 +23,50 @@ for file in os.listdir("./ready_trader_one"):
             config = json.loads(f.read())
         bots[config["TeamName"]] = file[:-5]
 
+
 template_file = "exchange_template.json"
 
 with open(template_file, "r") as f:
     exchange = json.loads(f.read())
 
-sessions = [
-    Session("1", ["SusumBot", "AlecBotV2", "FusionBot", "DynamicInventory"], 1.0)
-]
+sessions = []
 
-print(bots)
+for day in range(1, 11):
+    sessions.append(Session(str(day), ["SusumBot", "AlecBotV2", "FusionBot", "DynamicInventory"], 5.0))
+
 
 with open("run_template.txt", "r") as f:
     run_template = f.read()
 
 for i, session in enumerate(sessions):
     run_file = run_template
-    path = f"./runs/{i}/"
+    path = f"/home/darentang/projects/readytraderone/runs/Session{i+1}/"
+    data_file = path + "data.csv"
     if not os.path.exists(path):
         os.mkdir(path)
-    exchange["Engine"]["MarketDataFile"] = f"../ready_trader_one/data/day{session.day}.csv"
+    exchange["Engine"]["MarketDataFile"] = directory + f"data/day{session.day}.csv"
+    exchange["Engine"]["MatchEventsFile"] = data_file
     exchange["Engine"]["Speed"] = session.speed
     
     run_file = run_file.replace("#BOTNAMES#", str([bots[x] for x in session.bots]) )
 
-    with open(path + "run.py", "w") as f:
+    with open(directory + "run.py", "w") as f:
         f.write(run_file)
+    
+    with open(directory + "exchange.json", "w") as f:
+        f.write(json.dumps(exchange, indent=4))
+
+    with open(path + "details.json", "w") as f:
+        f.write(json.dumps(session._asdict(), indent=4))
+
+    send_command("cd /home/darentang/projects/readytraderone/ready_trader_one/ \n python3 run.py")
+
+    for participant in session.bots:
+        log_file = directory + bots[participant] + '.log'
+        send_command(f"cp {log_file} {path+participant}.log")
+
+    send_command(f"rm {directory}*.log")
+        
+
+    send_command(f"python3 {working_directory}/liveplot.py {data_file} {path + 'overall.png'}")
+    send_command(f"python3 {working_directory}/benchmark.py {data_file} {path + 'analysis.json'}")

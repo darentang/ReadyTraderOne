@@ -5,12 +5,20 @@ import pandas as pd
 import numpy as np
 import networkx as nx
 import json
+import sys
 from networkx.drawing.nx_agraph import to_agraph 
 
 import matplotlib.pyplot as plt
 from collections import defaultdict
 
-filename = "ready_trader_one/match_events.csv"
+if len(sys.argv) == 1:
+    filename = "ready_trader_one/match_events.csv"
+elif len(sys.argv) == 2:
+    filename = sys.argv[1]
+    output = "analysis.json"
+else:
+    filename = sys.argv[1]
+    output = sys.argv[2]
 
 df = pd.read_csv(filename)
 bots = df["Competitor"]
@@ -99,5 +107,5 @@ get_profit_loss(competitors, info)
 get_liquidity(competitors, info, 0.3)
 get_inventory_volatility(competitors, info)
 
-with open("analysis.json", "w") as fp:
+with open(output, "w") as fp:
     fp.write(json.dumps(info, sort_keys=True, indent=4, separators=(',', ':')))

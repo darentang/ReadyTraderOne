@@ -1,8 +1,16 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
+import sys
 
-filename = "ready_trader_one/match_events.csv"
+if len(sys.argv) == 1:
+    filename = "ready_trader_one/match_events.csv"
+elif len(sys.argv) == 2:
+    filename = sys.argv[1]
+else:
+    filename = sys.argv[1]
+    output = sys.argv[2]
+
 
 fig = plt.figure(figsize=(20,20))
 ax1 = fig.add_subplot(311)
@@ -40,6 +48,9 @@ def animate(i):
     ax3.legend(loc=2)
     ax3.set_title("Prices")
 
-A = animation.FuncAnimation(fig, animate, interval=1000)
-
-plt.show()
+if len(sys.argv) == 1 or len(sys.argv) == 2:
+    A = animation.FuncAnimation(fig, animate, interval=1000)
+    plt.show()
+elif len(sys.argv) == 3:
+    animate(0)
+    plt.savefig(output)

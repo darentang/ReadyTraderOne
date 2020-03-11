@@ -2,11 +2,8 @@ import concurrent.futures
 import functools
 import time
 import traceback
-import sys
-
 import os
-
-os.chdir("/home/darentang/projects/readytraderone/read_trader_one/")
+import sys
 
 import ready_trader_one.exchange
 import ready_trader_one.trader
@@ -35,7 +32,7 @@ def main():
         time.sleep(0.5)
         if exchange.done():
             return
-
+        
         traders = [executor.submit(ready_trader_one.trader.main, name) for name in trader_names]
         for name, task in zip(trader_names, traders):
             task.add_done_callback(functools.partial(__on_task_completed, name=name, executor=executor))

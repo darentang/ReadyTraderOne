@@ -2,11 +2,11 @@ import concurrent.futures
 import functools
 import time
 import traceback
+import os
 import sys
 
 import ready_trader_one.exchange
 import ready_trader_one.trader
-
 
 def __on_task_completed(future: concurrent.futures.Future, name: str, executor: concurrent.futures.Executor) -> None:
     """Consume the result of a task."""
@@ -22,7 +22,7 @@ def main():
     """Run a match."""
     # To add another auto-trader add its python module name to this list and
     # add it to the 'Traders' section of the exchange.json file.
-    trader_names = ["fusion", "baseline_dynamic", "alec2", "susum"]
+    trader_names = ['susum', 'alec2', 'fusion', 'baseline_dynamic']
 
     with concurrent.futures.ProcessPoolExecutor(max_workers=len(trader_names) + 1) as executor:
         exchange = executor.submit(ready_trader_one.exchange.main)
@@ -32,7 +32,7 @@ def main():
         time.sleep(0.5)
         if exchange.done():
             return
-
+        
         traders = [executor.submit(ready_trader_one.trader.main, name) for name in trader_names]
         for name, task in zip(trader_names, traders):
             task.add_done_callback(functools.partial(__on_task_completed, name=name, executor=executor))

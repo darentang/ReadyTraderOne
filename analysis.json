@@ -1,62 +1,62 @@
 {
     "AlecBot":{
         "InventoryControl":{
-            "avg":4.67,
-            "std":36.25
+            "avg":-35.32,
+            "std":51.69
         },
         "Liquidity":{
-            "fill_rate":0.16,
-            "fill_time_avg":0.06
+            "fill_rate":0.56,
+            "fill_time_avg":0.25
         },
         "PnL":{
-            "avg":278.93,
-            "last":587.0,
-            "std":146.42
+            "avg":77174.19,
+            "last":156875.4,
+            "std":45944.83
+        }
+    },
+    "AlecBotV2":{
+        "InventoryControl":{
+            "avg":10.87,
+            "std":26.41
+        },
+        "Liquidity":{
+            "fill_rate":0.98,
+            "fill_time_avg":0.43
+        },
+        "PnL":{
+            "avg":87114.35,
+            "last":176299.66,
+            "std":50553.15
         }
     },
     "Baseline":{
         "InventoryControl":{
-            "avg":0.1,
-            "std":2.14
+            "avg":3.56,
+            "std":23.63
         },
         "Liquidity":{
-            "fill_rate":0.58,
-            "fill_time_avg":0.11
+            "fill_rate":0.82,
+            "fill_time_avg":0.0
         },
         "PnL":{
-            "avg":211.14,
-            "last":363.04,
-            "std":100.31
+            "avg":-390513.6,
+            "last":-776551.95,
+            "std":226328.29
         }
     },
     "DynamicInventory":{
         "InventoryControl":{
-            "avg":0.76,
-            "std":23.53
+            "avg":11.15,
+            "std":22.29
         },
         "Liquidity":{
-            "fill_rate":0.37,
-            "fill_time_avg":0.17
+            "fill_rate":0.54,
+            "fill_time_avg":0.16
         },
         "PnL":{
-            "avg":732.63,
-            "last":1446.31,
-            "std":399.41
-        }
-    },
-    "SusumBot":{
-        "InventoryControl":{
-            "avg":-11.28,
-            "std":33.35
-        },
-        "Liquidity":{
-            "fill_rate":0.19,
-            "fill_time_avg":0.08
-        },
-        "PnL":{
-            "avg":369.2,
-            "last":718.26,
-            "std":213.4
+            "avg":58761.52,
+            "last":115873.02,
+            "std":32844.87
         }
     }
 }

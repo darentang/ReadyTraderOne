@@ -11,7 +11,7 @@ class Constants:
     GAMMA = 0.01
     KAPPA = 2
     ETA = - 0.05
-    MAX_ORDER = 10
+    MAX_ORDER = 50
     DEFAULT_T = 20
     MAX_VOLUME = 100
     TIME_OUT = 1.0

@@ -1,0 +1,139 @@
+2020-03-11 23:11:49,686 [INFO   ] [APP] fusion started with arguments={run.py}
+2020-03-11 23:11:49,686 [INFO   ] [APP] configuration={"Execution":{"Host":"127.0.0.1","Port":12345},"Information":{"AllowBroadcast":false,"Interface":"0.0.0.0","ListenAddress":"239.255.1.1","Port":12346},"TeamName":"FusionBot","Secret":"12345"}
+2020-03-11 23:11:54,208 [INFO   ] [TRADER] Placing quotes (1, 2). Bid: 40 @ $3409, Ask: 40 @ $3411
+2020-03-11 23:11:54,208 [INFO   ] [TRADER] Placing quotes (3, 4). Bid: 9 @ $3408, Ask: 9 @ $3412
+2020-03-11 23:11:54,208 [INFO   ] [TRADER] Active bids: 2, asks 2
+2020-03-11 23:11:54,210 [INFO   ] [TRADER] Order 1 inserted
+2020-03-11 23:11:54,210 [INFO   ] [TRADER] Order 2 inserted
+2020-03-11 23:11:54,210 [INFO   ] [TRADER] Order 3 inserted
+2020-03-11 23:11:54,211 [INFO   ] [TRADER] Order 4 inserted
+2020-03-11 23:11:54,439 [INFO   ] [TRADER] Timeout
+2020-03-11 23:11:54,440 [INFO   ] [TRADER] Cancelling bid 1
+2020-03-11 23:11:54,440 [INFO   ] [TRADER] Cancelling bid 3
+2020-03-11 23:11:54,440 [INFO   ] [TRADER] Cancelling bid 2
+2020-03-11 23:11:54,440 [INFO   ] [TRADER] Cancelling bid 4
+2020-03-11 23:11:54,442 [INFO   ] [TRADER] Order 1 cancelled
+2020-03-11 23:11:54,442 [INFO   ] [TRADER] Order 3 cancelled
+2020-03-11 23:11:54,442 [INFO   ] [TRADER] Order 2 cancelled
+2020-03-11 23:11:54,442 [INFO   ] [TRADER] Order 4 cancelled
+2020-03-11 23:11:54,690 [INFO   ] [TRADER] Placing quotes (5, 6). Bid: 40 @ $3408, Ask: 40 @ $3409
+2020-03-11 23:11:54,690 [INFO   ] [TRADER] Placing quotes (7, 8). Bid: 9 @ $3407, Ask: 9 @ $3410
+2020-03-11 23:11:54,691 [INFO   ] [TRADER] Active bids: 2, asks 2
+2020-03-11 23:11:54,694 [INFO   ] [TRADER] Order 5 inserted
+2020-03-11 23:11:54,694 [INFO   ] [TRADER] Order 6 inserted
+2020-03-11 23:11:54,694 [INFO   ] [TRADER] Order 7 inserted
+2020-03-11 23:11:54,694 [INFO   ] [TRADER] Order 8 inserted
+2020-03-11 23:11:54,936 [INFO   ] [TRADER] Timeout
+2020-03-11 23:11:54,937 [INFO   ] [TRADER] Cancelling bid 5
+2020-03-11 23:11:54,937 [INFO   ] [TRADER] Cancelling bid 7
+2020-03-11 23:11:54,937 [INFO   ] [TRADER] Cancelling bid 6
+2020-03-11 23:11:54,937 [INFO   ] [TRADER] Cancelling bid 8
+2020-03-11 23:11:54,939 [INFO   ] [TRADER] Order 5 cancelled
+2020-03-11 23:11:54,939 [INFO   ] [TRADER] Order 7 cancelled
+2020-03-11 23:11:54,939 [INFO   ] [TRADER] Order 6 cancelled
+2020-03-11 23:11:54,939 [INFO   ] [TRADER] Order 8 cancelled
+2020-03-11 23:11:55,188 [INFO   ] [TRADER] Placing quotes (9, 10). Bid: 40 @ $3409, Ask: 40 @ $3410
+2020-03-11 23:11:55,188 [INFO   ] [TRADER] Placing quotes (11, 12). Bid: 9 @ $3408, Ask: 9 @ $3411
+2020-03-11 23:11:55,188 [INFO   ] [TRADER] Active bids: 2, asks 2
+2020-03-11 23:11:55,191 [INFO   ] [TRADER] Order 9 inserted
+2020-03-11 23:11:55,192 [INFO   ] [TRADER] Order 10 inserted
+2020-03-11 23:11:55,192 [INFO   ] [TRADER] Order 11 inserted
+2020-03-11 23:11:55,192 [INFO   ] [TRADER] Order 12 inserted
+2020-03-11 23:11:55,438 [INFO   ] [TRADER] Timeout
+2020-03-11 23:11:55,438 [INFO   ] [TRADER] Cancelling bid 9
+2020-03-11 23:11:55,439 [INFO   ] [TRADER] Cancelling bid 11
+2020-03-11 23:11:55,439 [INFO   ] [TRADER] Cancelling bid 10
+2020-03-11 23:11:55,439 [INFO   ] [TRADER] Cancelling bid 12
+2020-03-11 23:11:55,439 [INFO   ] [TRADER] Order 9 cancelled
+2020-03-11 23:11:55,440 [INFO   ] [TRADER] Order 11 cancelled
+2020-03-11 23:11:55,440 [INFO   ] [TRADER] Order 10 cancelled
+2020-03-11 23:11:55,440 [INFO   ] [TRADER] Order 12 cancelled
+2020-03-11 23:11:55,687 [INFO   ] [TRADER] Placing quotes (13, 14). Bid: 40 @ $3409, Ask: 40 @ $3410
+2020-03-11 23:11:55,687 [INFO   ] [TRADER] Placing quotes (15, 16). Bid: 9 @ $3408, Ask: 9 @ $3411
+2020-03-11 23:11:55,687 [INFO   ] [TRADER] Active bids: 2, asks 2
+2020-03-11 23:11:55,690 [INFO   ] [TRADER] Order 13 inserted
+2020-03-11 23:11:55,690 [INFO   ] [TRADER] Order 14 inserted
+2020-03-11 23:11:55,691 [INFO   ] [TRADER] Order 15 inserted
+2020-03-11 23:11:55,691 [INFO   ] [TRADER] Order 16 inserted
+2020-03-11 23:11:55,936 [INFO   ] [TRADER] Timeout
+2020-03-11 23:11:55,937 [INFO   ] [TRADER] Cancelling bid 13
+2020-03-11 23:11:55,937 [INFO   ] [TRADER] Cancelling bid 15
+2020-03-11 23:11:55,937 [INFO   ] [TRADER] Cancelling bid 14
+2020-03-11 23:11:55,937 [INFO   ] [TRADER] Cancelling bid 16
+2020-03-11 23:11:55,938 [INFO   ] [TRADER] Order 13 cancelled
+2020-03-11 23:11:55,938 [INFO   ] [TRADER] Order 15 cancelled
+2020-03-11 23:11:55,940 [INFO   ] [TRADER] Order 14 cancelled
+2020-03-11 23:11:55,940 [INFO   ] [TRADER] Order 16 cancelled
+2020-03-11 23:11:56,188 [INFO   ] [TRADER] Placing quotes (17, 18). Bid: 40 @ $3409, Ask: 40 @ $3410
+2020-03-11 23:11:56,189 [INFO   ] [TRADER] Placing quotes (19, 20). Bid: 9 @ $3408, Ask: 9 @ $3411
+2020-03-11 23:11:56,189 [INFO   ] [TRADER] Active bids: 2, asks 2
+2020-03-11 23:11:56,189 [INFO   ] [TRADER] Order 17 inserted
+2020-03-11 23:11:56,189 [INFO   ] [TRADER] Order 18 inserted
+2020-03-11 23:11:56,189 [INFO   ] [TRADER] Order 19 inserted
+2020-03-11 23:11:56,189 [INFO   ] [TRADER] Order 20 inserted
+2020-03-11 23:11:56,438 [INFO   ] [TRADER] Timeout
+2020-03-11 23:11:56,438 [INFO   ] [TRADER] Cancelling bid 17
+2020-03-11 23:11:56,439 [INFO   ] [TRADER] Cancelling bid 19
+2020-03-11 23:11:56,439 [INFO   ] [TRADER] Cancelling bid 18
+2020-03-11 23:11:56,439 [INFO   ] [TRADER] Cancelling bid 20
+2020-03-11 23:11:56,440 [INFO   ] [TRADER] Order 17 cancelled
+2020-03-11 23:11:56,440 [INFO   ] [TRADER] Order 19 cancelled
+2020-03-11 23:11:56,441 [INFO   ] [TRADER] Order 18 cancelled
+2020-03-11 23:11:56,441 [INFO   ] [TRADER] Order 20 cancelled
+2020-03-11 23:11:56,687 [INFO   ] [TRADER] Placing quotes (21, 22). Bid: 40 @ $3409, Ask: 40 @ $3410
+2020-03-11 23:11:56,688 [INFO   ] [TRADER] Placing quotes (23, 24). Bid: 9 @ $3408, Ask: 9 @ $3411
+2020-03-11 23:11:56,688 [INFO   ] [TRADER] Active bids: 2, asks 2
+2020-03-11 23:11:56,691 [INFO   ] [TRADER] Order 21 inserted
+2020-03-11 23:11:56,691 [INFO   ] [TRADER] Order 22 inserted
+2020-03-11 23:11:56,692 [INFO   ] [TRADER] Order 23 inserted
+2020-03-11 23:11:56,692 [INFO   ] [TRADER] Order 24 inserted
+2020-03-11 23:11:56,936 [INFO   ] [TRADER] Timeout
+2020-03-11 23:11:56,936 [INFO   ] [TRADER] Cancelling bid 21
+2020-03-11 23:11:56,937 [INFO   ] [TRADER] Cancelling bid 23
+2020-03-11 23:11:56,937 [INFO   ] [TRADER] Cancelling bid 22
+2020-03-11 23:11:56,937 [INFO   ] [TRADER] Cancelling bid 24
+2020-03-11 23:11:56,938 [INFO   ] [TRADER] Order 21 cancelled
+2020-03-11 23:11:56,938 [INFO   ] [TRADER] Order 23 cancelled
+2020-03-11 23:11:56,938 [INFO   ] [TRADER] Order 22 cancelled
+2020-03-11 23:11:56,939 [INFO   ] [TRADER] Order 24 cancelled
+2020-03-11 23:11:57,187 [INFO   ] [TRADER] Placing quotes (25, 26). Bid: 40 @ $3409, Ask: 40 @ $3410
+2020-03-11 23:11:57,188 [INFO   ] [TRADER] Placing quotes (27, 28). Bid: 9 @ $3408, Ask: 9 @ $3411
+2020-03-11 23:11:57,188 [INFO   ] [TRADER] Active bids: 2, asks 2
+2020-03-11 23:11:57,191 [INFO   ] [TRADER] Order 25 inserted
+2020-03-11 23:11:57,191 [INFO   ] [TRADER] Order 26 inserted
+2020-03-11 23:11:57,192 [INFO   ] [TRADER] Order 27 inserted
+2020-03-11 23:11:57,192 [INFO   ] [TRADER] Order 28 inserted
+2020-03-11 23:11:57,436 [INFO   ] [TRADER] Timeout
+2020-03-11 23:11:57,436 [INFO   ] [TRADER] Cancelling bid 25
+2020-03-11 23:11:57,437 [INFO   ] [TRADER] Cancelling bid 27
+2020-03-11 23:11:57,437 [INFO   ] [TRADER] Cancelling bid 26
+2020-03-11 23:11:57,437 [INFO   ] [TRADER] Cancelling bid 28
+2020-03-11 23:11:57,438 [INFO   ] [TRADER] Order 25 cancelled
+2020-03-11 23:11:57,439 [INFO   ] [TRADER] Order 27 cancelled
+2020-03-11 23:11:57,440 [INFO   ] [TRADER] Order 26 cancelled
+2020-03-11 23:11:57,440 [INFO   ] [TRADER] Order 28 cancelled
+2020-03-11 23:11:57,689 [INFO   ] [TRADER] Placing quotes (29, 30). Bid: 40 @ $3409, Ask: 40 @ $3410
+2020-03-11 23:11:57,690 [INFO   ] [TRADER] Placing quotes (31, 32). Bid: 9 @ $3408, Ask: 9 @ $3411
+2020-03-11 23:11:57,690 [INFO   ] [TRADER] Active bids: 2, asks 2
+2020-03-11 23:11:57,692 [INFO   ] [TRADER] Order 29 inserted
+2020-03-11 23:11:57,692 [INFO   ] [TRADER] Order 30 inserted
+2020-03-11 23:11:57,692 [INFO   ] [TRADER] Order 31 inserted
+2020-03-11 23:11:57,693 [INFO   ] [TRADER] Order 32 inserted
+2020-03-11 23:11:57,938 [INFO   ] [TRADER] Timeout
+2020-03-11 23:11:57,938 [INFO   ] [TRADER] Cancelling bid 29
+2020-03-11 23:11:57,938 [INFO   ] [TRADER] Cancelling bid 31
+2020-03-11 23:11:57,938 [INFO   ] [TRADER] Cancelling bid 30
+2020-03-11 23:11:57,938 [INFO   ] [TRADER] Cancelling bid 32
+2020-03-11 23:11:57,940 [INFO   ] [TRADER] Order 29 cancelled
+2020-03-11 23:11:57,940 [INFO   ] [TRADER] Order 31 cancelled
+2020-03-11 23:11:57,940 [INFO   ] [TRADER] Order 30 cancelled
+2020-03-11 23:11:57,940 [INFO   ] [TRADER] Order 32 cancelled
+2020-03-11 23:11:58,186 [INFO   ] [TRADER] Placing quotes (33, 34). Bid: 40 @ $3409, Ask: 40 @ $3410
+2020-03-11 23:11:58,187 [INFO   ] [TRADER] Placing quotes (35, 36). Bid: 9 @ $3408, Ask: 9 @ $3411
+2020-03-11 23:11:58,187 [INFO   ] [TRADER] Active bids: 2, asks 2
+2020-03-11 23:11:58,188 [INFO   ] [TRADER] Order 33 inserted
+2020-03-11 23:11:58,188 [INFO   ] [TRADER] Order 34 inserted
+2020-03-11 23:11:58,188 [INFO   ] [TRADER] Order 35 inserted
+2020-03-11 23:11:58,188 [INFO   ] [TRADER] Order 36 inserted
+2020-03-11 23:11:58,257 [INFO   ] [APP] SIGINT signal received - shutting down...
+2020-03-11 23:11:58,258 [INFO   ] [APP] closing event loop

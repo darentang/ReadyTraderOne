@@ -10,12 +10,12 @@ import numpy as np
 class Constants:
     GAMMA = 0.01
     KAPPA = 2
-    ETA = - 0.05
-    MAX_ORDER = 10
+    ETA = - 0.005
+    MAX_ORDER = 50
     DEFAULT_T = 0.25
     MAX_VOLUME = 100
     TIME_OUT = 1.0
-    UPDATE = 0.2
+    UPDATE = 1.0
 
 
 class AutoTrader(BaseAutoTrader):
@@ -90,7 +90,7 @@ class AutoTrader(BaseAutoTrader):
 
     def inventory(self):
         q = self.etf_position
-        remaining_volume = min((self.constants.MAX_ORDER, 1.8*self.constants.MAX_VOLUME - abs(q)))
+        remaining_volume = min((self.constants.MAX_ORDER, self.constants.MAX_VOLUME - abs(q)))
         opposing_volume = self.constants.MAX_ORDER
         if q < 0:
             bid = opposing_volume
@@ -107,7 +107,8 @@ class AutoTrader(BaseAutoTrader):
         return elapsed_time
 
 
-    def quote(self, bid_price=None, ask_price=None, bid_volume=None, ask_volume=None):
+
+    def quote(self, bid_price=None, ask_price=None, bid_volume=None, ask_volume=None, lifespan=Lifespan.GOOD_FOR_DAY):
         """
         Place a quote
 
@@ -128,25 +129,32 @@ class AutoTrader(BaseAutoTrader):
         # multiple of tick size (100 cents)
         bid_price -= bid_price % 100
         ask_price -= ask_price % 100 
-
         bid_price = int(bid_price)
         ask_price = int(ask_price)
 
         bid_volume = int(bid_volume)
         ask_volume = int(ask_volume)
 
-        bid_id = next(self.order_ids)
-        ask_id = next(self.order_ids)
+        placed = False
 
-        self.active_quotes["bids"].append(bid_id)
-        self.active_quotes["asks"].append(ask_id)
+        if bid_volume > 0 and bid_price > 0:
+            placed = True
+            self.bid_id = next(self.order_ids)
+            self.send_insert_order(self.bid_id, Side.BUY, bid_price, bid_volume, lifespan)
+            self.active_quotes["bids"].append(self.bid_id)
 
-        if self.bid_volume > 0 and self.bid_price > 0:
-            self.send_insert_order(bid_id, Side.BUY, bid_price, bid_volume, Lifespan.GOOD_FOR_DAY)
-        if self.ask_volume > 0 and self.ask_price > 0:
-            self.send_insert_order(ask_id, Side.SELL, ask_price, ask_volume, Lifespan.GOOD_FOR_DAY)
+        if ask_volume > 0 and ask_price > 0:
+            placed = True
+            self.ask_id = next(self.order_ids)
+            self.send_insert_order(self.ask_id, Side.SELL, ask_price, ask_volume, lifespan)
+            self.active_quotes["asks"].append(self.ask_id)
+        
+        # if nothing has been done
+        if not placed:
+            return
+
         self.quote_time = self.get_time()
-        self.logger.info("Placing quotes (%d, %d). Bid: %d @ $%d, Ask: %d @ $%d", bid_id, ask_id, bid_volume, bid_price / 100, ask_volume, ask_price / 100)
+        self.logger.info("Placing quotes (%d, %d). Bid: %d @ $%d, Ask: %d @ $%d", self.bid_id, self.ask_id, bid_volume, bid_price / 100, ask_volume, ask_price / 100)
 
     def cancel(self, ids):
         for i in ids:
@@ -206,17 +214,13 @@ class AutoTrader(BaseAutoTrader):
                 self.quote(bid_price=self.bid_price-100, ask_price=self.ask_price+100, bid_volume=0.2*self.bid_volume, ask_volume=0.2*self.ask_volume)
 
 
+                self.quote_time = self.get_time()
             # if two orders in book and timeout
-            elif (len(ask_queue) != 0 and len(bid_queue) != 0) and elapsed_time - self.quote_time > self.constants.UPDATE:
+            elif (len(ask_queue) != 0 or len(bid_queue) != 0) and elapsed_time - self.quote_time > self.constants.UPDATE:
+                self.logger.info("Timeout")
                 self.cancel(bid_queue)
                 self.cancel(ask_queue)
-                self.logger.info("Timeout")
                 
-
-        # print(self.active_quotes)
-
-        # print(f"{elapsed_time:.2f} sec has elapsed")
-
     def on_order_status_message(self, client_order_id: int, fill_volume: int, remaining_volume: int, fees: int) -> None:
         """Called when the status of one of your orders changes.
 
@@ -228,7 +232,6 @@ class AutoTrader(BaseAutoTrader):
         If an order is cancelled its remaining volume will be zero.
         """
 
-        self.logger.info("Order %d filled (%d / %d)", client_order_id, fill_volume, fill_volume + remaining_volume)
 
         # on completing an order
         if remaining_volume == 0:
@@ -238,12 +241,16 @@ class AutoTrader(BaseAutoTrader):
             if client_order_id in self.active_quotes['asks']:
                 self.active_quotes['asks'].remove(client_order_id)
 
-            if self.get_time() - self.execution_time > self.constants.TIME_OUT:
-                self.cancel(self.active_quotes['bids'])
-                self.cancel(self.active_quotes['asks'])
-    
-            self.execution_time = self.get_time()    
+            # if self.get_time() - self.execution_time > self.constants.TIME_OUT:
+            #     self.cancel(self.active_quotes['bids'])
+            #     self.cancel(self.active_quotes['asks'])
 
+            self.logger.info("Order %d cancelled", client_order_id)
+            self.execution_time = self.get_time()    
+        elif fill_volume == 0:
+            self.logger.info("Order %d inserted", client_order_id)
+        else:
+            self.logger.info("Order %d filled (%d / %d)", client_order_id, fill_volume, fill_volume + remaining_volume)
 
     def on_position_change_message(self, future_position: int, etf_position: int) -> None:
         """Called when your position changes.

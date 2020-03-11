@@ -4,7 +4,7 @@ import itertools
 from typing import List
 
 from ready_trader_one import BaseAutoTrader, Instrument, Lifespan, Side
-
+import numpy as np
 
 class AutoTrader(BaseAutoTrader):
     def __init__(self, loop: asyncio.AbstractEventLoop):
@@ -12,6 +12,22 @@ class AutoTrader(BaseAutoTrader):
         super(AutoTrader, self).__init__(loop)
         self.order_ids = itertools.count(1)
         self.ask_id = self.ask_price = self.bid_id = self.bid_price = self.position = 0
+        self.k = 50
+
+    def inventory(self):
+        q = self.position
+        remaining_volume = 0.5 * np.min((100, 50 - np.abs(q)))
+        opposing_volume = 50
+        if q < 0:
+            bid = opposing_volume
+            ask = remaining_volume * np.exp(0.005 * q)
+        else:
+            bid = remaining_volume * np.exp(-0.005 * q)
+            ask = opposing_volume
+
+        
+        return int(bid), int(ask)
+    
 
     def on_error_message(self, client_order_id: int, error_message: bytes) -> None:
         """Called when the exchange detects an error."""
@@ -25,6 +41,8 @@ class AutoTrader(BaseAutoTrader):
             new_bid_price = bid_prices[0] - self.position * 100 if bid_prices[0] != 0 else 0
             new_ask_price = ask_prices[0] - self.position * 100 if ask_prices[0] != 0 else 0
 
+            bid_volume, ask_volume = self.inventory()
+
             if self.bid_id != 0 and new_bid_price not in (self.bid_price, 0):
                 self.send_cancel_order(self.bid_id)
                 self.bid_id = 0
@@ -35,12 +53,12 @@ class AutoTrader(BaseAutoTrader):
             if self.bid_id == 0 and new_bid_price != 0 and self.position < 100:
                 self.bid_id = next(self.order_ids)
                 self.bid_price = new_bid_price
-                self.send_insert_order(self.bid_id, Side.BUY, new_bid_price, 1, Lifespan.GOOD_FOR_DAY)
+                self.send_insert_order(self.bid_id, Side.BUY, new_bid_price, bid_volume, Lifespan.GOOD_FOR_DAY)
 
             if self.ask_id == 0 and new_ask_price != 0 and self.position > -100:
                 self.ask_id = next(self.order_ids)
                 self.ask_price = new_ask_price
-                self.send_insert_order(self.ask_id, Side.SELL, new_ask_price, 1, Lifespan.GOOD_FOR_DAY)
+                self.send_insert_order(self.ask_id, Side.SELL, new_ask_price, ask_volume, Lifespan.GOOD_FOR_DAY)
 
     def on_order_status_message(self, client_order_id: int, fill_volume: int, remaining_volume: int, fees: int) -> None:
         """Called when the status of one of your orders changes."""

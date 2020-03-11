@@ -96,7 +96,7 @@ def get_inventory_volatility(competitors, info):
 info = defaultdict(lambda: dict())
 
 get_profit_loss(competitors, info)
-get_liquidity(competitors, info, 0.8)
+get_liquidity(competitors, info, 0.3)
 get_inventory_volatility(competitors, info)
 
 with open("analysis.json", "w") as fp:

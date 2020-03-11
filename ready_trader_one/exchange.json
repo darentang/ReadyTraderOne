@@ -1,8 +1,8 @@
 {
   "Engine": {
-    "MarketDataFile": "data/day2.csv",
+    "MarketDataFile": "data/day1.csv",
     "MatchEventsFile": "match_events.csv",
-    "Speed": 5.0,
+    "Speed": 1.0,
     "TickInterval": 0.25
   },
   "Execution": {
@@ -31,9 +31,12 @@
     "PositionLimit": 100
   },
   "Traders": {
+    "FusionBot": "12345",
     "AlecBot": "12345",
     "Baseline": "12345",
-    "SusumBot": "12345",
-    "DynamicInventory": "abcde"
+    "AlecBotV2": "12345",
+    "DynamicInventory": "abcde",
+    "IgnoreMe": "12345",
+    "SusumBot": "12345"
   }
 }

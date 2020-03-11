@@ -21,21 +21,23 @@ def animate(i):
 
     competitors = df["Competitor"].unique()
     for competitor in competitors:
+        if competitor == "IgnoreMe":
+            continue
         competitor_data = df.query(f"Competitor == '{competitor}'")
         profit_and_loss = competitor_data["ProfitLoss"]
         position = competitor_data["EtfPosition"]
         t = competitor_data["Time"]
         ax1.plot(t, profit_and_loss, label=competitor)
         ax2.plot(t, position, label=competitor)
-    ax1.legend()
+    ax1.legend(loc=2)
     ax1.set_title("Profit/Loss")
     
-    ax2.legend()
+    ax2.legend(loc=2)
     ax2.set_title("Position")
 
     ax3.plot(time, etf_price, label="ETF Last Traded Price")
     ax3.plot(time, future_price, label="Future Last Traded Price")
-    ax3.legend()
+    ax3.legend(loc=2)
     ax3.set_title("Prices")
 
 A = animation.FuncAnimation(fig, animate, interval=1000)

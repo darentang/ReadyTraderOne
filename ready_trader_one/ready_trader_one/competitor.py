@@ -167,7 +167,6 @@ class Competitor(ICompetitor, IOrderListener):
             return
             
         if len(self.orders) == self.order_count_limit:
-            print(len(self.orders))
             self.send_error(now, client_order_id, b"order rejected: active order count limit breached")
             return
 

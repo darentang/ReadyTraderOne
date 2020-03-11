@@ -40,7 +40,7 @@ class AutoTrader(BaseAutoTrader):
         self.etf_position = self.future_position = 0
 
         # speed of the simulation
-        self.speed = 5.0
+        self.speed = 1.0
 
         # the active quotes right now, contains order ids
         self.active_quotes = {
@@ -113,13 +113,13 @@ class AutoTrader(BaseAutoTrader):
 
         placed = False
 
-        if bid_volume > 0 and bid_price > 0:
+        if bid_volume > 0 and bid_price > 0 and len(self.active_quotes["bids"]) < 2:
             placed = True
             self.bid_id = next(self.order_ids)
             self.send_insert_order(self.bid_id, Side.BUY, bid_price, bid_volume, lifespan)
             self.active_quotes["bids"].append(self.bid_id)
 
-        if ask_volume > 0 and ask_price > 0:
+        if ask_volume > 0 and ask_price > 0 and len(self.active_quotes["asks"]) < 2:
             placed = True
             self.ask_id = next(self.order_ids)
             self.send_insert_order(self.ask_id, Side.SELL, ask_price, ask_volume, lifespan)
@@ -196,7 +196,7 @@ class AutoTrader(BaseAutoTrader):
                 # send double-decker quotes
                 self.quote_double()
             
-            elif (len(ask_queue) < 2 or len(bid_queue) < 2) and self.get_time() - self.execution_time > self.constants.TIME_OUT:
+            elif len(ask_queue) < 2 or len(bid_queue) < 2:
                 self.logger.info("Changing quote. Bid queue: %d, Ask queue: %d", len(bid_queue), len(ask_queue))
                 self.cancel(bid_queue)
                 self.cancel(ask_queue)

@@ -117,7 +117,7 @@ class AutoTrader(BaseAutoTrader):
 
         # TODO: CHANGE THIS
         # speed of the simulation
-        self.speed = 5.0
+        self.speed = 1.0
 
         # store the historical midpoint data of ETF and FUTURE
         self.history = {

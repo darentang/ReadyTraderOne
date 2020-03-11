@@ -196,8 +196,11 @@ class AutoTrader(BaseAutoTrader):
                     self.logger.info("Cancelling bid %d", self.bid_id)
                     
                     half_spread = (best_ask - best_bid) * 0.5
-                    self.bid_price -= half_spread
-                    self.ask_price = self.bid_price + half_spread
+                    self.bid_price = self.ask_price - half_spread
+                    self.ask_price += half_spread
+
+                    # self.bid_price -= half_spread
+                    # self.ask_price = self.bid_price + half_spread
                     self.bid_id = 0
 
                 # sell is not fufilled
@@ -206,8 +209,12 @@ class AutoTrader(BaseAutoTrader):
                     self.logger.info("Cancelling ask %d", self.ask_id)
 
                     half_spread = (best_ask - best_bid) * 0.5
-                    self.bid_price = self.ask_price - half_spread
-                    self.ask_price += half_spread
+                    self.ask_price = self.bid_price + half_spread
+                    self.bid_price -= half_spread
+
+
+                    # self.bid_price = self.ask_price - half_spread
+                    # self.ask_price += half_spread
                     self.ask_id = 0
                 self.execution_time = elapsed_time
 

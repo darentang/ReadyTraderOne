@@ -10,7 +10,7 @@ import numpy as np
 class Constants:
     GAMMA = 0.01
     KAPPA = 2
-    ETA = - 0.05
+    ETA = - 0.005
     MAX_ORDER = 10
     DEFAULT_T = 20
     MAX_VOLUME = 100

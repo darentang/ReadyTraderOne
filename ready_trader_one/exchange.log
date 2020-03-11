@@ -1,0 +1,26 @@
+2020-03-11 01:26:28,002 [INFO   ] [APP] exchange started with arguments={run.py}
+2020-03-11 01:26:28,003 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"data/day2.csv","MatchEventsFile":"match_events.csv","Speed":5.0,"TickInterval":0.25},"Execution":{"ListenAddress":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Information":{"AllowBroadcast":false,"Host":"239.255.1.1","Interface":"0.0.0.0","Port":12346},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":20,"PositionLimit":100},"Traders":{"AlecBot":"12345","Baseline":"12345","SusumBot":"12345","DynamicInventory":"abcde"}}
+2020-03-11 01:26:28,003 [INFO   ] [CONTROLLER] starting the match
+2020-03-11 01:26:28,510 [INFO   ] [EXECUTION] fd=19 accepted a new connection: peer=127.0.0.1:43846
+2020-03-11 01:26:28,511 [INFO   ] [CONTROLLER] 'Baseline' is ready!
+2020-03-11 01:26:28,511 [INFO   ] [EXECUTION] fd=19 login successful: name='Baseline'
+2020-03-11 01:26:28,589 [INFO   ] [EXECUTION] fd=20 accepted a new connection: peer=127.0.0.1:43848
+2020-03-11 01:26:28,592 [INFO   ] [CONTROLLER] 'DynamicInventory' is ready!
+2020-03-11 01:26:28,592 [INFO   ] [EXECUTION] fd=20 login successful: name='DynamicInventory'
+2020-03-11 01:26:28,599 [INFO   ] [EXECUTION] fd=21 accepted a new connection: peer=127.0.0.1:43850
+2020-03-11 01:26:28,600 [INFO   ] [CONTROLLER] 'SusumBot' is ready!
+2020-03-11 01:26:28,600 [INFO   ] [EXECUTION] fd=21 login successful: name='SusumBot'
+2020-03-11 01:26:28,617 [INFO   ] [EXECUTION] fd=22 accepted a new connection: peer=127.0.0.1:43852
+2020-03-11 01:26:28,617 [INFO   ] [CONTROLLER] 'AlecBot' is ready!
+2020-03-11 01:26:28,617 [INFO   ] [EXECUTION] fd=22 login successful: name='AlecBot'
+2020-03-11 01:26:33,011 [INFO   ] [CONTROLLER] market open
+2020-03-11 01:26:46,164 [INFO   ] [COMPETITOR] 'SusumBot' sent error message: time=65.759270 client_order_id=303 message='order rejected: invalid volume'
+2020-03-11 01:26:46,265 [INFO   ] [COMPETITOR] 'SusumBot' sent error message: time=66.268121 client_order_id=307 message='order rejected: invalid volume'
+2020-03-11 01:27:05,315 [INFO   ] [COMPETITOR] 'DynamicInventory' sent error message: time=161.514714 client_order_id=418 message='order rejected: invalid volume'
+2020-03-11 01:27:05,572 [INFO   ] [COMPETITOR] 'DynamicInventory' sent error message: time=162.799423 client_order_id=420 message='order rejected: invalid volume'
+2020-03-11 01:27:31,364 [INFO   ] [COMPETITOR] 'DynamicInventory' sent error message: time=291.762119 client_order_id=653 message='order rejected: invalid volume'
+2020-03-11 01:27:36,099 [INFO   ] [COMPETITOR] 'SusumBot' sent error message: time=315.434328 client_order_id=387 message='order rejected: invalid volume'
+2020-03-11 01:27:36,816 [INFO   ] [COMPETITOR] 'SusumBot' sent error message: time=319.020860 client_order_id=399 message='order rejected: invalid volume'
+2020-03-11 01:27:37,272 [INFO   ] [COMPETITOR] 'SusumBot' sent error message: time=321.302513 client_order_id=411 message='order rejected: invalid volume'
+2020-03-11 01:27:37,370 [INFO   ] [COMPETITOR] 'SusumBot' sent error message: time=321.792572 client_order_id=415 message='order rejected: invalid volume'
+2020-03-11 01:28:39,868 [INFO   ] [COMPETITOR] 'DynamicInventory' sent error message: time=634.278956 client_order_id=1336 message='order rejected: invalid volume'

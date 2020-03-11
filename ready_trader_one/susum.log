@@ -1,0 +1,1609 @@
+2020-03-11 01:26:28,509 [INFO   ] [APP] susum started with arguments={run.py}
+2020-03-11 01:26:28,509 [INFO   ] [APP] configuration={"Execution":{"Host":"127.0.0.1","Port":12345},"Information":{"AllowBroadcast":false,"Interface":"0.0.0.0","ListenAddress":"239.255.1.1","Port":12346},"TeamName":"SusumBot","Secret":"12345"}
+2020-03-11 01:26:33,091 [INFO   ] [TRADER] Placing quotes (1, 2). Bid: 8 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:33,092 [INFO   ] [TRADER] Placing quotes (3, 4). Bid: 2 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:33,106 [INFO   ] [TRADER] Order 1 filled (0 / 8)
+2020-03-11 01:26:33,107 [INFO   ] [TRADER] Order 2 filled (0 / 8)
+2020-03-11 01:26:33,107 [INFO   ] [TRADER] Order 3 filled (0 / 2)
+2020-03-11 01:26:33,107 [INFO   ] [TRADER] Order 4 filled (0 / 2)
+2020-03-11 01:26:33,164 [INFO   ] [TRADER] Order 1 filled (8 / 8)
+2020-03-11 01:26:33,164 [INFO   ] [TRADER] Position changed to ETF: 8, FUTURE: -8
+2020-03-11 01:26:33,166 [INFO   ] [TRADER] Cancelling bid 3
+2020-03-11 01:26:33,166 [INFO   ] [TRADER] Cancelling bid 2
+2020-03-11 01:26:33,166 [INFO   ] [TRADER] Cancelling bid 4
+2020-03-11 01:26:33,166 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:33,172 [INFO   ] [TRADER] Order 3 filled (0 / 0)
+2020-03-11 01:26:33,172 [INFO   ] [TRADER] Order 2 filled (0 / 0)
+2020-03-11 01:26:33,172 [INFO   ] [TRADER] Order 4 filled (0 / 0)
+2020-03-11 01:26:33,214 [INFO   ] [TRADER] Placing quotes (5, 6). Bid: 4 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:26:33,214 [INFO   ] [TRADER] Placing quotes (7, 8). Bid: 1 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:26:33,215 [INFO   ] [TRADER] Order 5 filled (0 / 4)
+2020-03-11 01:26:33,216 [INFO   ] [TRADER] Order 6 filled (8 / 8)
+2020-03-11 01:26:33,216 [INFO   ] [TRADER] Position changed to ETF: 0, FUTURE: 0
+2020-03-11 01:26:33,216 [INFO   ] [TRADER] Order 7 filled (0 / 1)
+2020-03-11 01:26:33,216 [INFO   ] [TRADER] Order 8 filled (0 / 2)
+2020-03-11 01:26:33,263 [INFO   ] [TRADER] Cancelling bid 5
+2020-03-11 01:26:33,263 [INFO   ] [TRADER] Cancelling bid 7
+2020-03-11 01:26:33,264 [INFO   ] [TRADER] Cancelling bid 8
+2020-03-11 01:26:33,264 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:33,264 [INFO   ] [TRADER] Order 5 filled (0 / 0)
+2020-03-11 01:26:33,264 [INFO   ] [TRADER] Order 7 filled (0 / 0)
+2020-03-11 01:26:33,264 [INFO   ] [TRADER] Order 8 filled (0 / 0)
+2020-03-11 01:26:33,314 [INFO   ] [TRADER] Placing quotes (9, 10). Bid: 8 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:26:33,315 [INFO   ] [TRADER] Placing quotes (11, 12). Bid: 2 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:26:33,316 [INFO   ] [TRADER] Order 9 filled (0 / 8)
+2020-03-11 01:26:33,317 [INFO   ] [TRADER] Order 10 filled (0 / 8)
+2020-03-11 01:26:33,317 [INFO   ] [TRADER] Order 11 filled (0 / 2)
+2020-03-11 01:26:33,317 [INFO   ] [TRADER] Order 12 filled (0 / 2)
+2020-03-11 01:26:33,363 [INFO   ] [TRADER] Cancelling bid 9
+2020-03-11 01:26:33,364 [INFO   ] [TRADER] Cancelling bid 11
+2020-03-11 01:26:33,364 [INFO   ] [TRADER] Cancelling bid 10
+2020-03-11 01:26:33,364 [INFO   ] [TRADER] Cancelling bid 12
+2020-03-11 01:26:33,364 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:33,365 [INFO   ] [TRADER] Order 9 filled (0 / 0)
+2020-03-11 01:26:33,365 [INFO   ] [TRADER] Order 11 filled (0 / 0)
+2020-03-11 01:26:33,365 [INFO   ] [TRADER] Order 10 filled (0 / 0)
+2020-03-11 01:26:33,365 [INFO   ] [TRADER] Order 12 filled (0 / 0)
+2020-03-11 01:26:33,413 [INFO   ] [TRADER] Placing quotes (13, 14). Bid: 8 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:26:33,413 [INFO   ] [TRADER] Placing quotes (15, 16). Bid: 2 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:26:33,414 [INFO   ] [TRADER] Order 13 filled (0 / 8)
+2020-03-11 01:26:33,414 [INFO   ] [TRADER] Order 14 filled (0 / 8)
+2020-03-11 01:26:33,414 [INFO   ] [TRADER] Order 15 filled (0 / 2)
+2020-03-11 01:26:33,414 [INFO   ] [TRADER] Order 16 filled (0 / 2)
+2020-03-11 01:26:33,463 [INFO   ] [TRADER] Cancelling bid 13
+2020-03-11 01:26:33,463 [INFO   ] [TRADER] Cancelling bid 15
+2020-03-11 01:26:33,463 [INFO   ] [TRADER] Cancelling bid 14
+2020-03-11 01:26:33,463 [INFO   ] [TRADER] Cancelling bid 16
+2020-03-11 01:26:33,463 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:33,463 [INFO   ] [TRADER] Order 13 filled (0 / 0)
+2020-03-11 01:26:33,463 [INFO   ] [TRADER] Order 15 filled (0 / 0)
+2020-03-11 01:26:33,463 [INFO   ] [TRADER] Order 14 filled (0 / 0)
+2020-03-11 01:26:33,464 [INFO   ] [TRADER] Order 16 filled (0 / 0)
+2020-03-11 01:26:33,513 [INFO   ] [TRADER] Placing quotes (17, 18). Bid: 8 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:26:33,513 [INFO   ] [TRADER] Placing quotes (19, 20). Bid: 2 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:26:33,513 [INFO   ] [TRADER] Order 17 filled (0 / 8)
+2020-03-11 01:26:33,514 [INFO   ] [TRADER] Order 18 filled (0 / 8)
+2020-03-11 01:26:33,514 [INFO   ] [TRADER] Order 19 filled (0 / 2)
+2020-03-11 01:26:33,514 [INFO   ] [TRADER] Order 20 filled (0 / 2)
+2020-03-11 01:26:33,563 [INFO   ] [TRADER] Cancelling bid 17
+2020-03-11 01:26:33,563 [INFO   ] [TRADER] Cancelling bid 19
+2020-03-11 01:26:33,563 [INFO   ] [TRADER] Cancelling bid 18
+2020-03-11 01:26:33,563 [INFO   ] [TRADER] Cancelling bid 20
+2020-03-11 01:26:33,563 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:33,564 [INFO   ] [TRADER] Order 18 filled (1 / 8)
+2020-03-11 01:26:33,564 [INFO   ] [TRADER] Position changed to ETF: -1, FUTURE: 1
+2020-03-11 01:26:33,564 [INFO   ] [TRADER] Order 17 filled (0 / 0)
+2020-03-11 01:26:33,564 [INFO   ] [TRADER] Order 19 filled (0 / 0)
+2020-03-11 01:26:33,564 [INFO   ] [TRADER] Order 18 filled (1 / 1)
+2020-03-11 01:26:33,564 [INFO   ] [TRADER] Order 20 filled (0 / 0)
+2020-03-11 01:26:33,613 [INFO   ] [TRADER] Placing quotes (21, 22). Bid: 8 @ $3427, Ask: 7 @ $3428
+2020-03-11 01:26:33,613 [INFO   ] [TRADER] Placing quotes (23, 24). Bid: 2 @ $3426, Ask: 1 @ $3429
+2020-03-11 01:26:33,614 [INFO   ] [TRADER] Order 21 filled (0 / 8)
+2020-03-11 01:26:33,614 [INFO   ] [TRADER] Order 22 filled (0 / 7)
+2020-03-11 01:26:33,614 [INFO   ] [TRADER] Order 23 filled (0 / 2)
+2020-03-11 01:26:33,614 [INFO   ] [TRADER] Order 24 filled (0 / 1)
+2020-03-11 01:26:33,663 [INFO   ] [TRADER] Cancelling bid 21
+2020-03-11 01:26:33,663 [INFO   ] [TRADER] Cancelling bid 23
+2020-03-11 01:26:33,663 [INFO   ] [TRADER] Cancelling bid 22
+2020-03-11 01:26:33,663 [INFO   ] [TRADER] Cancelling bid 24
+2020-03-11 01:26:33,663 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:33,663 [INFO   ] [TRADER] Order 21 filled (0 / 0)
+2020-03-11 01:26:33,663 [INFO   ] [TRADER] Order 23 filled (0 / 0)
+2020-03-11 01:26:33,663 [INFO   ] [TRADER] Order 22 filled (0 / 0)
+2020-03-11 01:26:33,664 [INFO   ] [TRADER] Order 24 filled (0 / 0)
+2020-03-11 01:26:33,713 [INFO   ] [TRADER] Placing quotes (25, 26). Bid: 8 @ $3427, Ask: 7 @ $3428
+2020-03-11 01:26:33,713 [INFO   ] [TRADER] Placing quotes (27, 28). Bid: 2 @ $3426, Ask: 1 @ $3429
+2020-03-11 01:26:33,713 [INFO   ] [TRADER] Order 25 filled (0 / 8)
+2020-03-11 01:26:33,714 [INFO   ] [TRADER] Order 26 filled (0 / 7)
+2020-03-11 01:26:33,714 [INFO   ] [TRADER] Order 27 filled (0 / 2)
+2020-03-11 01:26:33,714 [INFO   ] [TRADER] Order 28 filled (0 / 1)
+2020-03-11 01:26:33,764 [INFO   ] [TRADER] Cancelling bid 25
+2020-03-11 01:26:33,764 [INFO   ] [TRADER] Cancelling bid 27
+2020-03-11 01:26:33,764 [INFO   ] [TRADER] Cancelling bid 26
+2020-03-11 01:26:33,764 [INFO   ] [TRADER] Cancelling bid 28
+2020-03-11 01:26:33,764 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:33,764 [INFO   ] [TRADER] Order 25 filled (0 / 0)
+2020-03-11 01:26:33,764 [INFO   ] [TRADER] Order 27 filled (0 / 0)
+2020-03-11 01:26:33,764 [INFO   ] [TRADER] Order 26 filled (0 / 0)
+2020-03-11 01:26:33,764 [INFO   ] [TRADER] Order 28 filled (0 / 0)
+2020-03-11 01:26:33,813 [INFO   ] [TRADER] Placing quotes (29, 30). Bid: 8 @ $3427, Ask: 7 @ $3428
+2020-03-11 01:26:33,813 [INFO   ] [TRADER] Placing quotes (31, 32). Bid: 2 @ $3426, Ask: 1 @ $3429
+2020-03-11 01:26:33,813 [INFO   ] [TRADER] Order 29 filled (0 / 8)
+2020-03-11 01:26:33,813 [INFO   ] [TRADER] Order 30 filled (0 / 7)
+2020-03-11 01:26:33,813 [INFO   ] [TRADER] Order 31 filled (0 / 2)
+2020-03-11 01:26:33,813 [INFO   ] [TRADER] Order 32 filled (0 / 1)
+2020-03-11 01:26:33,863 [INFO   ] [TRADER] Cancelling bid 29
+2020-03-11 01:26:33,863 [INFO   ] [TRADER] Cancelling bid 31
+2020-03-11 01:26:33,863 [INFO   ] [TRADER] Cancelling bid 30
+2020-03-11 01:26:33,863 [INFO   ] [TRADER] Cancelling bid 32
+2020-03-11 01:26:33,863 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:33,864 [INFO   ] [TRADER] Order 29 filled (0 / 0)
+2020-03-11 01:26:33,864 [INFO   ] [TRADER] Order 31 filled (0 / 0)
+2020-03-11 01:26:33,864 [INFO   ] [TRADER] Order 30 filled (0 / 0)
+2020-03-11 01:26:33,864 [INFO   ] [TRADER] Order 32 filled (0 / 0)
+2020-03-11 01:26:33,913 [INFO   ] [TRADER] Placing quotes (33, 34). Bid: 8 @ $3427, Ask: 7 @ $3428
+2020-03-11 01:26:33,913 [INFO   ] [TRADER] Placing quotes (35, 36). Bid: 2 @ $3426, Ask: 1 @ $3429
+2020-03-11 01:26:33,913 [INFO   ] [TRADER] Order 33 filled (0 / 8)
+2020-03-11 01:26:33,913 [INFO   ] [TRADER] Order 34 filled (0 / 7)
+2020-03-11 01:26:33,913 [INFO   ] [TRADER] Order 35 filled (0 / 2)
+2020-03-11 01:26:33,913 [INFO   ] [TRADER] Order 36 filled (0 / 1)
+2020-03-11 01:26:33,964 [INFO   ] [TRADER] Cancelling bid 33
+2020-03-11 01:26:33,964 [INFO   ] [TRADER] Cancelling bid 35
+2020-03-11 01:26:33,964 [INFO   ] [TRADER] Cancelling bid 34
+2020-03-11 01:26:33,964 [INFO   ] [TRADER] Cancelling bid 36
+2020-03-11 01:26:33,964 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:33,964 [INFO   ] [TRADER] Order 33 filled (0 / 0)
+2020-03-11 01:26:33,964 [INFO   ] [TRADER] Order 35 filled (0 / 0)
+2020-03-11 01:26:33,964 [INFO   ] [TRADER] Order 34 filled (0 / 0)
+2020-03-11 01:26:33,964 [INFO   ] [TRADER] Order 36 filled (0 / 0)
+2020-03-11 01:26:34,013 [INFO   ] [TRADER] Placing quotes (37, 38). Bid: 8 @ $3427, Ask: 7 @ $3428
+2020-03-11 01:26:34,014 [INFO   ] [TRADER] Placing quotes (39, 40). Bid: 2 @ $3426, Ask: 1 @ $3429
+2020-03-11 01:26:34,014 [INFO   ] [TRADER] Order 37 filled (0 / 8)
+2020-03-11 01:26:34,014 [INFO   ] [TRADER] Order 38 filled (0 / 7)
+2020-03-11 01:26:34,014 [INFO   ] [TRADER] Order 39 filled (0 / 2)
+2020-03-11 01:26:34,014 [INFO   ] [TRADER] Order 40 filled (0 / 1)
+2020-03-11 01:26:34,063 [INFO   ] [TRADER] Cancelling bid 37
+2020-03-11 01:26:34,063 [INFO   ] [TRADER] Cancelling bid 39
+2020-03-11 01:26:34,063 [INFO   ] [TRADER] Cancelling bid 38
+2020-03-11 01:26:34,063 [INFO   ] [TRADER] Cancelling bid 40
+2020-03-11 01:26:34,063 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:34,063 [INFO   ] [TRADER] Order 37 filled (0 / 0)
+2020-03-11 01:26:34,063 [INFO   ] [TRADER] Order 39 filled (0 / 0)
+2020-03-11 01:26:34,063 [INFO   ] [TRADER] Order 38 filled (0 / 0)
+2020-03-11 01:26:34,063 [INFO   ] [TRADER] Order 40 filled (0 / 0)
+2020-03-11 01:26:34,113 [INFO   ] [TRADER] Placing quotes (41, 42). Bid: 8 @ $3427, Ask: 7 @ $3428
+2020-03-11 01:26:34,113 [INFO   ] [TRADER] Placing quotes (43, 44). Bid: 2 @ $3426, Ask: 1 @ $3429
+2020-03-11 01:26:34,113 [INFO   ] [TRADER] Order 41 filled (0 / 8)
+2020-03-11 01:26:34,113 [INFO   ] [TRADER] Order 42 filled (0 / 7)
+2020-03-11 01:26:34,113 [INFO   ] [TRADER] Order 43 filled (0 / 2)
+2020-03-11 01:26:34,114 [INFO   ] [TRADER] Order 44 filled (0 / 1)
+2020-03-11 01:26:34,163 [INFO   ] [TRADER] Cancelling bid 41
+2020-03-11 01:26:34,163 [INFO   ] [TRADER] Cancelling bid 43
+2020-03-11 01:26:34,163 [INFO   ] [TRADER] Cancelling bid 42
+2020-03-11 01:26:34,163 [INFO   ] [TRADER] Cancelling bid 44
+2020-03-11 01:26:34,164 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:34,164 [INFO   ] [TRADER] Order 41 filled (0 / 0)
+2020-03-11 01:26:34,164 [INFO   ] [TRADER] Order 43 filled (0 / 0)
+2020-03-11 01:26:34,164 [INFO   ] [TRADER] Order 42 filled (0 / 0)
+2020-03-11 01:26:34,164 [INFO   ] [TRADER] Order 44 filled (0 / 0)
+2020-03-11 01:26:34,214 [INFO   ] [TRADER] Placing quotes (45, 46). Bid: 8 @ $3427, Ask: 7 @ $3428
+2020-03-11 01:26:34,214 [INFO   ] [TRADER] Placing quotes (47, 48). Bid: 2 @ $3426, Ask: 1 @ $3429
+2020-03-11 01:26:34,214 [INFO   ] [TRADER] Order 45 filled (0 / 8)
+2020-03-11 01:26:34,214 [INFO   ] [TRADER] Order 46 filled (0 / 7)
+2020-03-11 01:26:34,214 [INFO   ] [TRADER] Order 47 filled (0 / 2)
+2020-03-11 01:26:34,214 [INFO   ] [TRADER] Order 48 filled (0 / 1)
+2020-03-11 01:26:34,263 [INFO   ] [TRADER] Cancelling bid 45
+2020-03-11 01:26:34,263 [INFO   ] [TRADER] Cancelling bid 47
+2020-03-11 01:26:34,263 [INFO   ] [TRADER] Cancelling bid 46
+2020-03-11 01:26:34,263 [INFO   ] [TRADER] Cancelling bid 48
+2020-03-11 01:26:34,263 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:34,263 [INFO   ] [TRADER] Order 45 filled (0 / 0)
+2020-03-11 01:26:34,263 [INFO   ] [TRADER] Order 47 filled (0 / 0)
+2020-03-11 01:26:34,263 [INFO   ] [TRADER] Order 46 filled (0 / 0)
+2020-03-11 01:26:34,263 [INFO   ] [TRADER] Order 48 filled (0 / 0)
+2020-03-11 01:26:34,313 [INFO   ] [TRADER] Placing quotes (49, 50). Bid: 8 @ $3427, Ask: 7 @ $3428
+2020-03-11 01:26:34,313 [INFO   ] [TRADER] Placing quotes (51, 52). Bid: 2 @ $3426, Ask: 1 @ $3429
+2020-03-11 01:26:34,314 [INFO   ] [TRADER] Order 49 filled (0 / 8)
+2020-03-11 01:26:34,314 [INFO   ] [TRADER] Order 50 filled (0 / 7)
+2020-03-11 01:26:34,314 [INFO   ] [TRADER] Order 51 filled (0 / 2)
+2020-03-11 01:26:34,314 [INFO   ] [TRADER] Order 52 filled (0 / 1)
+2020-03-11 01:26:34,363 [INFO   ] [TRADER] Cancelling bid 49
+2020-03-11 01:26:34,363 [INFO   ] [TRADER] Cancelling bid 51
+2020-03-11 01:26:34,363 [INFO   ] [TRADER] Cancelling bid 50
+2020-03-11 01:26:34,363 [INFO   ] [TRADER] Cancelling bid 52
+2020-03-11 01:26:34,363 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:34,364 [INFO   ] [TRADER] Order 49 filled (0 / 0)
+2020-03-11 01:26:34,364 [INFO   ] [TRADER] Order 51 filled (0 / 0)
+2020-03-11 01:26:34,364 [INFO   ] [TRADER] Order 50 filled (0 / 0)
+2020-03-11 01:26:34,364 [INFO   ] [TRADER] Order 52 filled (0 / 0)
+2020-03-11 01:26:34,413 [INFO   ] [TRADER] Placing quotes (53, 54). Bid: 8 @ $3425, Ask: 7 @ $3427
+2020-03-11 01:26:34,414 [INFO   ] [TRADER] Placing quotes (55, 56). Bid: 2 @ $3424, Ask: 1 @ $3428
+2020-03-11 01:26:34,417 [INFO   ] [TRADER] Order 53 filled (0 / 8)
+2020-03-11 01:26:34,417 [INFO   ] [TRADER] Order 54 filled (0 / 7)
+2020-03-11 01:26:34,417 [INFO   ] [TRADER] Order 55 filled (0 / 2)
+2020-03-11 01:26:34,417 [INFO   ] [TRADER] Order 56 filled (0 / 1)
+2020-03-11 01:26:34,465 [INFO   ] [TRADER] Cancelling bid 53
+2020-03-11 01:26:34,465 [INFO   ] [TRADER] Cancelling bid 55
+2020-03-11 01:26:34,465 [INFO   ] [TRADER] Cancelling bid 54
+2020-03-11 01:26:34,466 [INFO   ] [TRADER] Cancelling bid 56
+2020-03-11 01:26:34,466 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:34,467 [INFO   ] [TRADER] Order 54 filled (7 / 7)
+2020-03-11 01:26:34,468 [INFO   ] [TRADER] Position changed to ETF: -8, FUTURE: 8
+2020-03-11 01:26:34,468 [INFO   ] [TRADER] Order 56 filled (1 / 1)
+2020-03-11 01:26:34,468 [INFO   ] [TRADER] Position changed to ETF: -9, FUTURE: 9
+2020-03-11 01:26:34,469 [INFO   ] [TRADER] Order 53 filled (0 / 0)
+2020-03-11 01:26:34,469 [INFO   ] [TRADER] Order 55 filled (0 / 0)
+2020-03-11 01:26:34,515 [INFO   ] [TRADER] Placing quotes (57, 58). Bid: 8 @ $3425, Ask: 4 @ $3426
+2020-03-11 01:26:34,516 [INFO   ] [TRADER] Placing quotes (59, 60). Bid: 2 @ $3424, Ask: 1 @ $3427
+2020-03-11 01:26:34,517 [INFO   ] [TRADER] Order 57 filled (0 / 8)
+2020-03-11 01:26:34,517 [INFO   ] [TRADER] Order 58 filled (1 / 4)
+2020-03-11 01:26:34,517 [INFO   ] [TRADER] Position changed to ETF: -10, FUTURE: 10
+2020-03-11 01:26:34,518 [INFO   ] [TRADER] Order 59 filled (0 / 2)
+2020-03-11 01:26:34,518 [INFO   ] [TRADER] Order 60 filled (0 / 1)
+2020-03-11 01:26:34,563 [INFO   ] [TRADER] Order 58 filled (4 / 4)
+2020-03-11 01:26:34,563 [INFO   ] [TRADER] Position changed to ETF: -13, FUTURE: 13
+2020-03-11 01:26:34,564 [INFO   ] [TRADER] Cancelling bid 57
+2020-03-11 01:26:34,564 [INFO   ] [TRADER] Cancelling bid 59
+2020-03-11 01:26:34,565 [INFO   ] [TRADER] Cancelling bid 60
+2020-03-11 01:26:34,565 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:34,566 [INFO   ] [TRADER] Order 57 filled (0 / 0)
+2020-03-11 01:26:34,566 [INFO   ] [TRADER] Order 59 filled (0 / 0)
+2020-03-11 01:26:34,566 [INFO   ] [TRADER] Order 60 filled (0 / 0)
+2020-03-11 01:26:34,615 [INFO   ] [TRADER] Placing quotes (61, 62). Bid: 8 @ $3426, Ask: 4 @ $3427
+2020-03-11 01:26:34,615 [INFO   ] [TRADER] Placing quotes (63, 64). Bid: 2 @ $3425, Ask: 1 @ $3428
+2020-03-11 01:26:34,617 [INFO   ] [TRADER] Order 61 filled (0 / 8)
+2020-03-11 01:26:34,618 [INFO   ] [TRADER] Order 62 filled (0 / 4)
+2020-03-11 01:26:34,618 [INFO   ] [TRADER] Order 63 filled (0 / 2)
+2020-03-11 01:26:34,618 [INFO   ] [TRADER] Order 61 filled (1 / 8)
+2020-03-11 01:26:34,619 [INFO   ] [TRADER] Position changed to ETF: -12, FUTURE: 12
+2020-03-11 01:26:34,619 [INFO   ] [TRADER] Order 64 filled (0 / 1)
+2020-03-11 01:26:34,665 [INFO   ] [TRADER] Cancelling bid 61
+2020-03-11 01:26:34,665 [INFO   ] [TRADER] Cancelling bid 63
+2020-03-11 01:26:34,665 [INFO   ] [TRADER] Cancelling bid 62
+2020-03-11 01:26:34,665 [INFO   ] [TRADER] Cancelling bid 64
+2020-03-11 01:26:34,665 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:34,666 [INFO   ] [TRADER] Order 61 filled (1 / 1)
+2020-03-11 01:26:34,666 [INFO   ] [TRADER] Order 63 filled (0 / 0)
+2020-03-11 01:26:34,666 [INFO   ] [TRADER] Order 62 filled (0 / 0)
+2020-03-11 01:26:34,666 [INFO   ] [TRADER] Order 64 filled (0 / 0)
+2020-03-11 01:26:34,713 [INFO   ] [TRADER] Placing quotes (65, 66). Bid: 8 @ $3426, Ask: 4 @ $3427
+2020-03-11 01:26:34,713 [INFO   ] [TRADER] Placing quotes (67, 68). Bid: 2 @ $3425, Ask: 1 @ $3428
+2020-03-11 01:26:34,714 [INFO   ] [TRADER] Order 65 filled (0 / 8)
+2020-03-11 01:26:34,714 [INFO   ] [TRADER] Order 66 filled (0 / 4)
+2020-03-11 01:26:34,714 [INFO   ] [TRADER] Order 67 filled (0 / 2)
+2020-03-11 01:26:34,714 [INFO   ] [TRADER] Order 68 filled (0 / 1)
+2020-03-11 01:26:34,764 [INFO   ] [TRADER] Order 65 filled (1 / 8)
+2020-03-11 01:26:34,764 [INFO   ] [TRADER] Position changed to ETF: -11, FUTURE: 11
+2020-03-11 01:26:34,765 [INFO   ] [TRADER] Order 65 filled (8 / 8)
+2020-03-11 01:26:34,765 [INFO   ] [TRADER] Position changed to ETF: -4, FUTURE: 4
+2020-03-11 01:26:34,765 [INFO   ] [TRADER] Order 67 filled (1 / 2)
+2020-03-11 01:26:34,766 [INFO   ] [TRADER] Position changed to ETF: -3, FUTURE: 3
+2020-03-11 01:26:34,766 [INFO   ] [TRADER] Order 67 filled (2 / 2)
+2020-03-11 01:26:34,767 [INFO   ] [TRADER] Position changed to ETF: -2, FUTURE: 2
+2020-03-11 01:26:34,913 [INFO   ] [TRADER] Order 66 filled (1 / 4)
+2020-03-11 01:26:34,913 [INFO   ] [TRADER] Position changed to ETF: -3, FUTURE: 3
+2020-03-11 01:26:34,913 [INFO   ] [TRADER] Order 66 filled (4 / 4)
+2020-03-11 01:26:34,913 [INFO   ] [TRADER] Position changed to ETF: -6, FUTURE: 6
+2020-03-11 01:26:35,113 [INFO   ] [TRADER] Order 68 filled (1 / 1)
+2020-03-11 01:26:35,113 [INFO   ] [TRADER] Position changed to ETF: -7, FUTURE: 7
+2020-03-11 01:26:35,113 [INFO   ] [TRADER] Placing quotes (69, 70). Bid: 8 @ $3427, Ask: 5 @ $3428
+2020-03-11 01:26:35,114 [INFO   ] [TRADER] Placing quotes (71, 72). Bid: 2 @ $3426, Ask: 1 @ $3429
+2020-03-11 01:26:35,114 [INFO   ] [TRADER] Order 69 filled (0 / 8)
+2020-03-11 01:26:35,114 [INFO   ] [TRADER] Order 70 filled (0 / 5)
+2020-03-11 01:26:35,115 [INFO   ] [TRADER] Order 71 filled (0 / 2)
+2020-03-11 01:26:35,115 [INFO   ] [TRADER] Order 72 filled (0 / 1)
+2020-03-11 01:26:35,162 [INFO   ] [TRADER] Cancelling bid 69
+2020-03-11 01:26:35,162 [INFO   ] [TRADER] Cancelling bid 71
+2020-03-11 01:26:35,163 [INFO   ] [TRADER] Cancelling bid 70
+2020-03-11 01:26:35,163 [INFO   ] [TRADER] Cancelling bid 72
+2020-03-11 01:26:35,163 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:35,163 [INFO   ] [TRADER] Order 69 filled (0 / 0)
+2020-03-11 01:26:35,163 [INFO   ] [TRADER] Order 71 filled (0 / 0)
+2020-03-11 01:26:35,163 [INFO   ] [TRADER] Order 70 filled (0 / 0)
+2020-03-11 01:26:35,163 [INFO   ] [TRADER] Order 72 filled (0 / 0)
+2020-03-11 01:26:35,213 [INFO   ] [TRADER] Placing quotes (73, 74). Bid: 8 @ $3428, Ask: 5 @ $3429
+2020-03-11 01:26:35,213 [INFO   ] [TRADER] Placing quotes (75, 76). Bid: 2 @ $3427, Ask: 1 @ $3430
+2020-03-11 01:26:35,214 [INFO   ] [TRADER] Order 73 filled (8 / 8)
+2020-03-11 01:26:35,214 [INFO   ] [TRADER] Position changed to ETF: 1, FUTURE: -1
+2020-03-11 01:26:35,214 [INFO   ] [TRADER] Order 74 filled (0 / 5)
+2020-03-11 01:26:35,214 [INFO   ] [TRADER] Order 75 filled (0 / 2)
+2020-03-11 01:26:35,214 [INFO   ] [TRADER] Order 76 filled (0 / 1)
+2020-03-11 01:26:35,263 [INFO   ] [TRADER] Cancelling bid 75
+2020-03-11 01:26:35,263 [INFO   ] [TRADER] Cancelling bid 74
+2020-03-11 01:26:35,263 [INFO   ] [TRADER] Cancelling bid 76
+2020-03-11 01:26:35,263 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:35,263 [INFO   ] [TRADER] Order 75 filled (0 / 0)
+2020-03-11 01:26:35,263 [INFO   ] [TRADER] Order 74 filled (0 / 0)
+2020-03-11 01:26:35,263 [INFO   ] [TRADER] Order 76 filled (0 / 0)
+2020-03-11 01:26:35,315 [INFO   ] [TRADER] Placing quotes (77, 78). Bid: 7 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:35,316 [INFO   ] [TRADER] Placing quotes (79, 80). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:35,318 [INFO   ] [TRADER] Order 77 filled (7 / 7)
+2020-03-11 01:26:35,318 [INFO   ] [TRADER] Position changed to ETF: 8, FUTURE: -8
+2020-03-11 01:26:35,318 [INFO   ] [TRADER] Order 78 filled (0 / 8)
+2020-03-11 01:26:35,319 [INFO   ] [TRADER] Order 79 filled (0 / 1)
+2020-03-11 01:26:35,319 [INFO   ] [TRADER] Order 80 filled (0 / 2)
+2020-03-11 01:26:35,363 [INFO   ] [TRADER] Cancelling bid 79
+2020-03-11 01:26:35,364 [INFO   ] [TRADER] Cancelling bid 78
+2020-03-11 01:26:35,364 [INFO   ] [TRADER] Cancelling bid 80
+2020-03-11 01:26:35,364 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:35,364 [INFO   ] [TRADER] Order 79 filled (0 / 0)
+2020-03-11 01:26:35,364 [INFO   ] [TRADER] Order 78 filled (0 / 0)
+2020-03-11 01:26:35,364 [INFO   ] [TRADER] Order 80 filled (0 / 0)
+2020-03-11 01:26:35,413 [INFO   ] [TRADER] Placing quotes (81, 82). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:35,413 [INFO   ] [TRADER] Placing quotes (83, 84). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:35,413 [INFO   ] [TRADER] Order 81 filled (0 / 4)
+2020-03-11 01:26:35,413 [INFO   ] [TRADER] Order 82 filled (0 / 8)
+2020-03-11 01:26:35,413 [INFO   ] [TRADER] Order 83 filled (0 / 1)
+2020-03-11 01:26:35,413 [INFO   ] [TRADER] Order 84 filled (0 / 2)
+2020-03-11 01:26:35,465 [INFO   ] [TRADER] Cancelling bid 81
+2020-03-11 01:26:35,465 [INFO   ] [TRADER] Cancelling bid 83
+2020-03-11 01:26:35,465 [INFO   ] [TRADER] Cancelling bid 82
+2020-03-11 01:26:35,466 [INFO   ] [TRADER] Cancelling bid 84
+2020-03-11 01:26:35,466 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:35,466 [INFO   ] [TRADER] Order 81 filled (0 / 0)
+2020-03-11 01:26:35,467 [INFO   ] [TRADER] Order 83 filled (0 / 0)
+2020-03-11 01:26:35,467 [INFO   ] [TRADER] Order 82 filled (0 / 0)
+2020-03-11 01:26:35,467 [INFO   ] [TRADER] Order 84 filled (0 / 0)
+2020-03-11 01:26:35,517 [INFO   ] [TRADER] Placing quotes (85, 86). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:35,517 [INFO   ] [TRADER] Placing quotes (87, 88). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:35,518 [INFO   ] [TRADER] Order 85 filled (0 / 4)
+2020-03-11 01:26:35,519 [INFO   ] [TRADER] Order 86 filled (0 / 8)
+2020-03-11 01:26:35,519 [INFO   ] [TRADER] Order 87 filled (0 / 1)
+2020-03-11 01:26:35,519 [INFO   ] [TRADER] Order 88 filled (0 / 2)
+2020-03-11 01:26:35,564 [INFO   ] [TRADER] Cancelling bid 85
+2020-03-11 01:26:35,564 [INFO   ] [TRADER] Cancelling bid 87
+2020-03-11 01:26:35,564 [INFO   ] [TRADER] Cancelling bid 86
+2020-03-11 01:26:35,564 [INFO   ] [TRADER] Cancelling bid 88
+2020-03-11 01:26:35,564 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:35,567 [INFO   ] [TRADER] Order 85 filled (0 / 0)
+2020-03-11 01:26:35,567 [INFO   ] [TRADER] Order 87 filled (0 / 0)
+2020-03-11 01:26:35,568 [INFO   ] [TRADER] Order 86 filled (0 / 0)
+2020-03-11 01:26:35,568 [INFO   ] [TRADER] Order 88 filled (0 / 0)
+2020-03-11 01:26:35,614 [INFO   ] [TRADER] Placing quotes (89, 90). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:35,614 [INFO   ] [TRADER] Placing quotes (91, 92). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:35,617 [INFO   ] [TRADER] Order 89 filled (0 / 4)
+2020-03-11 01:26:35,618 [INFO   ] [TRADER] Order 90 filled (0 / 8)
+2020-03-11 01:26:35,618 [INFO   ] [TRADER] Order 91 filled (0 / 1)
+2020-03-11 01:26:35,618 [INFO   ] [TRADER] Order 92 filled (0 / 2)
+2020-03-11 01:26:35,664 [INFO   ] [TRADER] Cancelling bid 89
+2020-03-11 01:26:35,664 [INFO   ] [TRADER] Cancelling bid 91
+2020-03-11 01:26:35,664 [INFO   ] [TRADER] Cancelling bid 90
+2020-03-11 01:26:35,664 [INFO   ] [TRADER] Cancelling bid 92
+2020-03-11 01:26:35,664 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:35,665 [INFO   ] [TRADER] Order 89 filled (0 / 0)
+2020-03-11 01:26:35,665 [INFO   ] [TRADER] Order 91 filled (0 / 0)
+2020-03-11 01:26:35,665 [INFO   ] [TRADER] Order 90 filled (0 / 0)
+2020-03-11 01:26:35,666 [INFO   ] [TRADER] Order 92 filled (0 / 0)
+2020-03-11 01:26:35,714 [INFO   ] [TRADER] Placing quotes (93, 94). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:35,714 [INFO   ] [TRADER] Placing quotes (95, 96). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:35,714 [INFO   ] [TRADER] Order 93 filled (0 / 4)
+2020-03-11 01:26:35,714 [INFO   ] [TRADER] Order 94 filled (0 / 8)
+2020-03-11 01:26:35,714 [INFO   ] [TRADER] Order 95 filled (0 / 1)
+2020-03-11 01:26:35,714 [INFO   ] [TRADER] Order 96 filled (0 / 2)
+2020-03-11 01:26:35,764 [INFO   ] [TRADER] Cancelling bid 93
+2020-03-11 01:26:35,764 [INFO   ] [TRADER] Cancelling bid 95
+2020-03-11 01:26:35,764 [INFO   ] [TRADER] Cancelling bid 94
+2020-03-11 01:26:35,764 [INFO   ] [TRADER] Cancelling bid 96
+2020-03-11 01:26:35,764 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:35,764 [INFO   ] [TRADER] Order 93 filled (0 / 0)
+2020-03-11 01:26:35,764 [INFO   ] [TRADER] Order 95 filled (0 / 0)
+2020-03-11 01:26:35,764 [INFO   ] [TRADER] Order 94 filled (0 / 0)
+2020-03-11 01:26:35,764 [INFO   ] [TRADER] Order 96 filled (0 / 0)
+2020-03-11 01:26:35,814 [INFO   ] [TRADER] Placing quotes (97, 98). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:35,814 [INFO   ] [TRADER] Placing quotes (99, 100). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:35,814 [INFO   ] [TRADER] Order 97 filled (0 / 4)
+2020-03-11 01:26:35,814 [INFO   ] [TRADER] Order 98 filled (0 / 8)
+2020-03-11 01:26:35,814 [INFO   ] [TRADER] Order 99 filled (0 / 1)
+2020-03-11 01:26:35,814 [INFO   ] [TRADER] Order 100 filled (0 / 2)
+2020-03-11 01:26:35,864 [INFO   ] [TRADER] Order 97 filled (2 / 4)
+2020-03-11 01:26:35,865 [INFO   ] [TRADER] Position changed to ETF: 10, FUTURE: -10
+2020-03-11 01:26:35,865 [INFO   ] [TRADER] Order 97 filled (4 / 4)
+2020-03-11 01:26:35,865 [INFO   ] [TRADER] Position changed to ETF: 12, FUTURE: -12
+2020-03-11 01:26:35,867 [INFO   ] [TRADER] Cancelling bid 99
+2020-03-11 01:26:35,867 [INFO   ] [TRADER] Cancelling bid 98
+2020-03-11 01:26:35,868 [INFO   ] [TRADER] Cancelling bid 100
+2020-03-11 01:26:35,868 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:35,869 [INFO   ] [TRADER] Order 99 filled (0 / 0)
+2020-03-11 01:26:35,869 [INFO   ] [TRADER] Order 98 filled (0 / 0)
+2020-03-11 01:26:35,869 [INFO   ] [TRADER] Order 100 filled (0 / 0)
+2020-03-11 01:26:35,913 [INFO   ] [TRADER] Placing quotes (101, 102). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:35,913 [INFO   ] [TRADER] Placing quotes (103, 104). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:35,914 [INFO   ] [TRADER] Order 101 filled (0 / 4)
+2020-03-11 01:26:35,914 [INFO   ] [TRADER] Order 102 filled (0 / 8)
+2020-03-11 01:26:35,914 [INFO   ] [TRADER] Order 103 filled (0 / 1)
+2020-03-11 01:26:35,914 [INFO   ] [TRADER] Order 104 filled (0 / 2)
+2020-03-11 01:26:35,963 [INFO   ] [TRADER] Cancelling bid 101
+2020-03-11 01:26:35,963 [INFO   ] [TRADER] Cancelling bid 103
+2020-03-11 01:26:35,963 [INFO   ] [TRADER] Cancelling bid 102
+2020-03-11 01:26:35,963 [INFO   ] [TRADER] Cancelling bid 104
+2020-03-11 01:26:35,963 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:35,964 [INFO   ] [TRADER] Order 101 filled (0 / 0)
+2020-03-11 01:26:35,964 [INFO   ] [TRADER] Order 103 filled (0 / 0)
+2020-03-11 01:26:35,964 [INFO   ] [TRADER] Order 102 filled (0 / 0)
+2020-03-11 01:26:35,964 [INFO   ] [TRADER] Order 104 filled (0 / 0)
+2020-03-11 01:26:36,016 [INFO   ] [TRADER] Placing quotes (105, 106). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:36,017 [INFO   ] [TRADER] Placing quotes (107, 108). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:36,017 [INFO   ] [TRADER] Order 105 filled (0 / 4)
+2020-03-11 01:26:36,018 [INFO   ] [TRADER] Order 106 filled (0 / 8)
+2020-03-11 01:26:36,018 [INFO   ] [TRADER] Order 107 filled (0 / 1)
+2020-03-11 01:26:36,019 [INFO   ] [TRADER] Order 108 filled (0 / 2)
+2020-03-11 01:26:36,021 [INFO   ] [TRADER] Order 105 filled (1 / 4)
+2020-03-11 01:26:36,021 [INFO   ] [TRADER] Position changed to ETF: 13, FUTURE: -13
+2020-03-11 01:26:36,063 [INFO   ] [TRADER] Order 105 filled (4 / 4)
+2020-03-11 01:26:36,063 [INFO   ] [TRADER] Position changed to ETF: 16, FUTURE: -16
+2020-03-11 01:26:36,064 [INFO   ] [TRADER] Order 107 filled (1 / 1)
+2020-03-11 01:26:36,064 [INFO   ] [TRADER] Position changed to ETF: 17, FUTURE: -17
+2020-03-11 01:26:37,215 [INFO   ] [TRADER] Order 106 filled (1 / 8)
+2020-03-11 01:26:37,215 [INFO   ] [TRADER] Position changed to ETF: 16, FUTURE: -16
+2020-03-11 01:26:37,313 [INFO   ] [TRADER] Order 106 filled (2 / 8)
+2020-03-11 01:26:37,313 [INFO   ] [TRADER] Position changed to ETF: 15, FUTURE: -15
+2020-03-11 01:26:37,363 [INFO   ] [TRADER] Order 106 filled (4 / 8)
+2020-03-11 01:26:37,363 [INFO   ] [TRADER] Position changed to ETF: 13, FUTURE: -13
+2020-03-11 01:26:37,363 [INFO   ] [TRADER] Order 106 filled (7 / 8)
+2020-03-11 01:26:37,363 [INFO   ] [TRADER] Position changed to ETF: 10, FUTURE: -10
+2020-03-11 01:26:37,364 [INFO   ] [TRADER] Order 106 filled (8 / 8)
+2020-03-11 01:26:37,364 [INFO   ] [TRADER] Cancelling bid 108
+2020-03-11 01:26:37,364 [INFO   ] [TRADER] Position changed to ETF: 9, FUTURE: -9
+2020-03-11 01:26:37,364 [INFO   ] [TRADER] Order 108 filled (0 / 0)
+2020-03-11 01:26:37,413 [INFO   ] [TRADER] Placing quotes (109, 110). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:37,413 [INFO   ] [TRADER] Placing quotes (111, 112). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:37,414 [INFO   ] [TRADER] Order 109 filled (1 / 4)
+2020-03-11 01:26:37,414 [INFO   ] [TRADER] Position changed to ETF: 10, FUTURE: -10
+2020-03-11 01:26:37,414 [INFO   ] [TRADER] Order 110 filled (0 / 8)
+2020-03-11 01:26:37,414 [INFO   ] [TRADER] Order 111 filled (0 / 1)
+2020-03-11 01:26:37,414 [INFO   ] [TRADER] Order 112 filled (0 / 2)
+2020-03-11 01:26:37,463 [INFO   ] [TRADER] Cancelling bid 109
+2020-03-11 01:26:37,463 [INFO   ] [TRADER] Cancelling bid 111
+2020-03-11 01:26:37,463 [INFO   ] [TRADER] Cancelling bid 110
+2020-03-11 01:26:37,463 [INFO   ] [TRADER] Cancelling bid 112
+2020-03-11 01:26:37,463 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:37,464 [INFO   ] [TRADER] Order 109 filled (1 / 1)
+2020-03-11 01:26:37,464 [INFO   ] [TRADER] Order 111 filled (0 / 0)
+2020-03-11 01:26:37,464 [INFO   ] [TRADER] Order 110 filled (0 / 0)
+2020-03-11 01:26:37,464 [INFO   ] [TRADER] Order 112 filled (0 / 0)
+2020-03-11 01:26:37,515 [INFO   ] [TRADER] Placing quotes (113, 114). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:37,515 [INFO   ] [TRADER] Placing quotes (115, 116). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:37,516 [INFO   ] [TRADER] Order 113 filled (4 / 4)
+2020-03-11 01:26:37,517 [INFO   ] [TRADER] Position changed to ETF: 14, FUTURE: -14
+2020-03-11 01:26:37,517 [INFO   ] [TRADER] Order 114 filled (0 / 8)
+2020-03-11 01:26:37,517 [INFO   ] [TRADER] Order 115 filled (0 / 1)
+2020-03-11 01:26:37,517 [INFO   ] [TRADER] Order 116 filled (0 / 2)
+2020-03-11 01:26:37,563 [INFO   ] [TRADER] Order 115 filled (1 / 1)
+2020-03-11 01:26:37,563 [INFO   ] [TRADER] Position changed to ETF: 15, FUTURE: -15
+2020-03-11 01:26:39,763 [INFO   ] [TRADER] Order 114 filled (8 / 8)
+2020-03-11 01:26:39,763 [INFO   ] [TRADER] Cancelling bid 116
+2020-03-11 01:26:39,763 [INFO   ] [TRADER] Position changed to ETF: 7, FUTURE: -7
+2020-03-11 01:26:39,764 [INFO   ] [TRADER] Order 116 filled (0 / 0)
+2020-03-11 01:26:39,814 [INFO   ] [TRADER] Placing quotes (117, 118). Bid: 5 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:39,815 [INFO   ] [TRADER] Placing quotes (119, 120). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:39,816 [INFO   ] [TRADER] Order 117 filled (0 / 5)
+2020-03-11 01:26:39,816 [INFO   ] [TRADER] Order 118 filled (0 / 8)
+2020-03-11 01:26:39,817 [INFO   ] [TRADER] Order 119 filled (0 / 1)
+2020-03-11 01:26:39,817 [INFO   ] [TRADER] Order 120 filled (0 / 2)
+2020-03-11 01:26:39,863 [INFO   ] [TRADER] Cancelling bid 117
+2020-03-11 01:26:39,864 [INFO   ] [TRADER] Cancelling bid 119
+2020-03-11 01:26:39,864 [INFO   ] [TRADER] Cancelling bid 118
+2020-03-11 01:26:39,864 [INFO   ] [TRADER] Cancelling bid 120
+2020-03-11 01:26:39,864 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:39,866 [INFO   ] [TRADER] Order 117 filled (0 / 0)
+2020-03-11 01:26:39,866 [INFO   ] [TRADER] Order 119 filled (0 / 0)
+2020-03-11 01:26:39,866 [INFO   ] [TRADER] Order 118 filled (0 / 0)
+2020-03-11 01:26:39,867 [INFO   ] [TRADER] Order 120 filled (0 / 0)
+2020-03-11 01:26:39,914 [INFO   ] [TRADER] Placing quotes (121, 122). Bid: 5 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:39,914 [INFO   ] [TRADER] Placing quotes (123, 124). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:39,916 [INFO   ] [TRADER] Order 121 filled (0 / 5)
+2020-03-11 01:26:39,917 [INFO   ] [TRADER] Order 122 filled (0 / 8)
+2020-03-11 01:26:39,917 [INFO   ] [TRADER] Order 123 filled (0 / 1)
+2020-03-11 01:26:39,917 [INFO   ] [TRADER] Order 124 filled (0 / 2)
+2020-03-11 01:26:39,964 [INFO   ] [TRADER] Cancelling bid 121
+2020-03-11 01:26:39,965 [INFO   ] [TRADER] Cancelling bid 123
+2020-03-11 01:26:39,965 [INFO   ] [TRADER] Cancelling bid 122
+2020-03-11 01:26:39,965 [INFO   ] [TRADER] Cancelling bid 124
+2020-03-11 01:26:39,965 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:39,966 [INFO   ] [TRADER] Order 121 filled (1 / 5)
+2020-03-11 01:26:39,966 [INFO   ] [TRADER] Position changed to ETF: 8, FUTURE: -8
+2020-03-11 01:26:39,967 [INFO   ] [TRADER] Order 121 filled (1 / 1)
+2020-03-11 01:26:39,967 [INFO   ] [TRADER] Order 123 filled (0 / 0)
+2020-03-11 01:26:39,967 [INFO   ] [TRADER] Order 122 filled (0 / 0)
+2020-03-11 01:26:39,968 [INFO   ] [TRADER] Order 124 filled (0 / 0)
+2020-03-11 01:26:40,013 [INFO   ] [TRADER] Placing quotes (125, 126). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:40,014 [INFO   ] [TRADER] Placing quotes (127, 128). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:40,016 [INFO   ] [TRADER] Order 125 filled (0 / 4)
+2020-03-11 01:26:40,016 [INFO   ] [TRADER] Order 126 filled (0 / 8)
+2020-03-11 01:26:40,016 [INFO   ] [TRADER] Order 127 filled (0 / 1)
+2020-03-11 01:26:40,017 [INFO   ] [TRADER] Order 128 filled (0 / 2)
+2020-03-11 01:26:40,064 [INFO   ] [TRADER] Cancelling bid 125
+2020-03-11 01:26:40,064 [INFO   ] [TRADER] Cancelling bid 127
+2020-03-11 01:26:40,064 [INFO   ] [TRADER] Cancelling bid 126
+2020-03-11 01:26:40,064 [INFO   ] [TRADER] Cancelling bid 128
+2020-03-11 01:26:40,065 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:40,065 [INFO   ] [TRADER] Order 125 filled (0 / 0)
+2020-03-11 01:26:40,065 [INFO   ] [TRADER] Order 127 filled (0 / 0)
+2020-03-11 01:26:40,066 [INFO   ] [TRADER] Order 126 filled (0 / 0)
+2020-03-11 01:26:40,066 [INFO   ] [TRADER] Order 128 filled (0 / 0)
+2020-03-11 01:26:40,114 [INFO   ] [TRADER] Placing quotes (129, 130). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:40,114 [INFO   ] [TRADER] Placing quotes (131, 132). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:40,115 [INFO   ] [TRADER] Order 129 filled (0 / 4)
+2020-03-11 01:26:40,116 [INFO   ] [TRADER] Order 130 filled (0 / 8)
+2020-03-11 01:26:40,116 [INFO   ] [TRADER] Order 131 filled (0 / 1)
+2020-03-11 01:26:40,116 [INFO   ] [TRADER] Order 132 filled (0 / 2)
+2020-03-11 01:26:40,163 [INFO   ] [TRADER] Cancelling bid 129
+2020-03-11 01:26:40,163 [INFO   ] [TRADER] Cancelling bid 131
+2020-03-11 01:26:40,163 [INFO   ] [TRADER] Cancelling bid 130
+2020-03-11 01:26:40,163 [INFO   ] [TRADER] Cancelling bid 132
+2020-03-11 01:26:40,163 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:40,164 [INFO   ] [TRADER] Order 129 filled (0 / 0)
+2020-03-11 01:26:40,164 [INFO   ] [TRADER] Order 131 filled (0 / 0)
+2020-03-11 01:26:40,164 [INFO   ] [TRADER] Order 130 filled (0 / 0)
+2020-03-11 01:26:40,164 [INFO   ] [TRADER] Order 132 filled (0 / 0)
+2020-03-11 01:26:40,214 [INFO   ] [TRADER] Placing quotes (133, 134). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:40,214 [INFO   ] [TRADER] Placing quotes (135, 136). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:40,215 [INFO   ] [TRADER] Order 133 filled (0 / 4)
+2020-03-11 01:26:40,215 [INFO   ] [TRADER] Order 134 filled (0 / 8)
+2020-03-11 01:26:40,215 [INFO   ] [TRADER] Order 135 filled (0 / 1)
+2020-03-11 01:26:40,216 [INFO   ] [TRADER] Order 136 filled (0 / 2)
+2020-03-11 01:26:40,264 [INFO   ] [TRADER] Cancelling bid 133
+2020-03-11 01:26:40,265 [INFO   ] [TRADER] Cancelling bid 135
+2020-03-11 01:26:40,265 [INFO   ] [TRADER] Cancelling bid 134
+2020-03-11 01:26:40,265 [INFO   ] [TRADER] Cancelling bid 136
+2020-03-11 01:26:40,265 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:40,266 [INFO   ] [TRADER] Order 133 filled (0 / 0)
+2020-03-11 01:26:40,266 [INFO   ] [TRADER] Order 135 filled (0 / 0)
+2020-03-11 01:26:40,267 [INFO   ] [TRADER] Order 134 filled (0 / 0)
+2020-03-11 01:26:40,267 [INFO   ] [TRADER] Order 136 filled (0 / 0)
+2020-03-11 01:26:40,314 [INFO   ] [TRADER] Placing quotes (137, 138). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:40,314 [INFO   ] [TRADER] Placing quotes (139, 140). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:40,315 [INFO   ] [TRADER] Order 137 filled (0 / 4)
+2020-03-11 01:26:40,316 [INFO   ] [TRADER] Order 138 filled (0 / 8)
+2020-03-11 01:26:40,316 [INFO   ] [TRADER] Order 139 filled (0 / 1)
+2020-03-11 01:26:40,316 [INFO   ] [TRADER] Order 140 filled (0 / 2)
+2020-03-11 01:26:40,365 [INFO   ] [TRADER] Cancelling bid 137
+2020-03-11 01:26:40,366 [INFO   ] [TRADER] Cancelling bid 139
+2020-03-11 01:26:40,366 [INFO   ] [TRADER] Cancelling bid 138
+2020-03-11 01:26:40,366 [INFO   ] [TRADER] Cancelling bid 140
+2020-03-11 01:26:40,366 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:40,367 [INFO   ] [TRADER] Order 137 filled (0 / 0)
+2020-03-11 01:26:40,368 [INFO   ] [TRADER] Order 139 filled (0 / 0)
+2020-03-11 01:26:40,368 [INFO   ] [TRADER] Order 138 filled (0 / 0)
+2020-03-11 01:26:40,368 [INFO   ] [TRADER] Order 140 filled (0 / 0)
+2020-03-11 01:26:40,414 [INFO   ] [TRADER] Placing quotes (141, 142). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:40,414 [INFO   ] [TRADER] Placing quotes (143, 144). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:40,416 [INFO   ] [TRADER] Order 141 filled (0 / 4)
+2020-03-11 01:26:40,417 [INFO   ] [TRADER] Order 142 filled (0 / 8)
+2020-03-11 01:26:40,417 [INFO   ] [TRADER] Order 143 filled (0 / 1)
+2020-03-11 01:26:40,417 [INFO   ] [TRADER] Order 144 filled (0 / 2)
+2020-03-11 01:26:40,463 [INFO   ] [TRADER] Cancelling bid 141
+2020-03-11 01:26:40,463 [INFO   ] [TRADER] Cancelling bid 143
+2020-03-11 01:26:40,463 [INFO   ] [TRADER] Cancelling bid 142
+2020-03-11 01:26:40,463 [INFO   ] [TRADER] Cancelling bid 144
+2020-03-11 01:26:40,463 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:40,463 [INFO   ] [TRADER] Order 141 filled (0 / 0)
+2020-03-11 01:26:40,464 [INFO   ] [TRADER] Order 143 filled (0 / 0)
+2020-03-11 01:26:40,464 [INFO   ] [TRADER] Order 142 filled (0 / 0)
+2020-03-11 01:26:40,464 [INFO   ] [TRADER] Order 144 filled (0 / 0)
+2020-03-11 01:26:40,514 [INFO   ] [TRADER] Placing quotes (145, 146). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:40,514 [INFO   ] [TRADER] Placing quotes (147, 148). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:40,516 [INFO   ] [TRADER] Order 145 filled (0 / 4)
+2020-03-11 01:26:40,517 [INFO   ] [TRADER] Order 146 filled (0 / 8)
+2020-03-11 01:26:40,517 [INFO   ] [TRADER] Order 147 filled (0 / 1)
+2020-03-11 01:26:40,517 [INFO   ] [TRADER] Order 148 filled (0 / 2)
+2020-03-11 01:26:40,564 [INFO   ] [TRADER] Cancelling bid 145
+2020-03-11 01:26:40,564 [INFO   ] [TRADER] Cancelling bid 147
+2020-03-11 01:26:40,565 [INFO   ] [TRADER] Cancelling bid 146
+2020-03-11 01:26:40,565 [INFO   ] [TRADER] Cancelling bid 148
+2020-03-11 01:26:40,565 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:40,566 [INFO   ] [TRADER] Order 145 filled (0 / 0)
+2020-03-11 01:26:40,566 [INFO   ] [TRADER] Order 147 filled (0 / 0)
+2020-03-11 01:26:40,566 [INFO   ] [TRADER] Order 146 filled (0 / 0)
+2020-03-11 01:26:40,566 [INFO   ] [TRADER] Order 148 filled (0 / 0)
+2020-03-11 01:26:40,613 [INFO   ] [TRADER] Placing quotes (149, 150). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:40,613 [INFO   ] [TRADER] Placing quotes (151, 152). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:40,614 [INFO   ] [TRADER] Order 149 filled (0 / 4)
+2020-03-11 01:26:40,615 [INFO   ] [TRADER] Order 150 filled (0 / 8)
+2020-03-11 01:26:40,615 [INFO   ] [TRADER] Order 151 filled (0 / 1)
+2020-03-11 01:26:40,615 [INFO   ] [TRADER] Order 152 filled (0 / 2)
+2020-03-11 01:26:40,663 [INFO   ] [TRADER] Cancelling bid 149
+2020-03-11 01:26:40,663 [INFO   ] [TRADER] Cancelling bid 151
+2020-03-11 01:26:40,663 [INFO   ] [TRADER] Cancelling bid 150
+2020-03-11 01:26:40,663 [INFO   ] [TRADER] Cancelling bid 152
+2020-03-11 01:26:40,663 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:40,664 [INFO   ] [TRADER] Order 149 filled (0 / 0)
+2020-03-11 01:26:40,664 [INFO   ] [TRADER] Order 151 filled (0 / 0)
+2020-03-11 01:26:40,664 [INFO   ] [TRADER] Order 150 filled (0 / 0)
+2020-03-11 01:26:40,664 [INFO   ] [TRADER] Order 152 filled (0 / 0)
+2020-03-11 01:26:40,712 [INFO   ] [TRADER] Placing quotes (153, 154). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:40,713 [INFO   ] [TRADER] Placing quotes (155, 156). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:40,713 [INFO   ] [TRADER] Order 153 filled (0 / 4)
+2020-03-11 01:26:40,713 [INFO   ] [TRADER] Order 154 filled (0 / 8)
+2020-03-11 01:26:40,713 [INFO   ] [TRADER] Order 155 filled (0 / 1)
+2020-03-11 01:26:40,713 [INFO   ] [TRADER] Order 156 filled (0 / 2)
+2020-03-11 01:26:40,763 [INFO   ] [TRADER] Cancelling bid 153
+2020-03-11 01:26:40,763 [INFO   ] [TRADER] Cancelling bid 155
+2020-03-11 01:26:40,763 [INFO   ] [TRADER] Cancelling bid 154
+2020-03-11 01:26:40,763 [INFO   ] [TRADER] Cancelling bid 156
+2020-03-11 01:26:40,763 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:40,763 [INFO   ] [TRADER] Order 153 filled (0 / 0)
+2020-03-11 01:26:40,763 [INFO   ] [TRADER] Order 155 filled (0 / 0)
+2020-03-11 01:26:40,763 [INFO   ] [TRADER] Order 154 filled (0 / 0)
+2020-03-11 01:26:40,764 [INFO   ] [TRADER] Order 156 filled (0 / 0)
+2020-03-11 01:26:40,816 [INFO   ] [TRADER] Placing quotes (157, 158). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:40,816 [INFO   ] [TRADER] Placing quotes (159, 160). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:40,819 [INFO   ] [TRADER] Order 157 filled (0 / 4)
+2020-03-11 01:26:40,819 [INFO   ] [TRADER] Order 158 filled (0 / 8)
+2020-03-11 01:26:40,819 [INFO   ] [TRADER] Order 159 filled (0 / 1)
+2020-03-11 01:26:40,819 [INFO   ] [TRADER] Order 160 filled (0 / 2)
+2020-03-11 01:26:40,864 [INFO   ] [TRADER] Cancelling bid 157
+2020-03-11 01:26:40,864 [INFO   ] [TRADER] Cancelling bid 159
+2020-03-11 01:26:40,864 [INFO   ] [TRADER] Cancelling bid 158
+2020-03-11 01:26:40,864 [INFO   ] [TRADER] Cancelling bid 160
+2020-03-11 01:26:40,865 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:40,866 [INFO   ] [TRADER] Order 157 filled (0 / 0)
+2020-03-11 01:26:40,866 [INFO   ] [TRADER] Order 159 filled (0 / 0)
+2020-03-11 01:26:40,866 [INFO   ] [TRADER] Order 158 filled (0 / 0)
+2020-03-11 01:26:40,867 [INFO   ] [TRADER] Order 160 filled (0 / 0)
+2020-03-11 01:26:40,912 [INFO   ] [TRADER] Placing quotes (161, 162). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:40,913 [INFO   ] [TRADER] Placing quotes (163, 164). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:40,913 [INFO   ] [TRADER] Order 161 filled (0 / 4)
+2020-03-11 01:26:40,913 [INFO   ] [TRADER] Order 162 filled (0 / 8)
+2020-03-11 01:26:40,914 [INFO   ] [TRADER] Order 163 filled (0 / 1)
+2020-03-11 01:26:40,914 [INFO   ] [TRADER] Order 164 filled (0 / 2)
+2020-03-11 01:26:40,963 [INFO   ] [TRADER] Cancelling bid 161
+2020-03-11 01:26:40,963 [INFO   ] [TRADER] Cancelling bid 163
+2020-03-11 01:26:40,963 [INFO   ] [TRADER] Cancelling bid 162
+2020-03-11 01:26:40,964 [INFO   ] [TRADER] Cancelling bid 164
+2020-03-11 01:26:40,964 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:40,964 [INFO   ] [TRADER] Order 161 filled (0 / 0)
+2020-03-11 01:26:40,964 [INFO   ] [TRADER] Order 163 filled (0 / 0)
+2020-03-11 01:26:40,965 [INFO   ] [TRADER] Order 162 filled (0 / 0)
+2020-03-11 01:26:40,965 [INFO   ] [TRADER] Order 164 filled (0 / 0)
+2020-03-11 01:26:41,013 [INFO   ] [TRADER] Placing quotes (165, 166). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:41,014 [INFO   ] [TRADER] Placing quotes (167, 168). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:41,015 [INFO   ] [TRADER] Order 165 filled (0 / 4)
+2020-03-11 01:26:41,015 [INFO   ] [TRADER] Order 166 filled (0 / 8)
+2020-03-11 01:26:41,015 [INFO   ] [TRADER] Order 167 filled (0 / 1)
+2020-03-11 01:26:41,016 [INFO   ] [TRADER] Order 168 filled (0 / 2)
+2020-03-11 01:26:41,064 [INFO   ] [TRADER] Cancelling bid 165
+2020-03-11 01:26:41,064 [INFO   ] [TRADER] Cancelling bid 167
+2020-03-11 01:26:41,064 [INFO   ] [TRADER] Cancelling bid 166
+2020-03-11 01:26:41,064 [INFO   ] [TRADER] Cancelling bid 168
+2020-03-11 01:26:41,064 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:41,065 [INFO   ] [TRADER] Order 165 filled (0 / 0)
+2020-03-11 01:26:41,066 [INFO   ] [TRADER] Order 167 filled (0 / 0)
+2020-03-11 01:26:41,066 [INFO   ] [TRADER] Order 166 filled (0 / 0)
+2020-03-11 01:26:41,066 [INFO   ] [TRADER] Order 168 filled (0 / 0)
+2020-03-11 01:26:41,114 [INFO   ] [TRADER] Placing quotes (169, 170). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:41,115 [INFO   ] [TRADER] Placing quotes (171, 172). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:41,117 [INFO   ] [TRADER] Order 169 filled (0 / 4)
+2020-03-11 01:26:41,117 [INFO   ] [TRADER] Order 170 filled (0 / 8)
+2020-03-11 01:26:41,117 [INFO   ] [TRADER] Order 171 filled (0 / 1)
+2020-03-11 01:26:41,118 [INFO   ] [TRADER] Order 172 filled (0 / 2)
+2020-03-11 01:26:41,165 [INFO   ] [TRADER] Order 169 filled (4 / 4)
+2020-03-11 01:26:41,166 [INFO   ] [TRADER] Position changed to ETF: 12, FUTURE: -12
+2020-03-11 01:26:41,168 [INFO   ] [TRADER] Cancelling bid 171
+2020-03-11 01:26:41,168 [INFO   ] [TRADER] Cancelling bid 170
+2020-03-11 01:26:41,168 [INFO   ] [TRADER] Cancelling bid 172
+2020-03-11 01:26:41,168 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:41,169 [INFO   ] [TRADER] Order 171 filled (0 / 0)
+2020-03-11 01:26:41,170 [INFO   ] [TRADER] Order 170 filled (0 / 0)
+2020-03-11 01:26:41,170 [INFO   ] [TRADER] Order 172 filled (0 / 0)
+2020-03-11 01:26:41,214 [INFO   ] [TRADER] Placing quotes (173, 174). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:41,214 [INFO   ] [TRADER] Placing quotes (175, 176). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:41,215 [INFO   ] [TRADER] Order 173 filled (0 / 4)
+2020-03-11 01:26:41,215 [INFO   ] [TRADER] Order 174 filled (0 / 8)
+2020-03-11 01:26:41,215 [INFO   ] [TRADER] Order 175 filled (0 / 1)
+2020-03-11 01:26:41,215 [INFO   ] [TRADER] Order 176 filled (0 / 2)
+2020-03-11 01:26:41,263 [INFO   ] [TRADER] Order 174 filled (2 / 8)
+2020-03-11 01:26:41,263 [INFO   ] [TRADER] Position changed to ETF: 10, FUTURE: -10
+2020-03-11 01:26:41,264 [INFO   ] [TRADER] Cancelling bid 173
+2020-03-11 01:26:41,264 [INFO   ] [TRADER] Cancelling bid 175
+2020-03-11 01:26:41,264 [INFO   ] [TRADER] Cancelling bid 174
+2020-03-11 01:26:41,264 [INFO   ] [TRADER] Cancelling bid 176
+2020-03-11 01:26:41,264 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:41,265 [INFO   ] [TRADER] Order 173 filled (0 / 0)
+2020-03-11 01:26:41,265 [INFO   ] [TRADER] Order 175 filled (0 / 0)
+2020-03-11 01:26:41,265 [INFO   ] [TRADER] Order 174 filled (2 / 2)
+2020-03-11 01:26:41,265 [INFO   ] [TRADER] Order 176 filled (0 / 0)
+2020-03-11 01:26:41,315 [INFO   ] [TRADER] Placing quotes (177, 178). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:41,315 [INFO   ] [TRADER] Placing quotes (179, 180). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:41,318 [INFO   ] [TRADER] Order 177 filled (0 / 4)
+2020-03-11 01:26:41,318 [INFO   ] [TRADER] Order 178 filled (0 / 8)
+2020-03-11 01:26:41,318 [INFO   ] [TRADER] Order 179 filled (0 / 1)
+2020-03-11 01:26:41,319 [INFO   ] [TRADER] Order 180 filled (0 / 2)
+2020-03-11 01:26:41,363 [INFO   ] [TRADER] Order 178 filled (3 / 8)
+2020-03-11 01:26:41,364 [INFO   ] [TRADER] Position changed to ETF: 7, FUTURE: -7
+2020-03-11 01:26:41,364 [INFO   ] [TRADER] Order 178 filled (8 / 8)
+2020-03-11 01:26:41,365 [INFO   ] [TRADER] Position changed to ETF: 2, FUTURE: -2
+2020-03-11 01:26:41,365 [INFO   ] [TRADER] Cancelling bid 177
+2020-03-11 01:26:41,365 [INFO   ] [TRADER] Cancelling bid 179
+2020-03-11 01:26:41,366 [INFO   ] [TRADER] Cancelling bid 180
+2020-03-11 01:26:41,366 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:41,367 [INFO   ] [TRADER] Order 177 filled (0 / 0)
+2020-03-11 01:26:41,368 [INFO   ] [TRADER] Order 179 filled (0 / 0)
+2020-03-11 01:26:41,368 [INFO   ] [TRADER] Order 180 filled (0 / 0)
+2020-03-11 01:26:41,413 [INFO   ] [TRADER] Placing quotes (181, 182). Bid: 7 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:41,414 [INFO   ] [TRADER] Placing quotes (183, 184). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:41,415 [INFO   ] [TRADER] Order 181 filled (0 / 7)
+2020-03-11 01:26:41,416 [INFO   ] [TRADER] Order 182 filled (0 / 8)
+2020-03-11 01:26:41,416 [INFO   ] [TRADER] Order 183 filled (0 / 1)
+2020-03-11 01:26:41,416 [INFO   ] [TRADER] Order 184 filled (0 / 2)
+2020-03-11 01:26:41,463 [INFO   ] [TRADER] Order 181 filled (7 / 7)
+2020-03-11 01:26:41,464 [INFO   ] [TRADER] Position changed to ETF: 9, FUTURE: -9
+2020-03-11 01:26:41,465 [INFO   ] [TRADER] Cancelling bid 183
+2020-03-11 01:26:41,465 [INFO   ] [TRADER] Cancelling bid 182
+2020-03-11 01:26:41,465 [INFO   ] [TRADER] Cancelling bid 184
+2020-03-11 01:26:41,465 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:41,470 [INFO   ] [TRADER] Order 183 filled (0 / 0)
+2020-03-11 01:26:41,470 [INFO   ] [TRADER] Order 182 filled (0 / 0)
+2020-03-11 01:26:41,470 [INFO   ] [TRADER] Order 184 filled (0 / 0)
+2020-03-11 01:26:41,515 [INFO   ] [TRADER] Placing quotes (185, 186). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:41,515 [INFO   ] [TRADER] Placing quotes (187, 188). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:41,516 [INFO   ] [TRADER] Order 185 filled (0 / 4)
+2020-03-11 01:26:41,516 [INFO   ] [TRADER] Order 186 filled (0 / 8)
+2020-03-11 01:26:41,517 [INFO   ] [TRADER] Order 187 filled (0 / 1)
+2020-03-11 01:26:41,517 [INFO   ] [TRADER] Order 188 filled (0 / 2)
+2020-03-11 01:26:41,564 [INFO   ] [TRADER] Cancelling bid 185
+2020-03-11 01:26:41,565 [INFO   ] [TRADER] Cancelling bid 187
+2020-03-11 01:26:41,565 [INFO   ] [TRADER] Cancelling bid 186
+2020-03-11 01:26:41,565 [INFO   ] [TRADER] Cancelling bid 188
+2020-03-11 01:26:41,565 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:41,566 [INFO   ] [TRADER] Order 185 filled (0 / 0)
+2020-03-11 01:26:41,566 [INFO   ] [TRADER] Order 187 filled (0 / 0)
+2020-03-11 01:26:41,567 [INFO   ] [TRADER] Order 186 filled (0 / 0)
+2020-03-11 01:26:41,567 [INFO   ] [TRADER] Order 188 filled (0 / 0)
+2020-03-11 01:26:41,615 [INFO   ] [TRADER] Placing quotes (189, 190). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:41,615 [INFO   ] [TRADER] Placing quotes (191, 192). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:41,620 [INFO   ] [TRADER] Order 189 filled (0 / 4)
+2020-03-11 01:26:41,620 [INFO   ] [TRADER] Order 190 filled (0 / 8)
+2020-03-11 01:26:41,620 [INFO   ] [TRADER] Order 191 filled (0 / 1)
+2020-03-11 01:26:41,621 [INFO   ] [TRADER] Order 192 filled (0 / 2)
+2020-03-11 01:26:41,663 [INFO   ] [TRADER] Order 190 filled (7 / 8)
+2020-03-11 01:26:41,663 [INFO   ] [TRADER] Position changed to ETF: 2, FUTURE: -2
+2020-03-11 01:26:41,664 [INFO   ] [TRADER] Cancelling bid 189
+2020-03-11 01:26:41,664 [INFO   ] [TRADER] Cancelling bid 191
+2020-03-11 01:26:41,664 [INFO   ] [TRADER] Cancelling bid 190
+2020-03-11 01:26:41,664 [INFO   ] [TRADER] Cancelling bid 192
+2020-03-11 01:26:41,664 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:41,665 [INFO   ] [TRADER] Order 189 filled (0 / 0)
+2020-03-11 01:26:41,665 [INFO   ] [TRADER] Order 191 filled (0 / 0)
+2020-03-11 01:26:41,666 [INFO   ] [TRADER] Order 190 filled (7 / 7)
+2020-03-11 01:26:41,666 [INFO   ] [TRADER] Order 192 filled (0 / 0)
+2020-03-11 01:26:41,712 [INFO   ] [TRADER] Placing quotes (193, 194). Bid: 7 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:41,712 [INFO   ] [TRADER] Placing quotes (195, 196). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:41,713 [INFO   ] [TRADER] Order 193 filled (0 / 7)
+2020-03-11 01:26:41,713 [INFO   ] [TRADER] Order 194 filled (0 / 8)
+2020-03-11 01:26:41,713 [INFO   ] [TRADER] Order 195 filled (0 / 1)
+2020-03-11 01:26:41,713 [INFO   ] [TRADER] Order 196 filled (0 / 2)
+2020-03-11 01:26:41,762 [INFO   ] [TRADER] Order 193 filled (7 / 7)
+2020-03-11 01:26:41,763 [INFO   ] [TRADER] Position changed to ETF: 9, FUTURE: -9
+2020-03-11 01:26:41,763 [INFO   ] [TRADER] Order 195 filled (1 / 1)
+2020-03-11 01:26:41,763 [INFO   ] [TRADER] Position changed to ETF: 10, FUTURE: -10
+2020-03-11 01:26:43,214 [INFO   ] [TRADER] Order 194 filled (2 / 8)
+2020-03-11 01:26:43,214 [INFO   ] [TRADER] Position changed to ETF: 8, FUTURE: -8
+2020-03-11 01:26:43,514 [INFO   ] [TRADER] Order 194 filled (8 / 8)
+2020-03-11 01:26:43,514 [INFO   ] [TRADER] Cancelling bid 196
+2020-03-11 01:26:43,514 [INFO   ] [TRADER] Position changed to ETF: 2, FUTURE: -2
+2020-03-11 01:26:43,516 [INFO   ] [TRADER] Order 196 filled (0 / 0)
+2020-03-11 01:26:43,565 [INFO   ] [TRADER] Placing quotes (197, 198). Bid: 7 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:26:43,565 [INFO   ] [TRADER] Placing quotes (199, 200). Bid: 1 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:26:43,566 [INFO   ] [TRADER] Order 197 filled (0 / 7)
+2020-03-11 01:26:43,566 [INFO   ] [TRADER] Order 198 filled (0 / 8)
+2020-03-11 01:26:43,567 [INFO   ] [TRADER] Order 199 filled (0 / 1)
+2020-03-11 01:26:43,567 [INFO   ] [TRADER] Order 200 filled (0 / 2)
+2020-03-11 01:26:43,614 [INFO   ] [TRADER] Cancelling bid 197
+2020-03-11 01:26:43,614 [INFO   ] [TRADER] Cancelling bid 199
+2020-03-11 01:26:43,614 [INFO   ] [TRADER] Cancelling bid 198
+2020-03-11 01:26:43,614 [INFO   ] [TRADER] Cancelling bid 200
+2020-03-11 01:26:43,614 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:43,615 [INFO   ] [TRADER] Order 197 filled (0 / 0)
+2020-03-11 01:26:43,615 [INFO   ] [TRADER] Order 199 filled (0 / 0)
+2020-03-11 01:26:43,615 [INFO   ] [TRADER] Order 198 filled (0 / 0)
+2020-03-11 01:26:43,615 [INFO   ] [TRADER] Order 200 filled (0 / 0)
+2020-03-11 01:26:43,663 [INFO   ] [TRADER] Placing quotes (201, 202). Bid: 7 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:26:43,663 [INFO   ] [TRADER] Placing quotes (203, 204). Bid: 1 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:26:43,664 [INFO   ] [TRADER] Order 201 filled (0 / 7)
+2020-03-11 01:26:43,664 [INFO   ] [TRADER] Order 202 filled (0 / 8)
+2020-03-11 01:26:43,664 [INFO   ] [TRADER] Order 203 filled (0 / 1)
+2020-03-11 01:26:43,664 [INFO   ] [TRADER] Order 204 filled (0 / 2)
+2020-03-11 01:26:43,714 [INFO   ] [TRADER] Cancelling bid 201
+2020-03-11 01:26:43,714 [INFO   ] [TRADER] Cancelling bid 203
+2020-03-11 01:26:43,714 [INFO   ] [TRADER] Cancelling bid 202
+2020-03-11 01:26:43,714 [INFO   ] [TRADER] Cancelling bid 204
+2020-03-11 01:26:43,715 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:43,715 [INFO   ] [TRADER] Order 201 filled (0 / 0)
+2020-03-11 01:26:43,715 [INFO   ] [TRADER] Order 203 filled (0 / 0)
+2020-03-11 01:26:43,716 [INFO   ] [TRADER] Order 202 filled (0 / 0)
+2020-03-11 01:26:43,716 [INFO   ] [TRADER] Order 204 filled (0 / 0)
+2020-03-11 01:26:43,764 [INFO   ] [TRADER] Placing quotes (205, 206). Bid: 7 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:26:43,764 [INFO   ] [TRADER] Placing quotes (207, 208). Bid: 1 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:26:43,766 [INFO   ] [TRADER] Order 205 filled (0 / 7)
+2020-03-11 01:26:43,767 [INFO   ] [TRADER] Order 206 filled (0 / 8)
+2020-03-11 01:26:43,767 [INFO   ] [TRADER] Order 207 filled (0 / 1)
+2020-03-11 01:26:43,767 [INFO   ] [TRADER] Order 208 filled (0 / 2)
+2020-03-11 01:26:43,814 [INFO   ] [TRADER] Cancelling bid 205
+2020-03-11 01:26:43,814 [INFO   ] [TRADER] Cancelling bid 207
+2020-03-11 01:26:43,815 [INFO   ] [TRADER] Cancelling bid 206
+2020-03-11 01:26:43,815 [INFO   ] [TRADER] Cancelling bid 208
+2020-03-11 01:26:43,815 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:43,817 [INFO   ] [TRADER] Order 205 filled (0 / 0)
+2020-03-11 01:26:43,817 [INFO   ] [TRADER] Order 207 filled (0 / 0)
+2020-03-11 01:26:43,818 [INFO   ] [TRADER] Order 206 filled (0 / 0)
+2020-03-11 01:26:43,818 [INFO   ] [TRADER] Order 208 filled (0 / 0)
+2020-03-11 01:26:43,864 [INFO   ] [TRADER] Placing quotes (209, 210). Bid: 7 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:26:43,864 [INFO   ] [TRADER] Placing quotes (211, 212). Bid: 1 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:26:43,866 [INFO   ] [TRADER] Order 209 filled (0 / 7)
+2020-03-11 01:26:43,867 [INFO   ] [TRADER] Order 210 filled (0 / 8)
+2020-03-11 01:26:43,867 [INFO   ] [TRADER] Order 211 filled (0 / 1)
+2020-03-11 01:26:43,867 [INFO   ] [TRADER] Order 212 filled (0 / 2)
+2020-03-11 01:26:43,913 [INFO   ] [TRADER] Cancelling bid 209
+2020-03-11 01:26:43,913 [INFO   ] [TRADER] Cancelling bid 211
+2020-03-11 01:26:43,913 [INFO   ] [TRADER] Cancelling bid 210
+2020-03-11 01:26:43,913 [INFO   ] [TRADER] Cancelling bid 212
+2020-03-11 01:26:43,913 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:43,913 [INFO   ] [TRADER] Order 209 filled (0 / 0)
+2020-03-11 01:26:43,913 [INFO   ] [TRADER] Order 211 filled (0 / 0)
+2020-03-11 01:26:43,913 [INFO   ] [TRADER] Order 210 filled (0 / 0)
+2020-03-11 01:26:43,913 [INFO   ] [TRADER] Order 212 filled (0 / 0)
+2020-03-11 01:26:43,963 [INFO   ] [TRADER] Placing quotes (213, 214). Bid: 7 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:26:43,963 [INFO   ] [TRADER] Placing quotes (215, 216). Bid: 1 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:26:43,963 [INFO   ] [TRADER] Order 213 filled (0 / 7)
+2020-03-11 01:26:43,963 [INFO   ] [TRADER] Order 214 filled (0 / 8)
+2020-03-11 01:26:43,963 [INFO   ] [TRADER] Order 215 filled (0 / 1)
+2020-03-11 01:26:43,963 [INFO   ] [TRADER] Order 216 filled (0 / 2)
+2020-03-11 01:26:44,013 [INFO   ] [TRADER] Cancelling bid 213
+2020-03-11 01:26:44,013 [INFO   ] [TRADER] Cancelling bid 215
+2020-03-11 01:26:44,013 [INFO   ] [TRADER] Cancelling bid 214
+2020-03-11 01:26:44,013 [INFO   ] [TRADER] Cancelling bid 216
+2020-03-11 01:26:44,013 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:44,014 [INFO   ] [TRADER] Order 213 filled (0 / 0)
+2020-03-11 01:26:44,014 [INFO   ] [TRADER] Order 215 filled (0 / 0)
+2020-03-11 01:26:44,014 [INFO   ] [TRADER] Order 214 filled (0 / 0)
+2020-03-11 01:26:44,014 [INFO   ] [TRADER] Order 216 filled (0 / 0)
+2020-03-11 01:26:44,063 [INFO   ] [TRADER] Placing quotes (217, 218). Bid: 7 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:26:44,064 [INFO   ] [TRADER] Placing quotes (219, 220). Bid: 1 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:26:44,066 [INFO   ] [TRADER] Order 217 filled (0 / 7)
+2020-03-11 01:26:44,067 [INFO   ] [TRADER] Order 218 filled (0 / 8)
+2020-03-11 01:26:44,067 [INFO   ] [TRADER] Order 219 filled (0 / 1)
+2020-03-11 01:26:44,067 [INFO   ] [TRADER] Order 220 filled (0 / 2)
+2020-03-11 01:26:44,113 [INFO   ] [TRADER] Order 217 filled (2 / 7)
+2020-03-11 01:26:44,113 [INFO   ] [TRADER] Position changed to ETF: 4, FUTURE: -4
+2020-03-11 01:26:44,113 [INFO   ] [TRADER] Cancelling bid 217
+2020-03-11 01:26:44,113 [INFO   ] [TRADER] Cancelling bid 219
+2020-03-11 01:26:44,113 [INFO   ] [TRADER] Cancelling bid 218
+2020-03-11 01:26:44,114 [INFO   ] [TRADER] Cancelling bid 220
+2020-03-11 01:26:44,114 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:44,114 [INFO   ] [TRADER] Order 217 filled (2 / 2)
+2020-03-11 01:26:44,115 [INFO   ] [TRADER] Order 219 filled (0 / 0)
+2020-03-11 01:26:44,115 [INFO   ] [TRADER] Order 218 filled (0 / 0)
+2020-03-11 01:26:44,115 [INFO   ] [TRADER] Order 220 filled (0 / 0)
+2020-03-11 01:26:44,166 [INFO   ] [TRADER] Placing quotes (221, 222). Bid: 6 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:26:44,167 [INFO   ] [TRADER] Placing quotes (223, 224). Bid: 1 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:26:44,168 [INFO   ] [TRADER] Order 221 filled (0 / 6)
+2020-03-11 01:26:44,168 [INFO   ] [TRADER] Order 222 filled (0 / 8)
+2020-03-11 01:26:44,168 [INFO   ] [TRADER] Order 223 filled (0 / 1)
+2020-03-11 01:26:44,168 [INFO   ] [TRADER] Order 224 filled (0 / 2)
+2020-03-11 01:26:44,215 [INFO   ] [TRADER] Cancelling bid 221
+2020-03-11 01:26:44,216 [INFO   ] [TRADER] Cancelling bid 223
+2020-03-11 01:26:44,216 [INFO   ] [TRADER] Cancelling bid 222
+2020-03-11 01:26:44,216 [INFO   ] [TRADER] Cancelling bid 224
+2020-03-11 01:26:44,216 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:44,217 [INFO   ] [TRADER] Order 221 filled (0 / 0)
+2020-03-11 01:26:44,217 [INFO   ] [TRADER] Order 223 filled (0 / 0)
+2020-03-11 01:26:44,217 [INFO   ] [TRADER] Order 222 filled (0 / 0)
+2020-03-11 01:26:44,217 [INFO   ] [TRADER] Order 224 filled (0 / 0)
+2020-03-11 01:26:44,263 [INFO   ] [TRADER] Placing quotes (225, 226). Bid: 6 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:26:44,263 [INFO   ] [TRADER] Placing quotes (227, 228). Bid: 1 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:26:44,263 [INFO   ] [TRADER] Order 225 filled (0 / 6)
+2020-03-11 01:26:44,263 [INFO   ] [TRADER] Order 226 filled (0 / 8)
+2020-03-11 01:26:44,263 [INFO   ] [TRADER] Order 227 filled (0 / 1)
+2020-03-11 01:26:44,263 [INFO   ] [TRADER] Order 228 filled (0 / 2)
+2020-03-11 01:26:44,313 [INFO   ] [TRADER] Cancelling bid 225
+2020-03-11 01:26:44,313 [INFO   ] [TRADER] Cancelling bid 227
+2020-03-11 01:26:44,313 [INFO   ] [TRADER] Cancelling bid 226
+2020-03-11 01:26:44,313 [INFO   ] [TRADER] Cancelling bid 228
+2020-03-11 01:26:44,313 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:44,314 [INFO   ] [TRADER] Order 225 filled (0 / 0)
+2020-03-11 01:26:44,314 [INFO   ] [TRADER] Order 227 filled (0 / 0)
+2020-03-11 01:26:44,314 [INFO   ] [TRADER] Order 226 filled (0 / 0)
+2020-03-11 01:26:44,314 [INFO   ] [TRADER] Order 228 filled (0 / 0)
+2020-03-11 01:26:44,363 [INFO   ] [TRADER] Placing quotes (229, 230). Bid: 6 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:26:44,363 [INFO   ] [TRADER] Placing quotes (231, 232). Bid: 1 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:26:44,364 [INFO   ] [TRADER] Order 229 filled (0 / 6)
+2020-03-11 01:26:44,364 [INFO   ] [TRADER] Order 230 filled (0 / 8)
+2020-03-11 01:26:44,364 [INFO   ] [TRADER] Order 231 filled (0 / 1)
+2020-03-11 01:26:44,364 [INFO   ] [TRADER] Order 232 filled (0 / 2)
+2020-03-11 01:26:44,413 [INFO   ] [TRADER] Cancelling bid 229
+2020-03-11 01:26:44,413 [INFO   ] [TRADER] Cancelling bid 231
+2020-03-11 01:26:44,413 [INFO   ] [TRADER] Cancelling bid 230
+2020-03-11 01:26:44,413 [INFO   ] [TRADER] Cancelling bid 232
+2020-03-11 01:26:44,413 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:44,413 [INFO   ] [TRADER] Order 229 filled (0 / 0)
+2020-03-11 01:26:44,413 [INFO   ] [TRADER] Order 231 filled (0 / 0)
+2020-03-11 01:26:44,413 [INFO   ] [TRADER] Order 230 filled (0 / 0)
+2020-03-11 01:26:44,413 [INFO   ] [TRADER] Order 232 filled (0 / 0)
+2020-03-11 01:26:44,463 [INFO   ] [TRADER] Placing quotes (233, 234). Bid: 6 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:26:44,464 [INFO   ] [TRADER] Placing quotes (235, 236). Bid: 1 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:26:44,465 [INFO   ] [TRADER] Order 233 filled (0 / 6)
+2020-03-11 01:26:44,465 [INFO   ] [TRADER] Order 234 filled (0 / 8)
+2020-03-11 01:26:44,465 [INFO   ] [TRADER] Order 235 filled (0 / 1)
+2020-03-11 01:26:44,465 [INFO   ] [TRADER] Order 236 filled (0 / 2)
+2020-03-11 01:26:44,514 [INFO   ] [TRADER] Cancelling bid 233
+2020-03-11 01:26:44,514 [INFO   ] [TRADER] Cancelling bid 235
+2020-03-11 01:26:44,514 [INFO   ] [TRADER] Cancelling bid 234
+2020-03-11 01:26:44,514 [INFO   ] [TRADER] Cancelling bid 236
+2020-03-11 01:26:44,515 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:44,516 [INFO   ] [TRADER] Order 233 filled (0 / 0)
+2020-03-11 01:26:44,517 [INFO   ] [TRADER] Order 235 filled (0 / 0)
+2020-03-11 01:26:44,517 [INFO   ] [TRADER] Order 234 filled (0 / 0)
+2020-03-11 01:26:44,517 [INFO   ] [TRADER] Order 236 filled (0 / 0)
+2020-03-11 01:26:44,564 [INFO   ] [TRADER] Placing quotes (237, 238). Bid: 6 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:26:44,565 [INFO   ] [TRADER] Placing quotes (239, 240). Bid: 1 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:26:44,567 [INFO   ] [TRADER] Order 237 filled (0 / 6)
+2020-03-11 01:26:44,568 [INFO   ] [TRADER] Order 238 filled (0 / 8)
+2020-03-11 01:26:44,568 [INFO   ] [TRADER] Order 239 filled (0 / 1)
+2020-03-11 01:26:44,568 [INFO   ] [TRADER] Order 240 filled (0 / 2)
+2020-03-11 01:26:44,615 [INFO   ] [TRADER] Order 237 filled (6 / 6)
+2020-03-11 01:26:44,615 [INFO   ] [TRADER] Position changed to ETF: 10, FUTURE: -10
+2020-03-11 01:26:44,615 [INFO   ] [TRADER] Cancelling bid 239
+2020-03-11 01:26:44,616 [INFO   ] [TRADER] Cancelling bid 238
+2020-03-11 01:26:44,616 [INFO   ] [TRADER] Cancelling bid 240
+2020-03-11 01:26:44,616 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:44,619 [INFO   ] [TRADER] Order 239 filled (0 / 0)
+2020-03-11 01:26:44,619 [INFO   ] [TRADER] Order 238 filled (0 / 0)
+2020-03-11 01:26:44,620 [INFO   ] [TRADER] Order 240 filled (0 / 0)
+2020-03-11 01:26:44,664 [INFO   ] [TRADER] Placing quotes (241, 242). Bid: 4 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:26:44,664 [INFO   ] [TRADER] Placing quotes (243, 244). Bid: 1 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:26:44,666 [INFO   ] [TRADER] Order 241 filled (0 / 4)
+2020-03-11 01:26:44,666 [INFO   ] [TRADER] Order 242 filled (0 / 8)
+2020-03-11 01:26:44,667 [INFO   ] [TRADER] Order 243 filled (0 / 1)
+2020-03-11 01:26:44,667 [INFO   ] [TRADER] Order 244 filled (0 / 2)
+2020-03-11 01:26:44,714 [INFO   ] [TRADER] Cancelling bid 241
+2020-03-11 01:26:44,714 [INFO   ] [TRADER] Cancelling bid 243
+2020-03-11 01:26:44,714 [INFO   ] [TRADER] Cancelling bid 242
+2020-03-11 01:26:44,714 [INFO   ] [TRADER] Cancelling bid 244
+2020-03-11 01:26:44,714 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:44,715 [INFO   ] [TRADER] Order 241 filled (0 / 0)
+2020-03-11 01:26:44,715 [INFO   ] [TRADER] Order 243 filled (0 / 0)
+2020-03-11 01:26:44,715 [INFO   ] [TRADER] Order 242 filled (0 / 0)
+2020-03-11 01:26:44,716 [INFO   ] [TRADER] Order 244 filled (0 / 0)
+2020-03-11 01:26:44,764 [INFO   ] [TRADER] Placing quotes (245, 246). Bid: 4 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:26:44,764 [INFO   ] [TRADER] Placing quotes (247, 248). Bid: 1 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:26:44,764 [INFO   ] [TRADER] Order 245 filled (0 / 4)
+2020-03-11 01:26:44,764 [INFO   ] [TRADER] Order 246 filled (0 / 8)
+2020-03-11 01:26:44,765 [INFO   ] [TRADER] Order 247 filled (0 / 1)
+2020-03-11 01:26:44,765 [INFO   ] [TRADER] Order 248 filled (0 / 2)
+2020-03-11 01:26:44,814 [INFO   ] [TRADER] Cancelling bid 245
+2020-03-11 01:26:44,814 [INFO   ] [TRADER] Cancelling bid 247
+2020-03-11 01:26:44,814 [INFO   ] [TRADER] Cancelling bid 246
+2020-03-11 01:26:44,815 [INFO   ] [TRADER] Cancelling bid 248
+2020-03-11 01:26:44,815 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:44,815 [INFO   ] [TRADER] Order 245 filled (0 / 0)
+2020-03-11 01:26:44,815 [INFO   ] [TRADER] Order 247 filled (0 / 0)
+2020-03-11 01:26:44,816 [INFO   ] [TRADER] Order 246 filled (0 / 0)
+2020-03-11 01:26:44,816 [INFO   ] [TRADER] Order 248 filled (0 / 0)
+2020-03-11 01:26:44,864 [INFO   ] [TRADER] Placing quotes (249, 250). Bid: 4 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:26:44,864 [INFO   ] [TRADER] Placing quotes (251, 252). Bid: 1 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:26:44,866 [INFO   ] [TRADER] Order 249 filled (0 / 4)
+2020-03-11 01:26:44,866 [INFO   ] [TRADER] Order 250 filled (0 / 8)
+2020-03-11 01:26:44,866 [INFO   ] [TRADER] Order 251 filled (0 / 1)
+2020-03-11 01:26:44,866 [INFO   ] [TRADER] Order 252 filled (0 / 2)
+2020-03-11 01:26:44,914 [INFO   ] [TRADER] Cancelling bid 249
+2020-03-11 01:26:44,914 [INFO   ] [TRADER] Cancelling bid 251
+2020-03-11 01:26:44,914 [INFO   ] [TRADER] Cancelling bid 250
+2020-03-11 01:26:44,914 [INFO   ] [TRADER] Cancelling bid 252
+2020-03-11 01:26:44,915 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:44,916 [INFO   ] [TRADER] Order 249 filled (0 / 0)
+2020-03-11 01:26:44,916 [INFO   ] [TRADER] Order 251 filled (0 / 0)
+2020-03-11 01:26:44,916 [INFO   ] [TRADER] Order 250 filled (0 / 0)
+2020-03-11 01:26:44,916 [INFO   ] [TRADER] Order 252 filled (0 / 0)
+2020-03-11 01:26:44,967 [INFO   ] [TRADER] Placing quotes (253, 254). Bid: 4 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:26:44,967 [INFO   ] [TRADER] Placing quotes (255, 256). Bid: 1 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:26:44,968 [INFO   ] [TRADER] Order 253 filled (0 / 4)
+2020-03-11 01:26:44,968 [INFO   ] [TRADER] Order 254 filled (0 / 8)
+2020-03-11 01:26:44,968 [INFO   ] [TRADER] Order 255 filled (0 / 1)
+2020-03-11 01:26:44,969 [INFO   ] [TRADER] Order 256 filled (0 / 2)
+2020-03-11 01:26:45,014 [INFO   ] [TRADER] Cancelling bid 253
+2020-03-11 01:26:45,014 [INFO   ] [TRADER] Cancelling bid 255
+2020-03-11 01:26:45,014 [INFO   ] [TRADER] Cancelling bid 254
+2020-03-11 01:26:45,014 [INFO   ] [TRADER] Cancelling bid 256
+2020-03-11 01:26:45,014 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:45,014 [INFO   ] [TRADER] Order 253 filled (0 / 0)
+2020-03-11 01:26:45,014 [INFO   ] [TRADER] Order 255 filled (0 / 0)
+2020-03-11 01:26:45,014 [INFO   ] [TRADER] Order 254 filled (0 / 0)
+2020-03-11 01:26:45,014 [INFO   ] [TRADER] Order 256 filled (0 / 0)
+2020-03-11 01:26:45,066 [INFO   ] [TRADER] Placing quotes (257, 258). Bid: 4 @ $3426, Ask: 8 @ $3427
+2020-03-11 01:26:45,066 [INFO   ] [TRADER] Placing quotes (259, 260). Bid: 1 @ $3425, Ask: 2 @ $3428
+2020-03-11 01:26:45,067 [INFO   ] [TRADER] Order 257 filled (0 / 4)
+2020-03-11 01:26:45,067 [INFO   ] [TRADER] Order 258 filled (8 / 8)
+2020-03-11 01:26:45,067 [INFO   ] [TRADER] Position changed to ETF: 2, FUTURE: -2
+2020-03-11 01:26:45,067 [INFO   ] [TRADER] Order 259 filled (0 / 1)
+2020-03-11 01:26:45,067 [INFO   ] [TRADER] Order 260 filled (0 / 2)
+2020-03-11 01:26:45,114 [INFO   ] [TRADER] Cancelling bid 257
+2020-03-11 01:26:45,114 [INFO   ] [TRADER] Cancelling bid 259
+2020-03-11 01:26:45,114 [INFO   ] [TRADER] Cancelling bid 260
+2020-03-11 01:26:45,114 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:45,114 [INFO   ] [TRADER] Order 257 filled (0 / 0)
+2020-03-11 01:26:45,114 [INFO   ] [TRADER] Order 259 filled (0 / 0)
+2020-03-11 01:26:45,114 [INFO   ] [TRADER] Order 260 filled (0 / 0)
+2020-03-11 01:26:45,163 [INFO   ] [TRADER] Placing quotes (261, 262). Bid: 7 @ $3425, Ask: 8 @ $3427
+2020-03-11 01:26:45,164 [INFO   ] [TRADER] Placing quotes (263, 264). Bid: 1 @ $3424, Ask: 2 @ $3428
+2020-03-11 01:26:45,165 [INFO   ] [TRADER] Order 261 filled (0 / 7)
+2020-03-11 01:26:45,165 [INFO   ] [TRADER] Order 262 filled (0 / 8)
+2020-03-11 01:26:45,165 [INFO   ] [TRADER] Order 263 filled (0 / 1)
+2020-03-11 01:26:45,165 [INFO   ] [TRADER] Order 264 filled (0 / 2)
+2020-03-11 01:26:45,214 [INFO   ] [TRADER] Order 262 filled (1 / 8)
+2020-03-11 01:26:45,214 [INFO   ] [TRADER] Position changed to ETF: 1, FUTURE: -1
+2020-03-11 01:26:45,214 [INFO   ] [TRADER] Order 262 filled (2 / 8)
+2020-03-11 01:26:45,214 [INFO   ] [TRADER] Position changed to ETF: 0, FUTURE: 0
+2020-03-11 01:26:45,215 [INFO   ] [TRADER] Cancelling bid 261
+2020-03-11 01:26:45,215 [INFO   ] [TRADER] Cancelling bid 263
+2020-03-11 01:26:45,215 [INFO   ] [TRADER] Cancelling bid 262
+2020-03-11 01:26:45,215 [INFO   ] [TRADER] Cancelling bid 264
+2020-03-11 01:26:45,215 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:45,215 [INFO   ] [TRADER] Order 261 filled (0 / 0)
+2020-03-11 01:26:45,215 [INFO   ] [TRADER] Order 263 filled (0 / 0)
+2020-03-11 01:26:45,215 [INFO   ] [TRADER] Order 262 filled (2 / 2)
+2020-03-11 01:26:45,215 [INFO   ] [TRADER] Order 264 filled (0 / 0)
+2020-03-11 01:26:45,266 [INFO   ] [TRADER] Placing quotes (265, 266). Bid: 8 @ $3426, Ask: 8 @ $3427
+2020-03-11 01:26:45,266 [INFO   ] [TRADER] Placing quotes (267, 268). Bid: 2 @ $3425, Ask: 2 @ $3428
+2020-03-11 01:26:45,269 [INFO   ] [TRADER] Order 265 filled (0 / 8)
+2020-03-11 01:26:45,269 [INFO   ] [TRADER] Order 266 filled (0 / 8)
+2020-03-11 01:26:45,270 [INFO   ] [TRADER] Order 267 filled (0 / 2)
+2020-03-11 01:26:45,270 [INFO   ] [TRADER] Order 268 filled (0 / 2)
+2020-03-11 01:26:45,314 [INFO   ] [TRADER] Cancelling bid 265
+2020-03-11 01:26:45,314 [INFO   ] [TRADER] Cancelling bid 267
+2020-03-11 01:26:45,314 [INFO   ] [TRADER] Cancelling bid 266
+2020-03-11 01:26:45,314 [INFO   ] [TRADER] Cancelling bid 268
+2020-03-11 01:26:45,315 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:45,315 [INFO   ] [TRADER] Order 265 filled (0 / 0)
+2020-03-11 01:26:45,315 [INFO   ] [TRADER] Order 267 filled (0 / 0)
+2020-03-11 01:26:45,316 [INFO   ] [TRADER] Order 266 filled (0 / 0)
+2020-03-11 01:26:45,317 [INFO   ] [TRADER] Order 268 filled (0 / 0)
+2020-03-11 01:26:45,364 [INFO   ] [TRADER] Placing quotes (269, 270). Bid: 8 @ $3426, Ask: 8 @ $3427
+2020-03-11 01:26:45,364 [INFO   ] [TRADER] Placing quotes (271, 272). Bid: 2 @ $3425, Ask: 2 @ $3428
+2020-03-11 01:26:45,365 [INFO   ] [TRADER] Order 269 filled (0 / 8)
+2020-03-11 01:26:45,365 [INFO   ] [TRADER] Order 270 filled (0 / 8)
+2020-03-11 01:26:45,365 [INFO   ] [TRADER] Order 271 filled (0 / 2)
+2020-03-11 01:26:45,365 [INFO   ] [TRADER] Order 272 filled (0 / 2)
+2020-03-11 01:26:45,414 [INFO   ] [TRADER] Cancelling bid 269
+2020-03-11 01:26:45,414 [INFO   ] [TRADER] Cancelling bid 271
+2020-03-11 01:26:45,415 [INFO   ] [TRADER] Cancelling bid 270
+2020-03-11 01:26:45,415 [INFO   ] [TRADER] Cancelling bid 272
+2020-03-11 01:26:45,415 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:45,417 [INFO   ] [TRADER] Order 269 filled (0 / 0)
+2020-03-11 01:26:45,417 [INFO   ] [TRADER] Order 271 filled (0 / 0)
+2020-03-11 01:26:45,418 [INFO   ] [TRADER] Order 270 filled (0 / 0)
+2020-03-11 01:26:45,418 [INFO   ] [TRADER] Order 272 filled (0 / 0)
+2020-03-11 01:26:45,466 [INFO   ] [TRADER] Placing quotes (273, 274). Bid: 8 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:26:45,466 [INFO   ] [TRADER] Placing quotes (275, 276). Bid: 2 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:26:45,470 [INFO   ] [TRADER] Order 273 filled (1 / 8)
+2020-03-11 01:26:45,470 [INFO   ] [TRADER] Position changed to ETF: 1, FUTURE: -1
+2020-03-11 01:26:45,471 [INFO   ] [TRADER] Order 274 filled (0 / 8)
+2020-03-11 01:26:45,472 [INFO   ] [TRADER] Order 275 filled (0 / 2)
+2020-03-11 01:26:45,472 [INFO   ] [TRADER] Order 276 filled (0 / 2)
+2020-03-11 01:26:45,513 [INFO   ] [TRADER] Cancelling bid 273
+2020-03-11 01:26:45,513 [INFO   ] [TRADER] Cancelling bid 275
+2020-03-11 01:26:45,514 [INFO   ] [TRADER] Cancelling bid 274
+2020-03-11 01:26:45,514 [INFO   ] [TRADER] Cancelling bid 276
+2020-03-11 01:26:45,514 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:45,515 [INFO   ] [TRADER] Order 273 filled (1 / 1)
+2020-03-11 01:26:45,515 [INFO   ] [TRADER] Order 275 filled (0 / 0)
+2020-03-11 01:26:45,515 [INFO   ] [TRADER] Order 274 filled (0 / 0)
+2020-03-11 01:26:45,515 [INFO   ] [TRADER] Order 276 filled (0 / 0)
+2020-03-11 01:26:45,566 [INFO   ] [TRADER] Placing quotes (277, 278). Bid: 7 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:26:45,566 [INFO   ] [TRADER] Placing quotes (279, 280). Bid: 1 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:26:45,569 [INFO   ] [TRADER] Order 277 filled (0 / 7)
+2020-03-11 01:26:45,569 [INFO   ] [TRADER] Order 278 filled (0 / 8)
+2020-03-11 01:26:45,569 [INFO   ] [TRADER] Order 279 filled (0 / 1)
+2020-03-11 01:26:45,569 [INFO   ] [TRADER] Order 280 filled (0 / 2)
+2020-03-11 01:26:45,616 [INFO   ] [TRADER] Cancelling bid 277
+2020-03-11 01:26:45,616 [INFO   ] [TRADER] Cancelling bid 279
+2020-03-11 01:26:45,616 [INFO   ] [TRADER] Cancelling bid 278
+2020-03-11 01:26:45,616 [INFO   ] [TRADER] Cancelling bid 280
+2020-03-11 01:26:45,617 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:45,618 [INFO   ] [TRADER] Order 277 filled (0 / 0)
+2020-03-11 01:26:45,618 [INFO   ] [TRADER] Order 279 filled (0 / 0)
+2020-03-11 01:26:45,618 [INFO   ] [TRADER] Order 278 filled (0 / 0)
+2020-03-11 01:26:45,619 [INFO   ] [TRADER] Order 280 filled (0 / 0)
+2020-03-11 01:26:45,664 [INFO   ] [TRADER] Placing quotes (281, 282). Bid: 7 @ $3426, Ask: 8 @ $3427
+2020-03-11 01:26:45,665 [INFO   ] [TRADER] Placing quotes (283, 284). Bid: 1 @ $3425, Ask: 2 @ $3428
+2020-03-11 01:26:45,668 [INFO   ] [TRADER] Order 281 filled (0 / 7)
+2020-03-11 01:26:45,669 [INFO   ] [TRADER] Order 282 filled (8 / 8)
+2020-03-11 01:26:45,669 [INFO   ] [TRADER] Position changed to ETF: -7, FUTURE: 7
+2020-03-11 01:26:45,669 [INFO   ] [TRADER] Order 283 filled (0 / 1)
+2020-03-11 01:26:45,670 [INFO   ] [TRADER] Order 284 filled (0 / 2)
+2020-03-11 01:26:45,715 [INFO   ] [TRADER] Cancelling bid 281
+2020-03-11 01:26:45,715 [INFO   ] [TRADER] Cancelling bid 283
+2020-03-11 01:26:45,716 [INFO   ] [TRADER] Cancelling bid 284
+2020-03-11 01:26:45,716 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:45,717 [INFO   ] [TRADER] Order 281 filled (0 / 0)
+2020-03-11 01:26:45,718 [INFO   ] [TRADER] Order 283 filled (0 / 0)
+2020-03-11 01:26:45,718 [INFO   ] [TRADER] Order 284 filled (0 / 0)
+2020-03-11 01:26:45,765 [INFO   ] [TRADER] Placing quotes (285, 286). Bid: 8 @ $3426, Ask: 5 @ $3427
+2020-03-11 01:26:45,766 [INFO   ] [TRADER] Placing quotes (287, 288). Bid: 2 @ $3425, Ask: 1 @ $3428
+2020-03-11 01:26:45,769 [INFO   ] [TRADER] Order 285 filled (0 / 8)
+2020-03-11 01:26:45,769 [INFO   ] [TRADER] Order 286 filled (0 / 5)
+2020-03-11 01:26:45,770 [INFO   ] [TRADER] Order 287 filled (0 / 2)
+2020-03-11 01:26:45,770 [INFO   ] [TRADER] Order 288 filled (0 / 1)
+2020-03-11 01:26:45,814 [INFO   ] [TRADER] Cancelling bid 285
+2020-03-11 01:26:45,815 [INFO   ] [TRADER] Cancelling bid 287
+2020-03-11 01:26:45,815 [INFO   ] [TRADER] Cancelling bid 286
+2020-03-11 01:26:45,815 [INFO   ] [TRADER] Cancelling bid 288
+2020-03-11 01:26:45,815 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:45,817 [INFO   ] [TRADER] Order 285 filled (8 / 8)
+2020-03-11 01:26:45,817 [INFO   ] [TRADER] Position changed to ETF: 1, FUTURE: -1
+2020-03-11 01:26:45,817 [INFO   ] [TRADER] Order 287 filled (0 / 0)
+2020-03-11 01:26:45,818 [INFO   ] [TRADER] Order 286 filled (0 / 0)
+2020-03-11 01:26:45,818 [INFO   ] [TRADER] Order 288 filled (0 / 0)
+2020-03-11 01:26:45,864 [INFO   ] [TRADER] Placing quotes (289, 290). Bid: 7 @ $3426, Ask: 8 @ $3427
+2020-03-11 01:26:45,864 [INFO   ] [TRADER] Placing quotes (291, 292). Bid: 1 @ $3425, Ask: 2 @ $3428
+2020-03-11 01:26:45,866 [INFO   ] [TRADER] Order 289 filled (5 / 7)
+2020-03-11 01:26:45,866 [INFO   ] [TRADER] Position changed to ETF: 6, FUTURE: -6
+2020-03-11 01:26:45,866 [INFO   ] [TRADER] Order 290 filled (0 / 8)
+2020-03-11 01:26:45,866 [INFO   ] [TRADER] Order 291 filled (0 / 1)
+2020-03-11 01:26:45,866 [INFO   ] [TRADER] Order 292 filled (0 / 2)
+2020-03-11 01:26:45,913 [INFO   ] [TRADER] Order 289 filled (7 / 7)
+2020-03-11 01:26:45,913 [INFO   ] [TRADER] Position changed to ETF: 8, FUTURE: -8
+2020-03-11 01:26:45,915 [INFO   ] [TRADER] Cancelling bid 291
+2020-03-11 01:26:45,915 [INFO   ] [TRADER] Cancelling bid 290
+2020-03-11 01:26:45,915 [INFO   ] [TRADER] Cancelling bid 292
+2020-03-11 01:26:45,915 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:45,916 [INFO   ] [TRADER] Order 291 filled (0 / 0)
+2020-03-11 01:26:45,916 [INFO   ] [TRADER] Order 290 filled (0 / 0)
+2020-03-11 01:26:45,917 [INFO   ] [TRADER] Order 292 filled (0 / 0)
+2020-03-11 01:26:45,964 [INFO   ] [TRADER] Placing quotes (293, 294). Bid: 4 @ $3426, Ask: 8 @ $3427
+2020-03-11 01:26:45,964 [INFO   ] [TRADER] Placing quotes (295, 296). Bid: 1 @ $3425, Ask: 2 @ $3428
+2020-03-11 01:26:45,965 [INFO   ] [TRADER] Order 293 filled (4 / 4)
+2020-03-11 01:26:45,965 [INFO   ] [TRADER] Position changed to ETF: 12, FUTURE: -12
+2020-03-11 01:26:45,965 [INFO   ] [TRADER] Order 294 filled (0 / 8)
+2020-03-11 01:26:45,965 [INFO   ] [TRADER] Order 295 filled (0 / 1)
+2020-03-11 01:26:45,965 [INFO   ] [TRADER] Order 296 filled (0 / 2)
+2020-03-11 01:26:46,013 [INFO   ] [TRADER] Cancelling bid 295
+2020-03-11 01:26:46,013 [INFO   ] [TRADER] Cancelling bid 294
+2020-03-11 01:26:46,014 [INFO   ] [TRADER] Cancelling bid 296
+2020-03-11 01:26:46,014 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:46,015 [INFO   ] [TRADER] Order 295 filled (0 / 0)
+2020-03-11 01:26:46,015 [INFO   ] [TRADER] Order 294 filled (0 / 0)
+2020-03-11 01:26:46,015 [INFO   ] [TRADER] Order 296 filled (0 / 0)
+2020-03-11 01:26:46,067 [INFO   ] [TRADER] Placing quotes (297, 298). Bid: 4 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:26:46,068 [INFO   ] [TRADER] Placing quotes (299, 300). Bid: 1 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:26:46,070 [INFO   ] [TRADER] Order 297 filled (0 / 4)
+2020-03-11 01:26:46,070 [INFO   ] [TRADER] Order 298 filled (0 / 8)
+2020-03-11 01:26:46,070 [INFO   ] [TRADER] Order 299 filled (0 / 1)
+2020-03-11 01:26:46,071 [INFO   ] [TRADER] Order 300 filled (0 / 2)
+2020-03-11 01:26:46,113 [INFO   ] [TRADER] Order 297 filled (4 / 4)
+2020-03-11 01:26:46,113 [INFO   ] [TRADER] Position changed to ETF: 16, FUTURE: -16
+2020-03-11 01:26:46,113 [INFO   ] [TRADER] Cancelling bid 299
+2020-03-11 01:26:46,113 [INFO   ] [TRADER] Cancelling bid 298
+2020-03-11 01:26:46,113 [INFO   ] [TRADER] Cancelling bid 300
+2020-03-11 01:26:46,114 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:46,114 [INFO   ] [TRADER] Order 299 filled (0 / 0)
+2020-03-11 01:26:46,114 [INFO   ] [TRADER] Order 298 filled (0 / 0)
+2020-03-11 01:26:46,114 [INFO   ] [TRADER] Order 300 filled (0 / 0)
+2020-03-11 01:26:46,163 [INFO   ] [TRADER] Placing quotes (301, 302). Bid: 3 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:26:46,163 [INFO   ] [TRADER] Placing quotes (303, 304). Bid: 0 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:26:46,163 [INFO   ] [TRADER] Order 301 filled (1 / 3)
+2020-03-11 01:26:46,164 [INFO   ] [TRADER] Position changed to ETF: 17, FUTURE: -17
+2020-03-11 01:26:46,164 [INFO   ] [TRADER] Order 302 filled (0 / 8)
+2020-03-11 01:26:46,164 [WARNING] [TRADER] error with order 303: order rejected: invalid volume
+2020-03-11 01:26:46,164 [INFO   ] [TRADER] Order 303 filled (0 / 0)
+2020-03-11 01:26:46,164 [INFO   ] [TRADER] Order 304 filled (0 / 2)
+2020-03-11 01:26:46,212 [INFO   ] [TRADER] Cancelling bid 301
+2020-03-11 01:26:46,213 [INFO   ] [TRADER] Cancelling bid 302
+2020-03-11 01:26:46,213 [INFO   ] [TRADER] Cancelling bid 304
+2020-03-11 01:26:46,213 [INFO   ] [TRADER] Timeout
+2020-03-11 01:26:46,213 [INFO   ] [TRADER] Order 301 filled (1 / 1)
+2020-03-11 01:26:46,213 [INFO   ] [TRADER] Order 302 filled (0 / 0)
+2020-03-11 01:26:46,213 [INFO   ] [TRADER] Order 304 filled (0 / 0)
+2020-03-11 01:26:46,264 [INFO   ] [TRADER] Placing quotes (305, 306). Bid: 3 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:26:46,264 [INFO   ] [TRADER] Placing quotes (307, 308). Bid: 0 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:26:46,265 [INFO   ] [TRADER] Order 305 filled (3 / 3)
+2020-03-11 01:26:46,265 [INFO   ] [TRADER] Position changed to ETF: 20, FUTURE: -20
+2020-03-11 01:26:46,265 [INFO   ] [TRADER] Order 306 filled (0 / 8)
+2020-03-11 01:26:46,265 [WARNING] [TRADER] error with order 307: order rejected: invalid volume
+2020-03-11 01:26:46,265 [INFO   ] [TRADER] Order 307 filled (0 / 0)
+2020-03-11 01:26:46,265 [INFO   ] [TRADER] Order 308 filled (0 / 2)
+2020-03-11 01:26:46,813 [INFO   ] [TRADER] Order 306 filled (7 / 8)
+2020-03-11 01:26:46,814 [INFO   ] [TRADER] Position changed to ETF: 13, FUTURE: -13
+2020-03-11 01:26:47,013 [INFO   ] [TRADER] Order 306 filled (8 / 8)
+2020-03-11 01:26:47,013 [INFO   ] [TRADER] Cancelling bid 308
+2020-03-11 01:26:47,013 [INFO   ] [TRADER] Position changed to ETF: 12, FUTURE: -12
+2020-03-11 01:26:47,014 [INFO   ] [TRADER] Order 308 filled (0 / 0)
+2020-03-11 01:26:47,064 [INFO   ] [TRADER] Placing quotes (309, 310). Bid: 4 @ $3430, Ask: 8 @ $3431
+2020-03-11 01:26:47,064 [INFO   ] [TRADER] Placing quotes (311, 312). Bid: 1 @ $3429, Ask: 2 @ $3432
+2020-03-11 01:26:47,065 [INFO   ] [TRADER] Order 309 filled (1 / 4)
+2020-03-11 01:26:47,065 [INFO   ] [TRADER] Position changed to ETF: 13, FUTURE: -13
+2020-03-11 01:26:47,066 [INFO   ] [TRADER] Order 309 filled (3 / 4)
+2020-03-11 01:26:47,066 [INFO   ] [TRADER] Position changed to ETF: 15, FUTURE: -15
+2020-03-11 01:26:47,066 [INFO   ] [TRADER] Order 309 filled (4 / 4)
+2020-03-11 01:26:47,066 [INFO   ] [TRADER] Position changed to ETF: 16, FUTURE: -16
+2020-03-11 01:26:47,066 [INFO   ] [TRADER] Order 310 filled (0 / 8)
+2020-03-11 01:26:47,066 [INFO   ] [TRADER] Order 311 filled (0 / 1)
+2020-03-11 01:26:47,066 [INFO   ] [TRADER] Order 312 filled (0 / 2)
+2020-03-11 01:26:47,113 [INFO   ] [TRADER] Order 311 filled (1 / 1)
+2020-03-11 01:26:47,114 [INFO   ] [TRADER] Position changed to ETF: 17, FUTURE: -17
+2020-03-11 01:26:50,563 [INFO   ] [TRADER] Order 310 filled (1 / 8)
+2020-03-11 01:26:50,563 [INFO   ] [TRADER] Position changed to ETF: 16, FUTURE: -16
+2020-03-11 01:26:51,013 [INFO   ] [TRADER] Order 310 filled (2 / 8)
+2020-03-11 01:26:51,013 [INFO   ] [TRADER] Position changed to ETF: 15, FUTURE: -15
+2020-03-11 01:26:51,013 [INFO   ] [TRADER] Order 310 filled (5 / 8)
+2020-03-11 01:26:51,013 [INFO   ] [TRADER] Position changed to ETF: 12, FUTURE: -12
+2020-03-11 01:26:51,013 [INFO   ] [TRADER] Order 310 filled (6 / 8)
+2020-03-11 01:26:51,013 [INFO   ] [TRADER] Position changed to ETF: 11, FUTURE: -11
+2020-03-11 01:26:53,515 [INFO   ] [TRADER] Order 310 filled (7 / 8)
+2020-03-11 01:26:53,516 [INFO   ] [TRADER] Position changed to ETF: 10, FUTURE: -10
+2020-03-11 01:27:22,716 [INFO   ] [TRADER] Order 310 filled (8 / 8)
+2020-03-11 01:27:22,717 [INFO   ] [TRADER] Cancelling bid 312
+2020-03-11 01:27:22,717 [INFO   ] [TRADER] Position changed to ETF: 9, FUTURE: -9
+2020-03-11 01:27:22,722 [INFO   ] [TRADER] Order 312 filled (0 / 0)
+2020-03-11 01:27:22,764 [INFO   ] [TRADER] Placing quotes (313, 314). Bid: 4 @ $3430, Ask: 8 @ $3431
+2020-03-11 01:27:22,765 [INFO   ] [TRADER] Placing quotes (315, 316). Bid: 1 @ $3429, Ask: 2 @ $3432
+2020-03-11 01:27:22,766 [INFO   ] [TRADER] Order 313 filled (0 / 4)
+2020-03-11 01:27:22,766 [INFO   ] [TRADER] Order 314 filled (0 / 8)
+2020-03-11 01:27:22,766 [INFO   ] [TRADER] Order 315 filled (0 / 1)
+2020-03-11 01:27:22,766 [INFO   ] [TRADER] Order 316 filled (0 / 2)
+2020-03-11 01:27:22,813 [INFO   ] [TRADER] Order 313 filled (1 / 4)
+2020-03-11 01:27:22,813 [INFO   ] [TRADER] Position changed to ETF: 10, FUTURE: -10
+2020-03-11 01:27:22,813 [INFO   ] [TRADER] Cancelling bid 313
+2020-03-11 01:27:22,813 [INFO   ] [TRADER] Cancelling bid 315
+2020-03-11 01:27:22,813 [INFO   ] [TRADER] Cancelling bid 314
+2020-03-11 01:27:22,813 [INFO   ] [TRADER] Cancelling bid 316
+2020-03-11 01:27:22,813 [INFO   ] [TRADER] Timeout
+2020-03-11 01:27:22,814 [INFO   ] [TRADER] Order 313 filled (1 / 1)
+2020-03-11 01:27:22,814 [INFO   ] [TRADER] Order 315 filled (0 / 0)
+2020-03-11 01:27:22,815 [INFO   ] [TRADER] Order 314 filled (0 / 0)
+2020-03-11 01:27:22,815 [INFO   ] [TRADER] Order 316 filled (0 / 0)
+2020-03-11 01:27:22,864 [INFO   ] [TRADER] Placing quotes (317, 318). Bid: 4 @ $3429, Ask: 8 @ $3430
+2020-03-11 01:27:22,864 [INFO   ] [TRADER] Placing quotes (319, 320). Bid: 1 @ $3428, Ask: 2 @ $3431
+2020-03-11 01:27:22,866 [INFO   ] [TRADER] Order 317 filled (0 / 4)
+2020-03-11 01:27:22,866 [INFO   ] [TRADER] Order 318 filled (0 / 8)
+2020-03-11 01:27:22,866 [INFO   ] [TRADER] Order 319 filled (0 / 1)
+2020-03-11 01:27:22,866 [INFO   ] [TRADER] Order 320 filled (0 / 2)
+2020-03-11 01:27:22,918 [INFO   ] [TRADER] Cancelling bid 317
+2020-03-11 01:27:22,918 [INFO   ] [TRADER] Cancelling bid 319
+2020-03-11 01:27:22,919 [INFO   ] [TRADER] Cancelling bid 318
+2020-03-11 01:27:22,919 [INFO   ] [TRADER] Cancelling bid 320
+2020-03-11 01:27:22,919 [INFO   ] [TRADER] Timeout
+2020-03-11 01:27:22,924 [INFO   ] [TRADER] Order 317 filled (0 / 0)
+2020-03-11 01:27:22,925 [INFO   ] [TRADER] Order 319 filled (0 / 0)
+2020-03-11 01:27:22,925 [INFO   ] [TRADER] Order 318 filled (0 / 0)
+2020-03-11 01:27:22,925 [INFO   ] [TRADER] Order 320 filled (0 / 0)
+2020-03-11 01:27:22,975 [INFO   ] [TRADER] Placing quotes (321, 322). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:27:22,975 [INFO   ] [TRADER] Placing quotes (323, 324). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:27:22,983 [INFO   ] [TRADER] Order 321 filled (0 / 4)
+2020-03-11 01:27:22,983 [INFO   ] [TRADER] Order 322 filled (0 / 8)
+2020-03-11 01:27:22,983 [INFO   ] [TRADER] Order 323 filled (0 / 1)
+2020-03-11 01:27:22,983 [INFO   ] [TRADER] Order 324 filled (0 / 2)
+2020-03-11 01:27:23,065 [INFO   ] [TRADER] Cancelling bid 321
+2020-03-11 01:27:23,065 [INFO   ] [TRADER] Cancelling bid 323
+2020-03-11 01:27:23,065 [INFO   ] [TRADER] Cancelling bid 322
+2020-03-11 01:27:23,065 [INFO   ] [TRADER] Cancelling bid 324
+2020-03-11 01:27:23,065 [INFO   ] [TRADER] Timeout
+2020-03-11 01:27:23,067 [INFO   ] [TRADER] Order 321 filled (0 / 0)
+2020-03-11 01:27:23,068 [INFO   ] [TRADER] Order 323 filled (0 / 0)
+2020-03-11 01:27:23,068 [INFO   ] [TRADER] Order 322 filled (0 / 0)
+2020-03-11 01:27:23,068 [INFO   ] [TRADER] Order 324 filled (0 / 0)
+2020-03-11 01:27:23,115 [INFO   ] [TRADER] Placing quotes (325, 326). Bid: 4 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:27:23,115 [INFO   ] [TRADER] Placing quotes (327, 328). Bid: 1 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:27:23,118 [INFO   ] [TRADER] Order 325 filled (0 / 4)
+2020-03-11 01:27:23,119 [INFO   ] [TRADER] Order 326 filled (2 / 8)
+2020-03-11 01:27:23,119 [INFO   ] [TRADER] Position changed to ETF: 8, FUTURE: -8
+2020-03-11 01:27:23,119 [INFO   ] [TRADER] Order 327 filled (0 / 1)
+2020-03-11 01:27:23,120 [INFO   ] [TRADER] Order 328 filled (0 / 2)
+2020-03-11 01:27:23,166 [INFO   ] [TRADER] Cancelling bid 325
+2020-03-11 01:27:23,167 [INFO   ] [TRADER] Cancelling bid 327
+2020-03-11 01:27:23,167 [INFO   ] [TRADER] Cancelling bid 326
+2020-03-11 01:27:23,167 [INFO   ] [TRADER] Cancelling bid 328
+2020-03-11 01:27:23,167 [INFO   ] [TRADER] Timeout
+2020-03-11 01:27:23,171 [INFO   ] [TRADER] Order 326 filled (3 / 8)
+2020-03-11 01:27:23,171 [INFO   ] [TRADER] Position changed to ETF: 7, FUTURE: -7
+2020-03-11 01:27:23,172 [INFO   ] [TRADER] Order 325 filled (0 / 0)
+2020-03-11 01:27:23,172 [INFO   ] [TRADER] Order 327 filled (0 / 0)
+2020-03-11 01:27:23,172 [INFO   ] [TRADER] Order 326 filled (3 / 3)
+2020-03-11 01:27:23,173 [INFO   ] [TRADER] Order 328 filled (0 / 0)
+2020-03-11 01:27:23,235 [INFO   ] [TRADER] Placing quotes (329, 330). Bid: 5 @ $3427, Ask: 8 @ $3428
+2020-03-11 01:27:23,235 [INFO   ] [TRADER] Placing quotes (331, 332). Bid: 1 @ $3426, Ask: 2 @ $3429
+2020-03-11 01:27:23,238 [INFO   ] [TRADER] Order 329 filled (0 / 5)
+2020-03-11 01:27:23,238 [INFO   ] [TRADER] Order 330 filled (0 / 8)
+2020-03-11 01:27:23,238 [INFO   ] [TRADER] Order 331 filled (0 / 1)
+2020-03-11 01:27:23,239 [INFO   ] [TRADER] Order 332 filled (0 / 2)
+2020-03-11 01:27:23,315 [INFO   ] [TRADER] Order 329 filled (5 / 5)
+2020-03-11 01:27:23,316 [INFO   ] [TRADER] Position changed to ETF: 12, FUTURE: -12
+2020-03-11 01:27:23,317 [INFO   ] [TRADER] Cancelling bid 331
+2020-03-11 01:27:23,317 [INFO   ] [TRADER] Cancelling bid 330
+2020-03-11 01:27:23,317 [INFO   ] [TRADER] Cancelling bid 332
+2020-03-11 01:27:23,317 [INFO   ] [TRADER] Timeout
+2020-03-11 01:27:23,318 [INFO   ] [TRADER] Order 331 filled (0 / 0)
+2020-03-11 01:27:23,318 [INFO   ] [TRADER] Order 330 filled (0 / 0)
+2020-03-11 01:27:23,318 [INFO   ] [TRADER] Order 332 filled (0 / 0)
+2020-03-11 01:27:23,367 [INFO   ] [TRADER] Placing quotes (333, 334). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:27:23,368 [INFO   ] [TRADER] Placing quotes (335, 336). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:27:23,372 [INFO   ] [TRADER] Order 333 filled (0 / 4)
+2020-03-11 01:27:23,373 [INFO   ] [TRADER] Order 334 filled (0 / 8)
+2020-03-11 01:27:23,373 [INFO   ] [TRADER] Order 335 filled (0 / 1)
+2020-03-11 01:27:23,373 [INFO   ] [TRADER] Order 336 filled (0 / 2)
+2020-03-11 01:27:23,414 [INFO   ] [TRADER] Cancelling bid 333
+2020-03-11 01:27:23,414 [INFO   ] [TRADER] Cancelling bid 335
+2020-03-11 01:27:23,414 [INFO   ] [TRADER] Cancelling bid 334
+2020-03-11 01:27:23,414 [INFO   ] [TRADER] Cancelling bid 336
+2020-03-11 01:27:23,414 [INFO   ] [TRADER] Timeout
+2020-03-11 01:27:23,415 [INFO   ] [TRADER] Order 333 filled (0 / 0)
+2020-03-11 01:27:23,415 [INFO   ] [TRADER] Order 335 filled (0 / 0)
+2020-03-11 01:27:23,415 [INFO   ] [TRADER] Order 334 filled (0 / 0)
+2020-03-11 01:27:23,415 [INFO   ] [TRADER] Order 336 filled (0 / 0)
+2020-03-11 01:27:23,466 [INFO   ] [TRADER] Placing quotes (337, 338). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:27:23,466 [INFO   ] [TRADER] Placing quotes (339, 340). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:27:23,466 [INFO   ] [TRADER] Order 337 filled (0 / 4)
+2020-03-11 01:27:23,466 [INFO   ] [TRADER] Order 338 filled (0 / 8)
+2020-03-11 01:27:23,467 [INFO   ] [TRADER] Order 339 filled (0 / 1)
+2020-03-11 01:27:23,467 [INFO   ] [TRADER] Order 340 filled (0 / 2)
+2020-03-11 01:27:23,514 [INFO   ] [TRADER] Cancelling bid 337
+2020-03-11 01:27:23,514 [INFO   ] [TRADER] Cancelling bid 339
+2020-03-11 01:27:23,514 [INFO   ] [TRADER] Cancelling bid 338
+2020-03-11 01:27:23,514 [INFO   ] [TRADER] Cancelling bid 340
+2020-03-11 01:27:23,514 [INFO   ] [TRADER] Timeout
+2020-03-11 01:27:23,514 [INFO   ] [TRADER] Order 337 filled (0 / 0)
+2020-03-11 01:27:23,514 [INFO   ] [TRADER] Order 339 filled (0 / 0)
+2020-03-11 01:27:23,514 [INFO   ] [TRADER] Order 338 filled (0 / 0)
+2020-03-11 01:27:23,514 [INFO   ] [TRADER] Order 340 filled (0 / 0)
+2020-03-11 01:27:23,564 [INFO   ] [TRADER] Placing quotes (341, 342). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:27:23,564 [INFO   ] [TRADER] Placing quotes (343, 344). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:27:23,566 [INFO   ] [TRADER] Order 341 filled (0 / 4)
+2020-03-11 01:27:23,566 [INFO   ] [TRADER] Order 342 filled (0 / 8)
+2020-03-11 01:27:23,566 [INFO   ] [TRADER] Order 343 filled (0 / 1)
+2020-03-11 01:27:23,566 [INFO   ] [TRADER] Order 344 filled (0 / 2)
+2020-03-11 01:27:23,613 [INFO   ] [TRADER] Cancelling bid 341
+2020-03-11 01:27:23,613 [INFO   ] [TRADER] Cancelling bid 343
+2020-03-11 01:27:23,613 [INFO   ] [TRADER] Cancelling bid 342
+2020-03-11 01:27:23,613 [INFO   ] [TRADER] Cancelling bid 344
+2020-03-11 01:27:23,613 [INFO   ] [TRADER] Timeout
+2020-03-11 01:27:23,614 [INFO   ] [TRADER] Order 341 filled (0 / 0)
+2020-03-11 01:27:23,614 [INFO   ] [TRADER] Order 343 filled (0 / 0)
+2020-03-11 01:27:23,614 [INFO   ] [TRADER] Order 342 filled (0 / 0)
+2020-03-11 01:27:23,614 [INFO   ] [TRADER] Order 344 filled (0 / 0)
+2020-03-11 01:27:23,666 [INFO   ] [TRADER] Placing quotes (345, 346). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:27:23,666 [INFO   ] [TRADER] Placing quotes (347, 348). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:27:23,668 [INFO   ] [TRADER] Order 345 filled (0 / 4)
+2020-03-11 01:27:23,669 [INFO   ] [TRADER] Order 346 filled (0 / 8)
+2020-03-11 01:27:23,669 [INFO   ] [TRADER] Order 347 filled (0 / 1)
+2020-03-11 01:27:23,669 [INFO   ] [TRADER] Order 348 filled (0 / 2)
+2020-03-11 01:27:23,714 [INFO   ] [TRADER] Cancelling bid 345
+2020-03-11 01:27:23,715 [INFO   ] [TRADER] Cancelling bid 347
+2020-03-11 01:27:23,715 [INFO   ] [TRADER] Cancelling bid 346
+2020-03-11 01:27:23,715 [INFO   ] [TRADER] Cancelling bid 348
+2020-03-11 01:27:23,715 [INFO   ] [TRADER] Timeout
+2020-03-11 01:27:23,716 [INFO   ] [TRADER] Order 345 filled (0 / 0)
+2020-03-11 01:27:23,716 [INFO   ] [TRADER] Order 347 filled (0 / 0)
+2020-03-11 01:27:23,716 [INFO   ] [TRADER] Order 346 filled (0 / 0)
+2020-03-11 01:27:23,716 [INFO   ] [TRADER] Order 348 filled (0 / 0)
+2020-03-11 01:27:23,770 [INFO   ] [TRADER] Placing quotes (349, 350). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:27:23,771 [INFO   ] [TRADER] Placing quotes (351, 352). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:27:23,775 [INFO   ] [TRADER] Order 349 filled (0 / 4)
+2020-03-11 01:27:23,776 [INFO   ] [TRADER] Order 350 filled (0 / 8)
+2020-03-11 01:27:23,776 [INFO   ] [TRADER] Order 351 filled (0 / 1)
+2020-03-11 01:27:23,776 [INFO   ] [TRADER] Order 352 filled (0 / 2)
+2020-03-11 01:27:23,817 [INFO   ] [TRADER] Cancelling bid 349
+2020-03-11 01:27:23,818 [INFO   ] [TRADER] Cancelling bid 351
+2020-03-11 01:27:23,818 [INFO   ] [TRADER] Cancelling bid 350
+2020-03-11 01:27:23,818 [INFO   ] [TRADER] Cancelling bid 352
+2020-03-11 01:27:23,818 [INFO   ] [TRADER] Timeout
+2020-03-11 01:27:23,819 [INFO   ] [TRADER] Order 349 filled (0 / 0)
+2020-03-11 01:27:23,819 [INFO   ] [TRADER] Order 351 filled (0 / 0)
+2020-03-11 01:27:23,819 [INFO   ] [TRADER] Order 350 filled (0 / 0)
+2020-03-11 01:27:23,819 [INFO   ] [TRADER] Order 352 filled (0 / 0)
+2020-03-11 01:27:23,863 [INFO   ] [TRADER] Placing quotes (353, 354). Bid: 4 @ $3428, Ask: 8 @ $3429
+2020-03-11 01:27:23,863 [INFO   ] [TRADER] Placing quotes (355, 356). Bid: 1 @ $3427, Ask: 2 @ $3430
+2020-03-11 01:27:23,864 [INFO   ] [TRADER] Order 353 filled (0 / 4)
+2020-03-11 01:27:23,864 [INFO   ] [TRADER] Order 354 filled (0 / 8)
+2020-03-11 01:27:23,864 [INFO   ] [TRADER] Order 355 filled (0 / 1)
+2020-03-11 01:27:23,864 [INFO   ] [TRADER] Order 356 filled (0 / 2)
+2020-03-11 01:27:23,915 [INFO   ] [TRADER] Cancelling bid 353
+2020-03-11 01:27:23,916 [INFO   ] [TRADER] Cancelling bid 355
+2020-03-11 01:27:23,916 [INFO   ] [TRADER] Cancelling bid 354
+2020-03-11 01:27:23,916 [INFO   ] [TRADER] Cancelling bid 356
+2020-03-11 01:27:23,916 [INFO   ] [TRADER] Timeout
+2020-03-11 01:27:23,917 [INFO   ] [TRADER] Order 353 filled (0 / 0)
+2020-03-11 01:27:23,917 [INFO   ] [TRADER] Order 355 filled (0 / 0)
+2020-03-11 01:27:23,917 [INFO   ] [TRADER] Order 354 filled (0 / 0)
+2020-03-11 01:27:23,917 [INFO   ] [TRADER] Order 356 filled (0 / 0)
+2020-03-11 01:27:23,973 [INFO   ] [TRADER] Placing quotes (357, 358). Bid: 4 @ $3430, Ask: 8 @ $3431
+2020-03-11 01:27:23,974 [INFO   ] [TRADER] Placing quotes (359, 360). Bid: 1 @ $3429, Ask: 2 @ $3432
+2020-03-11 01:27:23,976 [INFO   ] [TRADER] Order 357 filled (4 / 4)
+2020-03-11 01:27:23,976 [INFO   ] [TRADER] Position changed to ETF: 16, FUTURE: -16
+2020-03-11 01:27:23,976 [INFO   ] [TRADER] Order 358 filled (0 / 8)
+2020-03-11 01:27:23,976 [INFO   ] [TRADER] Order 359 filled (1 / 1)
+2020-03-11 01:27:23,976 [INFO   ] [TRADER] Position changed to ETF: 17, FUTURE: -17
+2020-03-11 01:27:23,976 [INFO   ] [TRADER] Order 360 filled (0 / 2)
+2020-03-11 01:27:25,663 [INFO   ] [TRADER] Order 358 filled (8 / 8)
+2020-03-11 01:27:25,664 [INFO   ] [TRADER] Cancelling bid 360
+2020-03-11 01:27:25,664 [INFO   ] [TRADER] Position changed to ETF: 9, FUTURE: -9
+2020-03-11 01:27:25,667 [INFO   ] [TRADER] Order 360 filled (0 / 0)
+2020-03-11 01:27:25,717 [INFO   ] [TRADER] Placing quotes (361, 362). Bid: 4 @ $3436, Ask: 8 @ $3437
+2020-03-11 01:27:25,718 [INFO   ] [TRADER] Placing quotes (363, 364). Bid: 1 @ $3435, Ask: 2 @ $3438
+2020-03-11 01:27:25,722 [INFO   ] [TRADER] Order 361 filled (4 / 4)
+2020-03-11 01:27:25,722 [INFO   ] [TRADER] Position changed to ETF: 13, FUTURE: -13
+2020-03-11 01:27:25,722 [INFO   ] [TRADER] Order 362 filled (0 / 8)
+2020-03-11 01:27:25,722 [INFO   ] [TRADER] Order 363 filled (1 / 1)
+2020-03-11 01:27:25,722 [INFO   ] [TRADER] Position changed to ETF: 14, FUTURE: -14
+2020-03-11 01:27:25,722 [INFO   ] [TRADER] Order 364 filled (0 / 2)
+2020-03-11 01:27:27,164 [INFO   ] [TRADER] Order 362 filled (8 / 8)
+2020-03-11 01:27:27,164 [INFO   ] [TRADER] Cancelling bid 364
+2020-03-11 01:27:27,164 [INFO   ] [TRADER] Position changed to ETF: 6, FUTURE: -6
+2020-03-11 01:27:27,169 [INFO   ] [TRADER] Order 364 filled (0 / 0)
+2020-03-11 01:27:27,215 [INFO   ] [TRADER] Placing quotes (365, 366). Bid: 5 @ $3443, Ask: 8 @ $3444
+2020-03-11 01:27:27,215 [INFO   ] [TRADER] Placing quotes (367, 368). Bid: 1 @ $3442, Ask: 2 @ $3445
+2020-03-11 01:27:27,218 [INFO   ] [TRADER] Order 365 filled (5 / 5)
+2020-03-11 01:27:27,219 [INFO   ] [TRADER] Position changed to ETF: 11, FUTURE: -11
+2020-03-11 01:27:27,219 [INFO   ] [TRADER] Order 366 filled (0 / 8)
+2020-03-11 01:27:27,220 [INFO   ] [TRADER] Order 367 filled (1 / 1)
+2020-03-11 01:27:27,220 [INFO   ] [TRADER] Position changed to ETF: 12, FUTURE: -12
+2020-03-11 01:27:27,220 [INFO   ] [TRADER] Order 368 filled (0 / 2)
+2020-03-11 01:27:33,815 [INFO   ] [TRADER] Order 366 filled (8 / 8)
+2020-03-11 01:27:33,816 [INFO   ] [TRADER] Cancelling bid 368
+2020-03-11 01:27:33,816 [INFO   ] [TRADER] Position changed to ETF: 4, FUTURE: -4
+2020-03-11 01:27:33,818 [INFO   ] [TRADER] Order 368 filled (0 / 0)
+2020-03-11 01:27:33,877 [INFO   ] [TRADER] Placing quotes (369, 370). Bid: 6 @ $3448, Ask: 8 @ $3449
+2020-03-11 01:27:33,878 [INFO   ] [TRADER] Placing quotes (371, 372). Bid: 1 @ $3447, Ask: 2 @ $3450
+2020-03-11 01:27:33,891 [INFO   ] [TRADER] Order 369 filled (6 / 6)
+2020-03-11 01:27:33,891 [INFO   ] [TRADER] Position changed to ETF: 10, FUTURE: -10
+2020-03-11 01:27:33,894 [INFO   ] [TRADER] Order 370 filled (0 / 8)
+2020-03-11 01:27:33,897 [INFO   ] [TRADER] Order 371 filled (1 / 1)
+2020-03-11 01:27:33,899 [INFO   ] [TRADER] Position changed to ETF: 11, FUTURE: -11
+2020-03-11 01:27:33,899 [INFO   ] [TRADER] Order 372 filled (0 / 2)
+2020-03-11 01:27:35,040 [INFO   ] [TRADER] Order 370 filled (8 / 8)
+2020-03-11 01:27:35,040 [INFO   ] [TRADER] Cancelling bid 372
+2020-03-11 01:27:35,042 [INFO   ] [TRADER] Position changed to ETF: 3, FUTURE: -3
+2020-03-11 01:27:35,051 [INFO   ] [TRADER] Order 372 filled (0 / 0)
+2020-03-11 01:27:35,066 [INFO   ] [TRADER] Placing quotes (373, 374). Bid: 6 @ $3452, Ask: 8 @ $3453
+2020-03-11 01:27:35,066 [INFO   ] [TRADER] Placing quotes (375, 376). Bid: 1 @ $3451, Ask: 2 @ $3454
+2020-03-11 01:27:35,069 [INFO   ] [TRADER] Order 373 filled (6 / 6)
+2020-03-11 01:27:35,069 [INFO   ] [TRADER] Position changed to ETF: 9, FUTURE: -9
+2020-03-11 01:27:35,069 [INFO   ] [TRADER] Order 374 filled (0 / 8)
+2020-03-11 01:27:35,069 [INFO   ] [TRADER] Order 375 filled (1 / 1)
+2020-03-11 01:27:35,069 [INFO   ] [TRADER] Position changed to ETF: 10, FUTURE: -10
+2020-03-11 01:27:35,069 [INFO   ] [TRADER] Order 376 filled (0 / 2)
+2020-03-11 01:27:35,765 [INFO   ] [TRADER] Order 374 filled (1 / 8)
+2020-03-11 01:27:35,765 [INFO   ] [TRADER] Position changed to ETF: 9, FUTURE: -9
+2020-03-11 01:27:35,767 [INFO   ] [TRADER] Order 374 filled (3 / 8)
+2020-03-11 01:27:35,767 [INFO   ] [TRADER] Position changed to ETF: 7, FUTURE: -7
+2020-03-11 01:27:35,816 [INFO   ] [TRADER] Order 374 filled (8 / 8)
+2020-03-11 01:27:35,817 [INFO   ] [TRADER] Cancelling bid 376
+2020-03-11 01:27:35,819 [INFO   ] [TRADER] Position changed to ETF: 2, FUTURE: -2
+2020-03-11 01:27:35,843 [INFO   ] [TRADER] Order 376 filled (0 / 0)
+2020-03-11 01:27:35,864 [INFO   ] [TRADER] Placing quotes (377, 378). Bid: 7 @ $3455, Ask: 8 @ $3456
+2020-03-11 01:27:35,864 [INFO   ] [TRADER] Placing quotes (379, 380). Bid: 1 @ $3454, Ask: 2 @ $3457
+2020-03-11 01:27:35,871 [INFO   ] [TRADER] Order 377 filled (1 / 7)
+2020-03-11 01:27:35,873 [INFO   ] [TRADER] Position changed to ETF: 3, FUTURE: -3
+2020-03-11 01:27:35,873 [INFO   ] [TRADER] Order 377 filled (7 / 7)
+2020-03-11 01:27:35,873 [INFO   ] [TRADER] Position changed to ETF: 9, FUTURE: -9
+2020-03-11 01:27:35,874 [INFO   ] [TRADER] Order 378 filled (0 / 8)
+2020-03-11 01:27:35,877 [INFO   ] [TRADER] Order 379 filled (0 / 1)
+2020-03-11 01:27:35,878 [INFO   ] [TRADER] Order 380 filled (0 / 2)
+2020-03-11 01:27:35,916 [INFO   ] [TRADER] Cancelling bid 379
+2020-03-11 01:27:35,916 [INFO   ] [TRADER] Cancelling bid 378
+2020-03-11 01:27:35,916 [INFO   ] [TRADER] Cancelling bid 380
+2020-03-11 01:27:35,917 [INFO   ] [TRADER] Timeout
+2020-03-11 01:27:35,920 [INFO   ] [TRADER] Order 379 filled (1 / 1)
+2020-03-11 01:27:35,921 [INFO   ] [TRADER] Position changed to ETF: 10, FUTURE: -10
+2020-03-11 01:27:35,922 [INFO   ] [TRADER] Order 378 filled (0 / 0)
+2020-03-11 01:27:35,923 [INFO   ] [TRADER] Order 380 filled (0 / 0)
+2020-03-11 01:27:35,974 [INFO   ] [TRADER] Placing quotes (381, 382). Bid: 4 @ $3454, Ask: 8 @ $3455
+2020-03-11 01:27:35,974 [INFO   ] [TRADER] Placing quotes (383, 384). Bid: 1 @ $3453, Ask: 2 @ $3456
+2020-03-11 01:27:35,984 [INFO   ] [TRADER] Order 381 filled (0 / 4)
+2020-03-11 01:27:35,986 [INFO   ] [TRADER] Order 382 filled (0 / 8)
+2020-03-11 01:27:35,986 [INFO   ] [TRADER] Order 383 filled (0 / 1)
+2020-03-11 01:27:35,987 [INFO   ] [TRADER] Order 384 filled (0 / 2)
+2020-03-11 01:27:36,016 [INFO   ] [TRADER] Order 381 filled (2 / 4)
+2020-03-11 01:27:36,017 [INFO   ] [TRADER] Position changed to ETF: 12, FUTURE: -12
+2020-03-11 01:27:36,018 [INFO   ] [TRADER] Order 381 filled (4 / 4)
+2020-03-11 01:27:36,019 [INFO   ] [TRADER] Position changed to ETF: 14, FUTURE: -14
+2020-03-11 01:27:36,020 [INFO   ] [TRADER] Cancelling bid 383
+2020-03-11 01:27:36,020 [INFO   ] [TRADER] Cancelling bid 382
+2020-03-11 01:27:36,020 [INFO   ] [TRADER] Cancelling bid 384
+2020-03-11 01:27:36,020 [INFO   ] [TRADER] Timeout
+2020-03-11 01:27:36,022 [INFO   ] [TRADER] Order 383 filled (1 / 1)
+2020-03-11 01:27:36,022 [INFO   ] [TRADER] Position changed to ETF: 15, FUTURE: -15
+2020-03-11 01:27:36,022 [INFO   ] [TRADER] Order 382 filled (0 / 0)
+2020-03-11 01:27:36,022 [INFO   ] [TRADER] Order 384 filled (0 / 0)
+2020-03-11 01:27:36,077 [INFO   ] [TRADER] Placing quotes (385, 386). Bid: 3 @ $3451, Ask: 8 @ $3452
+2020-03-11 01:27:36,077 [INFO   ] [TRADER] Placing quotes (387, 388). Bid: 0 @ $3450, Ask: 2 @ $3453
+2020-03-11 01:27:36,098 [INFO   ] [TRADER] Order 385 filled (0 / 3)
+2020-03-11 01:27:36,099 [INFO   ] [TRADER] Order 386 filled (0 / 8)
+2020-03-11 01:27:36,099 [WARNING] [TRADER] error with order 387: order rejected: invalid volume
+2020-03-11 01:27:36,099 [INFO   ] [TRADER] Order 387 filled (0 / 0)
+2020-03-11 01:27:36,099 [INFO   ] [TRADER] Order 388 filled (0 / 2)
+2020-03-11 01:27:36,118 [INFO   ] [TRADER] Order 385 filled (3 / 3)
+2020-03-11 01:27:36,118 [INFO   ] [TRADER] Position changed to ETF: 18, FUTURE: -18
+2020-03-11 01:27:36,563 [INFO   ] [TRADER] Order 386 filled (8 / 8)
+2020-03-11 01:27:36,563 [INFO   ] [TRADER] Cancelling bid 388
+2020-03-11 01:27:36,564 [INFO   ] [TRADER] Position changed to ETF: 10, FUTURE: -10
+2020-03-11 01:27:36,570 [INFO   ] [TRADER] Order 388 filled (0 / 0)
+2020-03-11 01:27:36,618 [INFO   ] [TRADER] Placing quotes (389, 390). Bid: 4 @ $3450, Ask: 8 @ $3451
+2020-03-11 01:27:36,618 [INFO   ] [TRADER] Placing quotes (391, 392). Bid: 1 @ $3449, Ask: 2 @ $3452
+2020-03-11 01:27:36,623 [INFO   ] [TRADER] Order 389 filled (1 / 4)
+2020-03-11 01:27:36,624 [INFO   ] [TRADER] Position changed to ETF: 11, FUTURE: -11
+2020-03-11 01:27:36,624 [INFO   ] [TRADER] Order 390 filled (0 / 8)
+2020-03-11 01:27:36,624 [INFO   ] [TRADER] Order 391 filled (0 / 1)
+2020-03-11 01:27:36,624 [INFO   ] [TRADER] Order 392 filled (0 / 2)
+2020-03-11 01:27:36,664 [INFO   ] [TRADER] Order 389 filled (2 / 4)
+2020-03-11 01:27:36,664 [INFO   ] [TRADER] Position changed to ETF: 12, FUTURE: -12
+2020-03-11 01:27:36,664 [INFO   ] [TRADER] Cancelling bid 389
+2020-03-11 01:27:36,665 [INFO   ] [TRADER] Cancelling bid 391
+2020-03-11 01:27:36,665 [INFO   ] [TRADER] Cancelling bid 390
+2020-03-11 01:27:36,665 [INFO   ] [TRADER] Cancelling bid 392
+2020-03-11 01:27:36,665 [INFO   ] [TRADER] Timeout
+2020-03-11 01:27:36,666 [INFO   ] [TRADER] Order 389 filled (3 / 4)
+2020-03-11 01:27:36,666 [INFO   ] [TRADER] Position changed to ETF: 13, FUTURE: -13
+2020-03-11 01:27:36,666 [INFO   ] [TRADER] Order 390 filled (1 / 8)
+2020-03-11 01:27:36,666 [INFO   ] [TRADER] Position changed to ETF: 12, FUTURE: -12
+2020-03-11 01:27:36,667 [INFO   ] [TRADER] Order 389 filled (3 / 3)
+2020-03-11 01:27:36,667 [INFO   ] [TRADER] Order 391 filled (0 / 0)
+2020-03-11 01:27:36,667 [INFO   ] [TRADER] Order 390 filled (1 / 1)
+2020-03-11 01:27:36,667 [INFO   ] [TRADER] Order 392 filled (0 / 0)
+2020-03-11 01:27:36,714 [INFO   ] [TRADER] Placing quotes (393, 394). Bid: 4 @ $3451, Ask: 8 @ $3452
+2020-03-11 01:27:36,714 [INFO   ] [TRADER] Placing quotes (395, 396). Bid: 1 @ $3450, Ask: 2 @ $3453
+2020-03-11 01:27:36,715 [INFO   ] [TRADER] Order 393 filled (0 / 4)
+2020-03-11 01:27:36,715 [INFO   ] [TRADER] Order 394 filled (0 / 8)
+2020-03-11 01:27:36,715 [INFO   ] [TRADER] Order 395 filled (0 / 1)
+2020-03-11 01:27:36,715 [INFO   ] [TRADER] Order 396 filled (0 / 2)
+2020-03-11 01:27:36,762 [INFO   ] [TRADER] Order 393 filled (4 / 4)
+2020-03-11 01:27:36,762 [INFO   ] [TRADER] Position changed to ETF: 16, FUTURE: -16
+2020-03-11 01:27:36,763 [INFO   ] [TRADER] Cancelling bid 395
+2020-03-11 01:27:36,763 [INFO   ] [TRADER] Cancelling bid 394
+2020-03-11 01:27:36,763 [INFO   ] [TRADER] Cancelling bid 396
+2020-03-11 01:27:36,764 [INFO   ] [TRADER] Timeout
+2020-03-11 01:27:36,764 [INFO   ] [TRADER] Order 394 filled (2 / 8)
+2020-03-11 01:27:36,764 [INFO   ] [TRADER] Position changed to ETF: 14, FUTURE: -14
+2020-03-11 01:27:36,764 [INFO   ] [TRADER] Order 395 filled (0 / 0)
+2020-03-11 01:27:36,764 [INFO   ] [TRADER] Order 394 filled (2 / 2)
+2020-03-11 01:27:36,764 [INFO   ] [TRADER] Order 396 filled (0 / 0)
+2020-03-11 01:27:36,814 [INFO   ] [TRADER] Placing quotes (397, 398). Bid: 3 @ $3452, Ask: 8 @ $3453
+2020-03-11 01:27:36,814 [INFO   ] [TRADER] Placing quotes (399, 400). Bid: 0 @ $3451, Ask: 2 @ $3454
+2020-03-11 01:27:36,816 [INFO   ] [TRADER] Order 397 filled (3 / 3)
+2020-03-11 01:27:36,816 [INFO   ] [TRADER] Position changed to ETF: 17, FUTURE: -17
+2020-03-11 01:27:36,816 [INFO   ] [TRADER] Order 398 filled (0 / 8)
+2020-03-11 01:27:36,816 [WARNING] [TRADER] error with order 399: order rejected: invalid volume
+2020-03-11 01:27:36,816 [INFO   ] [TRADER] Order 399 filled (0 / 0)
+2020-03-11 01:27:36,816 [INFO   ] [TRADER] Order 400 filled (0 / 2)
+2020-03-11 01:27:36,968 [INFO   ] [TRADER] Order 398 filled (1 / 8)
+2020-03-11 01:27:36,968 [INFO   ] [TRADER] Position changed to ETF: 16, FUTURE: -16
+2020-03-11 01:27:37,020 [INFO   ] [TRADER] Order 398 filled (6 / 8)
+2020-03-11 01:27:37,021 [INFO   ] [TRADER] Position changed to ETF: 11, FUTURE: -11
+2020-03-11 01:27:37,022 [INFO   ] [TRADER] Order 398 filled (8 / 8)
+2020-03-11 01:27:37,022 [INFO   ] [TRADER] Cancelling bid 400
+2020-03-11 01:27:37,022 [INFO   ] [TRADER] Position changed to ETF: 9, FUTURE: -9
+2020-03-11 01:27:37,023 [INFO   ] [TRADER] Order 400 filled (0 / 0)
+2020-03-11 01:27:37,073 [INFO   ] [TRADER] Placing quotes (401, 402). Bid: 4 @ $3453, Ask: 8 @ $3454
+2020-03-11 01:27:37,073 [INFO   ] [TRADER] Placing quotes (403, 404). Bid: 1 @ $3452, Ask: 2 @ $3455
+2020-03-11 01:27:37,075 [INFO   ] [TRADER] Order 401 filled (0 / 4)
+2020-03-11 01:27:37,075 [INFO   ] [TRADER] Order 402 filled (0 / 8)
+2020-03-11 01:27:37,076 [INFO   ] [TRADER] Order 403 filled (0 / 1)
+2020-03-11 01:27:37,076 [INFO   ] [TRADER] Order 404 filled (0 / 2)
+2020-03-11 01:27:37,115 [INFO   ] [TRADER] Order 401 filled (4 / 4)
+2020-03-11 01:27:37,115 [INFO   ] [TRADER] Position changed to ETF: 13, FUTURE: -13
+2020-03-11 01:27:37,115 [INFO   ] [TRADER] Cancelling bid 403
+2020-03-11 01:27:37,115 [INFO   ] [TRADER] Cancelling bid 402
+2020-03-11 01:27:37,115 [INFO   ] [TRADER] Cancelling bid 404
+2020-03-11 01:27:37,115 [INFO   ] [TRADER] Timeout
+2020-03-11 01:27:37,116 [INFO   ] [TRADER] Order 403 filled (0 / 0)
+2020-03-11 01:27:37,116 [INFO   ] [TRADER] Order 402 filled (0 / 0)
+2020-03-11 01:27:37,116 [INFO   ] [TRADER] Order 404 filled (0 / 0)
+2020-03-11 01:27:37,164 [INFO   ] [TRADER] Placing quotes (405, 406). Bid: 4 @ $3453, Ask: 8 @ $3454
+2020-03-11 01:27:37,164 [INFO   ] [TRADER] Placing quotes (407, 408). Bid: 1 @ $3452, Ask: 2 @ $3455
+2020-03-11 01:27:37,164 [INFO   ] [TRADER] Order 405 filled (1 / 4)
+2020-03-11 01:27:37,164 [INFO   ] [TRADER] Position changed to ETF: 14, FUTURE: -14
+2020-03-11 01:27:37,164 [INFO   ] [TRADER] Order 406 filled (0 / 8)
+2020-03-11 01:27:37,164 [INFO   ] [TRADER] Order 407 filled (0 / 1)
+2020-03-11 01:27:37,164 [INFO   ] [TRADER] Order 408 filled (0 / 2)
+2020-03-11 01:27:37,213 [INFO   ] [TRADER] Order 405 filled (4 / 4)
+2020-03-11 01:27:37,213 [INFO   ] [TRADER] Position changed to ETF: 17, FUTURE: -17
+2020-03-11 01:27:37,217 [INFO   ] [TRADER] Cancelling bid 407
+2020-03-11 01:27:37,218 [INFO   ] [TRADER] Cancelling bid 406
+2020-03-11 01:27:37,218 [INFO   ] [TRADER] Cancelling bid 408
+2020-03-11 01:27:37,218 [INFO   ] [TRADER] Timeout
+2020-03-11 01:27:37,223 [INFO   ] [TRADER] Order 407 filled (0 / 0)
+2020-03-11 01:27:37,223 [INFO   ] [TRADER] Order 406 filled (0 / 0)
+2020-03-11 01:27:37,224 [INFO   ] [TRADER] Order 408 filled (0 / 0)
+2020-03-11 01:27:37,265 [INFO   ] [TRADER] Placing quotes (409, 410). Bid: 3 @ $3452, Ask: 8 @ $3453
+2020-03-11 01:27:37,266 [INFO   ] [TRADER] Placing quotes (411, 412). Bid: 0 @ $3451, Ask: 2 @ $3454
+2020-03-11 01:27:37,271 [INFO   ] [TRADER] Order 409 filled (0 / 3)
+2020-03-11 01:27:37,272 [INFO   ] [TRADER] Order 410 filled (0 / 8)
+2020-03-11 01:27:37,272 [WARNING] [TRADER] error with order 411: order rejected: invalid volume
+2020-03-11 01:27:37,273 [INFO   ] [TRADER] Order 411 filled (0 / 0)
+2020-03-11 01:27:37,273 [INFO   ] [TRADER] Order 412 filled (0 / 2)
+2020-03-11 01:27:37,317 [INFO   ] [TRADER] Cancelling bid 409
+2020-03-11 01:27:37,317 [INFO   ] [TRADER] Cancelling bid 410
+2020-03-11 01:27:37,318 [INFO   ] [TRADER] Cancelling bid 412
+2020-03-11 01:27:37,318 [INFO   ] [TRADER] Timeout
+2020-03-11 01:27:37,323 [INFO   ] [TRADER] Order 409 filled (1 / 3)
+2020-03-11 01:27:37,323 [INFO   ] [TRADER] Position changed to ETF: 18, FUTURE: -18
+2020-03-11 01:27:37,325 [INFO   ] [TRADER] Order 409 filled (1 / 1)
+2020-03-11 01:27:37,325 [INFO   ] [TRADER] Order 410 filled (0 / 0)
+2020-03-11 01:27:37,325 [INFO   ] [TRADER] Order 412 filled (0 / 0)
+2020-03-11 01:27:37,368 [INFO   ] [TRADER] Placing quotes (413, 414). Bid: 3 @ $3453, Ask: 8 @ $3454
+2020-03-11 01:27:37,368 [INFO   ] [TRADER] Placing quotes (415, 416). Bid: 0 @ $3452, Ask: 2 @ $3455
+2020-03-11 01:27:37,370 [INFO   ] [TRADER] Order 413 filled (3 / 3)
+2020-03-11 01:27:37,370 [INFO   ] [TRADER] Position changed to ETF: 21, FUTURE: -21
+2020-03-11 01:27:37,371 [INFO   ] [TRADER] Order 414 filled (0 / 8)
+2020-03-11 01:27:37,371 [WARNING] [TRADER] error with order 415: order rejected: invalid volume
+2020-03-11 01:27:37,371 [INFO   ] [TRADER] Order 415 filled (0 / 0)
+2020-03-11 01:27:37,371 [INFO   ] [TRADER] Order 416 filled (0 / 2)

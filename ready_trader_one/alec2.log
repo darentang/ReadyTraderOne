@@ -1,260 +1,58 @@
-2020-03-12 13:47:47,788 [INFO   ] [APP] alec2 started with arguments={run.py}
-2020-03-12 13:47:47,789 [INFO   ] [APP] configuration={"Execution":{"Host":"127.0.0.1","Port":12345},"Information":{"AllowBroadcast":false,"Interface":"0.0.0.0","ListenAddress":"239.255.1.1","Port":12346},"TeamName":"AlecBotV2","Secret":"12345"}
-2020-03-12 13:47:52,345 [INFO   ] [TRADER] Placing quotes (1, 2). Bid: 50 @ $3409, Ask: 50 @ $3411
-2020-03-12 13:47:52,348 [INFO   ] [TRADER] Order 1 placed
-2020-03-12 13:47:52,348 [INFO   ] [TRADER] Order 2 placed
-2020-03-12 13:47:53,790 [INFO   ] [TRADER] Order 2 filled (6 / 50)
-2020-03-12 13:47:53,790 [INFO   ] [TRADER] Position changed to ETF: -6, FUTURE: 6
-2020-03-12 13:47:54,291 [INFO   ] [TRADER] Order 1 filled (1 / 50)
-2020-03-12 13:47:54,292 [INFO   ] [TRADER] Position changed to ETF: -5, FUTURE: 5
-2020-03-12 13:47:54,292 [INFO   ] [TRADER] Order 1 filled (14 / 50)
-2020-03-12 13:47:54,293 [INFO   ] [TRADER] Position changed to ETF: 8, FUTURE: -8
-2020-03-12 13:47:54,539 [INFO   ] [TRADER] Order 1 filled (20 / 50)
-2020-03-12 13:47:54,539 [INFO   ] [TRADER] Position changed to ETF: 14, FUTURE: -14
-2020-03-12 13:47:54,540 [INFO   ] [TRADER] Cancelling bid 1
-2020-03-12 13:47:54,540 [INFO   ] [TRADER] Cancelling ask 2
-2020-03-12 13:47:54,541 [INFO   ] [TRADER] Order 2 cancelled
-2020-03-12 13:47:54,795 [INFO   ] [TRADER] Placing quotes (3, 4). Bid: 46 @ $3409, Ask: 50 @ $3410
-2020-03-12 13:47:54,797 [INFO   ] [TRADER] Order 3 placed
-2020-03-12 13:47:54,797 [INFO   ] [TRADER] Order 4 placed
-2020-03-12 13:47:55,289 [INFO   ] [TRADER] Order 1 filled (24 / 50)
-2020-03-12 13:47:55,290 [INFO   ] [TRADER] Position changed to ETF: 18, FUTURE: -18
-2020-03-12 13:47:55,540 [INFO   ] [TRADER] Order 1 filled (32 / 50)
-2020-03-12 13:47:55,540 [INFO   ] [TRADER] Position changed to ETF: 26, FUTURE: -26
-2020-03-12 13:47:55,789 [INFO   ] [TRADER] Order 4 filled (11 / 50)
-2020-03-12 13:47:55,789 [INFO   ] [TRADER] Position changed to ETF: 15, FUTURE: -15
-2020-03-12 13:47:55,790 [INFO   ] [TRADER] Order 4 filled (18 / 50)
-2020-03-12 13:47:55,790 [INFO   ] [TRADER] Position changed to ETF: 8, FUTURE: -8
-2020-03-12 13:47:55,790 [INFO   ] [TRADER] Order 4 filled (30 / 50)
-2020-03-12 13:47:55,790 [INFO   ] [TRADER] Position changed to ETF: -4, FUTURE: 4
-2020-03-12 13:47:56,039 [INFO   ] [TRADER] Order 4 filled (36 / 50)
-2020-03-12 13:47:56,040 [INFO   ] [TRADER] Position changed to ETF: -10, FUTURE: 10
-2020-03-12 13:47:56,289 [INFO   ] [TRADER] Order 4 filled (46 / 50)
-2020-03-12 13:47:56,289 [INFO   ] [TRADER] Position changed to ETF: -20, FUTURE: 20
-2020-03-12 13:47:56,540 [INFO   ] [TRADER] Order 1 filled (45 / 50)
-2020-03-12 13:47:56,540 [INFO   ] [TRADER] Position changed to ETF: -7, FUTURE: 7
-2020-03-12 13:47:56,790 [INFO   ] [TRADER] Order 4 cancelled
-2020-03-12 13:47:56,790 [INFO   ] [TRADER] Position changed to ETF: -11, FUTURE: 11
-2020-03-12 13:47:56,791 [INFO   ] [TRADER] Order 1 cancelled
-2020-03-12 13:47:56,791 [INFO   ] [TRADER] Position changed to ETF: -6, FUTURE: 6
-2020-03-12 13:47:56,791 [INFO   ] [TRADER] Order 3 filled (1 / 46)
-2020-03-12 13:47:56,792 [INFO   ] [TRADER] Position changed to ETF: -5, FUTURE: 5
-2020-03-12 13:47:57,290 [INFO   ] [TRADER] Order 3 filled (7 / 46)
-2020-03-12 13:47:57,291 [INFO   ] [TRADER] Position changed to ETF: 1, FUTURE: -1
-2020-03-12 13:47:58,540 [INFO   ] [TRADER] Order 3 filled (10 / 46)
-2020-03-12 13:47:58,540 [INFO   ] [TRADER] Position changed to ETF: 4, FUTURE: -4
-2020-03-12 13:47:59,040 [INFO   ] [TRADER] Order 3 filled (12 / 46)
-2020-03-12 13:47:59,041 [INFO   ] [TRADER] Position changed to ETF: 6, FUTURE: -6
-2020-03-12 13:47:59,042 [INFO   ] [TRADER] Cancelling bid 3
-2020-03-12 13:47:59,044 [INFO   ] [TRADER] Placing quotes (5, 6). Bid: 48 @ $3408, Ask: 50 @ $3409
-2020-03-12 13:47:59,045 [INFO   ] [TRADER] Order 3 cancelled
-2020-03-12 13:47:59,046 [INFO   ] [TRADER] Order 5 placed
-2020-03-12 13:47:59,046 [INFO   ] [TRADER] Order 6 cancelled
-2020-03-12 13:47:59,046 [INFO   ] [TRADER] Position changed to ETF: -44, FUTURE: 44
-2020-03-12 13:48:01,291 [INFO   ] [TRADER] Cancelling bid 5
-2020-03-12 13:48:01,293 [INFO   ] [TRADER] Order 5 cancelled
-2020-03-12 13:48:01,540 [INFO   ] [TRADER] Placing quotes (7, 8). Bid: 50 @ $3409, Ask: 40 @ $3410
-2020-03-12 13:48:01,543 [INFO   ] [TRADER] Order 7 placed
-2020-03-12 13:48:01,543 [INFO   ] [TRADER] Order 8 placed
-2020-03-12 13:48:02,789 [INFO   ] [TRADER] Order 7 filled (1 / 50)
-2020-03-12 13:48:02,789 [INFO   ] [TRADER] Position changed to ETF: -43, FUTURE: 43
-2020-03-12 13:48:02,790 [INFO   ] [TRADER] Order 8 filled (15 / 40)
-2020-03-12 13:48:02,790 [INFO   ] [TRADER] Position changed to ETF: -58, FUTURE: 58
-2020-03-12 13:48:03,039 [INFO   ] [TRADER] Order 8 filled (19 / 40)
-2020-03-12 13:48:03,040 [INFO   ] [TRADER] Position changed to ETF: -62, FUTURE: 62
-2020-03-12 13:48:03,289 [INFO   ] [TRADER] Order 8 filled (21 / 40)
-2020-03-12 13:48:03,290 [INFO   ] [TRADER] Position changed to ETF: -64, FUTURE: 64
-2020-03-12 13:48:03,539 [INFO   ] [TRADER] Order 8 filled (32 / 40)
-2020-03-12 13:48:03,539 [INFO   ] [TRADER] Position changed to ETF: -75, FUTURE: 75
-2020-03-12 13:48:03,542 [INFO   ] [TRADER] Order 8 filled (36 / 40)
-2020-03-12 13:48:03,542 [INFO   ] [TRADER] Position changed to ETF: -79, FUTURE: 79
-2020-03-12 13:48:03,542 [INFO   ] [TRADER] Order 8 filled (37 / 40)
-2020-03-12 13:48:03,543 [INFO   ] [TRADER] Position changed to ETF: -80, FUTURE: 80
-2020-03-12 13:48:03,543 [INFO   ] [TRADER] Order 7 filled (3 / 50)
-2020-03-12 13:48:03,543 [INFO   ] [TRADER] Position changed to ETF: -78, FUTURE: 78
-2020-03-12 13:48:03,543 [INFO   ] [TRADER] Cancelling bid 7
-2020-03-12 13:48:03,544 [INFO   ] [TRADER] Cancelling ask 8
-2020-03-12 13:48:03,545 [INFO   ] [TRADER] Order 7 cancelled
-2020-03-12 13:48:03,546 [INFO   ] [TRADER] Order 8 cancelled
-2020-03-12 13:48:03,791 [INFO   ] [TRADER] Placing quotes (9, 10). Bid: 50 @ $3409, Ask: 11 @ $3410
-2020-03-12 13:48:03,792 [INFO   ] [TRADER] Order 9 placed
-2020-03-12 13:48:03,793 [INFO   ] [TRADER] Order 10 placed
-2020-03-12 13:48:04,289 [INFO   ] [TRADER] Order 10 filled (9 / 11)
-2020-03-12 13:48:04,290 [INFO   ] [TRADER] Position changed to ETF: -87, FUTURE: 87
-2020-03-12 13:48:04,539 [INFO   ] [TRADER] Order 10 cancelled
-2020-03-12 13:48:04,539 [INFO   ] [TRADER] Position changed to ETF: -89, FUTURE: 89
-2020-03-12 13:48:06,290 [INFO   ] [TRADER] Order 9 filled (2 / 50)
-2020-03-12 13:48:06,291 [INFO   ] [TRADER] Position changed to ETF: -87, FUTURE: 87
-2020-03-12 13:48:06,542 [INFO   ] [TRADER] Cancelling bid 9
-2020-03-12 13:48:06,544 [INFO   ] [TRADER] Placing quotes (11, 12). Bid: 50 @ $3409, Ask: 5 @ $3410
-2020-03-12 13:48:06,545 [INFO   ] [TRADER] Order 9 cancelled
-2020-03-12 13:48:06,545 [INFO   ] [TRADER] Order 11 placed
-2020-03-12 13:48:06,545 [INFO   ] [TRADER] Order 12 filled (2 / 5)
-2020-03-12 13:48:06,545 [INFO   ] [TRADER] Position changed to ETF: -89, FUTURE: 89
-2020-03-12 13:48:06,789 [INFO   ] [TRADER] Order 12 cancelled
-2020-03-12 13:48:06,790 [INFO   ] [TRADER] Position changed to ETF: -92, FUTURE: 92
-2020-03-12 13:48:08,791 [INFO   ] [TRADER] Cancelling bid 11
-2020-03-12 13:48:08,792 [INFO   ] [TRADER] Placing quotes (13, 14). Bid: 50 @ $3409, Ask: 1 @ $3410
-2020-03-12 13:48:08,796 [INFO   ] [TRADER] Order 11 cancelled
-2020-03-12 13:48:08,796 [INFO   ] [TRADER] Order 13 placed
-2020-03-12 13:48:08,797 [INFO   ] [TRADER] Order 14 cancelled
-2020-03-12 13:48:08,797 [INFO   ] [TRADER] Position changed to ETF: -93, FUTURE: 93
-2020-03-12 13:48:11,041 [INFO   ] [TRADER] Cancelling bid 13
-2020-03-12 13:48:11,042 [INFO   ] [TRADER] Order 13 cancelled
-2020-03-12 13:48:11,290 [INFO   ] [TRADER] Placing quotes (15, 16). Bid: 50 @ $3410, Ask: 1 @ $3412
-2020-03-12 13:48:11,291 [INFO   ] [TRADER] Order 15 placed
-2020-03-12 13:48:11,291 [INFO   ] [TRADER] Order 16 placed
-2020-03-12 13:48:13,040 [INFO   ] [TRADER] Order 15 filled (9 / 50)
-2020-03-12 13:48:13,042 [INFO   ] [TRADER] Position changed to ETF: -84, FUTURE: 84
-2020-03-12 13:48:13,540 [INFO   ] [TRADER] Cancelling bid 15
-2020-03-12 13:48:13,541 [INFO   ] [TRADER] Cancelling ask 16
-2020-03-12 13:48:13,543 [INFO   ] [TRADER] Order 15 cancelled
-2020-03-12 13:48:13,543 [INFO   ] [TRADER] Order 16 cancelled
-2020-03-12 13:48:13,790 [INFO   ] [TRADER] Placing quotes (17, 18). Bid: 50 @ $3410, Ask: 7 @ $3411
-2020-03-12 13:48:13,794 [INFO   ] [TRADER] Order 17 placed
-2020-03-12 13:48:13,794 [INFO   ] [TRADER] Order 18 placed
-2020-03-12 13:48:15,289 [INFO   ] [TRADER] Order 17 filled (13 / 50)
-2020-03-12 13:48:15,289 [INFO   ] [TRADER] Position changed to ETF: -71, FUTURE: 71
-2020-03-12 13:48:15,290 [INFO   ] [TRADER] Order 18 cancelled
-2020-03-12 13:48:15,291 [INFO   ] [TRADER] Position changed to ETF: -78, FUTURE: 78
-2020-03-12 13:48:15,540 [INFO   ] [TRADER] Order 17 filled (19 / 50)
-2020-03-12 13:48:15,541 [INFO   ] [TRADER] Position changed to ETF: -72, FUTURE: 72
-2020-03-12 13:48:15,542 [INFO   ] [TRADER] Order 17 filled (29 / 50)
-2020-03-12 13:48:15,543 [INFO   ] [TRADER] Position changed to ETF: -62, FUTURE: 62
-2020-03-12 13:48:15,789 [INFO   ] [TRADER] Order 17 filled (30 / 50)
-2020-03-12 13:48:15,790 [INFO   ] [TRADER] Position changed to ETF: -61, FUTURE: 61
-2020-03-12 13:48:16,039 [INFO   ] [TRADER] Order 17 filled (41 / 50)
-2020-03-12 13:48:16,039 [INFO   ] [TRADER] Position changed to ETF: -50, FUTURE: 50
-2020-03-12 13:48:16,289 [INFO   ] [TRADER] Order 17 cancelled
-2020-03-12 13:48:16,290 [INFO   ] [TRADER] Position changed to ETF: -41, FUTURE: 41
-2020-03-12 13:48:16,291 [INFO   ] [TRADER] Placing quotes (19, 20). Bid: 50 @ $3410, Ask: 40 @ $3411
-2020-03-12 13:48:16,293 [INFO   ] [TRADER] Order 19 placed
-2020-03-12 13:48:16,293 [INFO   ] [TRADER] Order 20 placed
-2020-03-12 13:48:17,790 [INFO   ] [TRADER] Order 20 filled (3 / 40)
-2020-03-12 13:48:17,791 [INFO   ] [TRADER] Position changed to ETF: -44, FUTURE: 44
-2020-03-12 13:48:17,791 [INFO   ] [TRADER] Order 20 filled (4 / 40)
-2020-03-12 13:48:17,791 [INFO   ] [TRADER] Position changed to ETF: -45, FUTURE: 45
-2020-03-12 13:48:17,791 [INFO   ] [TRADER] Order 19 filled (13 / 50)
-2020-03-12 13:48:17,792 [INFO   ] [TRADER] Position changed to ETF: -32, FUTURE: 32
-2020-03-12 13:48:18,290 [INFO   ] [TRADER] Order 20 filled (12 / 40)
-2020-03-12 13:48:18,290 [INFO   ] [TRADER] Position changed to ETF: -40, FUTURE: 40
-2020-03-12 13:48:18,290 [INFO   ] [TRADER] Order 19 filled (14 / 50)
-2020-03-12 13:48:18,291 [INFO   ] [TRADER] Position changed to ETF: -39, FUTURE: 39
-2020-03-12 13:48:18,293 [INFO   ] [TRADER] Cancelling bid 19
-2020-03-12 13:48:18,293 [INFO   ] [TRADER] Cancelling ask 20
-2020-03-12 13:48:18,294 [INFO   ] [TRADER] Order 19 cancelled
-2020-03-12 13:48:18,295 [INFO   ] [TRADER] Order 20 cancelled
-2020-03-12 13:48:18,540 [INFO   ] [TRADER] Placing quotes (21, 22). Bid: 50 @ $3410, Ask: 41 @ $3411
-2020-03-12 13:48:18,542 [INFO   ] [TRADER] Order 21 placed
-2020-03-12 13:48:18,542 [INFO   ] [TRADER] Order 22 placed
-2020-03-12 13:48:19,291 [INFO   ] [TRADER] Order 22 filled (14 / 41)
-2020-03-12 13:48:19,291 [INFO   ] [TRADER] Position changed to ETF: -53, FUTURE: 53
-2020-03-12 13:48:19,541 [INFO   ] [TRADER] Order 22 cancelled
-2020-03-12 13:48:19,541 [INFO   ] [TRADER] Position changed to ETF: -80, FUTURE: 80
-2020-03-12 13:48:21,545 [INFO   ] [TRADER] Cancelling bid 21
-2020-03-12 13:48:21,546 [INFO   ] [TRADER] Placing quotes (23, 24). Bid: 50 @ $3410, Ask: 10 @ $3411
-2020-03-12 13:48:21,548 [INFO   ] [TRADER] Order 21 cancelled
-2020-03-12 13:48:21,548 [INFO   ] [TRADER] Order 23 placed
-2020-03-12 13:48:21,549 [INFO   ] [TRADER] Order 24 cancelled
-2020-03-12 13:48:21,549 [INFO   ] [TRADER] Position changed to ETF: -90, FUTURE: 90
-2020-03-12 13:48:23,791 [INFO   ] [TRADER] Cancelling bid 23
-2020-03-12 13:48:23,796 [INFO   ] [TRADER] Order 23 cancelled
-2020-03-12 13:48:24,041 [INFO   ] [TRADER] Placing quotes (25, 26). Bid: 50 @ $3412, Ask: 3 @ $3413
-2020-03-12 13:48:24,044 [INFO   ] [TRADER] Order 25 placed
-2020-03-12 13:48:24,045 [INFO   ] [TRADER] Order 26 placed
-2020-03-12 13:48:25,789 [INFO   ] [TRADER] Order 25 filled (3 / 50)
-2020-03-12 13:48:25,789 [INFO   ] [TRADER] Position changed to ETF: -87, FUTURE: 87
-2020-03-12 13:48:26,290 [INFO   ] [TRADER] Cancelling bid 25
-2020-03-12 13:48:26,290 [INFO   ] [TRADER] Cancelling ask 26
-2020-03-12 13:48:26,291 [INFO   ] [TRADER] Order 25 cancelled
-2020-03-12 13:48:26,291 [INFO   ] [TRADER] Order 26 cancelled
-2020-03-12 13:48:26,541 [INFO   ] [TRADER] Placing quotes (27, 28). Bid: 50 @ $3412, Ask: 5 @ $3413
-2020-03-12 13:48:26,543 [INFO   ] [TRADER] Order 27 placed
-2020-03-12 13:48:26,543 [INFO   ] [TRADER] Order 28 placed
-2020-03-12 13:48:28,790 [INFO   ] [TRADER] Cancelling bid 27
-2020-03-12 13:48:28,790 [INFO   ] [TRADER] Cancelling ask 28
-2020-03-12 13:48:28,791 [INFO   ] [TRADER] Order 27 cancelled
-2020-03-12 13:48:28,791 [INFO   ] [TRADER] Order 28 cancelled
-2020-03-12 13:48:29,040 [INFO   ] [TRADER] Placing quotes (29, 30). Bid: 50 @ $3412, Ask: 5 @ $3413
-2020-03-12 13:48:29,042 [INFO   ] [TRADER] Order 29 placed
-2020-03-12 13:48:29,042 [INFO   ] [TRADER] Order 30 placed
-2020-03-12 13:48:29,789 [INFO   ] [TRADER] Order 29 filled (11 / 50)
-2020-03-12 13:48:29,789 [INFO   ] [TRADER] Position changed to ETF: -76, FUTURE: 76
-2020-03-12 13:48:30,040 [INFO   ] [TRADER] Order 29 filled (23 / 50)
-2020-03-12 13:48:30,040 [INFO   ] [TRADER] Position changed to ETF: -64, FUTURE: 64
-2020-03-12 13:48:30,041 [INFO   ] [TRADER] Order 29 filled (24 / 50)
-2020-03-12 13:48:30,041 [INFO   ] [TRADER] Position changed to ETF: -63, FUTURE: 63
-2020-03-12 13:48:30,289 [INFO   ] [TRADER] Order 29 filled (25 / 50)
-2020-03-12 13:48:30,290 [INFO   ] [TRADER] Position changed to ETF: -62, FUTURE: 62
-2020-03-12 13:48:31,042 [INFO   ] [TRADER] Cancelling bid 29
-2020-03-12 13:48:31,042 [INFO   ] [TRADER] Cancelling ask 30
-2020-03-12 13:48:31,047 [INFO   ] [TRADER] Order 29 cancelled
-2020-03-12 13:48:31,047 [INFO   ] [TRADER] Order 30 cancelled
-2020-03-12 13:48:31,290 [INFO   ] [TRADER] Placing quotes (31, 32). Bid: 50 @ $3412, Ask: 24 @ $3413
-2020-03-12 13:48:31,293 [INFO   ] [TRADER] Order 31 placed
-2020-03-12 13:48:31,293 [INFO   ] [TRADER] Order 32 placed
-2020-03-12 13:48:32,789 [INFO   ] [TRADER] Order 31 filled (1 / 50)
-2020-03-12 13:48:32,789 [INFO   ] [TRADER] Position changed to ETF: -61, FUTURE: 61
-2020-03-12 13:48:33,293 [INFO   ] [TRADER] Cancelling bid 31
-2020-03-12 13:48:33,293 [INFO   ] [TRADER] Cancelling ask 32
-2020-03-12 13:48:33,294 [INFO   ] [TRADER] Order 31 cancelled
-2020-03-12 13:48:33,294 [INFO   ] [TRADER] Order 32 cancelled
-2020-03-12 13:48:33,541 [INFO   ] [TRADER] Placing quotes (33, 34). Bid: 50 @ $3412, Ask: 25 @ $3413
-2020-03-12 13:48:33,544 [INFO   ] [TRADER] Order 33 placed
-2020-03-12 13:48:33,544 [INFO   ] [TRADER] Order 34 placed
-2020-03-12 13:48:34,289 [INFO   ] [TRADER] Order 33 filled (6 / 50)
-2020-03-12 13:48:34,289 [INFO   ] [TRADER] Position changed to ETF: -55, FUTURE: 55
-2020-03-12 13:48:34,540 [INFO   ] [TRADER] Order 34 filled (1 / 25)
-2020-03-12 13:48:34,542 [INFO   ] [TRADER] Position changed to ETF: -56, FUTURE: 56
-2020-03-12 13:48:34,789 [INFO   ] [TRADER] Order 34 filled (6 / 25)
-2020-03-12 13:48:34,791 [INFO   ] [TRADER] Position changed to ETF: -61, FUTURE: 61
-2020-03-12 13:48:35,040 [INFO   ] [TRADER] Order 33 filled (13 / 50)
-2020-03-12 13:48:35,040 [INFO   ] [TRADER] Position changed to ETF: -54, FUTURE: 54
-2020-03-12 13:48:35,289 [INFO   ] [TRADER] Order 34 filled (16 / 25)
-2020-03-12 13:48:35,289 [INFO   ] [TRADER] Position changed to ETF: -64, FUTURE: 64
-2020-03-12 13:48:35,289 [INFO   ] [TRADER] Order 34 filled (21 / 25)
-2020-03-12 13:48:35,289 [INFO   ] [TRADER] Position changed to ETF: -69, FUTURE: 69
-2020-03-12 13:48:35,539 [INFO   ] [TRADER] Order 33 filled (14 / 50)
-2020-03-12 13:48:35,539 [INFO   ] [TRADER] Position changed to ETF: -68, FUTURE: 68
-2020-03-12 13:48:35,539 [INFO   ] [TRADER] Order 34 cancelled
-2020-03-12 13:48:35,540 [INFO   ] [TRADER] Position changed to ETF: -72, FUTURE: 72
-2020-03-12 13:48:36,539 [INFO   ] [TRADER] Order 33 filled (17 / 50)
-2020-03-12 13:48:36,540 [INFO   ] [TRADER] Position changed to ETF: -69, FUTURE: 69
-2020-03-12 13:48:37,289 [INFO   ] [TRADER] Order 33 filled (30 / 50)
-2020-03-12 13:48:37,290 [INFO   ] [TRADER] Position changed to ETF: -56, FUTURE: 56
-2020-03-12 13:48:37,290 [INFO   ] [TRADER] Order 33 filled (32 / 50)
-2020-03-12 13:48:37,290 [INFO   ] [TRADER] Position changed to ETF: -54, FUTURE: 54
-2020-03-12 13:48:37,539 [INFO   ] [TRADER] Order 33 filled (33 / 50)
-2020-03-12 13:48:37,540 [INFO   ] [TRADER] Position changed to ETF: -53, FUTURE: 53
-2020-03-12 13:48:37,540 [INFO   ] [TRADER] Cancelling bid 33
-2020-03-12 13:48:37,541 [INFO   ] [TRADER] Placing quotes (35, 36). Bid: 50 @ $3411, Ask: 32 @ $3412
-2020-03-12 13:48:37,541 [INFO   ] [TRADER] Order 33 cancelled
-2020-03-12 13:48:37,542 [INFO   ] [TRADER] Order 35 placed
-2020-03-12 13:48:37,542 [INFO   ] [TRADER] Order 36 cancelled
-2020-03-12 13:48:37,542 [INFO   ] [TRADER] Position changed to ETF: -85, FUTURE: 85
-2020-03-12 13:48:39,790 [INFO   ] [TRADER] Cancelling bid 35
-2020-03-12 13:48:39,790 [INFO   ] [TRADER] Placing quotes (37, 38). Bid: 50 @ $3411, Ask: 6 @ $3412
-2020-03-12 13:48:39,791 [INFO   ] [TRADER] Order 35 cancelled
-2020-03-12 13:48:39,791 [INFO   ] [TRADER] Order 37 placed
-2020-03-12 13:48:39,791 [INFO   ] [TRADER] Order 38 cancelled
-2020-03-12 13:48:39,791 [INFO   ] [TRADER] Position changed to ETF: -91, FUTURE: 91
-2020-03-12 13:48:42,040 [INFO   ] [TRADER] Cancelling bid 37
-2020-03-12 13:48:42,042 [INFO   ] [TRADER] Placing quotes (39, 40). Bid: 50 @ $3412, Ask: 2 @ $3413
-2020-03-12 13:48:42,043 [INFO   ] [TRADER] Order 37 cancelled
-2020-03-12 13:48:42,043 [INFO   ] [TRADER] Order 39 placed
-2020-03-12 13:48:42,043 [INFO   ] [TRADER] Order 40 cancelled
-2020-03-12 13:48:42,043 [INFO   ] [TRADER] Position changed to ETF: -93, FUTURE: 93
-2020-03-12 13:48:42,789 [INFO   ] [TRADER] Order 39 filled (6 / 50)
-2020-03-12 13:48:42,789 [INFO   ] [TRADER] Position changed to ETF: -87, FUTURE: 87
-2020-03-12 13:48:44,289 [INFO   ] [TRADER] Order 39 filled (9 / 50)
-2020-03-12 13:48:44,289 [INFO   ] [TRADER] Position changed to ETF: -84, FUTURE: 84
-2020-03-12 13:48:44,289 [INFO   ] [TRADER] Order 39 filled (16 / 50)
-2020-03-12 13:48:44,289 [INFO   ] [TRADER] Position changed to ETF: -77, FUTURE: 77
-2020-03-12 13:48:44,289 [INFO   ] [TRADER] Cancelling bid 39
-2020-03-12 13:48:44,289 [INFO   ] [TRADER] Placing quotes (41, 42). Bid: 50 @ $3411, Ask: 12 @ $3412
-2020-03-12 13:48:44,290 [INFO   ] [TRADER] Order 39 cancelled
-2020-03-12 13:48:44,290 [INFO   ] [TRADER] Order 41 placed
-2020-03-12 13:48:44,291 [INFO   ] [TRADER] Order 42 cancelled
-2020-03-12 13:48:44,291 [INFO   ] [TRADER] Position changed to ETF: -89, FUTURE: 89
-2020-03-12 13:48:46,113 [INFO   ] [APP] SIGINT signal received - shutting down...
-2020-03-12 13:48:46,114 [INFO   ] [APP] closing event loop
+2020-03-12 13:52:15,564 [INFO   ] [APP] alec2 started with arguments={run.py}
+2020-03-12 13:52:15,564 [INFO   ] [APP] configuration={"Execution":{"Host":"127.0.0.1","Port":12345},"Information":{"AllowBroadcast":false,"Interface":"0.0.0.0","ListenAddress":"239.255.1.1","Port":12346},"TeamName":"AlecBotV2","Secret":"12345"}
+2020-03-12 13:52:20,092 [INFO   ] [TRADER] Placing quotes (1, 2). Bid: 50 @ $3409, Ask: 50 @ $3411
+2020-03-12 13:52:20,094 [INFO   ] [TRADER] Order 1 placed
+2020-03-12 13:52:20,094 [INFO   ] [TRADER] Order 2 placed
+2020-03-12 13:52:21,569 [INFO   ] [TRADER] Order 2 filled (6 / 50)
+2020-03-12 13:52:21,569 [INFO   ] [TRADER] Position changed to ETF: -6, FUTURE: 6
+2020-03-12 13:52:22,071 [INFO   ] [TRADER] Order 1 filled (1 / 50)
+2020-03-12 13:52:22,073 [INFO   ] [TRADER] Position changed to ETF: -5, FUTURE: 5
+2020-03-12 13:52:22,073 [INFO   ] [TRADER] Order 1 filled (14 / 50)
+2020-03-12 13:52:22,074 [INFO   ] [TRADER] Position changed to ETF: 8, FUTURE: -8
+2020-03-12 13:52:22,320 [INFO   ] [TRADER] Order 1 filled (20 / 50)
+2020-03-12 13:52:22,320 [INFO   ] [TRADER] Position changed to ETF: 14, FUTURE: -14
+2020-03-12 13:52:22,321 [INFO   ] [TRADER] Cancelling bid 1
+2020-03-12 13:52:22,322 [INFO   ] [TRADER] Cancelling ask 2
+2020-03-12 13:52:22,323 [INFO   ] [TRADER] Order 2 cancelled
+2020-03-12 13:52:22,570 [INFO   ] [TRADER] Placing quotes (3, 4). Bid: 46 @ $3409, Ask: 50 @ $3410
+2020-03-12 13:52:22,570 [INFO   ] [TRADER] Order 3 placed
+2020-03-12 13:52:22,570 [INFO   ] [TRADER] Order 4 placed
+2020-03-12 13:52:23,069 [INFO   ] [TRADER] Order 1 filled (24 / 50)
+2020-03-12 13:52:23,069 [INFO   ] [TRADER] Position changed to ETF: 18, FUTURE: -18
+2020-03-12 13:52:23,319 [INFO   ] [TRADER] Order 1 filled (32 / 50)
+2020-03-12 13:52:23,320 [INFO   ] [TRADER] Position changed to ETF: 26, FUTURE: -26
+2020-03-12 13:52:23,569 [INFO   ] [TRADER] Order 4 filled (11 / 50)
+2020-03-12 13:52:23,569 [INFO   ] [TRADER] Position changed to ETF: 15, FUTURE: -15
+2020-03-12 13:52:23,569 [INFO   ] [TRADER] Order 4 filled (18 / 50)
+2020-03-12 13:52:23,569 [INFO   ] [TRADER] Position changed to ETF: 8, FUTURE: -8
+2020-03-12 13:52:23,569 [INFO   ] [TRADER] Order 4 filled (30 / 50)
+2020-03-12 13:52:23,570 [INFO   ] [TRADER] Position changed to ETF: -4, FUTURE: 4
+2020-03-12 13:52:23,820 [INFO   ] [TRADER] Order 4 filled (36 / 50)
+2020-03-12 13:52:23,820 [INFO   ] [TRADER] Position changed to ETF: -10, FUTURE: 10
+2020-03-12 13:52:24,069 [INFO   ] [TRADER] Order 4 filled (46 / 50)
+2020-03-12 13:52:24,069 [INFO   ] [TRADER] Position changed to ETF: -20, FUTURE: 20
+2020-03-12 13:52:24,319 [INFO   ] [TRADER] Order 1 filled (45 / 50)
+2020-03-12 13:52:24,319 [INFO   ] [TRADER] Position changed to ETF: -7, FUTURE: 7
+2020-03-12 13:52:24,569 [INFO   ] [TRADER] Order 4 cancelled
+2020-03-12 13:52:24,569 [INFO   ] [TRADER] Position changed to ETF: -11, FUTURE: 11
+2020-03-12 13:52:24,569 [INFO   ] [TRADER] Order 1 cancelled
+2020-03-12 13:52:24,569 [INFO   ] [TRADER] Position changed to ETF: -6, FUTURE: 6
+2020-03-12 13:52:24,569 [INFO   ] [TRADER] Order 3 filled (1 / 46)
+2020-03-12 13:52:24,570 [INFO   ] [TRADER] Position changed to ETF: -5, FUTURE: 5
+2020-03-12 13:52:25,071 [INFO   ] [TRADER] Order 3 filled (7 / 46)
+2020-03-12 13:52:25,071 [INFO   ] [TRADER] Position changed to ETF: 1, FUTURE: -1
+2020-03-12 13:52:26,320 [INFO   ] [TRADER] Order 3 filled (10 / 46)
+2020-03-12 13:52:26,321 [INFO   ] [TRADER] Position changed to ETF: 4, FUTURE: -4
+2020-03-12 13:52:26,571 [INFO   ] [TRADER] Cancelling bid 3
+2020-03-12 13:52:26,573 [INFO   ] [TRADER] Order 3 cancelled
+2020-03-12 13:52:26,820 [INFO   ] [TRADER] Placing quotes (5, 6). Bid: 49 @ $3409, Ask: 50 @ $3410
+2020-03-12 13:52:26,820 [INFO   ] [TRADER] Order 5 placed
+2020-03-12 13:52:26,820 [INFO   ] [TRADER] Order 6 placed
+2020-03-12 13:52:28,069 [INFO   ] [TRADER] Order 6 filled (2 / 50)
+2020-03-12 13:52:28,070 [INFO   ] [TRADER] Position changed to ETF: 2, FUTURE: -2
+2020-03-12 13:52:28,072 [INFO   ] [TRADER] Order 5 filled (9 / 49)
+2020-03-12 13:52:28,072 [INFO   ] [TRADER] Position changed to ETF: 11, FUTURE: -11
+2020-03-12 13:52:28,320 [INFO   ] [TRADER] Order 6 filled (3 / 50)
+2020-03-12 13:52:28,320 [INFO   ] [TRADER] Position changed to ETF: 10, FUTURE: -10
+2020-03-12 13:52:28,371 [INFO   ] [APP] SIGINT signal received - shutting down...
+2020-03-12 13:52:28,372 [INFO   ] [APP] closing event loop

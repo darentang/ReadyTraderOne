@@ -1,18 +1,18 @@
-2020-03-12 13:47:47,282 [INFO   ] [APP] exchange started with arguments={run.py}
-2020-03-12 13:47:47,283 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"/home/darentang/projects/readytraderone/ready_trader_one/data/day1.csv","MatchEventsFile":"/home/darentang/projects/readytraderone/runs/all/Day1/data.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"ListenAddress":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Information":{"AllowBroadcast":false,"Host":"239.255.1.1","Interface":"0.0.0.0","Port":12346},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":20,"PositionLimit":100},"Traders":{"FusionBot":"12345","AlecBot":"12345","Baseline":"12345","AlecBotV2":"12345","DynamicInventory":"abcde","IgnoreMe":"12345","SusumBot":"12345","TraderOne":"12345"}}
-2020-03-12 13:47:47,283 [INFO   ] [CONTROLLER] starting the match
-2020-03-12 13:47:47,885 [INFO   ] [EXECUTION] fd=19 accepted a new connection: peer=127.0.0.1:42220
-2020-03-12 13:47:47,885 [INFO   ] [CONTROLLER] 'TraderOne' is ready!
-2020-03-12 13:47:47,885 [INFO   ] [EXECUTION] fd=19 login successful: name='TraderOne'
-2020-03-12 13:47:47,900 [INFO   ] [EXECUTION] fd=20 accepted a new connection: peer=127.0.0.1:42222
-2020-03-12 13:47:47,900 [INFO   ] [CONTROLLER] 'DynamicInventory' is ready!
-2020-03-12 13:47:47,900 [INFO   ] [EXECUTION] fd=20 login successful: name='DynamicInventory'
-2020-03-12 13:47:48,302 [INFO   ] [EXECUTION] fd=21 accepted a new connection: peer=127.0.0.1:42224
-2020-03-12 13:47:48,302 [INFO   ] [CONTROLLER] 'AlecBotV2' is ready!
-2020-03-12 13:47:48,302 [INFO   ] [EXECUTION] fd=21 login successful: name='AlecBotV2'
-2020-03-12 13:47:48,320 [INFO   ] [EXECUTION] fd=22 accepted a new connection: peer=127.0.0.1:42226
-2020-03-12 13:47:48,320 [INFO   ] [CONTROLLER] 'FusionBot' is ready!
-2020-03-12 13:47:48,320 [INFO   ] [EXECUTION] fd=22 login successful: name='FusionBot'
-2020-03-12 13:47:52,288 [INFO   ] [CONTROLLER] market open
-2020-03-12 13:48:46,113 [INFO   ] [APP] SIGINT signal received - shutting down...
-2020-03-12 13:48:46,113 [INFO   ] [APP] closing event loop
+2020-03-12 13:52:15,058 [INFO   ] [APP] exchange started with arguments={run.py}
+2020-03-12 13:52:15,058 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"/home/darentang/projects/readytraderone/ready_trader_one/data/day1.csv","MatchEventsFile":"/home/darentang/projects/readytraderone/runs/all/Day1/data.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"ListenAddress":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Information":{"AllowBroadcast":false,"Host":"239.255.1.1","Interface":"0.0.0.0","Port":12346},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":20,"PositionLimit":100},"Traders":{"FusionBot":"12345","AlecBot":"12345","Baseline":"12345","AlecBotV2":"12345","DynamicInventory":"abcde","IgnoreMe":"12345","SusumBot":"12345","TraderOne":"12345"}}
+2020-03-12 13:52:15,058 [INFO   ] [CONTROLLER] starting the match
+2020-03-12 13:52:15,641 [INFO   ] [EXECUTION] fd=19 accepted a new connection: peer=127.0.0.1:42264
+2020-03-12 13:52:15,644 [INFO   ] [CONTROLLER] 'TraderOne' is ready!
+2020-03-12 13:52:15,645 [INFO   ] [EXECUTION] fd=19 login successful: name='TraderOne'
+2020-03-12 13:52:15,667 [INFO   ] [EXECUTION] fd=20 accepted a new connection: peer=127.0.0.1:42266
+2020-03-12 13:52:15,668 [INFO   ] [CONTROLLER] 'DynamicInventory' is ready!
+2020-03-12 13:52:15,668 [INFO   ] [EXECUTION] fd=20 login successful: name='DynamicInventory'
+2020-03-12 13:52:16,090 [INFO   ] [EXECUTION] fd=21 accepted a new connection: peer=127.0.0.1:42270
+2020-03-12 13:52:16,090 [INFO   ] [EXECUTION] fd=22 accepted a new connection: peer=127.0.0.1:42268
+2020-03-12 13:52:16,090 [INFO   ] [CONTROLLER] 'AlecBotV2' is ready!
+2020-03-12 13:52:16,090 [INFO   ] [EXECUTION] fd=21 login successful: name='AlecBotV2'
+2020-03-12 13:52:16,090 [INFO   ] [CONTROLLER] 'FusionBot' is ready!
+2020-03-12 13:52:16,090 [INFO   ] [EXECUTION] fd=22 login successful: name='FusionBot'
+2020-03-12 13:52:20,068 [INFO   ] [CONTROLLER] market open
+2020-03-12 13:52:28,372 [INFO   ] [APP] SIGINT signal received - shutting down...
+2020-03-12 13:52:28,372 [INFO   ] [APP] closing event loop

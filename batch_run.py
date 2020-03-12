@@ -32,17 +32,17 @@ with open(template_file, "r") as f:
 speed = 1.0
 
 sessions = []
-for day in range(2, 11):
-    sessions.append(Session("all", str(day), ["SusumBot", "AlecBotV2", "FusionBot", "DynamicInventory"], speed))
+for day in [1]:
+    sessions.append(Session("all", str(day), ["TraderOne", "AlecBotV2", "FusionBot", "DynamicInventory"], speed))
 
-for day in range(1, 11):
-    sessions.append(Session("susum", str(day), ["SusumBot", "DynamicInventory"], speed))
+# for day in range(1, 11):
+#     sessions.append(Session("susum", str(day), ["SusumBot", "DynamicInventory"], speed))
 
-for day in range(1, 11):
-    sessions.append(Session("alec", str(day), ["AlecBotV2", "DynamicInventory"], speed))
+# for day in range(1, 11):
+#     sessions.append(Session("alec", str(day), ["AlecBotV2", "DynamicInventory"], speed))
 
-for day in range(1, 11):
-    sessions.append(Session("fusion", str(day), ["FusionBot", "DynamicInventory"], speed))
+# for day in range(1, 11):
+#     sessions.append(Session("fusion", str(day), ["FusionBot", "DynamicInventory"], speed))
 
 
 

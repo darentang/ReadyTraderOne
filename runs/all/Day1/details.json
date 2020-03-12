@@ -2,10 +2,10 @@
     "path": "all",
     "day": "1",
     "bots": [
-        "SusumBot",
+        "TraderOne",
         "AlecBotV2",
         "FusionBot",
         "DynamicInventory"
     ],
-    "speed": 20.0
+    "speed": 1.0
 }

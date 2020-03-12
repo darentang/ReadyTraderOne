@@ -1,62 +1,62 @@
 {
     "AlecBotV2":{
         "InventoryControl":{
-            "avg":-3.68,
-            "std":43.64
+            "avg":-1.55,
+            "std":66.7
         },
         "Liquidity":{
-            "fill_rate":0.83,
-            "fill_time_avg":6.52
+            "fill_rate":0.37,
+            "fill_time_avg":1.16
         },
         "PnL":{
-            "avg":1217.79,
-            "last":2868.39,
-            "std":1103.81
+            "avg":2917.39,
+            "last":6307.44,
+            "std":1723.23
         }
     },
     "DynamicInventory":{
         "InventoryControl":{
-            "avg":4.72,
-            "std":34.95
+            "avg":1.25,
+            "std":48.2
         },
         "Liquidity":{
-            "fill_rate":0.77,
-            "fill_time_avg":3.65
+            "fill_rate":0.09,
+            "fill_time_avg":0.22
         },
         "PnL":{
-            "avg":1839.14,
-            "last":4308.51,
-            "std":1263.95
+            "avg":1547.03,
+            "last":3182.49,
+            "std":1024.3
         }
     },
     "FusionBot":{
         "InventoryControl":{
-            "avg":-7.18,
-            "std":76.21
+            "avg":-18.57,
+            "std":61.64
         },
         "Liquidity":{
-            "fill_rate":0.04,
-            "fill_time_avg":0.34
+            "fill_rate":0.01,
+            "fill_time_avg":0.08
         },
         "PnL":{
-            "avg":3899.81,
-            "last":7028.58,
-            "std":1815.72
+            "avg":1630.48,
+            "last":2701.92,
+            "std":659.29
         }
     },
-    "SusumBot":{
+    "TraderOne":{
         "InventoryControl":{
-            "avg":-0.22,
-            "std":49.99
+            "avg":7.61,
+            "std":72.69
         },
         "Liquidity":{
-            "fill_rate":0.76,
-            "fill_time_avg":3.58
+            "fill_rate":0.19,
+            "fill_time_avg":0.54
         },
         "PnL":{
-            "avg":2454.94,
-            "last":5358.93,
-            "std":1559.68
+            "avg":3681.08,
+            "last":7407.61,
+            "std":2165.76
         }
     }
 }

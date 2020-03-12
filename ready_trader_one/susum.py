@@ -172,10 +172,10 @@ class AutoTrader(BaseAutoTrader):
         """
 
         # turn everything into numpy arrays
-        bid_prices = np.array(bid_prices)
-        ask_prices = np.array(ask_prices)
-        bid_volumes = np.array(bid_volumes)
-        bid_volumes = np.array(bid_volumes)
+        bid_prices = np.array(bid_prices,dtype = "int64")
+        ask_prices = np.array(ask_prices,dtype = "int64")
+        bid_volumes = np.array(bid_volumes,dtype = "int64")
+        bid_volumes = np.array(bid_volumes,dtype = "int64")
 
         elapsed_time = self.get_time()
 

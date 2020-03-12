@@ -1,0 +1,11 @@
+{
+    "path": "all",
+    "day": "1",
+    "bots": [
+        "SusumBot",
+        "AlecBotV2",
+        "FusionBot",
+        "DynamicInventory"
+    ],
+    "speed": 20.0
+}

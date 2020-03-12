@@ -1,0 +1,32 @@
+{
+    "DynamicInventory":{
+        "InventoryControl":{
+            "avg":19.01,
+            "std":40.96
+        },
+        "Liquidity":{
+            "fill_rate":0.1,
+            "fill_time_avg":0.16
+        },
+        "PnL":{
+            "avg":3583.81,
+            "last":6694.48,
+            "std":2039.12
+        }
+    },
+    "SusumBot":{
+        "InventoryControl":{
+            "avg":24.96,
+            "std":65.8
+        },
+        "Liquidity":{
+            "fill_rate":0.19,
+            "fill_time_avg":0.55
+        },
+        "PnL":{
+            "avg":5204.61,
+            "last":11649.7,
+            "std":3732.88
+        }
+    }
+}

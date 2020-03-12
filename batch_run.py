@@ -13,7 +13,7 @@ def send_command(command, timer=None):
 working_directory = os.getcwd()
 directory = "/home/darentang/projects/readytraderone/ready_trader_one/"
 
-Session = namedtuple('Session', ['day', 'bots', 'speed'])
+Session = namedtuple('Session', ['path', 'day', 'bots', 'speed'])
 
 bots = {}
 
@@ -29,10 +29,21 @@ template_file = "exchange_template.json"
 with open(template_file, "r") as f:
     exchange = json.loads(f.read())
 
+speed = 1.0
+
 sessions = []
+for day in range(2, 11):
+    sessions.append(Session("all", str(day), ["SusumBot", "AlecBotV2", "FusionBot", "DynamicInventory"], speed))
 
 for day in range(1, 11):
-    sessions.append(Session(str(day), ["SusumBot", "AlecBotV2", "FusionBot", "DynamicInventory"], 5.0))
+    sessions.append(Session("susum", str(day), ["SusumBot", "DynamicInventory"], speed))
+
+for day in range(1, 11):
+    sessions.append(Session("alec", str(day), ["AlecBotV2", "DynamicInventory"], speed))
+
+for day in range(1, 11):
+    sessions.append(Session("fusion", str(day), ["FusionBot", "DynamicInventory"], speed))
+
 
 
 with open("run_template.txt", "r") as f:
@@ -40,10 +51,10 @@ with open("run_template.txt", "r") as f:
 
 for i, session in enumerate(sessions):
     run_file = run_template
-    path = f"/home/darentang/projects/readytraderone/runs/Session{i+1}/"
+    path = f"/home/darentang/projects/readytraderone/runs/{session.path}/Day{session.day}/"
     data_file = path + "data.csv"
     if not os.path.exists(path):
-        os.mkdir(path)
+        os.makedirs(path)
     exchange["Engine"]["MarketDataFile"] = directory + f"data/day{session.day}.csv"
     exchange["Engine"]["MatchEventsFile"] = data_file
     exchange["Engine"]["Speed"] = session.speed
@@ -59,6 +70,7 @@ for i, session in enumerate(sessions):
     with open(path + "details.json", "w") as f:
         f.write(json.dumps(session._asdict(), indent=4))
 
+    print(f"Running session {i + 1}/{len(sessions)}.")
     send_command("cd /home/darentang/projects/readytraderone/ready_trader_one/ \n python3 run.py")
 
     for participant in session.bots:

@@ -1,36 +1,10 @@
-2020-03-12 01:28:54,266 [INFO   ] [APP] exchange started with arguments={run.py}
-2020-03-12 01:28:54,266 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"/home/darentang/projects/readytraderone/ready_trader_one/data/day2.csv","MatchEventsFile":"/home/darentang/projects/readytraderone/runs/Session2/data.csv","Speed":10.0,"TickInterval":0.25},"Execution":{"ListenAddress":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Information":{"AllowBroadcast":false,"Host":"239.255.1.1","Interface":"0.0.0.0","Port":12346},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":20,"PositionLimit":100},"Traders":{"FusionBot":"12345","AlecBot":"12345","Baseline":"12345","AlecBotV2":"12345","DynamicInventory":"abcde","IgnoreMe":"12345","SusumBot":"12345"}}
-2020-03-12 01:28:54,267 [INFO   ] [CONTROLLER] starting the match
-2020-03-12 01:28:54,927 [INFO   ] [EXECUTION] fd=18 accepted a new connection: peer=127.0.0.1:34220
-2020-03-12 01:28:54,927 [INFO   ] [CONTROLLER] 'DynamicInventory' is ready!
-2020-03-12 01:28:54,927 [INFO   ] [EXECUTION] fd=18 login successful: name='DynamicInventory'
-2020-03-12 01:28:54,936 [INFO   ] [EXECUTION] fd=19 accepted a new connection: peer=127.0.0.1:34222
-2020-03-12 01:28:54,937 [INFO   ] [CONTROLLER] 'SusumBot' is ready!
-2020-03-12 01:28:54,937 [INFO   ] [EXECUTION] fd=19 login successful: name='SusumBot'
-2020-03-12 01:28:55,162 [INFO   ] [EXECUTION] fd=20 accepted a new connection: peer=127.0.0.1:34224
-2020-03-12 01:28:55,162 [INFO   ] [CONTROLLER] 'AlecBotV2' is ready!
-2020-03-12 01:28:55,162 [INFO   ] [EXECUTION] fd=20 login successful: name='AlecBotV2'
-2020-03-12 01:28:55,169 [INFO   ] [EXECUTION] fd=21 accepted a new connection: peer=127.0.0.1:34226
-2020-03-12 01:28:55,169 [INFO   ] [CONTROLLER] 'FusionBot' is ready!
-2020-03-12 01:28:55,169 [INFO   ] [EXECUTION] fd=21 login successful: name='FusionBot'
-2020-03-12 01:28:59,276 [INFO   ] [CONTROLLER] market open
-2020-03-12 01:29:52,810 [INFO   ] [APP] SIGINT signal received - shutting down...
-2020-03-12 01:29:52,810 [INFO   ] [APP] closing event loop
-2020-03-12 01:30:41,414 [INFO   ] [APP] exchange started with arguments={run.py}
-2020-03-12 01:30:41,414 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"/home/darentang/projects/readytraderone/ready_trader_one/data/day1.csv","MatchEventsFile":"/home/darentang/projects/readytraderone/runs/Session1/data.csv","Speed":5.0,"TickInterval":0.25},"Execution":{"ListenAddress":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Information":{"AllowBroadcast":false,"Host":"239.255.1.1","Interface":"0.0.0.0","Port":12346},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":20,"PositionLimit":100},"Traders":{"FusionBot":"12345","AlecBot":"12345","Baseline":"12345","AlecBotV2":"12345","DynamicInventory":"abcde","IgnoreMe":"12345","SusumBot":"12345"}}
-2020-03-12 01:30:41,415 [INFO   ] [CONTROLLER] starting the match
-2020-03-12 01:30:42,009 [INFO   ] [EXECUTION] fd=17 accepted a new connection: peer=127.0.0.1:34250
-2020-03-12 01:30:42,009 [INFO   ] [CONTROLLER] 'DynamicInventory' is ready!
-2020-03-12 01:30:42,009 [INFO   ] [EXECUTION] fd=17 login successful: name='DynamicInventory'
-2020-03-12 01:30:42,048 [INFO   ] [EXECUTION] fd=18 accepted a new connection: peer=127.0.0.1:34252
-2020-03-12 01:30:42,048 [INFO   ] [CONTROLLER] 'SusumBot' is ready!
-2020-03-12 01:30:42,049 [INFO   ] [EXECUTION] fd=18 login successful: name='SusumBot'
-2020-03-12 01:30:42,279 [INFO   ] [EXECUTION] fd=19 accepted a new connection: peer=127.0.0.1:34254
-2020-03-12 01:30:42,279 [INFO   ] [EXECUTION] fd=20 accepted a new connection: peer=127.0.0.1:34256
-2020-03-12 01:30:42,279 [INFO   ] [CONTROLLER] 'AlecBotV2' is ready!
-2020-03-12 01:30:42,279 [INFO   ] [EXECUTION] fd=19 login successful: name='AlecBotV2'
-2020-03-12 01:30:42,279 [INFO   ] [CONTROLLER] 'FusionBot' is ready!
-2020-03-12 01:30:42,279 [INFO   ] [EXECUTION] fd=20 login successful: name='FusionBot'
-2020-03-12 01:30:46,425 [INFO   ] [CONTROLLER] market open
-2020-03-12 01:32:18,200 [INFO   ] [APP] SIGINT signal received - shutting down...
-2020-03-12 01:32:18,200 [INFO   ] [APP] closing event loop
+2020-03-12 11:58:45,770 [INFO   ] [APP] exchange started with arguments={run.py}
+2020-03-12 11:58:45,771 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"/home/darentang/projects/readytraderone/ready_trader_one/data/day5.csv","MatchEventsFile":"/home/darentang/projects/readytraderone/runs/susum/Day5/data.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"ListenAddress":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Information":{"AllowBroadcast":false,"Host":"239.255.1.1","Interface":"0.0.0.0","Port":12346},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":20,"PositionLimit":100},"Traders":{"FusionBot":"12345","AlecBot":"12345","Baseline":"12345","AlecBotV2":"12345","DynamicInventory":"abcde","IgnoreMe":"12345","SusumBot":"12345"}}
+2020-03-12 11:58:45,771 [INFO   ] [CONTROLLER] starting the match
+2020-03-12 11:58:46,390 [INFO   ] [EXECUTION] fd=17 accepted a new connection: peer=127.0.0.1:40806
+2020-03-12 11:58:46,390 [INFO   ] [CONTROLLER] 'DynamicInventory' is ready!
+2020-03-12 11:58:46,390 [INFO   ] [EXECUTION] fd=17 login successful: name='DynamicInventory'
+2020-03-12 11:58:46,396 [INFO   ] [EXECUTION] fd=18 accepted a new connection: peer=127.0.0.1:40808
+2020-03-12 11:58:46,396 [INFO   ] [CONTROLLER] 'SusumBot' is ready!
+2020-03-12 11:58:46,397 [INFO   ] [EXECUTION] fd=18 login successful: name='SusumBot'
+2020-03-12 11:58:50,780 [INFO   ] [CONTROLLER] market open

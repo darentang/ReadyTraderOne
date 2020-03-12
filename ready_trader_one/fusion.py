@@ -13,10 +13,10 @@ from alec2 import Orderbook
 class Constants:
     GAMMA = 0.01
     KAPPA = 2
-    ETA = - 0.005
-    MAX_ORDER = 50
+    ETA = - 0.05
+    MAX_ORDER = 99
     DEFAULT_T = 0.25
-    MAX_VOLUME = 100
+    MAX_VOLUME = 95
     TIME_OUT = 1.0
     UPDATE = 1.0
 
@@ -44,8 +44,8 @@ class AutoTrader(BaseAutoTrader):
 
         # the active quotes right now, contains order ids
         self.active_quotes = {
-            "bids": [],
-            "asks": []
+            "bids": {},
+            "asks": {}
         }
 
         self.execution_time = self.start_time
@@ -55,6 +55,7 @@ class AutoTrader(BaseAutoTrader):
 
         self.orderbook = Orderbook("ETF", False)
 
+        self.bid_volume = self.ask_volume = self.bid_price = self.ask_price = 0
 
     def on_error_message(self, client_order_id: int, error_message: bytes) -> None:
         """Called when the exchange detects an error.
@@ -66,8 +67,17 @@ class AutoTrader(BaseAutoTrader):
         self.on_order_status_message(client_order_id, 0, 0, 0)
 
     def inventory(self):
-        q = self.etf_position
-        remaining_volume = np.min((self.constants.MAX_ORDER, self.constants.MAX_VOLUME - np.abs(q)))
+        active_bid_volume = np.sum([x for i, x in self.active_quotes["bids"].items()])
+        active_ask_volume = np.sum([x for i, x in self.active_quotes["asks"].items()])
+        if self.etf_position > 0:
+            q = self.etf_position + active_bid_volume
+        else:
+            q = self.etf_position - active_ask_volume
+
+        if np.abs(q) > self.constants.MAX_VOLUME:
+            remaining_volume = 0
+        else:
+            remaining_volume = np.min((self.constants.MAX_ORDER, self.constants.MAX_VOLUME - q))
         opposing_volume = self.constants.MAX_ORDER
         if q < 0:
             bid = opposing_volume
@@ -75,7 +85,6 @@ class AutoTrader(BaseAutoTrader):
         else:
             bid = remaining_volume * np.exp(self.constants.ETA * q)
             ask = opposing_volume
-
         return int(bid), int(ask)
     
     def get_time(self):
@@ -117,13 +126,13 @@ class AutoTrader(BaseAutoTrader):
             placed = True
             self.bid_id = next(self.order_ids)
             self.send_insert_order(self.bid_id, Side.BUY, bid_price, bid_volume, lifespan)
-            self.active_quotes["bids"].append(self.bid_id)
+            self.active_quotes["bids"][self.bid_id] = bid_volume
 
         if ask_volume > 0 and ask_price > 0 and len(self.active_quotes["asks"]) < 2:
             placed = True
             self.ask_id = next(self.order_ids)
             self.send_insert_order(self.ask_id, Side.SELL, ask_price, ask_volume, lifespan)
-            self.active_quotes["asks"].append(self.ask_id)
+            self.active_quotes["asks"][self.ask_id] = ask_volume
         
         # if nothing has been done
         if not placed:
@@ -134,7 +143,7 @@ class AutoTrader(BaseAutoTrader):
         self.logger.info("Placing quotes (%d, %d). Bid: %d @ $%d, Ask: %d @ $%d", self.bid_id, self.ask_id, bid_volume, bid_price / 100, ask_volume, ask_price / 100)
 
     def cancel(self, ids):
-        for i in ids:
+        for i in ids.keys():
             self.send_cancel_order(i)
             self.logger.info("Cancelling bid %d", i)
 
@@ -159,7 +168,7 @@ class AutoTrader(BaseAutoTrader):
         prices are reported along with the volume available at each of those
         price levels.
         """
-
+        
         # turn everything into numpy arrays
         bid_prices = np.array(bid_prices)
         ask_prices = np.array(ask_prices)
@@ -239,10 +248,10 @@ class AutoTrader(BaseAutoTrader):
         # on completing an order
         if remaining_volume == 0:
             if client_order_id in self.active_quotes['bids']:
-                self.active_quotes['bids'].remove(client_order_id)
+                self.active_quotes['bids'].pop(client_order_id)
             
             if client_order_id in self.active_quotes['asks']:
-                self.active_quotes['asks'].remove(client_order_id)
+                self.active_quotes['asks'].pop(client_order_id)
 
             self.logger.info("Order %d cancelled", client_order_id)
             self.execution_time = self.get_time()    

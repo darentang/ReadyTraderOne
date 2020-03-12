@@ -91,7 +91,7 @@ class Constants:
     ETA = - 0.005
     MAX_ORDER = 50
     DEFAULT_T = 0.25
-    MAX_VOLUME = 100
+    MAX_VOLUME = 95
     TIME_OUT = 2.0
     UPDATE = 2.0
     UNSTUCK_TIME = 2.0

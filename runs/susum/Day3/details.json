@@ -1,9 +1,0 @@
-{
-    "path": "susum",
-    "day": "3",
-    "bots": [
-        "SusumBot",
-        "DynamicInventory"
-    ],
-    "speed": 1.0
-}

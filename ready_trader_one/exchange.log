@@ -1,18 +1,47 @@
-2020-03-12 13:52:15,058 [INFO   ] [APP] exchange started with arguments={run.py}
-2020-03-12 13:52:15,058 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"/home/darentang/projects/readytraderone/ready_trader_one/data/day1.csv","MatchEventsFile":"/home/darentang/projects/readytraderone/runs/all/Day1/data.csv","Speed":1.0,"TickInterval":0.25},"Execution":{"ListenAddress":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Information":{"AllowBroadcast":false,"Host":"239.255.1.1","Interface":"0.0.0.0","Port":12346},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":20,"PositionLimit":100},"Traders":{"FusionBot":"12345","AlecBot":"12345","Baseline":"12345","AlecBotV2":"12345","DynamicInventory":"abcde","IgnoreMe":"12345","SusumBot":"12345","TraderOne":"12345"}}
-2020-03-12 13:52:15,058 [INFO   ] [CONTROLLER] starting the match
-2020-03-12 13:52:15,641 [INFO   ] [EXECUTION] fd=19 accepted a new connection: peer=127.0.0.1:42264
-2020-03-12 13:52:15,644 [INFO   ] [CONTROLLER] 'TraderOne' is ready!
-2020-03-12 13:52:15,645 [INFO   ] [EXECUTION] fd=19 login successful: name='TraderOne'
-2020-03-12 13:52:15,667 [INFO   ] [EXECUTION] fd=20 accepted a new connection: peer=127.0.0.1:42266
-2020-03-12 13:52:15,668 [INFO   ] [CONTROLLER] 'DynamicInventory' is ready!
-2020-03-12 13:52:15,668 [INFO   ] [EXECUTION] fd=20 login successful: name='DynamicInventory'
-2020-03-12 13:52:16,090 [INFO   ] [EXECUTION] fd=21 accepted a new connection: peer=127.0.0.1:42270
-2020-03-12 13:52:16,090 [INFO   ] [EXECUTION] fd=22 accepted a new connection: peer=127.0.0.1:42268
-2020-03-12 13:52:16,090 [INFO   ] [CONTROLLER] 'AlecBotV2' is ready!
-2020-03-12 13:52:16,090 [INFO   ] [EXECUTION] fd=21 login successful: name='AlecBotV2'
-2020-03-12 13:52:16,090 [INFO   ] [CONTROLLER] 'FusionBot' is ready!
-2020-03-12 13:52:16,090 [INFO   ] [EXECUTION] fd=22 login successful: name='FusionBot'
-2020-03-12 13:52:20,068 [INFO   ] [CONTROLLER] market open
-2020-03-12 13:52:28,372 [INFO   ] [APP] SIGINT signal received - shutting down...
-2020-03-12 13:52:28,372 [INFO   ] [APP] closing event loop
+2020-03-14 23:13:59,556 [INFO   ] [APP] exchange started with arguments={run.py}
+2020-03-14 23:13:59,557 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"/home/darentang/projects/readytraderone/logs/round1/market_data.csv","MatchEventsFile":"match_events.csv","Speed":20.0,"TickInterval":0.25},"Execution":{"ListenAddress":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Information":{"AllowBroadcast":false,"Host":"239.255.1.1","Interface":"0.0.0.0","Port":12346},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":20,"PositionLimit":100},"Traders":{"FusionBot":"12345","AlecBot":"12345","Baseline":"12345","AlecBotV2":"12345","DynamicInventory":"abcde","IgnoreMe":"12345","SusumBot":"12345","TraderOne":"12345","TeamJ":"12345"}}
+2020-03-14 23:13:59,557 [INFO   ] [CONTROLLER] starting the match
+2020-03-14 23:14:00,154 [INFO   ] [EXECUTION] fd=19 accepted a new connection: peer=127.0.0.1:46994
+2020-03-14 23:14:00,154 [INFO   ] [CONTROLLER] 'SusumBot' is ready!
+2020-03-14 23:14:00,154 [INFO   ] [EXECUTION] fd=19 login successful: name='SusumBot'
+2020-03-14 23:14:00,160 [INFO   ] [EXECUTION] fd=20 accepted a new connection: peer=127.0.0.1:46996
+2020-03-14 23:14:00,160 [INFO   ] [CONTROLLER] 'TraderOne' is ready!
+2020-03-14 23:14:00,160 [INFO   ] [EXECUTION] fd=20 login successful: name='TraderOne'
+2020-03-14 23:14:00,460 [INFO   ] [EXECUTION] fd=21 accepted a new connection: peer=127.0.0.1:46998
+2020-03-14 23:14:00,460 [INFO   ] [CONTROLLER] 'TeamJ' is ready!
+2020-03-14 23:14:00,460 [INFO   ] [EXECUTION] fd=21 login successful: name='TeamJ'
+2020-03-14 23:14:04,564 [INFO   ] [CONTROLLER] market open
+2020-03-14 23:14:08,994 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=88.594939 client_order_id=177 message='order rejected: in cross with an existing order'
+2020-03-14 23:14:18,343 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=275.574786 client_order_id=556 message='order rejected: in cross with an existing order'
+2020-03-14 23:14:25,821 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=425.119573 client_order_id=874 message='order rejected: in cross with an existing order'
+2020-03-14 23:14:27,826 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=465.228038 client_order_id=961 message='order rejected: in cross with an existing order'
+2020-03-14 23:14:30,394 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=516.537124 client_order_id=1063 message='order rejected: in cross with an existing order'
+2020-03-14 23:14:31,307 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=534.839053 client_order_id=1112 message='order rejected: in cross with an existing order'
+2020-03-14 23:14:33,049 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=569.680194 client_order_id=1183 message='order rejected: in cross with an existing order'
+2020-03-14 23:14:34,983 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=608.360430 client_order_id=1274 message='order rejected: in cross with an existing order'
+2020-03-14 23:14:39,107 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=690.848327 client_order_id=1438 message='order rejected: in cross with an existing order'
+2020-03-14 23:14:40,454 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=717.782084 client_order_id=1511 message='order rejected: in cross with an existing order'
+2020-03-14 23:14:43,974 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=788.161105 client_order_id=1668 message='order rejected: in cross with an existing order'
+2020-03-14 23:14:45,794 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=824.588657 client_order_id=1739 message='order rejected: in cross with an existing order'
+2020-03-14 23:14:46,516 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=839.038328 client_order_id=1767 message='order rejected: in cross with an existing order'
+2020-03-14 23:14:47,204 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=852.785524 client_order_id=1799 message='order rejected: in cross with an existing order'
+2020-03-14 23:14:48,680 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=882.310793 client_order_id=1857 message='order rejected: in cross with an existing order'
+2020-03-14 23:14:51,154 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=931.787764 client_order_id=1987 message='order rejected: in cross with an existing order'
+2020-03-14 23:14:53,018 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=969.058904 client_order_id=2078 message='order rejected: in cross with an existing order'
+2020-03-14 23:14:54,549 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=999.679861 client_order_id=2163 message='order rejected: in cross with an existing order'
+2020-03-14 23:14:54,604 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=1000.790587 client_order_id=2169 message='order rejected: in cross with an existing order'
+2020-03-14 23:14:58,471 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=1078.124908 client_order_id=2329 message='order rejected: in cross with an existing order'
+2020-03-14 23:14:59,142 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=1091.550144 client_order_id=2372 message='order rejected: in cross with an existing order'
+2020-03-14 23:14:59,594 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=1100.575037 client_order_id=2392 message='order rejected: in cross with an existing order'
+2020-03-14 23:15:23,454 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=1577.758822 client_order_id=3147 message='order rejected: in cross with an existing order'
+2020-03-14 23:15:23,954 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=1587.787879 client_order_id=3168 message='order rejected: in cross with an existing order'
+2020-03-14 23:15:24,016 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=1589.025322 client_order_id=3178 message='order rejected: in cross with an existing order'
+2020-03-14 23:15:25,851 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=1625.720700 client_order_id=3272 message='order rejected: in cross with an existing order'
+2020-03-14 23:15:36,495 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=1838.607741 client_order_id=3721 message='order rejected: in cross with an existing order'
+2020-03-14 23:15:47,898 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=2066.671897 client_order_id=4225 message='order rejected: in cross with an existing order'
+2020-03-14 23:15:54,089 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=2190.452205 client_order_id=4466 message='order rejected: in cross with an existing order'
+2020-03-14 23:16:00,298 [INFO   ] [COMPETITOR] 'TeamJ' sent error message: time=2314.669937 client_order_id=4706 message='order rejected: in cross with an existing order'
+2020-03-14 23:16:08,491 [INFO   ] [MARKET_EVENTS] reader thread complete after processing 905103 market events
+2020-03-14 23:16:09,065 [INFO   ] [CONTROLLER] shutting down the match: time=2490.013371 reason='match complete'
+2020-03-14 23:16:09,067 [INFO   ] [MATCH_EVENTS] writer thread complete after processing 70231 match events
+2020-03-14 23:16:09,067 [INFO   ] [APP] closing event loop

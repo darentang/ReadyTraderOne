@@ -1,3 +1,4 @@
+import sys
 import pandas as pd
 import matplotlib.pyplot as plt
 from collections import namedtuple
@@ -5,8 +6,9 @@ from matplotlib.lines import Line2D
 import numpy as np
 
 bots = {
-    # "Tradies": np.array([0, 150, 0]), 
-    "TeamJ": np.array([0, 150, 0])
+    "Tradies": np.array([0, 150, 0]), 
+    "TeamJ": np.array([150, 0, 0]),
+    # "NowUCMe": np.array([0, 0, 150]),
 }
 
 def side_color(name, side):
@@ -39,8 +41,13 @@ linestyle = {
 c = "b"
 t = 5
 
-start_time = 1720
-duration = 60
+if len(sys.argv) == 3:
+    start_time = int(sys.argv[1])
+    duration = int(sys.argv[2])
+else:
+    start_time = 250
+    duration = 50
+
 
 time_range = (start_time, start_time + duration)
 

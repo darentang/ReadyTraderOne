@@ -1,19 +1,13 @@
 import asyncio
 
 from typing import List, Tuple
-
-from ready_trader_one import BaseAutoTrader, Instrument, Lifespan, Side
-
 import itertools
 import numpy as np
 
 import matplotlib
 import matplotlib.pyplot as plt
 
-# set up matplotlib
-is_ipython = 'inline' in matplotlib.get_backend()
-if is_ipython:
-    from IPython import display
+from ready_trader_one import BaseAutoTrader, Instrument, Lifespan, Side
 
 class Orderbook:
     def __init__(self, name):
@@ -23,71 +17,63 @@ class Orderbook:
         self.ask_prices = None
         self.name = name
         self.figure = plt.figure()
-        self.max_length = 100
-        self.history = np.zeros((self.max_length, 3))
-        self.gradient_length = 100
+        self.max_length = 50
+        self.history = np.zeros((self.max_length, 2))
+        self.gradient_length = 50
+        self.fit_degree = 2
+        self.fit_coeff = np.zeros(self.fit_degree + 1)
         self.i = 0
 
     def get_table(self):
         return np.vstack((self.bid_volumes, self.bid_prices, self.ask_prices, self.ask_volumes)).astype(str).T
 
-    def update(self, bid_volumes, bid_prices, ask_prices, ask_volumes, time=0):
+    def update_orders(self, bid_volumes, bid_prices, ask_prices, ask_volumes, time=0):
         self.bid_volumes = bid_volumes
         self.ask_volumes = ask_volumes
         self.bid_prices = bid_prices
         self.ask_prices = ask_prices
         self.total_volume = np.sum([bid_volumes, ask_volumes])
         
-        if self.i < self.max_length:
-            self.history[self.i, :] = [time, self.midpoint()]
-        else:
-            self.history = np.roll(self.history, 1, axis=0)
-            self.history[-1, :] = [time, self.midpoint()]
-        self.i += 1
-
-    def update_price(self, price, time):
-        if self.i < self.max_length:
-            self.history[self.i, :] = [time, price, self.gradient()]
-        else:
-            self.history = np.roll(self.history, 1, axis=0)
-            self.history[-1, :] = [time, price, self.gradient()]
-        self.i += 1
-
-    def gradient_change(self):
-        if self.i > self.max_length:
-            P = self.history[-self.gradient_length:, 0]
-            X = np.vstack((self.history[-self.gradient_length:, 2], np.ones(self.gradient_length)))
-            A = P @ np.linalg.pinv(X)
-            return A[0]
-
-        elif self.i > self.gradient_length:
-            P = self.history[self.i  - self.gradient_length:self.i, 0]
-            X = np.vstack((self.history[self.i - self.gradient_length:self.i, 2], np.ones(self.gradient_length)))
-
-            A = P @ np.linalg.pinv(X)
-
-            return A[0]
-
-        return 0
+        self.update(self.midpoint(), time)
         
 
-    def gradient(self):
+    def update(self, price, time):
+        if self.i < self.max_length:
+            self.history[self.i, :] = [time, price]
+        else:
+            self.history = np.roll(self.history, -1, axis=0)
+            self.history[-1, :] = [time, price]
+        self.fit()
+        self.i += 1
+
+    def gradient(self, time):
+        return np.polyval(np.polyder(self.fit_coeff, 1), time)
+
+    def acceleration(self, time):
+        return np.polyval(np.polyder(self.fit_coeff, 2), time)
+
+    def predict(self, time):
+        return np.polyval(self.fit_coeff, time)
+
+    def fit(self):
+        if self.i < self.fit_degree:
+            return
+
         if self.i > self.max_length:
-            P = self.history[-self.gradient_length:, 0]
-            X = np.vstack((self.history[-self.gradient_length:, 1], np.ones(self.gradient_length)))
-            A = P @ np.linalg.pinv(X)
-            return A[0]
+            i = self.max_length - 1
+        else:
+            i = self.i
+        
+        if self.i > self.gradient_length:
+            l = self.gradient_length - 1
+        else:
+            l = i
+        
+        
+        X = self.history[i  - l:i + 1, 0]
+        Y = self.history[i  - l:i + 1, 1]
+        self.fit_coeff = np.polyfit(X, Y, deg=self.fit_degree)
 
-        elif self.i > self.gradient_length:
-            P = self.history[self.i  - self.gradient_length:self.i, 0]
-            X = np.vstack((self.history[self.i - self.gradient_length:self.i, 1], np.ones(self.gradient_length)))
-
-            A = P @ np.linalg.pinv(X)
-
-            return A[0]
-
-        return 0
-    
     def best_bid(self):
         return self.bid_prices[0]
 
@@ -100,8 +86,6 @@ class Orderbook:
         else:
             return 0
 
-
-
 class Constants:
     ETA = - 0.005
     MAX_ORDER = 15
@@ -111,9 +95,12 @@ class Constants:
     # Acceleration
     ALPHA = 1.0 
     # Speed
-    BETA = 1.0
-    # KAPPA
-    KAPPA = 0.01
+    BETA = 0.2
+    # Discount for inventory
+    KAPPA = 0.012
+    SPEED = 20.0
+    # maximum message per second
+    MAX_MESSAGE = 20
 
 class AutoTrader(BaseAutoTrader):
     def __init__(self, loop: asyncio.AbstractEventLoop):
@@ -129,6 +116,7 @@ class AutoTrader(BaseAutoTrader):
 
         self.bid_time = 0
         self.ask_time = 0
+        self.update_time = 0
 
         self.constants = Constants
 
@@ -137,7 +125,9 @@ class AutoTrader(BaseAutoTrader):
         self.high = self.low = self.mean = 0
         self.orderbook = Orderbook("ETF")
 
-        self.speed = 20.0
+        self.speed = self.constants.SPEED
+
+        self.command_buffer = []
 
         self.prices = {
         Instrument.ETF:{
@@ -152,8 +142,7 @@ class AutoTrader(BaseAutoTrader):
             },
             
         }
-            
-
+        
 
     def on_error_message(self, client_order_id: int, error_message: bytes) -> None:
         """Called when the exchange detects an error.
@@ -212,39 +201,52 @@ class AutoTrader(BaseAutoTrader):
         else:
             self.logger.info("Invalid side %d", side)
             return
+        
+        if len(self.command_buffer) + 1 < self.constants.MAX_MESSAGE:
+            self.send_insert_order(order_id, side, price, volume, lifspan)
+            self.command_buffer.append(self.get_time())
+            self.logger.info("(id: %d) Placing  %s %d lots for $%d", order_id, "bid" if side == Side.BUY else "ask", volume, price // 100)
 
-        price -= price % 100
-        price = int(price)
 
-        self.send_insert_order(order_id, side, price, volume, lifspan)
-        self.logger.info("(id: %d) Placing  %s %d lots for $%d", order_id, "bid" if side == Side.BUY else "ask", volume, price // 100)
-
-    def cancel(self, order_id,):
+    def cancel(self, order_id):
         if order_id > 0:
-            self.send_cancel_order(order_id)
-            self.logger.info("Cancelling %d", order_id)
+            if len(self.command_buffer) + 1 < self.constants.MAX_MESSAGE:
+                self.send_cancel_order(order_id)
+                self.command_buffer.append(self.get_time())
+                self.logger.info("Cancelling %d", order_id)
     
     def pricing(self, side):
         discount = 0 
         if self.etf_position < 0:
-            discount = np.exp(self.constants.KAPPA * np.abs(self.etf_position)) * 100 - 100
+            discount =  np.exp(self.constants.KAPPA * np.abs(self.etf_position)) * 100 - 100
         elif self.etf_position > 0:
-            discount = -np.exp(self.constants.KAPPA * np.abs(self.etf_position)) * 100 + 100
+            discount = - np.exp(self.constants.KAPPA * np.abs(self.etf_position)) * 100 + 100
 
         # ask
         if side == Side.SELL:
             # price = self.high + self.constants.ALPHA * np.max((0, self.delta_m)) / 10 / self.speed + self.constants.BETA * np.max((0, self.orderbook.gradient())) * 10000 / self.speed
             price = np.max((self.prices[Instrument.ETF]["high"], self.prices[Instrument.FUTURE]["high"], self.best_ask))
+            
+            # if self.etf_position > 0:
+            price += discount
+            # price = np.max((price, self.prices[Instrument.ETF]["high"]))
             time = self.ask_time
+
         # bid
         elif side == Side.BUY:
             # price = self.low + self.constants.ALPHA * np.min((0, self.delta_m)) / 10 / self.speed + self.constants.BETA * np.min((0, self.orderbook.gradient())) * 10000 / self.speed
             price = np.min((self.prices[Instrument.ETF]["low"], self.prices[Instrument.FUTURE]["low"], self.best_bid))
+
+            # if self.etf_position < 0:
+            price += discount
+            # price = np.min((price, self.prices[Instrument.ETF]["low"]))
             time = self.bid_time
 
-        # price -= self.orderbook.gradient() * 10000 / self.speed * (self.get_time() - time) * self.constants.BETA
-
-        return price + discount
+        # delta = self.orderbook.gradient(self.get_time()) * (self.get_time() - time) * self.constants.BETA
+        # self.logger.info("Current delta is %.2f", delta)
+        # price -= delta
+        
+        return int(price // 100) * 100
 
 
     def time_out(self, side):
@@ -275,10 +277,11 @@ class AutoTrader(BaseAutoTrader):
         Look at volume detection later
 
         """
+        
+
         if np.sum(ask_volumes) + np.sum(bid_volumes) == 0:
             return
         
-        self.delta_m = self.orderbook.gradient_change()
         if instrument == Instrument.FUTURE:
             self.best_bid = bid_prices[0]
             self.best_ask = ask_prices[0] 
@@ -286,19 +289,36 @@ class AutoTrader(BaseAutoTrader):
 
         if self.bid_id == 0 or self.bid_changed or self.ask_changed or self.time_out(Side.BUY):
             pricing = self.pricing(Side.BUY)
+            self.logger.info("Quoting bid price %d (Existing %d)", pricing // 100, self.bid_price // 100)
+            if pricing > self.ask_price:
+                self.logger.info("Bid crosses ask, cancelling ask")
+                self.cancel(self.ask_id)
             if pricing != self.bid_price:
                 self.logger.info("placing bid")
                 self.cancel(self.bid_id)
                 self.insert(Side.BUY, self.inventory(Side.BUY), pricing)
+            else:
+                self.logger.info("Same price as existing bid")
 
         if self.ask_id == 0 or self.bid_changed or self.ask_changed or self.time_out(Side.SELL):
             pricing = self.pricing(Side.SELL)
+            self.logger.info("Quoting ask price %d (Existing %d)", pricing // 100, self.ask_price // 100)
+            if pricing < self.bid_price:
+                self.logger.info("Ask crosses bid, cancelling bid")
+                self.cancel(self.bid_id)
             if pricing != self.ask_price:
                 self.logger.info("placing ask")
                 self.cancel(self.ask_id)
                 self.insert(Side.SELL, self.inventory(Side.SELL), pricing)
+            else:
+                self.logger.info("Same price as existing ask")
 
         self.ask_changed = self.bid_changed = False
+        # print(self.orderbook.history)
+        self.update_buffer()
+
+    def update_buffer(self):
+        self.command_buffer = [x for x in self.command_buffer if self.get_time() - x < 1.0]
         
     def on_order_status_message(self, client_order_id: int, fill_volume: int, remaining_volume: int, fees: int) -> None:
         """Called when the status of one of your orders changes.
@@ -316,14 +336,10 @@ class AutoTrader(BaseAutoTrader):
         if remaining_volume == 0:
             if client_order_id == self.bid_id:
                 self.bid_id = 0
-                self.bid_remaining = 0
                 self.bid_volume = 0
-                self.bid_changed = True
             elif client_order_id == self.ask_id:
                 self.ask_id = 0
-                self.ask_remaining = 0
                 self.ask_volume = 0
-                self.ask_changed = True
             if fill_volume == 0:
                 self.logger.info("Order %d cancelled", client_order_id)
             else:
@@ -331,10 +347,6 @@ class AutoTrader(BaseAutoTrader):
         elif fill_volume == 0:
             self.logger.info("Order %d placed", client_order_id)
         else:
-            if client_order_id == self.bid_id:
-                self.bid_changed = True
-            elif client_order_id == self.ask_id:
-                self.ask_changed = True
             self.logger.info("Order %d filled (%d / %d)", client_order_id, fill_volume, fill_volume + remaining_volume)
             
 
@@ -371,7 +383,8 @@ class AutoTrader(BaseAutoTrader):
         self.prices[instrument]['high'] = high
         self.prices[instrument]['low'] = low
 
+        self.update_time = self.get_time()
 
         if instrument == Instrument.ETF:
-            self.orderbook.update_price(mean, self.get_time())
+            self.orderbook.update(mean, self.update_time)
 

@@ -10,6 +10,8 @@ import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
 
+from config import speed
+
 # set up matplotlib
 is_ipython = 'inline' in matplotlib.get_backend()
 if is_ipython:
@@ -117,7 +119,7 @@ class AutoTrader(BaseAutoTrader):
 
         # TODO: CHANGE THIS
         # speed of the simulation
-        self.speed = 1.0
+        self.speed = speed
 
         # store the historical midpoint data of ETF and FUTURE
         self.history = {

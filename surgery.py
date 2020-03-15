@@ -7,8 +7,18 @@ import numpy as np
 
 
 bots = {
-    "TraderOne": np.array([0, 150, 0]), 
-    "TeamJ": np.array([150, 0, 0])
+    "Tradies": np.array([0, 150, 0]), 
+    # "TeamJ": np.array([150, 0, 0]),
+    "NowUCMe": np.array([0, 0, 150]),
+    # "SMCtrading": np.array([0, 150, 150]),
+    "LilAkuma": np.array([150, 150, 0]),
+    # "AlecBotV2": np.array([0, 0, 150]),
+}
+
+
+linestyle = {
+    "B": "-",
+    "S": "-"
 }
 
 def side_color(name, side):
@@ -31,20 +41,20 @@ def invert(name, side):
 
     return normalise(rgb)
 
-filename = "ready_trader_one/match_events.csv"
-
-linestyle = {
-    "B": "-",
-    "S": "-"
-}
+if len(sys.argv) >= 3:
+    filename = sys.argv[1]
+    outfile = sys.argv[2]
+else:
+    filename = "ready_trader_one/match_events.csv"
+    outfile = "img/pricing2.pdf"
 
 c = "b"
 t = 5
 
 
-if len(sys.argv) == 3:
-    start_time = int(sys.argv[1])
-    duration = int(sys.argv[2])
+if len(sys.argv) == 5:
+    start_time = int(sys.argv[3])
+    duration = int(sys.argv[4])
 else:
     start_time = 250
     duration = 50
@@ -55,16 +65,17 @@ df = pd.read_csv(filename)
 df = df.query(f"Time > {time_range[0]}").query(f"Time < {time_range[1]}")
 
 fig = plt.figure(constrained_layout=True, figsize=(20, 10))
-spec = fig.add_gridspec(ncols=1, nrows=2, height_ratios=[1, 5])
+spec = fig.add_gridspec(ncols=1, nrows=3, height_ratios=[1, 1, 7])
 
 ax2 = fig.add_subplot(spec[0, 0])
-ax = fig.add_subplot(spec[1, 0])
+pnl = fig.add_subplot(spec[1, 0])
+ax = fig.add_subplot(spec[2, 0])
 
 for i, bot_name in enumerate(bots.keys()):
     bot_data = df.query(f"Competitor == '{bot_name}'")
     orders = bot_data["OrderId"].dropna().unique()
     ax2.plot(bot_data["Time"], bot_data["EtfPosition"], label=bot_name)
-
+    pnl.plot(bot_data["Time"], bot_data["ProfitLoss"], label=bot_name)
 
     for order_id in orders:
         data = bot_data.query(f"OrderId == {order_id}")
@@ -78,8 +89,13 @@ for i, bot_name in enumerate(bots.keys()):
             insert_price = insert["Price"].values[0] - i * 0.2
             insert_time = insert["Time"].values[0]
             insert_volume = int(insert["Volume"].values[0])
-            ax.scatter(insert_time, insert_price, marker="v", color=invert(bot_name, side), zorder=2)
-            ax.text(insert_time + 0.02, insert_price - 0.02, str(insert_volume))
+            if side == "B":
+                marker = "v"
+            else:
+                marker = "^"
+            ax.scatter(insert_time, insert_price, marker=marker, color=invert(bot_name, side), zorder=2)
+            ax.text(insert_time + 0.02, insert_price - 0.02, str(int(insert_volume)))
+            # ax.text(insert_time + 0.02, insert_price - 0.02, str(int(order_id)))
             if len(cancel) == 1:
                 cancel_time = cancel["Time"].values[-1]
                 ax.plot([insert_time, cancel_time], [insert_price, insert_price], linestyle=linestyle[side], color=side_color(bot_name, side), linewidth=t, zorder=1)
@@ -100,6 +116,7 @@ ax.grid(axis='y')
 
 
 ax2.legend()
+pnl.legend()
 
 legend_elements = []
 legend_elements.append(Line2D([0], [0], color='orange', label="ETF"))
@@ -113,4 +130,5 @@ legend_elements.append(Line2D([0], [0], marker="*", color=c, label="Fill"))
 
 
 ax.legend(handles=legend_elements, loc=0)
-plt.savefig("img/pricing2.pdf")
+
+plt.savefig(outfile)

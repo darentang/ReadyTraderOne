@@ -7,6 +7,8 @@ from ready_trader_one import BaseAutoTrader, Instrument, Lifespan, Side
 import itertools
 import numpy as np
 
+from config import speed
+
 class Constants:
     GAMMA = 0.01
     KAPPA = 2
@@ -37,7 +39,7 @@ class AutoTrader(BaseAutoTrader):
         self.etf_position = self.future_position = 0
 
         # speed of the simulation
-        self.speed = 20.0
+        self.speed = speed
 
         # store the historical midpoint data of ETF and FUTURE
         self.history = {

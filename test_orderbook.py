@@ -1,6 +1,40 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+# class KalmanFilter:
+#     def __init__(self, R, Q, X0, P0):
+#         self.R = R
+#         self.Q = Q
+#         self.X = X0
+#         self.P = P0
+#         self.H = np.array([1, 0])
+#         self.K = np.zeros(2)
+#         self.t = 0
+
+#     def gamma(self, t):
+#         return np.array([0.5 * (t - self.t) ** 2, (t - self.t)])
+        
+#     def A(self, t):
+#         return np.array([[1, t - self.t], [0, 1]])
+    
+#     def predict(self, t):
+#         # state vector 
+#         self.X = self.A(t) @ self.X
+#         self.P = self.A(t) @ self.P @ self.A(t).T + self.Q * self.gamma(t) @ self.gamma(t).T
+#         # self.P = self.A(t) @ self.P @ self.A(t).T + self.Q 
+
+#     def update(self, z, t):
+#         self.K = self.P @ self.H.T  / (self.H @ self.P @ self.H.T + self.R)
+#         self.X = self.X + self.K * (z - self.H @ self.X)
+#         self.P = (np.identity(2) - self.K @ self.H) @ self.P
+#         self.t = t
+
+#     def cov(self, sigma1, sigma2):
+#         cov_matrix = np.outer([sigma1, sigma2], [sigma1, sigma2])
+#         return np.diag(np.diag(cov_matrix))
+
+
+
 class Orderbook:
     def __init__(self, name):
         self.bid_volumes = None
@@ -12,7 +46,7 @@ class Orderbook:
         self.max_length = 10
         self.history = np.zeros((self.max_length, 2))
         self.gradient_length = 10
-        self.fit_degree = 5
+        self.fit_degree = 2
         self.fit_coeff = np.zeros(self.fit_degree + 1)
         self.i = 0
 
@@ -85,7 +119,7 @@ def gauss(x, mu, sigma):
 sigma = 0.1
 sigma_v = 2
 prob = [0.6, 0.4]
-N = 12
+N = 100
 ask_prices = np.zeros((N , 5))
 ask_volumes = np.zeros((N , 5))
 bid_prices = np.zeros((N , 5))
@@ -114,16 +148,21 @@ for i in range(N):
 
     orderbook.update_orders(bid_volumes[i, :], bid_prices[i, :], ask_prices[i, :], ask_volumes[i, :], time=time[i])
     predicted_midpoints[i] = orderbook.midpoint()
+    predicted_gradient[i] = orderbook.acceleration(time[i])
 
     plt.scatter(time[i] * np.ones(5), ask_prices[i, :], c="r", s=ask_volumes[i, :])
     plt.scatter(time[i] * np.ones(5), bid_prices[i, :], c="b", s=bid_volumes[i, :])
 
 plt.figure(1)
 
+plt.subplot(2, 1, 1)
 plt.plot(time, midpoints)
 plt.plot(time, predicted_midpoints)
 plt.plot(time[-10:], orderbook.predict(time[-10:]))
 plt.plot(time[-1] + np.array([0, 1]), predicted_midpoints[-1] + np.array([0, orderbook.gradient(time[-1])]))
+
+plt.subplot(2, 1, 2)
+plt.plot(time, predicted_gradient)
+
+
 plt.show()
-
-

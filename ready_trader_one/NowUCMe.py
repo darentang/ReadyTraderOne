@@ -122,8 +122,6 @@ class AutoTrader(BaseAutoTrader):
             bid_volume = np.min((99, self.constants.MAX_VOLUME - self.etf_position - self.bid_volume))
             ask_volume = np.min((99, self.etf_position - self.ask_volume + self.constants.MAX_VOLUME))
 
-            print(self.etf_position, bid_volume, ask_volume)
-
             if best_bid != self.bid_price and bid_volume > 0:
                 self.bid_price = best_bid
                 self.bid_volume = bid_volume

@@ -8,10 +8,12 @@ import numpy as np
 
 bots = {
     "Tradies": np.array([0, 150, 0]), 
-    # "TeamJ": np.array([150, 0, 0]),
-    "NowUCMe": np.array([0, 0, 150]),
+    "TeamJ": np.array([150, 0, 0]),
+    # "NowUCMe": np.array([0, 0, 150]),
     # "SMCtrading": np.array([0, 150, 150]),
-    "LilAkuma": np.array([150, 150, 0]),
+    # "LilAkuma": np.array([150, 150, 0]),
+    # "SMCtrading": np.array([150, 0, 150]),
+
     # "AlecBotV2": np.array([0, 0, 150]),
 }
 

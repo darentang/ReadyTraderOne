@@ -14,11 +14,11 @@ class Constants:
     MAX_ORDER = 15
     MAX_VOLUME = 100
     TIMEOUT = 1.0
-    INVENTORY_THRESHOLD = 50
-    # Acceleration
-    ALPHA = 1.0 
-    # Ratio between future and etf
-    BETA = 0.1
+    INVENTORY_THRESHOLD = 55
+    
+    ONE_LEVEL_POINT = 30
+    END_LEVEL = 5
+
     # Discount for inventory
     KAPPA = 0.005
     SPEED = 20.0
@@ -158,7 +158,10 @@ class AutoTrader(BaseAutoTrader):
             },
             
         }
-        
+
+
+        self.n = np.log(1.0 / self.constants.END_LEVEL) / np.log(self.constants.ONE_LEVEL_POINT / self.constants.MAX_VOLUME) 
+        self.a = 1 / (self.constants.ONE_LEVEL_POINT) ** self.n
 
     def on_error_message(self, client_order_id: int, error_message: bytes) -> None:
         """Called when the exchange detects an error.
@@ -233,7 +236,8 @@ class AutoTrader(BaseAutoTrader):
     
 
     def pricing(self, side):
-        discount = int(- self.etf_position * 0.02) * 100
+        discount = - np.sign(self.etf_position) * np.floor(np.abs(self.etf_position) ** self.n * self.a) * 100
+        print(discount, self.etf_position)
         gradient = self.etf_orderbook.gradient(self.get_time())
 
         etf = self.etf_orderbook.midpoint()
@@ -244,41 +248,26 @@ class AutoTrader(BaseAutoTrader):
         future_best_ask = self.future_orderbook.best_ask()
         future_best_bid = self.future_orderbook.best_bid()
     
-        Lambda = np.min((1, np.abs(gradient) / 100))
 
-
-
-        # if np.abs(etf - self.etf_prediction) > 200:
-        #     etf_best_ask = self.etf_prediction + self.etf_orderbook.spread() / 2
-        #     etf_best_bid = self.etf_prediction - self.etf_orderbook.spread() / 2
-
-        # if np.abs(future - self.future_prediction) > 200:
-        #     future_best_ask = self.future_prediction + self.future_orderbook.spread() / 2
-        #     future_best_bid = self.future_prediction - self.future_orderbook.spread() / 2
 
         # ask
         if side == Side.SELL:
-            if future > etf:
-                price = Lambda * future_best_ask + (1 - Lambda) * etf_best_ask
+            if self.etf_position < self.constants.INVENTORY_THRESHOLD:
+                price = np.max((etf_best_ask, future_best_ask + discount))
             else:
-                price = np.min((self.prices[Instrument.ETF]["high"], etf_best_ask))
-                # price = self.etf_orderbook.best_ask()
-            price += discount
+                price = np.min((etf_best_ask, future_best_ask))
+            # price += discount
             time = self.ask_time
 
         # bid
         elif side == Side.BUY:
-            if etf > future:
-                price = Lambda * future_best_bid + (1 - Lambda) * etf_best_bid
-            else:
-                price = np.max((self.prices[Instrument.ETF]["low"], etf_best_bid))
-                # price = self.etf_orderbook.best_bid()
-            price += discount
-            time = self.bid_time
 
-        # delta = self.orderbook.gradient(self.get_time()) * (self.get_time() - time) * self.constants.BETA
-        # self.logger.info("Current delta is %.2f", delta)
-        # price -= delta
+
+            if self.etf_position > -self.constants.INVENTORY_THRESHOLD:
+                price = np.min((etf_best_bid, future_best_bid + discount))
+            else:
+                price = np.max((etf_best_bid, future_best_bid))
+            time = self.bid_time
         
         return int(price // 100) * 100
 
@@ -324,19 +313,13 @@ class AutoTrader(BaseAutoTrader):
         if self.future_orderbook.total_volume == 0 or self.etf_orderbook.total_volume == 0:
             return 
 
-        if self.future_orderbook.i > self.future_orderbook.fit_degree:
-            self.future_prediction = self.future_orderbook.predict(self.get_time())
-
-        if self.etf_orderbook.i > self.etf_orderbook.fit_degree:
-            self.etf_prediction = self.etf_orderbook.predict(self.get_time())
-
         if self.bid_id == 0 or self.bid_changed or self.ask_changed or self.time_out(Side.BUY):
             pricing = self.pricing(Side.BUY)
             self.logger.info("Quoting bid price %d (Existing %d)", pricing // 100, self.bid_price // 100)
             if pricing >= self.ask_price:
                 self.logger.info("Bid crosses ask, cancelling ask")
-                pricing = self.ask_price - 100
-                # self.cancel(self.ask_id)
+                # pricing = self.ask_price - 100
+                self.cancel(self.ask_id)
             if pricing != self.bid_price:
                 self.logger.info("placing bid")
                 self.cancel(self.bid_id)
@@ -349,8 +332,8 @@ class AutoTrader(BaseAutoTrader):
             self.logger.info("Quoting ask price %d (Existing %d)", pricing // 100, self.ask_price // 100)
             if pricing <= self.bid_price:
                 self.logger.info("Ask crosses bid, cancelling bid")
-                pricing = self.bid_price + 100
-                # self.cancel(self.bid_id)
+                # pricing = self.bid_price + 100
+                self.cancel(self.bid_id)
             if pricing != self.ask_price:
                 self.logger.info("placing ask")
                 self.cancel(self.ask_id)

@@ -11,16 +11,16 @@ from ready_trader_one import BaseAutoTrader, Instrument, Lifespan, Side
 
 class Constants:
     ETA = - 0.005
-    MAX_ORDER = 15
+    MAX_ORDER = 25
     MAX_VOLUME = 100
     TIMEOUT = 1.0
-    INVENTORY_THRESHOLD = 55
+    INVENTORY_THRESHOLD = 50
     
-    ONE_LEVEL_POINT = 30
-    END_LEVEL = 5
+    ONE_LEVEL_POINT = 15 # inventory volume to reach 1 penalisation level
+    END_LEVEL = 5 # penalisation level at maximum allowable volume
 
     # Discount for inventory
-    KAPPA = 0.005
+    KAPPA = 0.1
     SPEED = 20.0
     # maximum message per second
     MAX_MESSAGE = 20
@@ -233,7 +233,11 @@ class AutoTrader(BaseAutoTrader):
                 self.send_cancel_order(order_id)
                 self.command_buffer.append(self.get_time())
                 self.logger.info("Cancelling %d", order_id)
-    
+
+    @staticmethod
+    def sigmoid(k, mu, x):
+        return 1 / (1 + np.exp(-k * (x - mu)))
+
 
     def pricing(self, side):
         discount = - np.sign(self.etf_position) * np.floor(np.abs(self.etf_position) ** self.n * self.a) * 100
@@ -248,25 +252,32 @@ class AutoTrader(BaseAutoTrader):
         future_best_ask = self.future_orderbook.best_ask()
         future_best_bid = self.future_orderbook.best_bid()
     
-
+        
 
         # ask
         if side == Side.SELL:
-            if self.etf_position < self.constants.INVENTORY_THRESHOLD:
-                price = np.max((etf_best_ask, future_best_ask + discount))
-            else:
-                price = np.min((etf_best_ask, future_best_ask))
+            # if self.etf_position < self.constants.INVENTORY_THRESHOLD:
+            #     print(np.max((etf_best_ask, future_best_ask + discount)))
+            # else:
+            #     print(np.min((etf_best_ask, future_best_ask)))
+
+            Lambda = self.sigmoid(self.constants.KAPPA, self.etf_position, self.constants.INVENTORY_THRESHOLD)
+            
+            price = Lambda * np.max((etf_best_ask, future_best_ask + discount)) + (1 - Lambda) * np.min((etf_best_ask, future_best_ask))
+
             # price += discount
             time = self.ask_time
 
         # bid
         elif side == Side.BUY:
 
+            # if self.etf_position > -self.constants.INVENTORY_THRESHOLD:
+            #     print(np.min((etf_best_bid, future_best_bid + discount)))
+            # else:
+            #     print(np.max((etf_best_bid, future_best_bid)))
+            Lambda = self.sigmoid(self.constants.KAPPA, -self.etf_position, self.constants.INVENTORY_THRESHOLD)
+            price = Lambda * np.min((etf_best_bid, future_best_bid + discount)) + (1 - Lambda) * np.max((etf_best_bid, future_best_bid))
 
-            if self.etf_position > -self.constants.INVENTORY_THRESHOLD:
-                price = np.min((etf_best_bid, future_best_bid + discount))
-            else:
-                price = np.max((etf_best_bid, future_best_bid))
             time = self.bid_time
         
         return int(price // 100) * 100

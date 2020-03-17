@@ -7,21 +7,26 @@ import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
 
+# TODO: Change in final version
+from config import speed
+
 from ready_trader_one import BaseAutoTrader, Instrument, Lifespan, Side
 
 class Constants:
-    ETA = - 0.005
-    MAX_ORDER = 25
+    MAX_ORDER = 15
     MAX_VOLUME = 100
     TIMEOUT = 1.0
-    INVENTORY_THRESHOLD = 50
-    
-    ONE_LEVEL_POINT = 15 # inventory volume to reach 1 penalisation level
-    END_LEVEL = 5 # penalisation level at maximum allowable volume
 
-    # Discount for inventory
+    INVENTORY_THRESHOLD_FACTOR = 1.0
+    INVENTORY_THRESHOLD = 40
+    
+    ONE_LEVEL_POINT = 40 # inventory volume to reach 1 penalisation level
+    END_LEVEL = 4 # penalisation level at maximum allowable volume
+
+    # Spread
     KAPPA = 0.1
-    SPEED = 20.0
+    # TODO: Change in final version
+    SPEED = speed
     # maximum message per second
     MAX_MESSAGE = 20
     GRADIENT_LENGTH = 25
@@ -240,9 +245,9 @@ class AutoTrader(BaseAutoTrader):
 
 
     def pricing(self, side):
-        discount = - np.sign(self.etf_position) * np.floor(np.abs(self.etf_position) ** self.n * self.a) * 100
-        print(discount, self.etf_position)
         gradient = self.etf_orderbook.gradient(self.get_time())
+        discount = - np.sign(self.etf_position) * np.floor(np.abs(self.etf_position) ** self.n * self.a) * 100
+        # print(discount, self.etf_position)
 
         etf = self.etf_orderbook.midpoint()
         etf_best_ask = self.etf_orderbook.best_ask()
@@ -253,6 +258,7 @@ class AutoTrader(BaseAutoTrader):
         future_best_bid = self.future_orderbook.best_bid()
     
         
+        threshold = np.min((self.constants.INVENTORY_THRESHOLD,  np.abs(gradient) * self.constants.INVENTORY_THRESHOLD_FACTOR))
 
         # ask
         if side == Side.SELL:
@@ -261,9 +267,10 @@ class AutoTrader(BaseAutoTrader):
             # else:
             #     print(np.min((etf_best_ask, future_best_ask)))
 
-            Lambda = self.sigmoid(self.constants.KAPPA, self.etf_position, self.constants.INVENTORY_THRESHOLD)
+            # Lambda = self.sigmoid(self.constants.KAPPA, self.etf_position, self.constants.INVENTORY_THRESHOLD)
+            Lambda = self.sigmoid(self.constants.KAPPA, self.etf_position, threshold)
             
-            price = Lambda * np.max((etf_best_ask, future_best_ask + discount)) + (1 - Lambda) * np.min((etf_best_ask, future_best_ask))
+            price = Lambda * np.max((etf_best_ask + discount, future_best_ask)) + (1 - Lambda) * np.min((etf_best_ask, future_best_ask))
 
             # price += discount
             time = self.ask_time
@@ -275,7 +282,8 @@ class AutoTrader(BaseAutoTrader):
             #     print(np.min((etf_best_bid, future_best_bid + discount)))
             # else:
             #     print(np.max((etf_best_bid, future_best_bid)))
-            Lambda = self.sigmoid(self.constants.KAPPA, -self.etf_position, self.constants.INVENTORY_THRESHOLD)
+            # Lambda = self.sigmoid(self.constants.KAPPA, -self.etf_position, self.constants.INVENTORY_THRESHOLD)
+            Lambda = self.sigmoid(self.constants.KAPPA, -self.etf_position, threshold)
             price = Lambda * np.min((etf_best_bid, future_best_bid + discount)) + (1 - Lambda) * np.max((etf_best_bid, future_best_bid))
 
             time = self.bid_time

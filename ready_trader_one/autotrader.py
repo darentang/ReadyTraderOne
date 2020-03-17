@@ -34,7 +34,7 @@ class Constants:
     # maximum message per second
     MAX_MESSAGE = 20
     GRADIENT_LENGTH = 25
-
+    
 class Orderbook:
     def __init__(self, name):
         self.bid_volumes = None
@@ -154,6 +154,9 @@ class AutoTrader(BaseAutoTrader):
 
         self.etf_prediction = self.future_prediction = 0
 
+        # upper and lower bound of etf
+        self.etf_ub = self.etf_lb = 0
+
         self.prices = {
         Instrument.ETF:{
                 "mean": 0,
@@ -183,23 +186,14 @@ class AutoTrader(BaseAutoTrader):
 
 
     def inventory(self, side):
-        if self.etf_position + self.bid_volume > -self.etf_position + self.ask_volume:
-            q = self.etf_position + self.bid_volume
-        else:
-            q = self.etf_position - self.ask_volume
-        remaining_volume = np.min((self.constants.MAX_ORDER, self.constants.MAX_VOLUME - np.abs(q)))
-        opposing_volume = self.constants.MAX_ORDER
-        if q < 0:
-            bid = opposing_volume
-            ask = remaining_volume 
-        else:
-            bid = remaining_volume 
-            ask = opposing_volume
-
         if side == Side.BUY:
-            return int(bid)
-        elif side == Side.SELL:
-            return int(ask)
+            q = self.etf_ub
+            return np.min((self.constants.MAX_ORDER, self.constants.MAX_VOLUME - q))
+        else:
+            q = self.etf_lb
+            return np.min((self.constants.MAX_ORDER, q + self.constants.MAX_VOLUME))
+
+        
         
 
     def get_time(self):
@@ -336,7 +330,7 @@ class AutoTrader(BaseAutoTrader):
         if self.future_orderbook.total_volume == 0 or self.etf_orderbook.total_volume == 0:
             return 
 
-        if self.bid_id == 0 or self.bid_changed or self.ask_changed or self.time_out(Side.BUY):
+        if self.bid_id == 0 or self.bid_changed or self.ask_changed or self.time_out(Side.BUY) or self.etf_ub > self.constants.MAX_VOLUME:
             pricing = self.pricing(Side.BUY)
             self.logger.info("Quoting bid price %d (Existing %d)", pricing // 100, self.bid_price // 100)
             if pricing >= self.ask_price:
@@ -350,7 +344,7 @@ class AutoTrader(BaseAutoTrader):
             else:
                 self.logger.info("Same price as existing bid")
 
-        if self.ask_id == 0 or self.bid_changed or self.ask_changed or self.time_out(Side.SELL):
+        if self.ask_id == 0 or self.bid_changed or self.ask_changed or self.time_out(Side.SELL) or self.etf_lb < - self.constants.MAX_VOLUME:
             pricing = self.pricing(Side.SELL)
             self.logger.info("Quoting ask price %d (Existing %d)", pricing // 100, self.ask_price // 100)
             if pricing <= self.bid_price:
@@ -366,7 +360,11 @@ class AutoTrader(BaseAutoTrader):
 
         self.ask_changed = self.bid_changed = False
         # print(self.orderbook.history)
+
+        self.etf_ub = self.etf_position + self.bid_volume
+        self.etf_lb = self.etf_position - self.ask_volume
         self.update_buffer()
+
 
     def update_buffer(self):
         self.command_buffer = [x for x in self.command_buffer if self.get_time() - x < 1.0]
@@ -381,7 +379,6 @@ class AutoTrader(BaseAutoTrader):
 
         If an order is cancelled its remaining volume will be zero.
         """
-        
 
         # only when it cancels
         if remaining_volume == 0:
@@ -393,9 +390,14 @@ class AutoTrader(BaseAutoTrader):
                 self.ask_id = 0
                 self.ask_volume = 0
                 self.ask_price = 0
+            
             if fill_volume == 0:
                 self.logger.info("Order %d cancelled", client_order_id)
             else:
+                if client_order_id == self.bid_id:
+                    self.etf_ub = self.etf_position + fill_volume
+                elif client_order_id == self.ask_id:
+                    self.etf_lb = self.etf_position - fill_volume
                 self.logger.info("Order %d filled (%d / %d)", client_order_id, fill_volume, fill_volume + remaining_volume)
         elif fill_volume == 0:
             self.logger.info("Order %d placed", client_order_id)
@@ -418,7 +420,7 @@ class AutoTrader(BaseAutoTrader):
         self.logger.info("Position changed to ETF: %d, FUTURE: %d", etf_position, future_position)
         self.etf_position = etf_position
         self.future_position = future_position
-
+                    
         
 
     def on_trade_ticks_message(self, instrument: int, trade_ticks: List[Tuple[int, int]]) -> None:

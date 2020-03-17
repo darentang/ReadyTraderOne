@@ -12,21 +12,21 @@ from config import speed
 
 from ready_trader_one import BaseAutoTrader, Instrument, Lifespan, Side
 
+
 class Constants:
     MAX_ORDER = 30
     MAX_VOLUME = 95
     TIMEOUT = 1.0
 
     # TWEAKABLE
-
     INVENTORY_THRESHOLD_FACTOR = 0.5
-    INVENTORY_THRESHOLD = 10
+    INVENTORY_THRESHOLD = 50
     
-    ONE_LEVEL_POINT = 20 # inventory volume to reach 1 penalisation level
-    END_LEVEL = 5 # penalisation level at maximum allowable volume
+    ONE_LEVEL_POINT = 50 # inventory volume to reach 1 penalisation level
+    END_LEVEL = 3 # penalisation level at maximum allowable volume
 
     # Spread
-    KAPPA = 0.02
+    KAPPA = 1
 
 
     # TODO: Change in final version
@@ -34,7 +34,7 @@ class Constants:
     # maximum message per second
     MAX_MESSAGE = 20
     GRADIENT_LENGTH = 25
-    
+
 class Orderbook:
     def __init__(self, name):
         self.bid_volumes = None
@@ -154,6 +154,8 @@ class AutoTrader(BaseAutoTrader):
 
         self.etf_prediction = self.future_prediction = 0
 
+        self.crossed = False
+
         # upper and lower bound of etf
         self.etf_ub = self.etf_lb = 0
 
@@ -257,37 +259,40 @@ class AutoTrader(BaseAutoTrader):
     
         
         threshold = np.min((self.constants.INVENTORY_THRESHOLD,  np.abs(gradient) * self.constants.INVENTORY_THRESHOLD_FACTOR))
+        threshold = self.constants.INVENTORY_THRESHOLD
+
+
+        if self.etf_position < self.constants.INVENTORY_THRESHOLD:
+            price1 = np.max((etf_best_ask + discount, future_best_ask ))
+        else:
+            price1 = np.min((etf_best_ask, future_best_ask))
+
+        if self.etf_position > -self.constants.INVENTORY_THRESHOLD:
+            price2 = np.min((etf_best_bid, future_best_bid + discount))
+        else:
+            price2 = np.max((etf_best_bid, future_best_bid))
+        
+        price1 = int(price1 // 100) * 100 
+        price2 = int(price2 // 100) * 100 
+
+        if price1 == price2:
+            price1 = price2 + 100
 
         # ask
         if side == Side.SELL:
-            # if self.etf_position < self.constants.INVENTORY_THRESHOLD:
-            #     print(np.max((etf_best_ask, future_best_ask + discount)))
-            # else:
-            #     print(np.min((etf_best_ask, future_best_ask)))
+            # Lambda = self.sigmoid(self.constants.KAPPA, self.etf_position, threshold)
+            # price = Lambda * np.max((etf_best_ask, future_best_ask + discount)) + (1 - Lambda) * np.min((etf_best_ask, future_best_ask))
 
-            # Lambda = self.sigmoid(self.constants.KAPPA, self.etf_position, self.constants.INVENTORY_THRESHOLD)
-            Lambda = self.sigmoid(self.constants.KAPPA, self.etf_position, threshold)
-            
-            price = Lambda * np.max((etf_best_ask + discount, future_best_ask)) + (1 - Lambda) * np.min((etf_best_ask, future_best_ask))
-
-            # price += discount
             time = self.ask_time
+            return np.max((price1, price2))
 
         # bid
         elif side == Side.BUY:
-
-            # if self.etf_position > -self.constants.INVENTORY_THRESHOLD:
-            #     print(np.min((etf_best_bid, future_best_bid + discount)))
-            # else:
-            #     print(np.max((etf_best_bid, future_best_bid)))
-            # Lambda = self.sigmoid(self.constants.KAPPA, -self.etf_position, self.constants.INVENTORY_THRESHOLD)
-            Lambda = self.sigmoid(self.constants.KAPPA, -self.etf_position, threshold)
-            price = Lambda * np.min((etf_best_bid, future_best_bid + discount)) + (1 - Lambda) * np.max((etf_best_bid, future_best_bid))
+            # Lambda = self.sigmoid(self.constants.KAPPA, -self.etf_position, threshold)
+            # price = Lambda * np.min((etf_best_bid, future_best_bid + discount)) + (1 - Lambda) * np.max((etf_best_bid, future_best_bid))
 
             time = self.bid_time
-        
-        return int(price // 100) * 100
-
+            return np.min((price1, price2))
 
     def time_out(self, side):
         if side == Side.SELL:
@@ -317,6 +322,7 @@ class AutoTrader(BaseAutoTrader):
         Look at volume detection later
 
         """
+
         
 
         if np.sum(ask_volumes) + np.sum(bid_volumes) == 0:
@@ -330,13 +336,16 @@ class AutoTrader(BaseAutoTrader):
         if self.future_orderbook.total_volume == 0 or self.etf_orderbook.total_volume == 0:
             return 
 
-        if self.bid_id == 0 or self.bid_changed or self.ask_changed or self.time_out(Side.BUY) or self.etf_ub > self.constants.MAX_VOLUME:
+        if self.bid_id == 0 or self.bid_changed or self.ask_changed or self.time_out(Side.BUY) or self.etf_ub > self.constants.MAX_VOLUME or self.crossed:
             pricing = self.pricing(Side.BUY)
             self.logger.info("Quoting bid price %d (Existing %d)", pricing // 100, self.bid_price // 100)
             if pricing >= self.ask_price:
-                self.logger.info("Bid crosses ask, cancelling ask")
-                # pricing = self.ask_price - 100
+                self.logger.info("Bid crosses ask")
+                print("crossing bid")
                 self.cancel(self.ask_id)
+                self.crossed = True
+            else:
+                self.crossed = False
             if pricing != self.bid_price:
                 self.logger.info("placing bid")
                 self.cancel(self.bid_id)
@@ -344,13 +353,16 @@ class AutoTrader(BaseAutoTrader):
             else:
                 self.logger.info("Same price as existing bid")
 
-        if self.ask_id == 0 or self.bid_changed or self.ask_changed or self.time_out(Side.SELL) or self.etf_lb < - self.constants.MAX_VOLUME:
+        if self.ask_id == 0 or self.bid_changed or self.ask_changed or self.time_out(Side.SELL) or self.etf_lb < - self.constants.MAX_VOLUME or self.crossed:
             pricing = self.pricing(Side.SELL)
             self.logger.info("Quoting ask price %d (Existing %d)", pricing // 100, self.ask_price // 100)
             if pricing <= self.bid_price:
-                self.logger.info("Ask crosses bid, cancelling bid")
-                # pricing = self.bid_price + 100
+                self.logger.info("Ask crosses bid")
+                print("crossing ask")
                 self.cancel(self.bid_id)
+                self.crossed = True
+            else:
+                self.crossed = False
             if pricing != self.ask_price:
                 self.logger.info("placing ask")
                 self.cancel(self.ask_id)
@@ -420,6 +432,9 @@ class AutoTrader(BaseAutoTrader):
         self.logger.info("Position changed to ETF: %d, FUTURE: %d", etf_position, future_position)
         self.etf_position = etf_position
         self.future_position = future_position
+
+        self.etf_ub = self.etf_position + self.bid_volume
+        self.etf_lb = self.etf_position - self.ask_volume
                     
         
 

@@ -12,6 +12,7 @@ from config import speed
 
 from ready_trader_one import BaseAutoTrader, Instrument, Lifespan, Side
 
+
 class Constants:
     MAX_ORDER = 30
     MAX_VOLUME = 95
@@ -267,7 +268,7 @@ class AutoTrader(BaseAutoTrader):
             # Lambda = self.sigmoid(self.constants.KAPPA, self.etf_position, self.constants.INVENTORY_THRESHOLD)
             Lambda = self.sigmoid(self.constants.KAPPA, self.etf_position, threshold)
             
-            price = Lambda * np.max((etf_best_ask + discount, future_best_ask)) + (1 - Lambda) * np.min((etf_best_ask, future_best_ask))
+            price = Lambda * np.max((etf_best_ask + discount , future_best_ask + discount)) + (1 - Lambda) * np.min((etf_best_ask, future_best_ask))
 
             # price += discount
             time = self.ask_time
@@ -281,7 +282,8 @@ class AutoTrader(BaseAutoTrader):
             #     print(np.max((etf_best_bid, future_best_bid)))
             # Lambda = self.sigmoid(self.constants.KAPPA, -self.etf_position, self.constants.INVENTORY_THRESHOLD)
             Lambda = self.sigmoid(self.constants.KAPPA, -self.etf_position, threshold)
-            price = Lambda * np.min((etf_best_bid, future_best_bid + discount)) + (1 - Lambda) * np.max((etf_best_bid, future_best_bid))
+
+            price = Lambda * np.min((etf_best_bid + discount, future_best_bid + discount )) + (1 - Lambda) * np.max((etf_best_bid, future_best_bid))
 
             time = self.bid_time
         

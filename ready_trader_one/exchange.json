@@ -1,6 +1,6 @@
 {
     "Engine": {
-        "MarketDataFile": "/home/darentang/projects/readytraderone/logs/round1/market_data.csv",
+        "MarketDataFile": "/home/darentang/projects/readytraderone/ready_trader_one/data/day3.csv",
         "MatchEventsFile": "match_events.csv",
         "Speed": 20.0,
         "TickInterval": 0.25
@@ -39,8 +39,8 @@
         "IgnoreMe": "12345",
         "SusumBot": "12345",
         "Tradies": "12345",
-        "TeamJ": "12345",
         "LilAkuma": "12345",
-        "NowUCMe": "12345"
+        "NowUCMe": "12345",
+        "TeamJ": "12345"
     }
 }

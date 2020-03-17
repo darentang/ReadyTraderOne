@@ -25,7 +25,9 @@ the penalisation level at the maximum allowable inventory level, $\delta_\text{m
         ylabel={$\delta$}
         ] 
         \addplot[red, domain=-100:100]{-sign(x) * floor(0.000113 *abs(x) ^ 2.322)}; 
+        \addplot[red, domain=-100:100]{-sign(x) * (0.000113 *abs(x) ^ 2.322)}; 
         \addplot[blue, domain=-100:100] {-sign(x) * floor(0.2 * abs(x) ^ 0.699)}; 
+        \addplot[blue, domain=-100:100] {-sign(x) * (0.2 * abs(x) ^ 0.699)}; 
         \end{axis}
     \end{tikzpicture}
     \caption{Penalty levels in response to inventory}
@@ -53,15 +55,15 @@ Where ${q_\text{thres}}_\text{max}$ is the maximum threshold value, and $f$ is s
 $f = 0.4$. In a similar fashion, the bidding price can be defined as:
 
 \begin{equation} \label{eqn:bid}
-p^a = \begin{cases} \max(p^b_e, p^b_f+\delta) & q < -q_\text{thres} \\ \min(p^b_e, p^b_f) & \text{otherwise} \end{cases}
+p^b = \begin{cases} \max(p^b_e, p^b_f+\delta) & q < -q_\text{thres} \\ \min(p^b_e, p^b_f) & \text{otherwise} \end{cases}
 \end{equation}
 
 Now, equations \ref{eqn:ask} and \ref{eqn:bid} are discontinuous functions. To smooth the transition
 between the two, a mixing multiplier $\lambda$ can be used, which can be defined from a logistic curve:
 
 \begin{eqnarray}
-    \lambda^a &= \dfrac{1}{1 + \exp{-\kappa (q - q_\text{thres})}} \\ 
-    \lambda^b &= \dfrac{1}{1 + \exp{-\kappa ( - q - q_\text{thres})}}
+    \lambda^a &= \dfrac{1}{1 + \exp{(-\kappa (q - q_\text{thres})})} \\ 
+    \lambda^b &= \dfrac{1}{1 + \exp{(-\kappa ( - q - q_\text{thres}))}}
 \end{eqnarray}
 
 Where $\kappa$ is a mixing constant. A larger $\kappa$ results in a stepper transition in the sigmoid curve.

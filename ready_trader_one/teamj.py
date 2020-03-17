@@ -13,18 +13,22 @@ from config import speed
 from ready_trader_one import BaseAutoTrader, Instrument, Lifespan, Side
 
 class Constants:
-    MAX_ORDER = 15
-    MAX_VOLUME = 100
+    MAX_ORDER = 30
+    MAX_VOLUME = 95
     TIMEOUT = 1.0
 
-    INVENTORY_THRESHOLD_FACTOR = 1.0
-    INVENTORY_THRESHOLD = 40
+    # TWEAKABLE
+
+    INVENTORY_THRESHOLD_FACTOR = 0.3
+    INVENTORY_THRESHOLD = 10
     
-    ONE_LEVEL_POINT = 40 # inventory volume to reach 1 penalisation level
-    END_LEVEL = 4 # penalisation level at maximum allowable volume
+    ONE_LEVEL_POINT = 20 # inventory volume to reach 1 penalisation level
+    END_LEVEL = 5 # penalisation level at maximum allowable volume
 
     # Spread
-    KAPPA = 0.1
+    KAPPA = 0.02
+
+
     # TODO: Change in final version
     SPEED = speed
     # maximum message per second
@@ -384,9 +388,11 @@ class AutoTrader(BaseAutoTrader):
             if client_order_id == self.bid_id:
                 self.bid_id = 0
                 self.bid_volume = 0
+                self.bid_price = 0
             elif client_order_id == self.ask_id:
                 self.ask_id = 0
                 self.ask_volume = 0
+                self.ask_price = 0
             if fill_volume == 0:
                 self.logger.info("Order %d cancelled", client_order_id)
             else:
@@ -395,6 +401,10 @@ class AutoTrader(BaseAutoTrader):
             self.logger.info("Order %d placed", client_order_id)
         else:
             self.logger.info("Order %d filled (%d / %d)", client_order_id, fill_volume, fill_volume + remaining_volume)
+            if client_order_id == self.bid_id:
+                self.bid_changed = True
+            elif client_order_id == self.ask_id:
+                self.ask_changed = True
             
 
 

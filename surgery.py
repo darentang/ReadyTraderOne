@@ -96,8 +96,8 @@ for i, bot_name in enumerate(bots.keys()):
             else:
                 marker = "^"
             ax.scatter(insert_time, insert_price, marker=marker, color=invert(bot_name, side), zorder=2)
-            ax.text(insert_time + 0.02, insert_price - 0.02, str(int(insert_volume)))
-            # ax.text(insert_time + 0.02, insert_price - 0.02, str(int(order_id)))
+            # ax.text(insert_time + 0.02, insert_price - 0.02, str(int(insert_volume)))
+            ax.text(insert_time + 0.02, insert_price - 0.02, str(int(order_id)))
             if len(cancel) == 1:
                 cancel_time = cancel["Time"].values[-1]
                 ax.plot([insert_time, cancel_time], [insert_price, insert_price], linestyle=linestyle[side], color=side_color(bot_name, side), linewidth=t, zorder=1)

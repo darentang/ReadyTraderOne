@@ -1,8 +1,8 @@
 {
     "Engine": {
-        "MarketDataFile": "/home/darentang/projects/readytraderone/ready_trader_one/data/day3.csv",
-        "MatchEventsFile": "match_events.csv",
-        "Speed": 20.0,
+        "MarketDataFile": "/home/darentang/projects/readytraderone/ready_trader_one/data/day1.csv",
+        "MatchEventsFile": "/home/darentang/projects/readytraderone/runs/all/Day1/data.csv",
+        "Speed": 1.0,
         "TickInterval": 0.25
     },
     "Execution": {

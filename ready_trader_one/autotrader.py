@@ -15,7 +15,7 @@ from ready_trader_one import BaseAutoTrader, Instrument, Lifespan, Side
 
 class Constants:
     MAX_ORDER = 30
-    MAX_VOLUME = 95
+    MAX_VOLUME = 90
     TIMEOUT = 1.0
 
     # TWEAKABLE
@@ -341,7 +341,6 @@ class AutoTrader(BaseAutoTrader):
             self.logger.info("Quoting bid price %d (Existing %d)", pricing // 100, self.bid_price // 100)
             if pricing >= self.ask_price:
                 self.logger.info("Bid crosses ask")
-                print("crossing bid")
                 self.cancel(self.ask_id)
                 self.crossed = True
             else:
@@ -358,7 +357,6 @@ class AutoTrader(BaseAutoTrader):
             self.logger.info("Quoting ask price %d (Existing %d)", pricing // 100, self.ask_price // 100)
             if pricing <= self.bid_price:
                 self.logger.info("Ask crosses bid")
-                print("crossing ask")
                 self.cancel(self.bid_id)
                 self.crossed = True
             else:
@@ -456,9 +454,3 @@ class AutoTrader(BaseAutoTrader):
         self.prices[instrument]['mean'] = mean
         self.prices[instrument]['high'] = high
         self.prices[instrument]['low'] = low
-
-        # self.update_time = self.get_time()
-
-        # if instrument == Instrument.ETF:
-        #     self.orderbook.update(mean, self.update_time)
-

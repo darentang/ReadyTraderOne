@@ -1,0 +1,2675 @@
+2020-03-18 03:11:34,841 [INFO   ] [APP] LilAkuma started with arguments={run.py}
+2020-03-18 03:11:34,841 [INFO   ] [APP] configuration={"Execution":{"Host":"127.0.0.1","Port":12345},"Information":{"AllowBroadcast":false,"Interface":"0.0.0.0","ListenAddress":"239.255.1.1","Port":12346},"TeamName":"LilAkuma","Secret":"12345"}
+2020-03-18 03:11:39,363 [INFO   ] [TRADER] (id: 1) Placing  bid 1 lots for $3577
+2020-03-18 03:11:39,363 [INFO   ] [TRADER] (id: 2) Placing  bid 2 lots for $3576
+2020-03-18 03:11:39,363 [INFO   ] [TRADER] (id: 3) Placing  bid 3 lots for $3575
+2020-03-18 03:11:39,363 [INFO   ] [TRADER] (id: 4) Placing  ask 1 lots for $3580
+2020-03-18 03:11:39,363 [INFO   ] [TRADER] (id: 5) Placing  ask 2 lots for $3581
+2020-03-18 03:11:39,364 [INFO   ] [TRADER] (id: 6) Placing  ask 3 lots for $3582
+2020-03-18 03:11:39,365 [INFO   ] [TRADER] Order 1 inserted
+2020-03-18 03:11:39,365 [INFO   ] [TRADER] Order 2 inserted
+2020-03-18 03:11:39,365 [INFO   ] [TRADER] Order 3 inserted
+2020-03-18 03:11:39,365 [INFO   ] [TRADER] Order 4 inserted
+2020-03-18 03:11:39,365 [INFO   ] [TRADER] Order 5 inserted
+2020-03-18 03:11:39,365 [INFO   ] [TRADER] Order 6 inserted
+2020-03-18 03:11:39,365 [INFO   ] [TRADER] Cancelling bid 1
+2020-03-18 03:11:39,365 [INFO   ] [TRADER] Cancelling bid 2
+2020-03-18 03:11:39,366 [INFO   ] [TRADER] Cancelling bid 3
+2020-03-18 03:11:39,366 [INFO   ] [TRADER] (id: 7) Placing  bid 1 lots for $3576
+2020-03-18 03:11:39,366 [INFO   ] [TRADER] (id: 8) Placing  bid 2 lots for $3575
+2020-03-18 03:11:39,366 [INFO   ] [TRADER] (id: 9) Placing  bid 3 lots for $3574
+2020-03-18 03:11:39,366 [INFO   ] [TRADER] Cancelling bid 4
+2020-03-18 03:11:39,366 [INFO   ] [TRADER] Cancelling bid 5
+2020-03-18 03:11:39,366 [INFO   ] [TRADER] Cancelling bid 6
+2020-03-18 03:11:39,366 [INFO   ] [TRADER] (id: 10) Placing  ask 1 lots for $3579
+2020-03-18 03:11:39,366 [INFO   ] [TRADER] (id: 11) Placing  ask 2 lots for $3580
+2020-03-18 03:11:39,366 [INFO   ] [TRADER] (id: 12) Placing  ask 3 lots for $3581
+2020-03-18 03:11:39,366 [INFO   ] [TRADER] Order 1 cancelled
+2020-03-18 03:11:39,366 [INFO   ] [TRADER] Order 2 cancelled
+2020-03-18 03:11:39,366 [INFO   ] [TRADER] Order 3 cancelled
+2020-03-18 03:11:39,366 [INFO   ] [TRADER] Order 7 inserted
+2020-03-18 03:11:39,366 [INFO   ] [TRADER] Order 8 inserted
+2020-03-18 03:11:39,366 [INFO   ] [TRADER] Order 9 inserted
+2020-03-18 03:11:39,366 [INFO   ] [TRADER] Order 4 cancelled
+2020-03-18 03:11:39,366 [INFO   ] [TRADER] Order 5 cancelled
+2020-03-18 03:11:39,366 [INFO   ] [TRADER] Order 6 cancelled
+2020-03-18 03:11:39,366 [INFO   ] [TRADER] Order 10 inserted
+2020-03-18 03:11:39,366 [INFO   ] [TRADER] Order 11 inserted
+2020-03-18 03:11:39,366 [INFO   ] [TRADER] Order 12 inserted
+2020-03-18 03:11:39,661 [INFO   ] [TRADER] Order 10 cancelled
+2020-03-18 03:11:39,661 [INFO   ] [TRADER] Position changed to ETF: -1, FUTURE: 1
+2020-03-18 03:11:41,323 [INFO   ] [TRADER] Order 7 cancelled
+2020-03-18 03:11:41,324 [INFO   ] [TRADER] Position changed to ETF: 0, FUTURE: 0
+2020-03-18 03:11:41,911 [INFO   ] [TRADER] Cancelling bid 11
+2020-03-18 03:11:41,911 [INFO   ] [TRADER] Cancelling bid 12
+2020-03-18 03:11:41,911 [INFO   ] [TRADER] (id: 13) Placing  ask 1 lots for $3580
+2020-03-18 03:11:41,911 [INFO   ] [TRADER] (id: 14) Placing  ask 2 lots for $3581
+2020-03-18 03:11:41,912 [INFO   ] [TRADER] (id: 15) Placing  ask 3 lots for $3582
+2020-03-18 03:11:41,912 [INFO   ] [TRADER] Order 11 cancelled
+2020-03-18 03:11:41,912 [INFO   ] [TRADER] Order 12 cancelled
+2020-03-18 03:11:41,912 [INFO   ] [TRADER] Order 13 inserted
+2020-03-18 03:11:41,912 [INFO   ] [TRADER] Order 14 inserted
+2020-03-18 03:11:41,912 [INFO   ] [TRADER] Order 15 inserted
+2020-03-18 03:11:42,326 [INFO   ] [TRADER] Cancelling bid 8
+2020-03-18 03:11:42,326 [INFO   ] [TRADER] Cancelling bid 9
+2020-03-18 03:11:42,327 [INFO   ] [TRADER] (id: 16) Placing  bid 1 lots for $3577
+2020-03-18 03:11:42,327 [INFO   ] [TRADER] (id: 17) Placing  bid 2 lots for $3576
+2020-03-18 03:11:42,327 [INFO   ] [TRADER] (id: 18) Placing  bid 3 lots for $3575
+2020-03-18 03:11:42,327 [INFO   ] [TRADER] Order 8 cancelled
+2020-03-18 03:11:42,328 [INFO   ] [TRADER] Order 9 cancelled
+2020-03-18 03:11:42,329 [INFO   ] [TRADER] Order 16 inserted
+2020-03-18 03:11:42,330 [INFO   ] [TRADER] Order 17 inserted
+2020-03-18 03:11:42,331 [INFO   ] [TRADER] Order 18 inserted
+2020-03-18 03:11:42,466 [INFO   ] [TRADER] Order 16 cancelled
+2020-03-18 03:11:42,467 [INFO   ] [TRADER] Position changed to ETF: 1, FUTURE: -1
+2020-03-18 03:11:42,493 [INFO   ] [TRADER] Order 17 cancelled
+2020-03-18 03:11:42,494 [INFO   ] [TRADER] Position changed to ETF: 3, FUTURE: -3
+2020-03-18 03:11:42,575 [INFO   ] [TRADER] Order 18 cancelled
+2020-03-18 03:11:42,578 [INFO   ] [TRADER] Position changed to ETF: 6, FUTURE: -6
+2020-03-18 03:11:42,916 [INFO   ] [TRADER] Cancelling bid 13
+2020-03-18 03:11:42,916 [INFO   ] [TRADER] Cancelling bid 14
+2020-03-18 03:11:42,916 [INFO   ] [TRADER] Cancelling bid 15
+2020-03-18 03:11:42,916 [INFO   ] [TRADER] (id: 19) Placing  ask 1 lots for $3570
+2020-03-18 03:11:42,916 [INFO   ] [TRADER] (id: 20) Placing  ask 2 lots for $3571
+2020-03-18 03:11:42,917 [INFO   ] [TRADER] (id: 21) Placing  ask 3 lots for $3572
+2020-03-18 03:11:42,919 [INFO   ] [TRADER] Order 13 cancelled
+2020-03-18 03:11:42,924 [INFO   ] [TRADER] Order 14 cancelled
+2020-03-18 03:11:42,927 [INFO   ] [TRADER] Order 15 cancelled
+2020-03-18 03:11:42,932 [INFO   ] [TRADER] Order 19 cancelled
+2020-03-18 03:11:42,932 [INFO   ] [TRADER] Position changed to ETF: 5, FUTURE: -5
+2020-03-18 03:11:42,933 [INFO   ] [TRADER] Order 20 cancelled
+2020-03-18 03:11:42,933 [INFO   ] [TRADER] Position changed to ETF: 3, FUTURE: -3
+2020-03-18 03:11:42,933 [INFO   ] [TRADER] Order 21 cancelled
+2020-03-18 03:11:42,934 [INFO   ] [TRADER] Position changed to ETF: 0, FUTURE: 0
+2020-03-18 03:11:43,589 [INFO   ] [TRADER] (id: 22) Placing  bid 1 lots for $3559
+2020-03-18 03:11:43,590 [INFO   ] [TRADER] (id: 23) Placing  bid 2 lots for $3558
+2020-03-18 03:11:43,590 [INFO   ] [TRADER] (id: 24) Placing  bid 3 lots for $3557
+2020-03-18 03:11:43,594 [INFO   ] [TRADER] Order 22 inserted
+2020-03-18 03:11:43,595 [INFO   ] [TRADER] Order 23 inserted
+2020-03-18 03:11:43,596 [INFO   ] [TRADER] Order 24 inserted
+2020-03-18 03:11:43,599 [INFO   ] [TRADER] Cancelling bid 22
+2020-03-18 03:11:43,599 [INFO   ] [TRADER] Cancelling bid 23
+2020-03-18 03:11:43,599 [INFO   ] [TRADER] Cancelling bid 24
+2020-03-18 03:11:43,600 [INFO   ] [TRADER] (id: 25) Placing  bid 1 lots for $3559
+2020-03-18 03:11:43,600 [INFO   ] [TRADER] (id: 26) Placing  bid 2 lots for $3558
+2020-03-18 03:11:43,600 [INFO   ] [TRADER] (id: 27) Placing  bid 3 lots for $3557
+2020-03-18 03:11:43,600 [INFO   ] [TRADER] Order 22 cancelled
+2020-03-18 03:11:43,601 [INFO   ] [TRADER] Order 23 cancelled
+2020-03-18 03:11:43,601 [INFO   ] [TRADER] Order 24 cancelled
+2020-03-18 03:11:43,601 [INFO   ] [TRADER] Order 25 inserted
+2020-03-18 03:11:43,602 [INFO   ] [TRADER] Order 26 inserted
+2020-03-18 03:11:43,603 [INFO   ] [TRADER] Order 27 inserted
+2020-03-18 03:11:43,936 [INFO   ] [TRADER] (id: 28) Placing  ask 1 lots for $3559
+2020-03-18 03:11:43,936 [INFO   ] [TRADER] (id: 29) Placing  ask 2 lots for $3560
+2020-03-18 03:11:43,936 [INFO   ] [TRADER] (id: 30) Placing  ask 3 lots for $3561
+2020-03-18 03:11:43,937 [WARNING] [TRADER] error with order 28: order rejected: in cross with an existing order
+2020-03-18 03:11:43,937 [INFO   ] [TRADER] Order 28 cancelled
+2020-03-18 03:11:43,938 [INFO   ] [TRADER] Order 29 cancelled
+2020-03-18 03:11:43,938 [INFO   ] [TRADER] Position changed to ETF: -2, FUTURE: 2
+2020-03-18 03:11:43,938 [INFO   ] [TRADER] Order 30 inserted
+2020-03-18 03:11:43,949 [INFO   ] [TRADER] Order 30 filled (2 / 3)
+2020-03-18 03:11:43,950 [INFO   ] [TRADER] Position changed to ETF: -4, FUTURE: 4
+2020-03-18 03:11:43,961 [INFO   ] [TRADER] Order 30 cancelled
+2020-03-18 03:11:43,962 [INFO   ] [TRADER] Position changed to ETF: -5, FUTURE: 5
+2020-03-18 03:11:44,113 [INFO   ] [TRADER] Order 25 cancelled
+2020-03-18 03:11:44,115 [INFO   ] [TRADER] Position changed to ETF: -4, FUTURE: 4
+2020-03-18 03:11:44,161 [INFO   ] [TRADER] Order 26 cancelled
+2020-03-18 03:11:44,161 [INFO   ] [TRADER] Position changed to ETF: -2, FUTURE: 2
+2020-03-18 03:11:44,361 [INFO   ] [TRADER] Order 27 cancelled
+2020-03-18 03:11:44,361 [INFO   ] [TRADER] Position changed to ETF: 1, FUTURE: -1
+2020-03-18 03:11:44,962 [INFO   ] [TRADER] (id: 31) Placing  ask 1 lots for $3552
+2020-03-18 03:11:44,963 [INFO   ] [TRADER] (id: 32) Placing  ask 2 lots for $3553
+2020-03-18 03:11:44,963 [INFO   ] [TRADER] (id: 33) Placing  ask 3 lots for $3554
+2020-03-18 03:11:44,965 [INFO   ] [TRADER] Order 31 cancelled
+2020-03-18 03:11:44,965 [INFO   ] [TRADER] Position changed to ETF: 0, FUTURE: 0
+2020-03-18 03:11:44,966 [INFO   ] [TRADER] Order 32 inserted
+2020-03-18 03:11:44,967 [INFO   ] [TRADER] Order 33 inserted
+2020-03-18 03:11:45,163 [INFO   ] [TRADER] Order 32 cancelled
+2020-03-18 03:11:45,164 [INFO   ] [TRADER] Position changed to ETF: -2, FUTURE: 2
+2020-03-18 03:11:45,164 [INFO   ] [TRADER] Order 33 cancelled
+2020-03-18 03:11:45,164 [INFO   ] [TRADER] Position changed to ETF: -5, FUTURE: 5
+2020-03-18 03:11:45,363 [INFO   ] [TRADER] (id: 34) Placing  bid 1 lots for $3544
+2020-03-18 03:11:45,363 [INFO   ] [TRADER] (id: 35) Placing  bid 2 lots for $3543
+2020-03-18 03:11:45,364 [INFO   ] [TRADER] (id: 36) Placing  bid 3 lots for $3542
+2020-03-18 03:11:45,366 [INFO   ] [TRADER] Order 34 inserted
+2020-03-18 03:11:45,367 [INFO   ] [TRADER] Order 35 inserted
+2020-03-18 03:11:45,368 [INFO   ] [TRADER] Order 36 inserted
+2020-03-18 03:11:45,374 [INFO   ] [TRADER] Cancelling bid 34
+2020-03-18 03:11:45,374 [INFO   ] [TRADER] Cancelling bid 35
+2020-03-18 03:11:45,374 [INFO   ] [TRADER] Cancelling bid 36
+2020-03-18 03:11:45,374 [INFO   ] [TRADER] (id: 37) Placing  bid 1 lots for $3544
+2020-03-18 03:11:45,374 [INFO   ] [TRADER] (id: 38) Placing  bid 2 lots for $3543
+2020-03-18 03:11:45,375 [INFO   ] [TRADER] (id: 39) Placing  bid 3 lots for $3542
+2020-03-18 03:11:45,375 [INFO   ] [TRADER] Order 34 cancelled
+2020-03-18 03:11:45,375 [INFO   ] [TRADER] Order 35 cancelled
+2020-03-18 03:11:45,376 [INFO   ] [TRADER] Order 36 cancelled
+2020-03-18 03:11:45,376 [INFO   ] [TRADER] Order 37 inserted
+2020-03-18 03:11:45,376 [INFO   ] [TRADER] Order 38 inserted
+2020-03-18 03:11:45,376 [INFO   ] [TRADER] Order 39 inserted
+2020-03-18 03:11:46,174 [INFO   ] [TRADER] (id: 40) Placing  ask 1 lots for $3546
+2020-03-18 03:11:46,174 [INFO   ] [TRADER] (id: 41) Placing  ask 2 lots for $3547
+2020-03-18 03:11:46,174 [INFO   ] [TRADER] (id: 42) Placing  ask 3 lots for $3548
+2020-03-18 03:11:46,175 [INFO   ] [TRADER] Order 40 cancelled
+2020-03-18 03:11:46,177 [INFO   ] [TRADER] Position changed to ETF: -6, FUTURE: 6
+2020-03-18 03:11:46,177 [INFO   ] [TRADER] Order 41 inserted
+2020-03-18 03:11:46,177 [INFO   ] [TRADER] Order 42 inserted
+2020-03-18 03:11:46,199 [INFO   ] [TRADER] Order 41 filled (1 / 2)
+2020-03-18 03:11:46,200 [INFO   ] [TRADER] Position changed to ETF: -7, FUTURE: 7
+2020-03-18 03:11:46,211 [INFO   ] [TRADER] Order 41 cancelled
+2020-03-18 03:11:46,211 [INFO   ] [TRADER] Position changed to ETF: -8, FUTURE: 8
+2020-03-18 03:11:46,299 [INFO   ] [TRADER] Order 37 cancelled
+2020-03-18 03:11:46,300 [INFO   ] [TRADER] Position changed to ETF: -7, FUTURE: 7
+2020-03-18 03:11:46,462 [INFO   ] [TRADER] Order 38 filled (1 / 2)
+2020-03-18 03:11:46,462 [INFO   ] [TRADER] Position changed to ETF: -6, FUTURE: 6
+2020-03-18 03:11:46,463 [INFO   ] [TRADER] Order 38 cancelled
+2020-03-18 03:11:46,463 [INFO   ] [TRADER] Position changed to ETF: -5, FUTURE: 5
+2020-03-18 03:11:46,624 [INFO   ] [TRADER] Order 39 cancelled
+2020-03-18 03:11:46,624 [INFO   ] [TRADER] Position changed to ETF: -2, FUTURE: 2
+2020-03-18 03:11:47,213 [INFO   ] [TRADER] Cancelling bid 42
+2020-03-18 03:11:47,213 [INFO   ] [TRADER] (id: 43) Placing  ask 1 lots for $3543
+2020-03-18 03:11:47,213 [INFO   ] [TRADER] (id: 44) Placing  ask 2 lots for $3544
+2020-03-18 03:11:47,214 [INFO   ] [TRADER] (id: 45) Placing  ask 3 lots for $3545
+2020-03-18 03:11:47,216 [INFO   ] [TRADER] Order 42 cancelled
+2020-03-18 03:11:47,216 [INFO   ] [TRADER] Order 43 inserted
+2020-03-18 03:11:47,217 [INFO   ] [TRADER] Order 44 inserted
+2020-03-18 03:11:47,217 [INFO   ] [TRADER] Order 45 inserted
+2020-03-18 03:11:47,223 [INFO   ] [TRADER] Order 43 cancelled
+2020-03-18 03:11:47,223 [INFO   ] [TRADER] Position changed to ETF: -3, FUTURE: 3
+2020-03-18 03:11:47,228 [INFO   ] [TRADER] Order 44 cancelled
+2020-03-18 03:11:47,229 [INFO   ] [TRADER] Position changed to ETF: -5, FUTURE: 5
+2020-03-18 03:11:47,580 [INFO   ] [TRADER] Order 45 cancelled
+2020-03-18 03:11:47,582 [INFO   ] [TRADER] Position changed to ETF: -8, FUTURE: 8
+2020-03-18 03:11:47,627 [INFO   ] [TRADER] (id: 46) Placing  bid 1 lots for $3545
+2020-03-18 03:11:47,627 [INFO   ] [TRADER] (id: 47) Placing  bid 2 lots for $3544
+2020-03-18 03:11:47,627 [INFO   ] [TRADER] (id: 48) Placing  bid 3 lots for $3543
+2020-03-18 03:11:47,629 [INFO   ] [TRADER] Order 46 cancelled
+2020-03-18 03:11:47,630 [INFO   ] [TRADER] Position changed to ETF: -7, FUTURE: 7
+2020-03-18 03:11:47,630 [INFO   ] [TRADER] Order 47 cancelled
+2020-03-18 03:11:47,630 [INFO   ] [TRADER] Position changed to ETF: -5, FUTURE: 5
+2020-03-18 03:11:47,630 [INFO   ] [TRADER] Order 48 cancelled
+2020-03-18 03:11:47,631 [INFO   ] [TRADER] Position changed to ETF: -2, FUTURE: 2
+2020-03-18 03:11:48,586 [INFO   ] [TRADER] (id: 49) Placing  ask 1 lots for $3549
+2020-03-18 03:11:48,587 [INFO   ] [TRADER] (id: 50) Placing  ask 2 lots for $3550
+2020-03-18 03:11:48,587 [INFO   ] [TRADER] (id: 51) Placing  ask 3 lots for $3551
+2020-03-18 03:11:48,589 [INFO   ] [TRADER] Order 49 inserted
+2020-03-18 03:11:48,590 [INFO   ] [TRADER] Order 50 inserted
+2020-03-18 03:11:48,591 [INFO   ] [TRADER] Order 51 inserted
+2020-03-18 03:11:48,598 [INFO   ] [TRADER] Order 49 cancelled
+2020-03-18 03:11:48,599 [INFO   ] [TRADER] Position changed to ETF: -3, FUTURE: 3
+2020-03-18 03:11:48,613 [INFO   ] [TRADER] Order 50 filled (1 / 2)
+2020-03-18 03:11:48,614 [INFO   ] [TRADER] Position changed to ETF: -4, FUTURE: 4
+2020-03-18 03:11:48,637 [INFO   ] [TRADER] (id: 52) Placing  bid 1 lots for $3547
+2020-03-18 03:11:48,637 [INFO   ] [TRADER] (id: 53) Placing  bid 2 lots for $3546
+2020-03-18 03:11:48,637 [INFO   ] [TRADER] (id: 54) Placing  bid 3 lots for $3545
+2020-03-18 03:11:48,638 [INFO   ] [TRADER] Order 52 inserted
+2020-03-18 03:11:48,638 [INFO   ] [TRADER] Order 53 inserted
+2020-03-18 03:11:48,638 [INFO   ] [TRADER] Order 54 inserted
+2020-03-18 03:11:48,648 [INFO   ] [TRADER] Cancelling bid 52
+2020-03-18 03:11:48,648 [INFO   ] [TRADER] Cancelling bid 53
+2020-03-18 03:11:48,648 [INFO   ] [TRADER] Cancelling bid 54
+2020-03-18 03:11:48,648 [INFO   ] [TRADER] (id: 55) Placing  bid 1 lots for $3547
+2020-03-18 03:11:48,648 [INFO   ] [TRADER] (id: 56) Placing  bid 2 lots for $3546
+2020-03-18 03:11:48,648 [INFO   ] [TRADER] (id: 57) Placing  bid 3 lots for $3545
+2020-03-18 03:11:48,649 [INFO   ] [TRADER] Order 52 cancelled
+2020-03-18 03:11:48,649 [INFO   ] [TRADER] Order 53 cancelled
+2020-03-18 03:11:48,649 [INFO   ] [TRADER] Order 54 cancelled
+2020-03-18 03:11:48,650 [INFO   ] [TRADER] Order 55 inserted
+2020-03-18 03:11:48,650 [INFO   ] [TRADER] Order 56 inserted
+2020-03-18 03:11:48,650 [INFO   ] [TRADER] Order 57 inserted
+2020-03-18 03:11:48,673 [INFO   ] [TRADER] Order 55 cancelled
+2020-03-18 03:11:48,673 [INFO   ] [TRADER] Position changed to ETF: -3, FUTURE: 3
+2020-03-18 03:11:48,673 [INFO   ] [TRADER] Order 56 cancelled
+2020-03-18 03:11:48,673 [INFO   ] [TRADER] Position changed to ETF: -1, FUTURE: 1
+2020-03-18 03:11:48,785 [INFO   ] [TRADER] Order 50 cancelled
+2020-03-18 03:11:48,786 [INFO   ] [TRADER] Position changed to ETF: -2, FUTURE: 2
+2020-03-18 03:11:48,786 [INFO   ] [TRADER] Order 51 cancelled
+2020-03-18 03:11:48,786 [INFO   ] [TRADER] Position changed to ETF: -5, FUTURE: 5
+2020-03-18 03:11:49,675 [INFO   ] [TRADER] Cancelling bid 57
+2020-03-18 03:11:49,675 [INFO   ] [TRADER] (id: 58) Placing  bid 1 lots for $3554
+2020-03-18 03:11:49,675 [INFO   ] [TRADER] (id: 59) Placing  bid 2 lots for $3553
+2020-03-18 03:11:49,675 [INFO   ] [TRADER] (id: 60) Placing  bid 3 lots for $3552
+2020-03-18 03:11:49,680 [INFO   ] [TRADER] Order 57 cancelled
+2020-03-18 03:11:49,680 [INFO   ] [TRADER] Order 58 inserted
+2020-03-18 03:11:49,680 [INFO   ] [TRADER] Order 59 inserted
+2020-03-18 03:11:49,681 [INFO   ] [TRADER] Order 60 inserted
+2020-03-18 03:11:49,712 [INFO   ] [TRADER] Order 58 cancelled
+2020-03-18 03:11:49,712 [INFO   ] [TRADER] Position changed to ETF: -4, FUTURE: 4
+2020-03-18 03:11:49,712 [INFO   ] [TRADER] Order 59 cancelled
+2020-03-18 03:11:49,712 [INFO   ] [TRADER] Position changed to ETF: -2, FUTURE: 2
+2020-03-18 03:11:49,811 [INFO   ] [TRADER] (id: 61) Placing  ask 1 lots for $3561
+2020-03-18 03:11:49,811 [INFO   ] [TRADER] (id: 62) Placing  ask 2 lots for $3562
+2020-03-18 03:11:49,811 [INFO   ] [TRADER] (id: 63) Placing  ask 3 lots for $3563
+2020-03-18 03:11:49,848 [INFO   ] [TRADER] Order 61 inserted
+2020-03-18 03:11:49,920 [INFO   ] [TRADER] Order 62 inserted
+2020-03-18 03:11:49,963 [INFO   ] [TRADER] Order 63 inserted
+2020-03-18 03:11:49,967 [INFO   ] [TRADER] Order 61 cancelled
+2020-03-18 03:11:49,967 [INFO   ] [TRADER] Position changed to ETF: -3, FUTURE: 3
+2020-03-18 03:11:49,987 [INFO   ] [TRADER] Order 62 cancelled
+2020-03-18 03:11:49,987 [INFO   ] [TRADER] Position changed to ETF: -5, FUTURE: 5
+2020-03-18 03:11:49,988 [INFO   ] [TRADER] Order 63 cancelled
+2020-03-18 03:11:49,988 [INFO   ] [TRADER] Position changed to ETF: -8, FUTURE: 8
+2020-03-18 03:11:50,713 [INFO   ] [TRADER] Cancelling bid 60
+2020-03-18 03:11:50,714 [INFO   ] [TRADER] (id: 64) Placing  bid 1 lots for $3576
+2020-03-18 03:11:50,714 [INFO   ] [TRADER] (id: 65) Placing  bid 2 lots for $3575
+2020-03-18 03:11:50,714 [INFO   ] [TRADER] (id: 66) Placing  bid 3 lots for $3574
+2020-03-18 03:11:50,714 [INFO   ] [TRADER] Order 60 cancelled
+2020-03-18 03:11:50,715 [INFO   ] [TRADER] Order 64 cancelled
+2020-03-18 03:11:50,718 [INFO   ] [TRADER] Position changed to ETF: -7, FUTURE: 7
+2020-03-18 03:11:50,724 [INFO   ] [TRADER] Order 65 inserted
+2020-03-18 03:11:50,724 [INFO   ] [TRADER] Order 66 inserted
+2020-03-18 03:11:50,746 [INFO   ] [TRADER] Order 65 cancelled
+2020-03-18 03:11:50,746 [INFO   ] [TRADER] Position changed to ETF: -5, FUTURE: 5
+2020-03-18 03:11:50,989 [INFO   ] [TRADER] (id: 67) Placing  ask 1 lots for $3580
+2020-03-18 03:11:50,989 [INFO   ] [TRADER] (id: 68) Placing  ask 2 lots for $3581
+2020-03-18 03:11:50,989 [INFO   ] [TRADER] (id: 69) Placing  ask 3 lots for $3582
+2020-03-18 03:11:50,996 [INFO   ] [TRADER] Order 67 inserted
+2020-03-18 03:11:50,999 [INFO   ] [TRADER] Order 68 inserted
+2020-03-18 03:11:51,001 [INFO   ] [TRADER] Order 69 inserted
+2020-03-18 03:11:51,002 [INFO   ] [TRADER] Cancelling bid 67
+2020-03-18 03:11:51,002 [INFO   ] [TRADER] Cancelling bid 68
+2020-03-18 03:11:51,002 [INFO   ] [TRADER] Cancelling bid 69
+2020-03-18 03:11:51,002 [INFO   ] [TRADER] (id: 70) Placing  ask 1 lots for $3580
+2020-03-18 03:11:51,002 [INFO   ] [TRADER] (id: 71) Placing  ask 2 lots for $3581
+2020-03-18 03:11:51,002 [INFO   ] [TRADER] (id: 72) Placing  ask 3 lots for $3582
+2020-03-18 03:11:51,003 [INFO   ] [TRADER] Order 67 cancelled
+2020-03-18 03:11:51,003 [INFO   ] [TRADER] Order 68 cancelled
+2020-03-18 03:11:51,004 [INFO   ] [TRADER] Order 69 cancelled
+2020-03-18 03:11:51,004 [INFO   ] [TRADER] Order 70 inserted
+2020-03-18 03:11:51,005 [INFO   ] [TRADER] Order 71 inserted
+2020-03-18 03:11:51,005 [INFO   ] [TRADER] Order 72 inserted
+2020-03-18 03:11:51,756 [INFO   ] [TRADER] Cancelling bid 66
+2020-03-18 03:11:51,756 [INFO   ] [TRADER] (id: 73) Placing  bid 1 lots for $3575
+2020-03-18 03:11:51,757 [INFO   ] [TRADER] (id: 74) Placing  bid 2 lots for $3574
+2020-03-18 03:11:51,757 [INFO   ] [TRADER] (id: 75) Placing  bid 3 lots for $3573
+2020-03-18 03:11:51,758 [INFO   ] [TRADER] Order 66 cancelled
+2020-03-18 03:11:51,758 [INFO   ] [TRADER] Order 73 inserted
+2020-03-18 03:11:51,758 [INFO   ] [TRADER] Order 74 inserted
+2020-03-18 03:11:51,759 [INFO   ] [TRADER] Order 75 inserted
+2020-03-18 03:11:52,016 [INFO   ] [TRADER] Cancelling bid 70
+2020-03-18 03:11:52,017 [INFO   ] [TRADER] Cancelling bid 71
+2020-03-18 03:11:52,017 [INFO   ] [TRADER] Cancelling bid 72
+2020-03-18 03:11:52,017 [INFO   ] [TRADER] (id: 76) Placing  ask 1 lots for $3578
+2020-03-18 03:11:52,017 [INFO   ] [TRADER] (id: 77) Placing  ask 2 lots for $3579
+2020-03-18 03:11:52,018 [INFO   ] [TRADER] (id: 78) Placing  ask 3 lots for $3580
+2020-03-18 03:11:52,036 [INFO   ] [TRADER] Order 70 cancelled
+2020-03-18 03:11:52,039 [INFO   ] [TRADER] Order 71 cancelled
+2020-03-18 03:11:52,042 [INFO   ] [TRADER] Order 72 cancelled
+2020-03-18 03:11:52,044 [INFO   ] [TRADER] Order 76 inserted
+2020-03-18 03:11:52,047 [INFO   ] [TRADER] Order 77 inserted
+2020-03-18 03:11:52,049 [INFO   ] [TRADER] Order 78 inserted
+2020-03-18 03:11:52,185 [INFO   ] [TRADER] Order 76 cancelled
+2020-03-18 03:11:52,185 [INFO   ] [TRADER] Position changed to ETF: -6, FUTURE: 6
+2020-03-18 03:11:52,309 [INFO   ] [TRADER] Order 73 cancelled
+2020-03-18 03:11:52,309 [INFO   ] [TRADER] Position changed to ETF: -5, FUTURE: 5
+2020-03-18 03:11:52,425 [INFO   ] [TRADER] Order 74 filled (1 / 2)
+2020-03-18 03:11:52,426 [INFO   ] [TRADER] Position changed to ETF: -4, FUTURE: 4
+2020-03-18 03:11:52,601 [INFO   ] [TRADER] Order 74 cancelled
+2020-03-18 03:11:52,602 [INFO   ] [TRADER] Position changed to ETF: -3, FUTURE: 3
+2020-03-18 03:11:52,661 [INFO   ] [TRADER] Order 77 cancelled
+2020-03-18 03:11:52,661 [INFO   ] [TRADER] Position changed to ETF: -5, FUTURE: 5
+2020-03-18 03:11:52,910 [INFO   ] [TRADER] Order 78 cancelled
+2020-03-18 03:11:52,911 [INFO   ] [TRADER] Position changed to ETF: -8, FUTURE: 8
+2020-03-18 03:11:53,601 [INFO   ] [TRADER] Cancelling bid 75
+2020-03-18 03:11:53,602 [INFO   ] [TRADER] (id: 79) Placing  bid 1 lots for $3592
+2020-03-18 03:11:53,602 [INFO   ] [TRADER] (id: 80) Placing  bid 2 lots for $3591
+2020-03-18 03:11:53,602 [INFO   ] [TRADER] (id: 81) Placing  bid 3 lots for $3590
+2020-03-18 03:11:53,613 [INFO   ] [TRADER] Order 75 cancelled
+2020-03-18 03:11:53,615 [INFO   ] [TRADER] Order 79 cancelled
+2020-03-18 03:11:53,616 [INFO   ] [TRADER] Position changed to ETF: -7, FUTURE: 7
+2020-03-18 03:11:53,617 [INFO   ] [TRADER] Order 80 cancelled
+2020-03-18 03:11:53,617 [INFO   ] [TRADER] Position changed to ETF: -5, FUTURE: 5
+2020-03-18 03:11:53,617 [INFO   ] [TRADER] Order 81 inserted
+2020-03-18 03:11:53,649 [INFO   ] [TRADER] Order 81 filled (2 / 3)
+2020-03-18 03:11:53,649 [INFO   ] [TRADER] Position changed to ETF: -3, FUTURE: 3
+2020-03-18 03:11:53,812 [INFO   ] [TRADER] Order 81 cancelled
+2020-03-18 03:11:53,812 [INFO   ] [TRADER] Position changed to ETF: -2, FUTURE: 2
+2020-03-18 03:11:53,911 [INFO   ] [TRADER] (id: 82) Placing  ask 1 lots for $3590
+2020-03-18 03:11:53,911 [INFO   ] [TRADER] (id: 83) Placing  ask 2 lots for $3591
+2020-03-18 03:11:53,911 [INFO   ] [TRADER] (id: 84) Placing  ask 3 lots for $3592
+2020-03-18 03:11:53,914 [INFO   ] [TRADER] Order 82 inserted
+2020-03-18 03:11:53,915 [INFO   ] [TRADER] Order 83 inserted
+2020-03-18 03:11:53,915 [INFO   ] [TRADER] Order 84 inserted
+2020-03-18 03:11:53,925 [INFO   ] [TRADER] Cancelling bid 82
+2020-03-18 03:11:53,925 [INFO   ] [TRADER] Cancelling bid 83
+2020-03-18 03:11:53,925 [INFO   ] [TRADER] Cancelling bid 84
+2020-03-18 03:11:53,925 [INFO   ] [TRADER] (id: 85) Placing  ask 1 lots for $3591
+2020-03-18 03:11:53,925 [INFO   ] [TRADER] (id: 86) Placing  ask 2 lots for $3592
+2020-03-18 03:11:53,925 [INFO   ] [TRADER] (id: 87) Placing  ask 3 lots for $3593
+2020-03-18 03:11:53,929 [INFO   ] [TRADER] Order 82 cancelled
+2020-03-18 03:11:53,929 [INFO   ] [TRADER] Order 83 cancelled
+2020-03-18 03:11:53,929 [INFO   ] [TRADER] Order 84 cancelled
+2020-03-18 03:11:53,931 [INFO   ] [TRADER] Order 85 inserted
+2020-03-18 03:11:53,931 [INFO   ] [TRADER] Order 86 inserted
+2020-03-18 03:11:53,932 [INFO   ] [TRADER] Order 87 inserted
+2020-03-18 03:11:54,318 [INFO   ] [TRADER] Order 85 cancelled
+2020-03-18 03:11:54,318 [INFO   ] [TRADER] Position changed to ETF: -3, FUTURE: 3
+2020-03-18 03:11:54,332 [INFO   ] [TRADER] Order 86 cancelled
+2020-03-18 03:11:54,332 [INFO   ] [TRADER] Position changed to ETF: -5, FUTURE: 5
+2020-03-18 03:11:54,561 [INFO   ] [TRADER] Order 87 cancelled
+2020-03-18 03:11:54,561 [INFO   ] [TRADER] Position changed to ETF: -8, FUTURE: 8
+2020-03-18 03:11:54,814 [INFO   ] [TRADER] (id: 88) Placing  bid 1 lots for $3592
+2020-03-18 03:11:54,814 [INFO   ] [TRADER] (id: 89) Placing  bid 2 lots for $3591
+2020-03-18 03:11:54,815 [INFO   ] [TRADER] (id: 90) Placing  bid 3 lots for $3590
+2020-03-18 03:11:54,818 [INFO   ] [TRADER] Order 88 inserted
+2020-03-18 03:11:54,819 [INFO   ] [TRADER] Order 89 inserted
+2020-03-18 03:11:54,820 [INFO   ] [TRADER] Order 90 inserted
+2020-03-18 03:11:54,842 [INFO   ] [TRADER] Cancelling bid 88
+2020-03-18 03:11:54,843 [INFO   ] [TRADER] Cancelling bid 89
+2020-03-18 03:11:54,843 [INFO   ] [TRADER] Cancelling bid 90
+2020-03-18 03:11:54,843 [INFO   ] [TRADER] (id: 91) Placing  bid 1 lots for $3591
+2020-03-18 03:11:54,843 [INFO   ] [TRADER] (id: 92) Placing  bid 2 lots for $3590
+2020-03-18 03:11:54,843 [INFO   ] [TRADER] (id: 93) Placing  bid 3 lots for $3589
+2020-03-18 03:11:54,854 [INFO   ] [TRADER] Order 88 cancelled
+2020-03-18 03:11:54,859 [INFO   ] [TRADER] Order 89 cancelled
+2020-03-18 03:11:54,862 [INFO   ] [TRADER] Order 90 cancelled
+2020-03-18 03:11:54,863 [INFO   ] [TRADER] Order 91 inserted
+2020-03-18 03:11:54,863 [INFO   ] [TRADER] Order 92 inserted
+2020-03-18 03:11:54,864 [INFO   ] [TRADER] Order 93 inserted
+2020-03-18 03:11:54,890 [INFO   ] [TRADER] Order 91 cancelled
+2020-03-18 03:11:54,893 [INFO   ] [TRADER] Position changed to ETF: -7, FUTURE: 7
+2020-03-18 03:11:54,922 [INFO   ] [TRADER] Order 92 cancelled
+2020-03-18 03:11:54,923 [INFO   ] [TRADER] Position changed to ETF: -5, FUTURE: 5
+2020-03-18 03:11:55,023 [INFO   ] [TRADER] Order 93 cancelled
+2020-03-18 03:11:55,023 [INFO   ] [TRADER] Position changed to ETF: -2, FUTURE: 2
+2020-03-18 03:11:55,586 [INFO   ] [TRADER] (id: 94) Placing  ask 1 lots for $3578
+2020-03-18 03:11:55,587 [INFO   ] [TRADER] (id: 95) Placing  ask 2 lots for $3579
+2020-03-18 03:11:55,587 [INFO   ] [TRADER] (id: 96) Placing  ask 3 lots for $3580
+2020-03-18 03:11:55,739 [INFO   ] [TRADER] Order 94 cancelled
+2020-03-18 03:11:55,739 [INFO   ] [TRADER] Position changed to ETF: -3, FUTURE: 3
+2020-03-18 03:11:55,743 [INFO   ] [TRADER] Order 95 cancelled
+2020-03-18 03:11:55,746 [INFO   ] [TRADER] Position changed to ETF: -5, FUTURE: 5
+2020-03-18 03:11:55,751 [INFO   ] [TRADER] Order 96 filled (2 / 3)
+2020-03-18 03:11:55,751 [INFO   ] [TRADER] Position changed to ETF: -7, FUTURE: 7
+2020-03-18 03:11:55,752 [INFO   ] [TRADER] Order 96 cancelled
+2020-03-18 03:11:55,752 [INFO   ] [TRADER] Position changed to ETF: -8, FUTURE: 8
+2020-03-18 03:11:56,030 [INFO   ] [TRADER] (id: 97) Placing  bid 1 lots for $3577
+2020-03-18 03:11:56,030 [INFO   ] [TRADER] (id: 98) Placing  bid 2 lots for $3576
+2020-03-18 03:11:56,031 [INFO   ] [TRADER] (id: 99) Placing  bid 3 lots for $3575
+2020-03-18 03:11:56,034 [INFO   ] [TRADER] Order 97 inserted
+2020-03-18 03:11:56,038 [INFO   ] [TRADER] Order 98 inserted
+2020-03-18 03:11:56,040 [INFO   ] [TRADER] Order 99 inserted
+2020-03-18 03:11:56,041 [INFO   ] [TRADER] Cancelling bid 97
+2020-03-18 03:11:56,042 [INFO   ] [TRADER] Cancelling bid 98
+2020-03-18 03:11:56,042 [INFO   ] [TRADER] Cancelling bid 99
+2020-03-18 03:11:56,042 [INFO   ] [TRADER] (id: 100) Placing  bid 1 lots for $3577
+2020-03-18 03:11:56,042 [INFO   ] [TRADER] (id: 101) Placing  bid 2 lots for $3576
+2020-03-18 03:11:56,042 [INFO   ] [TRADER] (id: 102) Placing  bid 3 lots for $3575
+2020-03-18 03:11:56,042 [INFO   ] [TRADER] Order 97 cancelled
+2020-03-18 03:11:56,042 [INFO   ] [TRADER] Order 98 cancelled
+2020-03-18 03:11:56,043 [INFO   ] [TRADER] Order 99 cancelled
+2020-03-18 03:11:56,043 [INFO   ] [TRADER] Order 100 inserted
+2020-03-18 03:11:56,043 [INFO   ] [TRADER] Order 101 inserted
+2020-03-18 03:11:56,044 [INFO   ] [TRADER] Order 102 inserted
+2020-03-18 03:11:56,752 [INFO   ] [TRADER] (id: 103) Placing  ask 1 lots for $3591
+2020-03-18 03:11:56,752 [INFO   ] [TRADER] (id: 104) Placing  ask 2 lots for $3592
+2020-03-18 03:11:56,753 [INFO   ] [TRADER] (id: 105) Placing  ask 3 lots for $3593
+2020-03-18 03:11:56,758 [INFO   ] [TRADER] Order 103 inserted
+2020-03-18 03:11:56,762 [INFO   ] [TRADER] Order 104 inserted
+2020-03-18 03:11:56,767 [INFO   ] [TRADER] Order 105 inserted
+2020-03-18 03:11:56,774 [INFO   ] [TRADER] Cancelling bid 103
+2020-03-18 03:11:56,775 [INFO   ] [TRADER] Cancelling bid 104
+2020-03-18 03:11:56,775 [INFO   ] [TRADER] Cancelling bid 105
+2020-03-18 03:11:56,775 [INFO   ] [TRADER] (id: 106) Placing  ask 1 lots for $3590
+2020-03-18 03:11:56,775 [INFO   ] [TRADER] (id: 107) Placing  ask 2 lots for $3591
+2020-03-18 03:11:56,775 [INFO   ] [TRADER] (id: 108) Placing  ask 3 lots for $3592
+2020-03-18 03:11:56,776 [INFO   ] [TRADER] Order 103 cancelled
+2020-03-18 03:11:56,776 [INFO   ] [TRADER] Order 104 cancelled
+2020-03-18 03:11:56,778 [INFO   ] [TRADER] Order 105 cancelled
+2020-03-18 03:11:56,780 [INFO   ] [TRADER] Order 106 inserted
+2020-03-18 03:11:56,784 [INFO   ] [TRADER] Order 107 inserted
+2020-03-18 03:11:56,787 [INFO   ] [TRADER] Order 108 inserted
+2020-03-18 03:11:57,046 [INFO   ] [TRADER] Cancelling bid 100
+2020-03-18 03:11:57,046 [INFO   ] [TRADER] Cancelling bid 101
+2020-03-18 03:11:57,047 [INFO   ] [TRADER] Cancelling bid 102
+2020-03-18 03:11:57,047 [INFO   ] [TRADER] (id: 109) Placing  bid 1 lots for $3592
+2020-03-18 03:11:57,047 [INFO   ] [TRADER] (id: 110) Placing  bid 2 lots for $3591
+2020-03-18 03:11:57,048 [INFO   ] [TRADER] (id: 111) Placing  bid 3 lots for $3590
+2020-03-18 03:11:57,062 [INFO   ] [TRADER] Order 100 cancelled
+2020-03-18 03:11:57,069 [INFO   ] [TRADER] Order 101 cancelled
+2020-03-18 03:11:57,071 [INFO   ] [TRADER] Order 102 cancelled
+2020-03-18 03:11:57,073 [WARNING] [TRADER] error with order 109: order rejected: in cross with an existing order
+2020-03-18 03:11:57,074 [INFO   ] [TRADER] Order 109 cancelled
+2020-03-18 03:11:57,074 [WARNING] [TRADER] error with order 110: order rejected: in cross with an existing order
+2020-03-18 03:11:57,074 [INFO   ] [TRADER] Order 110 cancelled
+2020-03-18 03:11:57,074 [WARNING] [TRADER] error with order 111: order rejected: in cross with an existing order
+2020-03-18 03:11:57,074 [INFO   ] [TRADER] Order 111 cancelled
+2020-03-18 03:11:57,116 [INFO   ] [TRADER] Order 106 cancelled
+2020-03-18 03:11:57,116 [INFO   ] [TRADER] Position changed to ETF: -9, FUTURE: 9
+2020-03-18 03:11:57,344 [INFO   ] [TRADER] Order 107 cancelled
+2020-03-18 03:11:57,344 [INFO   ] [TRADER] Position changed to ETF: -11, FUTURE: 11
+2020-03-18 03:11:57,345 [INFO   ] [TRADER] Order 108 cancelled
+2020-03-18 03:11:57,345 [INFO   ] [TRADER] Position changed to ETF: -14, FUTURE: 14
+2020-03-18 03:11:58,075 [INFO   ] [TRADER] (id: 112) Placing  bid 1 lots for $3595
+2020-03-18 03:11:58,075 [INFO   ] [TRADER] (id: 113) Placing  bid 2 lots for $3594
+2020-03-18 03:11:58,075 [INFO   ] [TRADER] (id: 114) Placing  bid 3 lots for $3593
+2020-03-18 03:11:58,077 [INFO   ] [TRADER] Order 112 inserted
+2020-03-18 03:11:58,078 [INFO   ] [TRADER] Order 112 cancelled
+2020-03-18 03:11:58,078 [INFO   ] [TRADER] Position changed to ETF: -13, FUTURE: 13
+2020-03-18 03:11:58,079 [INFO   ] [TRADER] Order 113 inserted
+2020-03-18 03:11:58,079 [INFO   ] [TRADER] Order 114 inserted
+2020-03-18 03:11:58,349 [INFO   ] [TRADER] (id: 115) Placing  ask 1 lots for $3604
+2020-03-18 03:11:58,349 [INFO   ] [TRADER] (id: 116) Placing  ask 2 lots for $3605
+2020-03-18 03:11:58,349 [INFO   ] [TRADER] (id: 117) Placing  ask 3 lots for $3606
+2020-03-18 03:11:58,350 [INFO   ] [TRADER] Order 115 inserted
+2020-03-18 03:11:58,350 [INFO   ] [TRADER] Order 116 inserted
+2020-03-18 03:11:58,350 [INFO   ] [TRADER] Order 117 inserted
+2020-03-18 03:11:58,364 [INFO   ] [TRADER] Cancelling bid 115
+2020-03-18 03:11:58,364 [INFO   ] [TRADER] Cancelling bid 116
+2020-03-18 03:11:58,364 [INFO   ] [TRADER] Cancelling bid 117
+2020-03-18 03:11:58,364 [INFO   ] [TRADER] (id: 118) Placing  ask 1 lots for $3603
+2020-03-18 03:11:58,364 [INFO   ] [TRADER] (id: 119) Placing  ask 2 lots for $3604
+2020-03-18 03:11:58,365 [INFO   ] [TRADER] (id: 120) Placing  ask 3 lots for $3605
+2020-03-18 03:11:58,368 [INFO   ] [TRADER] Order 115 cancelled
+2020-03-18 03:11:58,371 [INFO   ] [TRADER] Order 116 cancelled
+2020-03-18 03:11:58,373 [INFO   ] [TRADER] Order 117 cancelled
+2020-03-18 03:11:58,373 [INFO   ] [TRADER] Order 118 inserted
+2020-03-18 03:11:58,374 [INFO   ] [TRADER] Order 119 inserted
+2020-03-18 03:11:58,374 [INFO   ] [TRADER] Order 120 inserted
+2020-03-18 03:11:58,711 [INFO   ] [TRADER] Order 113 cancelled
+2020-03-18 03:11:58,711 [INFO   ] [TRADER] Position changed to ETF: -11, FUTURE: 11
+2020-03-18 03:11:58,776 [INFO   ] [TRADER] Order 114 cancelled
+2020-03-18 03:11:58,776 [INFO   ] [TRADER] Position changed to ETF: -8, FUTURE: 8
+2020-03-18 03:11:59,374 [INFO   ] [TRADER] Cancelling bid 118
+2020-03-18 03:11:59,374 [INFO   ] [TRADER] Cancelling bid 119
+2020-03-18 03:11:59,374 [INFO   ] [TRADER] Cancelling bid 120
+2020-03-18 03:11:59,374 [INFO   ] [TRADER] (id: 121) Placing  ask 1 lots for $3599
+2020-03-18 03:11:59,374 [INFO   ] [TRADER] (id: 122) Placing  ask 2 lots for $3600
+2020-03-18 03:11:59,375 [INFO   ] [TRADER] (id: 123) Placing  ask 3 lots for $3601
+2020-03-18 03:11:59,375 [INFO   ] [TRADER] Order 118 cancelled
+2020-03-18 03:11:59,375 [INFO   ] [TRADER] Order 119 cancelled
+2020-03-18 03:11:59,375 [INFO   ] [TRADER] Order 120 cancelled
+2020-03-18 03:11:59,376 [INFO   ] [TRADER] Order 121 cancelled
+2020-03-18 03:11:59,376 [INFO   ] [TRADER] Position changed to ETF: -9, FUTURE: 9
+2020-03-18 03:11:59,376 [INFO   ] [TRADER] Order 122 inserted
+2020-03-18 03:11:59,376 [INFO   ] [TRADER] Order 123 inserted
+2020-03-18 03:11:59,787 [INFO   ] [TRADER] (id: 124) Placing  bid 1 lots for $3587
+2020-03-18 03:11:59,787 [INFO   ] [TRADER] (id: 125) Placing  bid 2 lots for $3586
+2020-03-18 03:11:59,787 [INFO   ] [TRADER] (id: 126) Placing  bid 3 lots for $3585
+2020-03-18 03:11:59,788 [INFO   ] [TRADER] Order 124 inserted
+2020-03-18 03:11:59,788 [INFO   ] [TRADER] Order 125 inserted
+2020-03-18 03:11:59,788 [INFO   ] [TRADER] Order 126 inserted
+2020-03-18 03:11:59,799 [INFO   ] [TRADER] Cancelling bid 124
+2020-03-18 03:11:59,799 [INFO   ] [TRADER] Cancelling bid 125
+2020-03-18 03:11:59,800 [INFO   ] [TRADER] Cancelling bid 126
+2020-03-18 03:11:59,800 [INFO   ] [TRADER] (id: 127) Placing  bid 1 lots for $3588
+2020-03-18 03:11:59,800 [INFO   ] [TRADER] (id: 128) Placing  bid 2 lots for $3587
+2020-03-18 03:11:59,800 [INFO   ] [TRADER] (id: 129) Placing  bid 3 lots for $3586
+2020-03-18 03:11:59,800 [INFO   ] [TRADER] Order 124 cancelled
+2020-03-18 03:11:59,800 [INFO   ] [TRADER] Order 125 cancelled
+2020-03-18 03:11:59,800 [INFO   ] [TRADER] Order 126 cancelled
+2020-03-18 03:11:59,800 [INFO   ] [TRADER] Order 127 inserted
+2020-03-18 03:11:59,800 [INFO   ] [TRADER] Order 128 inserted
+2020-03-18 03:11:59,800 [INFO   ] [TRADER] Order 129 inserted
+2020-03-18 03:12:00,388 [INFO   ] [TRADER] Cancelling bid 122
+2020-03-18 03:12:00,389 [INFO   ] [TRADER] Cancelling bid 123
+2020-03-18 03:12:00,389 [INFO   ] [TRADER] (id: 130) Placing  ask 1 lots for $3600
+2020-03-18 03:12:00,389 [INFO   ] [TRADER] (id: 131) Placing  ask 2 lots for $3601
+2020-03-18 03:12:00,389 [INFO   ] [TRADER] (id: 132) Placing  ask 3 lots for $3602
+2020-03-18 03:12:00,395 [INFO   ] [TRADER] Order 122 cancelled
+2020-03-18 03:12:00,397 [INFO   ] [TRADER] Order 123 cancelled
+2020-03-18 03:12:00,398 [INFO   ] [TRADER] Order 130 inserted
+2020-03-18 03:12:00,399 [INFO   ] [TRADER] Order 131 inserted
+2020-03-18 03:12:00,401 [INFO   ] [TRADER] Order 132 inserted
+2020-03-18 03:12:00,812 [INFO   ] [TRADER] Cancelling bid 127
+2020-03-18 03:12:00,812 [INFO   ] [TRADER] Cancelling bid 128
+2020-03-18 03:12:00,813 [INFO   ] [TRADER] Cancelling bid 129
+2020-03-18 03:12:00,813 [INFO   ] [TRADER] (id: 133) Placing  bid 1 lots for $3594
+2020-03-18 03:12:00,813 [INFO   ] [TRADER] (id: 134) Placing  bid 2 lots for $3593
+2020-03-18 03:12:00,813 [INFO   ] [TRADER] (id: 135) Placing  bid 3 lots for $3592
+2020-03-18 03:12:00,815 [INFO   ] [TRADER] Order 127 cancelled
+2020-03-18 03:12:00,815 [INFO   ] [TRADER] Order 128 cancelled
+2020-03-18 03:12:00,815 [INFO   ] [TRADER] Order 129 cancelled
+2020-03-18 03:12:00,815 [INFO   ] [TRADER] Order 133 inserted
+2020-03-18 03:12:00,815 [INFO   ] [TRADER] Order 134 inserted
+2020-03-18 03:12:00,815 [INFO   ] [TRADER] Order 135 inserted
+2020-03-18 03:12:01,399 [INFO   ] [TRADER] Cancelling bid 130
+2020-03-18 03:12:01,399 [INFO   ] [TRADER] Cancelling bid 131
+2020-03-18 03:12:01,399 [INFO   ] [TRADER] Cancelling bid 132
+2020-03-18 03:12:01,399 [INFO   ] [TRADER] (id: 136) Placing  ask 1 lots for $3598
+2020-03-18 03:12:01,399 [INFO   ] [TRADER] (id: 137) Placing  ask 2 lots for $3599
+2020-03-18 03:12:01,399 [INFO   ] [TRADER] (id: 138) Placing  ask 3 lots for $3600
+2020-03-18 03:12:01,400 [INFO   ] [TRADER] Order 130 cancelled
+2020-03-18 03:12:01,401 [INFO   ] [TRADER] Order 131 cancelled
+2020-03-18 03:12:01,401 [INFO   ] [TRADER] Order 132 cancelled
+2020-03-18 03:12:01,402 [INFO   ] [TRADER] Order 136 inserted
+2020-03-18 03:12:01,403 [INFO   ] [TRADER] Order 137 inserted
+2020-03-18 03:12:01,403 [INFO   ] [TRADER] Order 138 inserted
+2020-03-18 03:12:01,486 [INFO   ] [TRADER] Order 136 cancelled
+2020-03-18 03:12:01,486 [INFO   ] [TRADER] Position changed to ETF: -10, FUTURE: 10
+2020-03-18 03:12:01,598 [INFO   ] [TRADER] Order 133 cancelled
+2020-03-18 03:12:01,598 [INFO   ] [TRADER] Position changed to ETF: -9, FUTURE: 9
+2020-03-18 03:12:01,622 [INFO   ] [TRADER] Order 137 filled (1 / 2)
+2020-03-18 03:12:01,622 [INFO   ] [TRADER] Position changed to ETF: -10, FUTURE: 10
+2020-03-18 03:12:01,888 [INFO   ] [TRADER] Order 134 cancelled
+2020-03-18 03:12:01,888 [INFO   ] [TRADER] Position changed to ETF: -8, FUTURE: 8
+2020-03-18 03:12:02,436 [INFO   ] [TRADER] Order 135 filled (2 / 3)
+2020-03-18 03:12:02,436 [INFO   ] [TRADER] Position changed to ETF: -6, FUTURE: 6
+2020-03-18 03:12:02,436 [INFO   ] [TRADER] Order 135 cancelled
+2020-03-18 03:12:02,437 [INFO   ] [TRADER] Position changed to ETF: -5, FUTURE: 5
+2020-03-18 03:12:02,486 [INFO   ] [TRADER] Cancelling bid 137
+2020-03-18 03:12:02,486 [INFO   ] [TRADER] Cancelling bid 138
+2020-03-18 03:12:02,486 [INFO   ] [TRADER] (id: 139) Placing  ask 1 lots for $3592
+2020-03-18 03:12:02,486 [INFO   ] [TRADER] (id: 140) Placing  ask 2 lots for $3593
+2020-03-18 03:12:02,486 [INFO   ] [TRADER] (id: 141) Placing  ask 3 lots for $3594
+2020-03-18 03:12:02,487 [INFO   ] [TRADER] Order 137 cancelled
+2020-03-18 03:12:02,487 [INFO   ] [TRADER] Order 138 cancelled
+2020-03-18 03:12:02,487 [INFO   ] [TRADER] Order 139 cancelled
+2020-03-18 03:12:02,487 [INFO   ] [TRADER] Position changed to ETF: -6, FUTURE: 6
+2020-03-18 03:12:02,487 [INFO   ] [TRADER] Order 140 cancelled
+2020-03-18 03:12:02,488 [INFO   ] [TRADER] Position changed to ETF: -8, FUTURE: 8
+2020-03-18 03:12:02,488 [INFO   ] [TRADER] Order 141 filled (2 / 3)
+2020-03-18 03:12:02,488 [INFO   ] [TRADER] Position changed to ETF: -10, FUTURE: 10
+2020-03-18 03:12:02,499 [INFO   ] [TRADER] Order 141 cancelled
+2020-03-18 03:12:02,499 [INFO   ] [TRADER] Position changed to ETF: -11, FUTURE: 11
+2020-03-18 03:12:03,441 [INFO   ] [TRADER] (id: 142) Placing  bid 1 lots for $3585
+2020-03-18 03:12:03,441 [INFO   ] [TRADER] (id: 143) Placing  bid 2 lots for $3584
+2020-03-18 03:12:03,441 [INFO   ] [TRADER] (id: 144) Placing  bid 3 lots for $3583
+2020-03-18 03:12:03,444 [INFO   ] [TRADER] Order 142 inserted
+2020-03-18 03:12:03,444 [INFO   ] [TRADER] Order 143 inserted
+2020-03-18 03:12:03,444 [INFO   ] [TRADER] Order 144 inserted
+2020-03-18 03:12:03,448 [INFO   ] [TRADER] Cancelling bid 142
+2020-03-18 03:12:03,448 [INFO   ] [TRADER] Cancelling bid 143
+2020-03-18 03:12:03,449 [INFO   ] [TRADER] Cancelling bid 144
+2020-03-18 03:12:03,449 [INFO   ] [TRADER] (id: 145) Placing  bid 1 lots for $3585
+2020-03-18 03:12:03,449 [INFO   ] [TRADER] (id: 146) Placing  bid 2 lots for $3584
+2020-03-18 03:12:03,449 [INFO   ] [TRADER] (id: 147) Placing  bid 3 lots for $3583
+2020-03-18 03:12:03,450 [INFO   ] [TRADER] Order 142 cancelled
+2020-03-18 03:12:03,450 [INFO   ] [TRADER] Order 143 cancelled
+2020-03-18 03:12:03,450 [INFO   ] [TRADER] Order 144 cancelled
+2020-03-18 03:12:03,450 [INFO   ] [TRADER] Order 145 inserted
+2020-03-18 03:12:03,450 [INFO   ] [TRADER] Order 146 inserted
+2020-03-18 03:12:03,450 [INFO   ] [TRADER] Order 147 inserted
+2020-03-18 03:12:03,500 [INFO   ] [TRADER] (id: 148) Placing  ask 1 lots for $3589
+2020-03-18 03:12:03,500 [INFO   ] [TRADER] (id: 149) Placing  ask 2 lots for $3590
+2020-03-18 03:12:03,501 [INFO   ] [TRADER] (id: 150) Placing  ask 3 lots for $3591
+2020-03-18 03:12:03,506 [INFO   ] [TRADER] Order 148 cancelled
+2020-03-18 03:12:03,506 [INFO   ] [TRADER] Position changed to ETF: -12, FUTURE: 12
+2020-03-18 03:12:03,506 [INFO   ] [TRADER] Order 149 inserted
+2020-03-18 03:12:03,506 [INFO   ] [TRADER] Order 150 inserted
+2020-03-18 03:12:03,602 [INFO   ] [TRADER] Order 149 cancelled
+2020-03-18 03:12:03,603 [INFO   ] [TRADER] Position changed to ETF: -14, FUTURE: 14
+2020-03-18 03:12:04,136 [INFO   ] [TRADER] Order 145 cancelled
+2020-03-18 03:12:04,136 [INFO   ] [TRADER] Position changed to ETF: -13, FUTURE: 13
+2020-03-18 03:12:04,154 [INFO   ] [TRADER] Order 146 cancelled
+2020-03-18 03:12:04,155 [INFO   ] [TRADER] Position changed to ETF: -11, FUTURE: 11
+2020-03-18 03:12:04,191 [INFO   ] [TRADER] Order 147 filled (2 / 3)
+2020-03-18 03:12:04,192 [INFO   ] [TRADER] Position changed to ETF: -9, FUTURE: 9
+2020-03-18 03:12:04,193 [INFO   ] [TRADER] Order 147 cancelled
+2020-03-18 03:12:04,194 [INFO   ] [TRADER] Position changed to ETF: -8, FUTURE: 8
+2020-03-18 03:12:04,603 [INFO   ] [TRADER] Cancelling bid 150
+2020-03-18 03:12:04,604 [INFO   ] [TRADER] (id: 151) Placing  ask 1 lots for $3574
+2020-03-18 03:12:04,604 [INFO   ] [TRADER] (id: 152) Placing  ask 2 lots for $3575
+2020-03-18 03:12:04,604 [INFO   ] [TRADER] (id: 153) Placing  ask 3 lots for $3576
+2020-03-18 03:12:04,619 [INFO   ] [TRADER] Order 150 cancelled
+2020-03-18 03:12:04,622 [INFO   ] [TRADER] Order 151 cancelled
+2020-03-18 03:12:04,622 [INFO   ] [TRADER] Position changed to ETF: -9, FUTURE: 9
+2020-03-18 03:12:04,624 [INFO   ] [TRADER] Order 152 cancelled
+2020-03-18 03:12:04,626 [INFO   ] [TRADER] Position changed to ETF: -11, FUTURE: 11
+2020-03-18 03:12:04,627 [INFO   ] [TRADER] Order 153 inserted
+2020-03-18 03:12:04,662 [INFO   ] [TRADER] Order 153 cancelled
+2020-03-18 03:12:04,664 [INFO   ] [TRADER] Position changed to ETF: -14, FUTURE: 14
+2020-03-18 03:12:05,203 [INFO   ] [TRADER] (id: 154) Placing  bid 1 lots for $3576
+2020-03-18 03:12:05,203 [INFO   ] [TRADER] (id: 155) Placing  bid 2 lots for $3575
+2020-03-18 03:12:05,204 [INFO   ] [TRADER] (id: 156) Placing  bid 3 lots for $3574
+2020-03-18 03:12:05,207 [INFO   ] [TRADER] Order 154 inserted
+2020-03-18 03:12:05,210 [INFO   ] [TRADER] Order 155 inserted
+2020-03-18 03:12:05,215 [INFO   ] [TRADER] Order 156 inserted
+2020-03-18 03:12:05,218 [INFO   ] [TRADER] Cancelling bid 154
+2020-03-18 03:12:05,219 [INFO   ] [TRADER] Cancelling bid 155
+2020-03-18 03:12:05,219 [INFO   ] [TRADER] Cancelling bid 156
+2020-03-18 03:12:05,219 [INFO   ] [TRADER] (id: 157) Placing  bid 1 lots for $3575
+2020-03-18 03:12:05,219 [INFO   ] [TRADER] (id: 158) Placing  bid 2 lots for $3574
+2020-03-18 03:12:05,220 [INFO   ] [TRADER] (id: 159) Placing  bid 3 lots for $3573
+2020-03-18 03:12:05,221 [INFO   ] [TRADER] Order 154 cancelled
+2020-03-18 03:12:05,221 [INFO   ] [TRADER] Order 155 cancelled
+2020-03-18 03:12:05,222 [INFO   ] [TRADER] Order 156 cancelled
+2020-03-18 03:12:05,223 [INFO   ] [TRADER] Order 157 inserted
+2020-03-18 03:12:05,223 [INFO   ] [TRADER] Order 158 inserted
+2020-03-18 03:12:05,223 [INFO   ] [TRADER] Order 159 inserted
+2020-03-18 03:12:05,267 [INFO   ] [TRADER] Order 157 cancelled
+2020-03-18 03:12:05,267 [INFO   ] [TRADER] Position changed to ETF: -13, FUTURE: 13
+2020-03-18 03:12:05,285 [INFO   ] [TRADER] Order 158 cancelled
+2020-03-18 03:12:05,285 [INFO   ] [TRADER] Position changed to ETF: -11, FUTURE: 11
+2020-03-18 03:12:05,563 [INFO   ] [TRADER] Order 159 cancelled
+2020-03-18 03:12:05,563 [INFO   ] [TRADER] Position changed to ETF: -8, FUTURE: 8
+2020-03-18 03:12:05,666 [INFO   ] [TRADER] (id: 160) Placing  ask 1 lots for $3577
+2020-03-18 03:12:05,666 [INFO   ] [TRADER] (id: 161) Placing  ask 2 lots for $3578
+2020-03-18 03:12:05,666 [INFO   ] [TRADER] (id: 162) Placing  ask 3 lots for $3579
+2020-03-18 03:12:05,675 [INFO   ] [TRADER] Order 160 inserted
+2020-03-18 03:12:05,676 [INFO   ] [TRADER] Order 161 inserted
+2020-03-18 03:12:05,677 [INFO   ] [TRADER] Order 162 inserted
+2020-03-18 03:12:05,679 [INFO   ] [TRADER] Cancelling bid 160
+2020-03-18 03:12:05,679 [INFO   ] [TRADER] Cancelling bid 161
+2020-03-18 03:12:05,679 [INFO   ] [TRADER] Cancelling bid 162
+2020-03-18 03:12:05,679 [INFO   ] [TRADER] (id: 163) Placing  ask 1 lots for $3577
+2020-03-18 03:12:05,679 [INFO   ] [TRADER] (id: 164) Placing  ask 2 lots for $3578
+2020-03-18 03:12:05,679 [INFO   ] [TRADER] (id: 165) Placing  ask 3 lots for $3579
+2020-03-18 03:12:05,682 [INFO   ] [TRADER] Order 160 cancelled
+2020-03-18 03:12:05,682 [INFO   ] [TRADER] Order 161 cancelled
+2020-03-18 03:12:05,682 [INFO   ] [TRADER] Order 162 cancelled
+2020-03-18 03:12:05,682 [INFO   ] [TRADER] Order 163 inserted
+2020-03-18 03:12:05,683 [INFO   ] [TRADER] Order 164 inserted
+2020-03-18 03:12:05,683 [INFO   ] [TRADER] Order 165 inserted
+2020-03-18 03:12:06,568 [INFO   ] [TRADER] (id: 166) Placing  bid 1 lots for $3574
+2020-03-18 03:12:06,568 [INFO   ] [TRADER] (id: 167) Placing  bid 2 lots for $3573
+2020-03-18 03:12:06,568 [INFO   ] [TRADER] (id: 168) Placing  bid 3 lots for $3572
+2020-03-18 03:12:06,569 [INFO   ] [TRADER] Order 166 inserted
+2020-03-18 03:12:06,569 [INFO   ] [TRADER] Order 167 inserted
+2020-03-18 03:12:06,569 [INFO   ] [TRADER] Order 168 inserted
+2020-03-18 03:12:06,573 [INFO   ] [TRADER] Cancelling bid 166
+2020-03-18 03:12:06,573 [INFO   ] [TRADER] Cancelling bid 167
+2020-03-18 03:12:06,573 [INFO   ] [TRADER] Cancelling bid 168
+2020-03-18 03:12:06,573 [INFO   ] [TRADER] (id: 169) Placing  bid 1 lots for $3574
+2020-03-18 03:12:06,573 [INFO   ] [TRADER] (id: 170) Placing  bid 2 lots for $3573
+2020-03-18 03:12:06,573 [INFO   ] [TRADER] (id: 171) Placing  bid 3 lots for $3572
+2020-03-18 03:12:06,573 [INFO   ] [TRADER] Order 166 cancelled
+2020-03-18 03:12:06,574 [INFO   ] [TRADER] Order 167 cancelled
+2020-03-18 03:12:06,574 [INFO   ] [TRADER] Order 168 cancelled
+2020-03-18 03:12:06,574 [INFO   ] [TRADER] Order 169 inserted
+2020-03-18 03:12:06,574 [INFO   ] [TRADER] Order 170 inserted
+2020-03-18 03:12:06,574 [INFO   ] [TRADER] Order 171 inserted
+2020-03-18 03:12:06,686 [INFO   ] [TRADER] Cancelling bid 163
+2020-03-18 03:12:06,686 [INFO   ] [TRADER] Cancelling bid 164
+2020-03-18 03:12:06,686 [INFO   ] [TRADER] Cancelling bid 165
+2020-03-18 03:12:06,686 [INFO   ] [TRADER] (id: 172) Placing  ask 1 lots for $3579
+2020-03-18 03:12:06,686 [INFO   ] [TRADER] (id: 173) Placing  ask 2 lots for $3580
+2020-03-18 03:12:06,686 [INFO   ] [TRADER] (id: 174) Placing  ask 3 lots for $3581
+2020-03-18 03:12:06,686 [INFO   ] [TRADER] Order 163 cancelled
+2020-03-18 03:12:06,686 [INFO   ] [TRADER] Order 164 cancelled
+2020-03-18 03:12:06,686 [INFO   ] [TRADER] Order 165 cancelled
+2020-03-18 03:12:06,686 [INFO   ] [TRADER] Order 172 inserted
+2020-03-18 03:12:06,686 [INFO   ] [TRADER] Order 173 inserted
+2020-03-18 03:12:06,686 [INFO   ] [TRADER] Order 174 inserted
+2020-03-18 03:12:06,710 [INFO   ] [TRADER] Order 169 cancelled
+2020-03-18 03:12:06,710 [INFO   ] [TRADER] Position changed to ETF: -7, FUTURE: 7
+2020-03-18 03:12:06,986 [INFO   ] [TRADER] Order 172 cancelled
+2020-03-18 03:12:06,986 [INFO   ] [TRADER] Position changed to ETF: -8, FUTURE: 8
+2020-03-18 03:12:07,307 [INFO   ] [TRADER] Order 170 cancelled
+2020-03-18 03:12:07,307 [INFO   ] [TRADER] Position changed to ETF: -6, FUTURE: 6
+2020-03-18 03:12:07,364 [INFO   ] [TRADER] Order 171 filled (2 / 3)
+2020-03-18 03:12:07,368 [INFO   ] [TRADER] Position changed to ETF: -4, FUTURE: 4
+2020-03-18 03:12:07,430 [INFO   ] [TRADER] Order 171 cancelled
+2020-03-18 03:12:07,431 [INFO   ] [TRADER] Position changed to ETF: -3, FUTURE: 3
+2020-03-18 03:12:07,990 [INFO   ] [TRADER] Cancelling bid 173
+2020-03-18 03:12:07,990 [INFO   ] [TRADER] Cancelling bid 174
+2020-03-18 03:12:07,991 [INFO   ] [TRADER] (id: 175) Placing  ask 1 lots for $3563
+2020-03-18 03:12:07,991 [INFO   ] [TRADER] (id: 176) Placing  ask 2 lots for $3564
+2020-03-18 03:12:07,991 [INFO   ] [TRADER] (id: 177) Placing  ask 3 lots for $3565
+2020-03-18 03:12:07,994 [INFO   ] [TRADER] Order 173 cancelled
+2020-03-18 03:12:07,996 [INFO   ] [TRADER] Order 174 cancelled
+2020-03-18 03:12:07,997 [INFO   ] [TRADER] Order 175 cancelled
+2020-03-18 03:12:07,997 [INFO   ] [TRADER] Position changed to ETF: -4, FUTURE: 4
+2020-03-18 03:12:07,997 [INFO   ] [TRADER] Order 176 cancelled
+2020-03-18 03:12:07,997 [INFO   ] [TRADER] Position changed to ETF: -6, FUTURE: 6
+2020-03-18 03:12:07,998 [INFO   ] [TRADER] Order 177 cancelled
+2020-03-18 03:12:07,998 [INFO   ] [TRADER] Position changed to ETF: -9, FUTURE: 9
+2020-03-18 03:12:08,436 [INFO   ] [TRADER] (id: 178) Placing  bid 1 lots for $3557
+2020-03-18 03:12:08,437 [INFO   ] [TRADER] (id: 179) Placing  bid 2 lots for $3556
+2020-03-18 03:12:08,437 [INFO   ] [TRADER] (id: 180) Placing  bid 3 lots for $3555
+2020-03-18 03:12:08,438 [INFO   ] [TRADER] Order 178 inserted
+2020-03-18 03:12:08,438 [INFO   ] [TRADER] Order 179 inserted
+2020-03-18 03:12:08,439 [INFO   ] [TRADER] Order 180 inserted
+2020-03-18 03:12:08,449 [INFO   ] [TRADER] Cancelling bid 178
+2020-03-18 03:12:08,449 [INFO   ] [TRADER] Cancelling bid 179
+2020-03-18 03:12:08,449 [INFO   ] [TRADER] Cancelling bid 180
+2020-03-18 03:12:08,450 [INFO   ] [TRADER] (id: 181) Placing  bid 1 lots for $3557
+2020-03-18 03:12:08,450 [INFO   ] [TRADER] (id: 182) Placing  bid 2 lots for $3556
+2020-03-18 03:12:08,450 [INFO   ] [TRADER] (id: 183) Placing  bid 3 lots for $3555
+2020-03-18 03:12:08,453 [INFO   ] [TRADER] Order 178 cancelled
+2020-03-18 03:12:08,453 [INFO   ] [TRADER] Order 179 cancelled
+2020-03-18 03:12:08,453 [INFO   ] [TRADER] Order 180 cancelled
+2020-03-18 03:12:08,453 [INFO   ] [TRADER] Order 181 inserted
+2020-03-18 03:12:08,454 [INFO   ] [TRADER] Order 182 inserted
+2020-03-18 03:12:08,454 [INFO   ] [TRADER] Order 183 inserted
+2020-03-18 03:12:08,999 [INFO   ] [TRADER] (id: 184) Placing  ask 1 lots for $3563
+2020-03-18 03:12:08,999 [INFO   ] [TRADER] (id: 185) Placing  ask 2 lots for $3564
+2020-03-18 03:12:08,999 [INFO   ] [TRADER] (id: 186) Placing  ask 3 lots for $3565
+2020-03-18 03:12:08,999 [INFO   ] [TRADER] Order 184 inserted
+2020-03-18 03:12:09,000 [INFO   ] [TRADER] Order 185 inserted
+2020-03-18 03:12:09,000 [INFO   ] [TRADER] Order 186 inserted
+2020-03-18 03:12:09,011 [INFO   ] [TRADER] Cancelling bid 184
+2020-03-18 03:12:09,012 [INFO   ] [TRADER] Cancelling bid 185
+2020-03-18 03:12:09,012 [INFO   ] [TRADER] Cancelling bid 186
+2020-03-18 03:12:09,012 [INFO   ] [TRADER] (id: 187) Placing  ask 1 lots for $3562
+2020-03-18 03:12:09,012 [INFO   ] [TRADER] (id: 188) Placing  ask 2 lots for $3563
+2020-03-18 03:12:09,012 [INFO   ] [TRADER] (id: 189) Placing  ask 3 lots for $3564
+2020-03-18 03:12:09,013 [INFO   ] [TRADER] Order 184 cancelled
+2020-03-18 03:12:09,013 [INFO   ] [TRADER] Order 185 cancelled
+2020-03-18 03:12:09,013 [INFO   ] [TRADER] Order 186 cancelled
+2020-03-18 03:12:09,013 [INFO   ] [TRADER] Order 187 inserted
+2020-03-18 03:12:09,013 [INFO   ] [TRADER] Order 188 inserted
+2020-03-18 03:12:09,013 [INFO   ] [TRADER] Order 189 inserted
+2020-03-18 03:12:09,073 [INFO   ] [TRADER] Order 187 cancelled
+2020-03-18 03:12:09,074 [INFO   ] [TRADER] Position changed to ETF: -10, FUTURE: 10
+2020-03-18 03:12:09,106 [INFO   ] [TRADER] Order 188 cancelled
+2020-03-18 03:12:09,106 [INFO   ] [TRADER] Position changed to ETF: -12, FUTURE: 12
+2020-03-18 03:12:09,316 [INFO   ] [TRADER] Order 189 cancelled
+2020-03-18 03:12:09,316 [INFO   ] [TRADER] Position changed to ETF: -15, FUTURE: 15
+2020-03-18 03:12:09,472 [INFO   ] [TRADER] Cancelling bid 181
+2020-03-18 03:12:09,473 [INFO   ] [TRADER] Cancelling bid 182
+2020-03-18 03:12:09,473 [INFO   ] [TRADER] Cancelling bid 183
+2020-03-18 03:12:09,473 [INFO   ] [TRADER] (id: 190) Placing  bid 1 lots for $3567
+2020-03-18 03:12:09,473 [INFO   ] [TRADER] (id: 191) Placing  bid 2 lots for $3566
+2020-03-18 03:12:09,473 [INFO   ] [TRADER] (id: 192) Placing  bid 3 lots for $3565
+2020-03-18 03:12:09,479 [INFO   ] [TRADER] Order 181 cancelled
+2020-03-18 03:12:09,485 [INFO   ] [TRADER] Order 182 cancelled
+2020-03-18 03:12:09,491 [INFO   ] [TRADER] Order 183 cancelled
+2020-03-18 03:12:09,497 [INFO   ] [TRADER] Order 190 cancelled
+2020-03-18 03:12:09,497 [INFO   ] [TRADER] Position changed to ETF: -14, FUTURE: 14
+2020-03-18 03:12:09,502 [INFO   ] [TRADER] Order 191 cancelled
+2020-03-18 03:12:09,502 [INFO   ] [TRADER] Position changed to ETF: -12, FUTURE: 12
+2020-03-18 03:12:09,504 [INFO   ] [TRADER] Order 192 cancelled
+2020-03-18 03:12:09,504 [INFO   ] [TRADER] Position changed to ETF: -9, FUTURE: 9
+2020-03-18 03:12:10,336 [INFO   ] [TRADER] (id: 193) Placing  ask 1 lots for $3569
+2020-03-18 03:12:10,336 [INFO   ] [TRADER] (id: 194) Placing  ask 2 lots for $3570
+2020-03-18 03:12:10,337 [INFO   ] [TRADER] (id: 195) Placing  ask 3 lots for $3571
+2020-03-18 03:12:10,348 [INFO   ] [TRADER] Order 193 inserted
+2020-03-18 03:12:10,350 [INFO   ] [TRADER] Order 194 inserted
+2020-03-18 03:12:10,350 [INFO   ] [TRADER] Order 195 inserted
+2020-03-18 03:12:10,354 [INFO   ] [TRADER] Cancelling bid 193
+2020-03-18 03:12:10,354 [INFO   ] [TRADER] Cancelling bid 194
+2020-03-18 03:12:10,355 [INFO   ] [TRADER] Cancelling bid 195
+2020-03-18 03:12:10,355 [INFO   ] [TRADER] (id: 196) Placing  ask 1 lots for $3569
+2020-03-18 03:12:10,355 [INFO   ] [TRADER] (id: 197) Placing  ask 2 lots for $3570
+2020-03-18 03:12:10,355 [INFO   ] [TRADER] (id: 198) Placing  ask 3 lots for $3571
+2020-03-18 03:12:10,355 [INFO   ] [TRADER] Order 193 cancelled
+2020-03-18 03:12:10,356 [INFO   ] [TRADER] Order 194 cancelled
+2020-03-18 03:12:10,356 [INFO   ] [TRADER] Order 195 cancelled
+2020-03-18 03:12:10,356 [INFO   ] [TRADER] Order 196 inserted
+2020-03-18 03:12:10,357 [INFO   ] [TRADER] Order 197 inserted
+2020-03-18 03:12:10,357 [INFO   ] [TRADER] Order 198 inserted
+2020-03-18 03:12:10,511 [INFO   ] [TRADER] (id: 199) Placing  bid 1 lots for $3566
+2020-03-18 03:12:10,512 [INFO   ] [TRADER] (id: 200) Placing  bid 2 lots for $3565
+2020-03-18 03:12:10,512 [INFO   ] [TRADER] (id: 201) Placing  bid 3 lots for $3564
+2020-03-18 03:12:10,513 [INFO   ] [TRADER] Order 199 inserted
+2020-03-18 03:12:10,515 [INFO   ] [TRADER] Order 200 inserted
+2020-03-18 03:12:10,515 [INFO   ] [TRADER] Order 201 inserted
+2020-03-18 03:12:10,523 [INFO   ] [TRADER] Cancelling bid 199
+2020-03-18 03:12:10,523 [INFO   ] [TRADER] Cancelling bid 200
+2020-03-18 03:12:10,523 [INFO   ] [TRADER] Cancelling bid 201
+2020-03-18 03:12:10,523 [INFO   ] [TRADER] (id: 202) Placing  bid 1 lots for $3566
+2020-03-18 03:12:10,523 [INFO   ] [TRADER] (id: 203) Placing  bid 2 lots for $3565
+2020-03-18 03:12:10,523 [INFO   ] [TRADER] (id: 204) Placing  bid 3 lots for $3564
+2020-03-18 03:12:10,523 [INFO   ] [TRADER] Order 199 cancelled
+2020-03-18 03:12:10,524 [INFO   ] [TRADER] Order 200 cancelled
+2020-03-18 03:12:10,524 [INFO   ] [TRADER] Order 201 cancelled
+2020-03-18 03:12:10,524 [INFO   ] [TRADER] Order 202 inserted
+2020-03-18 03:12:10,524 [INFO   ] [TRADER] Order 203 inserted
+2020-03-18 03:12:10,524 [INFO   ] [TRADER] Order 204 inserted
+2020-03-18 03:12:10,711 [INFO   ] [TRADER] Order 196 cancelled
+2020-03-18 03:12:10,711 [INFO   ] [TRADER] Position changed to ETF: -10, FUTURE: 10
+2020-03-18 03:12:10,936 [INFO   ] [TRADER] Order 197 cancelled
+2020-03-18 03:12:10,937 [INFO   ] [TRADER] Position changed to ETF: -12, FUTURE: 12
+2020-03-18 03:12:11,310 [INFO   ] [TRADER] Order 198 cancelled
+2020-03-18 03:12:11,310 [INFO   ] [TRADER] Position changed to ETF: -15, FUTURE: 15
+2020-03-18 03:12:11,537 [INFO   ] [TRADER] Cancelling bid 202
+2020-03-18 03:12:11,537 [INFO   ] [TRADER] Cancelling bid 203
+2020-03-18 03:12:11,537 [INFO   ] [TRADER] Cancelling bid 204
+2020-03-18 03:12:11,538 [INFO   ] [TRADER] (id: 205) Placing  bid 1 lots for $3570
+2020-03-18 03:12:11,538 [INFO   ] [TRADER] (id: 206) Placing  bid 2 lots for $3569
+2020-03-18 03:12:11,538 [INFO   ] [TRADER] (id: 207) Placing  bid 3 lots for $3568
+2020-03-18 03:12:11,540 [INFO   ] [TRADER] Order 202 cancelled
+2020-03-18 03:12:11,540 [INFO   ] [TRADER] Order 203 cancelled
+2020-03-18 03:12:11,541 [INFO   ] [TRADER] Order 204 cancelled
+2020-03-18 03:12:11,541 [INFO   ] [TRADER] Order 205 inserted
+2020-03-18 03:12:11,542 [INFO   ] [TRADER] Order 205 cancelled
+2020-03-18 03:12:11,542 [INFO   ] [TRADER] Position changed to ETF: -14, FUTURE: 14
+2020-03-18 03:12:11,542 [INFO   ] [TRADER] Order 206 inserted
+2020-03-18 03:12:11,543 [INFO   ] [TRADER] Order 207 inserted
+2020-03-18 03:12:11,830 [INFO   ] [TRADER] Order 206 cancelled
+2020-03-18 03:12:11,831 [INFO   ] [TRADER] Position changed to ETF: -12, FUTURE: 12
+2020-03-18 03:12:12,313 [INFO   ] [TRADER] (id: 208) Placing  ask 1 lots for $3576
+2020-03-18 03:12:12,313 [INFO   ] [TRADER] (id: 209) Placing  ask 2 lots for $3577
+2020-03-18 03:12:12,314 [INFO   ] [TRADER] (id: 210) Placing  ask 3 lots for $3578
+2020-03-18 03:12:12,319 [INFO   ] [TRADER] Order 208 inserted
+2020-03-18 03:12:12,321 [INFO   ] [TRADER] Order 209 inserted
+2020-03-18 03:12:12,324 [INFO   ] [TRADER] Order 210 inserted
+2020-03-18 03:12:12,326 [INFO   ] [TRADER] Cancelling bid 208
+2020-03-18 03:12:12,326 [INFO   ] [TRADER] Cancelling bid 209
+2020-03-18 03:12:12,326 [INFO   ] [TRADER] Cancelling bid 210
+2020-03-18 03:12:12,327 [INFO   ] [TRADER] (id: 211) Placing  ask 1 lots for $3575
+2020-03-18 03:12:12,327 [INFO   ] [TRADER] (id: 212) Placing  ask 2 lots for $3576
+2020-03-18 03:12:12,327 [INFO   ] [TRADER] (id: 213) Placing  ask 3 lots for $3577
+2020-03-18 03:12:12,328 [INFO   ] [TRADER] Order 208 cancelled
+2020-03-18 03:12:12,328 [INFO   ] [TRADER] Order 209 cancelled
+2020-03-18 03:12:12,329 [INFO   ] [TRADER] Order 210 cancelled
+2020-03-18 03:12:12,330 [INFO   ] [TRADER] Order 211 inserted
+2020-03-18 03:12:12,330 [INFO   ] [TRADER] Order 212 inserted
+2020-03-18 03:12:12,330 [INFO   ] [TRADER] Order 213 inserted
+2020-03-18 03:12:12,836 [INFO   ] [TRADER] Cancelling bid 207
+2020-03-18 03:12:12,837 [INFO   ] [TRADER] (id: 214) Placing  bid 1 lots for $3577
+2020-03-18 03:12:12,837 [INFO   ] [TRADER] (id: 215) Placing  bid 2 lots for $3576
+2020-03-18 03:12:12,837 [INFO   ] [TRADER] (id: 216) Placing  bid 3 lots for $3575
+2020-03-18 03:12:12,838 [INFO   ] [TRADER] Order 207 cancelled
+2020-03-18 03:12:12,839 [WARNING] [TRADER] error with order 214: order rejected: in cross with an existing order
+2020-03-18 03:12:12,839 [INFO   ] [TRADER] Order 214 cancelled
+2020-03-18 03:12:12,844 [WARNING] [TRADER] error with order 215: order rejected: in cross with an existing order
+2020-03-18 03:12:12,844 [INFO   ] [TRADER] Order 215 cancelled
+2020-03-18 03:12:12,844 [WARNING] [TRADER] error with order 216: order rejected: in cross with an existing order
+2020-03-18 03:12:12,845 [INFO   ] [TRADER] Order 216 cancelled
+2020-03-18 03:12:13,188 [INFO   ] [TRADER] Order 211 cancelled
+2020-03-18 03:12:13,191 [INFO   ] [TRADER] Position changed to ETF: -13, FUTURE: 13
+2020-03-18 03:12:13,436 [INFO   ] [TRADER] Order 212 filled (1 / 2)
+2020-03-18 03:12:13,436 [INFO   ] [TRADER] Position changed to ETF: -14, FUTURE: 14
+2020-03-18 03:12:13,437 [INFO   ] [TRADER] Order 212 cancelled
+2020-03-18 03:12:13,437 [INFO   ] [TRADER] Position changed to ETF: -15, FUTURE: 15
+2020-03-18 03:12:13,851 [INFO   ] [TRADER] (id: 217) Placing  bid 1 lots for $3574
+2020-03-18 03:12:13,851 [INFO   ] [TRADER] (id: 218) Placing  bid 2 lots for $3573
+2020-03-18 03:12:13,852 [INFO   ] [TRADER] (id: 219) Placing  bid 3 lots for $3572
+2020-03-18 03:12:13,855 [INFO   ] [TRADER] Order 217 inserted
+2020-03-18 03:12:13,856 [INFO   ] [TRADER] Order 218 inserted
+2020-03-18 03:12:13,857 [INFO   ] [TRADER] Order 219 inserted
+2020-03-18 03:12:13,858 [INFO   ] [TRADER] Order 217 cancelled
+2020-03-18 03:12:13,858 [INFO   ] [TRADER] Position changed to ETF: -14, FUTURE: 14
+2020-03-18 03:12:14,479 [INFO   ] [TRADER] Cancelling bid 213
+2020-03-18 03:12:14,479 [INFO   ] [TRADER] (id: 220) Placing  ask 1 lots for $3574
+2020-03-18 03:12:14,479 [INFO   ] [TRADER] (id: 221) Placing  ask 2 lots for $3575
+2020-03-18 03:12:14,479 [INFO   ] [TRADER] (id: 222) Placing  ask 3 lots for $3576
+2020-03-18 03:12:14,486 [INFO   ] [TRADER] Order 213 cancelled
+2020-03-18 03:12:14,498 [INFO   ] [TRADER] Order 220 inserted
+2020-03-18 03:12:14,505 [INFO   ] [TRADER] Order 221 inserted
+2020-03-18 03:12:14,509 [INFO   ] [TRADER] Order 222 inserted
+2020-03-18 03:12:14,515 [INFO   ] [TRADER] Order 218 cancelled
+2020-03-18 03:12:14,516 [INFO   ] [TRADER] Position changed to ETF: -12, FUTURE: 12
+2020-03-18 03:12:14,575 [INFO   ] [TRADER] Order 220 cancelled
+2020-03-18 03:12:14,576 [INFO   ] [TRADER] Position changed to ETF: -13, FUTURE: 13
+2020-03-18 03:12:14,674 [INFO   ] [TRADER] Order 219 cancelled
+2020-03-18 03:12:14,674 [INFO   ] [TRADER] Position changed to ETF: -10, FUTURE: 10
+2020-03-18 03:12:15,585 [INFO   ] [TRADER] Cancelling bid 221
+2020-03-18 03:12:15,586 [INFO   ] [TRADER] Cancelling bid 222
+2020-03-18 03:12:15,586 [INFO   ] [TRADER] (id: 223) Placing  ask 1 lots for $3569
+2020-03-18 03:12:15,586 [INFO   ] [TRADER] (id: 224) Placing  ask 2 lots for $3570
+2020-03-18 03:12:15,586 [INFO   ] [TRADER] (id: 225) Placing  ask 3 lots for $3571
+2020-03-18 03:12:15,586 [INFO   ] [TRADER] Order 221 cancelled
+2020-03-18 03:12:15,587 [INFO   ] [TRADER] Order 222 cancelled
+2020-03-18 03:12:15,587 [INFO   ] [TRADER] Order 223 cancelled
+2020-03-18 03:12:15,587 [INFO   ] [TRADER] Position changed to ETF: -11, FUTURE: 11
+2020-03-18 03:12:15,587 [INFO   ] [TRADER] Order 224 inserted
+2020-03-18 03:12:15,587 [INFO   ] [TRADER] Order 225 inserted
+2020-03-18 03:12:15,687 [INFO   ] [TRADER] (id: 226) Placing  bid 1 lots for $3566
+2020-03-18 03:12:15,687 [INFO   ] [TRADER] (id: 227) Placing  bid 2 lots for $3565
+2020-03-18 03:12:15,687 [INFO   ] [TRADER] (id: 228) Placing  bid 3 lots for $3564
+2020-03-18 03:12:15,688 [INFO   ] [TRADER] Order 226 inserted
+2020-03-18 03:12:15,688 [INFO   ] [TRADER] Order 227 inserted
+2020-03-18 03:12:15,688 [INFO   ] [TRADER] Order 228 inserted
+2020-03-18 03:12:15,700 [INFO   ] [TRADER] Cancelling bid 226
+2020-03-18 03:12:15,700 [INFO   ] [TRADER] Cancelling bid 227
+2020-03-18 03:12:15,700 [INFO   ] [TRADER] Cancelling bid 228
+2020-03-18 03:12:15,700 [INFO   ] [TRADER] (id: 229) Placing  bid 1 lots for $3565
+2020-03-18 03:12:15,701 [INFO   ] [TRADER] (id: 230) Placing  bid 2 lots for $3564
+2020-03-18 03:12:15,701 [INFO   ] [TRADER] (id: 231) Placing  bid 3 lots for $3563
+2020-03-18 03:12:15,701 [INFO   ] [TRADER] Order 226 cancelled
+2020-03-18 03:12:15,702 [INFO   ] [TRADER] Order 227 cancelled
+2020-03-18 03:12:15,702 [INFO   ] [TRADER] Order 228 cancelled
+2020-03-18 03:12:15,702 [INFO   ] [TRADER] Order 229 inserted
+2020-03-18 03:12:15,702 [INFO   ] [TRADER] Order 230 inserted
+2020-03-18 03:12:15,702 [INFO   ] [TRADER] Order 231 inserted
+2020-03-18 03:12:15,921 [INFO   ] [TRADER] Order 224 filled (1 / 2)
+2020-03-18 03:12:15,924 [INFO   ] [TRADER] Position changed to ETF: -12, FUTURE: 12
+2020-03-18 03:12:16,026 [INFO   ] [TRADER] Order 224 cancelled
+2020-03-18 03:12:16,027 [INFO   ] [TRADER] Position changed to ETF: -13, FUTURE: 13
+2020-03-18 03:12:16,659 [INFO   ] [TRADER] Order 229 cancelled
+2020-03-18 03:12:16,659 [INFO   ] [TRADER] Position changed to ETF: -12, FUTURE: 12
+2020-03-18 03:12:17,041 [INFO   ] [TRADER] Cancelling bid 225
+2020-03-18 03:12:17,041 [INFO   ] [TRADER] (id: 232) Placing  ask 1 lots for $3572
+2020-03-18 03:12:17,041 [INFO   ] [TRADER] (id: 233) Placing  ask 2 lots for $3573
+2020-03-18 03:12:17,042 [INFO   ] [TRADER] (id: 234) Placing  ask 3 lots for $3574
+2020-03-18 03:12:17,048 [INFO   ] [TRADER] Order 225 cancelled
+2020-03-18 03:12:17,049 [INFO   ] [TRADER] Order 232 inserted
+2020-03-18 03:12:17,049 [INFO   ] [TRADER] Order 233 inserted
+2020-03-18 03:12:17,049 [INFO   ] [TRADER] Order 234 inserted
+2020-03-18 03:12:17,691 [INFO   ] [TRADER] Cancelling bid 230
+2020-03-18 03:12:17,691 [INFO   ] [TRADER] Cancelling bid 231
+2020-03-18 03:12:17,691 [INFO   ] [TRADER] (id: 235) Placing  bid 1 lots for $3566
+2020-03-18 03:12:17,691 [INFO   ] [TRADER] (id: 236) Placing  bid 2 lots for $3565
+2020-03-18 03:12:17,691 [INFO   ] [TRADER] (id: 237) Placing  bid 3 lots for $3564
+2020-03-18 03:12:17,698 [INFO   ] [TRADER] Order 230 cancelled
+2020-03-18 03:12:17,701 [INFO   ] [TRADER] Order 231 cancelled
+2020-03-18 03:12:17,703 [INFO   ] [TRADER] Order 235 inserted
+2020-03-18 03:12:17,704 [INFO   ] [TRADER] Order 236 inserted
+2020-03-18 03:12:17,705 [INFO   ] [TRADER] Order 237 inserted
+2020-03-18 03:12:17,723 [INFO   ] [TRADER] Order 235 cancelled
+2020-03-18 03:12:17,723 [INFO   ] [TRADER] Position changed to ETF: -11, FUTURE: 11
+2020-03-18 03:12:17,754 [INFO   ] [TRADER] Order 236 cancelled
+2020-03-18 03:12:17,755 [INFO   ] [TRADER] Position changed to ETF: -9, FUTURE: 9
+2020-03-18 03:12:18,049 [INFO   ] [TRADER] Cancelling bid 232
+2020-03-18 03:12:18,050 [INFO   ] [TRADER] Cancelling bid 233
+2020-03-18 03:12:18,050 [INFO   ] [TRADER] Cancelling bid 234
+2020-03-18 03:12:18,050 [INFO   ] [TRADER] (id: 238) Placing  ask 1 lots for $3565
+2020-03-18 03:12:18,050 [INFO   ] [TRADER] (id: 239) Placing  ask 2 lots for $3566
+2020-03-18 03:12:18,050 [INFO   ] [TRADER] (id: 240) Placing  ask 3 lots for $3567
+2020-03-18 03:12:18,053 [INFO   ] [TRADER] Order 232 cancelled
+2020-03-18 03:12:18,058 [INFO   ] [TRADER] Order 233 cancelled
+2020-03-18 03:12:18,064 [INFO   ] [TRADER] Order 234 cancelled
+2020-03-18 03:12:18,065 [INFO   ] [TRADER] Order 238 cancelled
+2020-03-18 03:12:18,065 [INFO   ] [TRADER] Position changed to ETF: -10, FUTURE: 10
+2020-03-18 03:12:18,065 [INFO   ] [TRADER] Order 239 cancelled
+2020-03-18 03:12:18,066 [INFO   ] [TRADER] Position changed to ETF: -12, FUTURE: 12
+2020-03-18 03:12:18,068 [INFO   ] [TRADER] Order 240 cancelled
+2020-03-18 03:12:18,069 [INFO   ] [TRADER] Position changed to ETF: -15, FUTURE: 15
+2020-03-18 03:12:18,762 [INFO   ] [TRADER] Cancelling bid 237
+2020-03-18 03:12:18,762 [INFO   ] [TRADER] (id: 241) Placing  bid 1 lots for $3567
+2020-03-18 03:12:18,763 [INFO   ] [TRADER] (id: 242) Placing  bid 2 lots for $3566
+2020-03-18 03:12:18,763 [INFO   ] [TRADER] (id: 243) Placing  bid 3 lots for $3565
+2020-03-18 03:12:18,766 [INFO   ] [TRADER] Order 237 cancelled
+2020-03-18 03:12:18,766 [INFO   ] [TRADER] Order 241 inserted
+2020-03-18 03:12:18,767 [INFO   ] [TRADER] Order 242 inserted
+2020-03-18 03:12:18,767 [INFO   ] [TRADER] Order 243 inserted
+2020-03-18 03:12:18,860 [INFO   ] [TRADER] Order 241 cancelled
+2020-03-18 03:12:18,861 [INFO   ] [TRADER] Position changed to ETF: -14, FUTURE: 14
+2020-03-18 03:12:19,074 [INFO   ] [TRADER] (id: 244) Placing  ask 1 lots for $3572
+2020-03-18 03:12:19,074 [INFO   ] [TRADER] (id: 245) Placing  ask 2 lots for $3573
+2020-03-18 03:12:19,074 [INFO   ] [TRADER] (id: 246) Placing  ask 3 lots for $3574
+2020-03-18 03:12:19,076 [INFO   ] [TRADER] Order 244 inserted
+2020-03-18 03:12:19,077 [INFO   ] [TRADER] Order 245 inserted
+2020-03-18 03:12:19,078 [INFO   ] [TRADER] Order 246 inserted
+2020-03-18 03:12:19,087 [INFO   ] [TRADER] Cancelling bid 244
+2020-03-18 03:12:19,088 [INFO   ] [TRADER] Cancelling bid 245
+2020-03-18 03:12:19,088 [INFO   ] [TRADER] Cancelling bid 246
+2020-03-18 03:12:19,088 [INFO   ] [TRADER] (id: 247) Placing  ask 1 lots for $3571
+2020-03-18 03:12:19,088 [INFO   ] [TRADER] (id: 248) Placing  ask 2 lots for $3572
+2020-03-18 03:12:19,089 [INFO   ] [TRADER] (id: 249) Placing  ask 3 lots for $3573
+2020-03-18 03:12:19,089 [INFO   ] [TRADER] Order 244 cancelled
+2020-03-18 03:12:19,090 [INFO   ] [TRADER] Order 245 cancelled
+2020-03-18 03:12:19,092 [INFO   ] [TRADER] Order 246 cancelled
+2020-03-18 03:12:19,093 [INFO   ] [TRADER] Order 247 inserted
+2020-03-18 03:12:19,094 [INFO   ] [TRADER] Order 248 inserted
+2020-03-18 03:12:19,096 [INFO   ] [TRADER] Order 249 inserted
+2020-03-18 03:12:19,464 [INFO   ] [TRADER] Order 247 cancelled
+2020-03-18 03:12:19,467 [INFO   ] [TRADER] Position changed to ETF: -15, FUTURE: 15
+2020-03-18 03:12:19,861 [INFO   ] [TRADER] Cancelling bid 242
+2020-03-18 03:12:19,861 [INFO   ] [TRADER] Cancelling bid 243
+2020-03-18 03:12:19,862 [INFO   ] [TRADER] (id: 250) Placing  bid 1 lots for $3571
+2020-03-18 03:12:19,862 [INFO   ] [TRADER] (id: 251) Placing  bid 2 lots for $3570
+2020-03-18 03:12:19,862 [INFO   ] [TRADER] (id: 252) Placing  bid 3 lots for $3569
+2020-03-18 03:12:19,863 [INFO   ] [TRADER] Order 242 cancelled
+2020-03-18 03:12:19,864 [INFO   ] [TRADER] Order 243 cancelled
+2020-03-18 03:12:19,864 [INFO   ] [TRADER] Order 250 cancelled
+2020-03-18 03:12:19,864 [INFO   ] [TRADER] Position changed to ETF: -14, FUTURE: 14
+2020-03-18 03:12:19,864 [INFO   ] [TRADER] Order 251 cancelled
+2020-03-18 03:12:19,865 [INFO   ] [TRADER] Position changed to ETF: -12, FUTURE: 12
+2020-03-18 03:12:19,865 [INFO   ] [TRADER] Order 252 inserted
+2020-03-18 03:12:20,018 [INFO   ] [TRADER] Order 248 cancelled
+2020-03-18 03:12:20,018 [INFO   ] [TRADER] Position changed to ETF: -14, FUTURE: 14
+2020-03-18 03:12:20,386 [INFO   ] [TRADER] Order 249 cancelled
+2020-03-18 03:12:20,387 [INFO   ] [TRADER] Position changed to ETF: -17, FUTURE: 17
+2020-03-18 03:12:20,867 [INFO   ] [TRADER] Cancelling bid 252
+2020-03-18 03:12:20,868 [INFO   ] [TRADER] (id: 253) Placing  bid 1 lots for $3578
+2020-03-18 03:12:20,868 [INFO   ] [TRADER] (id: 254) Placing  bid 2 lots for $3577
+2020-03-18 03:12:20,868 [INFO   ] [TRADER] (id: 255) Placing  bid 3 lots for $3576
+2020-03-18 03:12:20,869 [INFO   ] [TRADER] Order 252 cancelled
+2020-03-18 03:12:20,870 [INFO   ] [TRADER] Order 253 cancelled
+2020-03-18 03:12:20,870 [INFO   ] [TRADER] Position changed to ETF: -16, FUTURE: 16
+2020-03-18 03:12:20,871 [INFO   ] [TRADER] Order 254 cancelled
+2020-03-18 03:12:20,872 [INFO   ] [TRADER] Position changed to ETF: -14, FUTURE: 14
+2020-03-18 03:12:20,872 [INFO   ] [TRADER] Order 255 cancelled
+2020-03-18 03:12:20,872 [INFO   ] [TRADER] Position changed to ETF: -11, FUTURE: 11
+2020-03-18 03:12:21,393 [INFO   ] [TRADER] (id: 256) Placing  ask 1 lots for $3587
+2020-03-18 03:12:21,393 [INFO   ] [TRADER] (id: 257) Placing  ask 2 lots for $3588
+2020-03-18 03:12:21,394 [INFO   ] [TRADER] (id: 258) Placing  ask 3 lots for $3589
+2020-03-18 03:12:21,395 [INFO   ] [TRADER] Order 256 inserted
+2020-03-18 03:12:21,396 [INFO   ] [TRADER] Order 257 inserted
+2020-03-18 03:12:21,396 [INFO   ] [TRADER] Order 258 inserted
+2020-03-18 03:12:21,398 [INFO   ] [TRADER] Cancelling bid 256
+2020-03-18 03:12:21,400 [INFO   ] [TRADER] Cancelling bid 257
+2020-03-18 03:12:21,400 [INFO   ] [TRADER] Cancelling bid 258
+2020-03-18 03:12:21,400 [INFO   ] [TRADER] (id: 259) Placing  ask 1 lots for $3587
+2020-03-18 03:12:21,400 [INFO   ] [TRADER] (id: 260) Placing  ask 2 lots for $3588
+2020-03-18 03:12:21,400 [INFO   ] [TRADER] (id: 261) Placing  ask 3 lots for $3589
+2020-03-18 03:12:21,401 [INFO   ] [TRADER] Order 256 cancelled
+2020-03-18 03:12:21,401 [INFO   ] [TRADER] Order 257 cancelled
+2020-03-18 03:12:21,401 [INFO   ] [TRADER] Order 258 cancelled
+2020-03-18 03:12:21,402 [INFO   ] [TRADER] Order 259 inserted
+2020-03-18 03:12:21,402 [INFO   ] [TRADER] Order 260 inserted
+2020-03-18 03:12:21,403 [INFO   ] [TRADER] Order 261 inserted
+2020-03-18 03:12:21,875 [INFO   ] [TRADER] (id: 262) Placing  bid 1 lots for $3579
+2020-03-18 03:12:21,875 [INFO   ] [TRADER] (id: 263) Placing  bid 2 lots for $3578
+2020-03-18 03:12:21,875 [INFO   ] [TRADER] (id: 264) Placing  bid 3 lots for $3577
+2020-03-18 03:12:21,877 [INFO   ] [TRADER] Order 262 inserted
+2020-03-18 03:12:21,878 [INFO   ] [TRADER] Order 263 inserted
+2020-03-18 03:12:21,879 [INFO   ] [TRADER] Order 264 inserted
+2020-03-18 03:12:21,886 [INFO   ] [TRADER] Order 262 cancelled
+2020-03-18 03:12:21,886 [INFO   ] [TRADER] Position changed to ETF: -10, FUTURE: 10
+2020-03-18 03:12:21,900 [INFO   ] [TRADER] Order 263 cancelled
+2020-03-18 03:12:21,903 [INFO   ] [TRADER] Position changed to ETF: -8, FUTURE: 8
+2020-03-18 03:12:22,315 [INFO   ] [TRADER] Order 264 cancelled
+2020-03-18 03:12:22,315 [INFO   ] [TRADER] Position changed to ETF: -5, FUTURE: 5
+2020-03-18 03:12:22,412 [INFO   ] [TRADER] Cancelling bid 259
+2020-03-18 03:12:22,412 [INFO   ] [TRADER] Cancelling bid 260
+2020-03-18 03:12:22,412 [INFO   ] [TRADER] Cancelling bid 261
+2020-03-18 03:12:22,413 [INFO   ] [TRADER] (id: 265) Placing  ask 1 lots for $3580
+2020-03-18 03:12:22,413 [INFO   ] [TRADER] (id: 266) Placing  ask 2 lots for $3581
+2020-03-18 03:12:22,413 [INFO   ] [TRADER] (id: 267) Placing  ask 3 lots for $3582
+2020-03-18 03:12:22,416 [INFO   ] [TRADER] Order 259 cancelled
+2020-03-18 03:12:22,421 [INFO   ] [TRADER] Order 260 cancelled
+2020-03-18 03:12:22,426 [INFO   ] [TRADER] Order 261 cancelled
+2020-03-18 03:12:22,426 [INFO   ] [TRADER] Order 265 inserted
+2020-03-18 03:12:22,426 [INFO   ] [TRADER] Order 266 inserted
+2020-03-18 03:12:22,427 [INFO   ] [TRADER] Order 267 inserted
+2020-03-18 03:12:22,527 [INFO   ] [TRADER] Order 265 cancelled
+2020-03-18 03:12:22,533 [INFO   ] [TRADER] Position changed to ETF: -6, FUTURE: 6
+2020-03-18 03:12:23,324 [INFO   ] [TRADER] (id: 268) Placing  bid 1 lots for $3575
+2020-03-18 03:12:23,324 [INFO   ] [TRADER] (id: 269) Placing  bid 2 lots for $3574
+2020-03-18 03:12:23,324 [INFO   ] [TRADER] (id: 270) Placing  bid 3 lots for $3573
+2020-03-18 03:12:23,326 [INFO   ] [TRADER] Order 268 inserted
+2020-03-18 03:12:23,326 [INFO   ] [TRADER] Order 269 inserted
+2020-03-18 03:12:23,326 [INFO   ] [TRADER] Order 270 inserted
+2020-03-18 03:12:23,338 [INFO   ] [TRADER] Cancelling bid 268
+2020-03-18 03:12:23,339 [INFO   ] [TRADER] Cancelling bid 269
+2020-03-18 03:12:23,339 [INFO   ] [TRADER] Cancelling bid 270
+2020-03-18 03:12:23,339 [INFO   ] [TRADER] (id: 271) Placing  bid 1 lots for $3575
+2020-03-18 03:12:23,340 [INFO   ] [TRADER] (id: 272) Placing  bid 2 lots for $3574
+2020-03-18 03:12:23,340 [INFO   ] [TRADER] (id: 273) Placing  bid 3 lots for $3573
+2020-03-18 03:12:23,342 [INFO   ] [TRADER] Order 268 cancelled
+2020-03-18 03:12:23,342 [INFO   ] [TRADER] Order 269 cancelled
+2020-03-18 03:12:23,342 [INFO   ] [TRADER] Order 270 cancelled
+2020-03-18 03:12:23,342 [INFO   ] [TRADER] Order 271 inserted
+2020-03-18 03:12:23,342 [INFO   ] [TRADER] Order 272 inserted
+2020-03-18 03:12:23,343 [INFO   ] [TRADER] Order 273 inserted
+2020-03-18 03:12:23,537 [INFO   ] [TRADER] Cancelling bid 266
+2020-03-18 03:12:23,537 [INFO   ] [TRADER] Cancelling bid 267
+2020-03-18 03:12:23,537 [INFO   ] [TRADER] (id: 274) Placing  ask 1 lots for $3578
+2020-03-18 03:12:23,538 [INFO   ] [TRADER] (id: 275) Placing  ask 2 lots for $3579
+2020-03-18 03:12:23,538 [INFO   ] [TRADER] (id: 276) Placing  ask 3 lots for $3580
+2020-03-18 03:12:23,538 [INFO   ] [TRADER] Order 266 cancelled
+2020-03-18 03:12:23,539 [INFO   ] [TRADER] Order 267 cancelled
+2020-03-18 03:12:23,539 [INFO   ] [TRADER] Order 274 inserted
+2020-03-18 03:12:23,539 [INFO   ] [TRADER] Order 275 inserted
+2020-03-18 03:12:23,539 [INFO   ] [TRADER] Order 276 inserted
+2020-03-18 03:12:24,348 [INFO   ] [TRADER] Cancelling bid 271
+2020-03-18 03:12:24,348 [INFO   ] [TRADER] Cancelling bid 272
+2020-03-18 03:12:24,348 [INFO   ] [TRADER] Cancelling bid 273
+2020-03-18 03:12:24,348 [INFO   ] [TRADER] (id: 277) Placing  bid 1 lots for $3574
+2020-03-18 03:12:24,348 [INFO   ] [TRADER] (id: 278) Placing  bid 2 lots for $3573
+2020-03-18 03:12:24,349 [INFO   ] [TRADER] (id: 279) Placing  bid 3 lots for $3572
+2020-03-18 03:12:24,349 [INFO   ] [TRADER] Order 271 cancelled
+2020-03-18 03:12:24,349 [INFO   ] [TRADER] Order 272 cancelled
+2020-03-18 03:12:24,349 [INFO   ] [TRADER] Order 273 cancelled
+2020-03-18 03:12:24,349 [INFO   ] [TRADER] Order 277 inserted
+2020-03-18 03:12:24,349 [INFO   ] [TRADER] Order 278 inserted
+2020-03-18 03:12:24,349 [INFO   ] [TRADER] Order 279 inserted
+2020-03-18 03:12:24,373 [INFO   ] [TRADER] Order 274 cancelled
+2020-03-18 03:12:24,374 [INFO   ] [TRADER] Position changed to ETF: -7, FUTURE: 7
+2020-03-18 03:12:25,362 [INFO   ] [TRADER] Cancelling bid 277
+2020-03-18 03:12:25,362 [INFO   ] [TRADER] Cancelling bid 278
+2020-03-18 03:12:25,362 [INFO   ] [TRADER] Cancelling bid 279
+2020-03-18 03:12:25,362 [INFO   ] [TRADER] (id: 280) Placing  bid 1 lots for $3573
+2020-03-18 03:12:25,363 [INFO   ] [TRADER] (id: 281) Placing  bid 2 lots for $3572
+2020-03-18 03:12:25,363 [INFO   ] [TRADER] (id: 282) Placing  bid 3 lots for $3571
+2020-03-18 03:12:25,364 [INFO   ] [TRADER] Order 277 cancelled
+2020-03-18 03:12:25,364 [INFO   ] [TRADER] Order 278 cancelled
+2020-03-18 03:12:25,364 [INFO   ] [TRADER] Order 279 cancelled
+2020-03-18 03:12:25,364 [INFO   ] [TRADER] Order 280 inserted
+2020-03-18 03:12:25,365 [INFO   ] [TRADER] Order 281 inserted
+2020-03-18 03:12:25,365 [INFO   ] [TRADER] Order 282 inserted
+2020-03-18 03:12:25,374 [INFO   ] [TRADER] Cancelling bid 275
+2020-03-18 03:12:25,374 [INFO   ] [TRADER] Cancelling bid 276
+2020-03-18 03:12:25,374 [INFO   ] [TRADER] (id: 283) Placing  ask 1 lots for $3576
+2020-03-18 03:12:25,374 [INFO   ] [TRADER] (id: 284) Placing  ask 2 lots for $3577
+2020-03-18 03:12:25,374 [INFO   ] [TRADER] (id: 285) Placing  ask 3 lots for $3578
+2020-03-18 03:12:25,375 [INFO   ] [TRADER] Order 275 cancelled
+2020-03-18 03:12:25,375 [INFO   ] [TRADER] Order 276 cancelled
+2020-03-18 03:12:25,375 [INFO   ] [TRADER] Order 283 cancelled
+2020-03-18 03:12:25,376 [INFO   ] [TRADER] Position changed to ETF: -8, FUTURE: 8
+2020-03-18 03:12:25,376 [INFO   ] [TRADER] Order 284 cancelled
+2020-03-18 03:12:25,376 [INFO   ] [TRADER] Position changed to ETF: -10, FUTURE: 10
+2020-03-18 03:12:25,377 [INFO   ] [TRADER] Order 285 inserted
+2020-03-18 03:12:25,423 [INFO   ] [TRADER] Order 285 cancelled
+2020-03-18 03:12:25,423 [INFO   ] [TRADER] Position changed to ETF: -13, FUTURE: 13
+2020-03-18 03:12:26,401 [INFO   ] [TRADER] Cancelling bid 280
+2020-03-18 03:12:26,401 [INFO   ] [TRADER] Cancelling bid 281
+2020-03-18 03:12:26,401 [INFO   ] [TRADER] Cancelling bid 282
+2020-03-18 03:12:26,402 [INFO   ] [TRADER] (id: 286) Placing  bid 1 lots for $3572
+2020-03-18 03:12:26,402 [INFO   ] [TRADER] (id: 287) Placing  bid 2 lots for $3571
+2020-03-18 03:12:26,402 [INFO   ] [TRADER] (id: 288) Placing  bid 3 lots for $3570
+2020-03-18 03:12:26,402 [INFO   ] [TRADER] Order 280 cancelled
+2020-03-18 03:12:26,403 [INFO   ] [TRADER] Order 281 cancelled
+2020-03-18 03:12:26,403 [INFO   ] [TRADER] Order 282 cancelled
+2020-03-18 03:12:26,403 [INFO   ] [TRADER] Order 286 inserted
+2020-03-18 03:12:26,403 [INFO   ] [TRADER] Order 287 inserted
+2020-03-18 03:12:26,404 [INFO   ] [TRADER] Order 288 inserted
+2020-03-18 03:12:26,426 [INFO   ] [TRADER] (id: 289) Placing  ask 1 lots for $3576
+2020-03-18 03:12:26,426 [INFO   ] [TRADER] (id: 290) Placing  ask 2 lots for $3577
+2020-03-18 03:12:26,427 [INFO   ] [TRADER] (id: 291) Placing  ask 3 lots for $3578
+2020-03-18 03:12:26,428 [INFO   ] [TRADER] Order 289 inserted
+2020-03-18 03:12:26,429 [INFO   ] [TRADER] Order 290 inserted
+2020-03-18 03:12:26,429 [INFO   ] [TRADER] Order 291 inserted
+2020-03-18 03:12:26,685 [INFO   ] [TRADER] Order 289 cancelled
+2020-03-18 03:12:26,686 [INFO   ] [TRADER] Position changed to ETF: -14, FUTURE: 14
+2020-03-18 03:12:27,410 [INFO   ] [TRADER] Cancelling bid 286
+2020-03-18 03:12:27,410 [INFO   ] [TRADER] Cancelling bid 287
+2020-03-18 03:12:27,410 [INFO   ] [TRADER] Cancelling bid 288
+2020-03-18 03:12:27,410 [INFO   ] [TRADER] (id: 292) Placing  bid 1 lots for $3573
+2020-03-18 03:12:27,410 [INFO   ] [TRADER] (id: 293) Placing  bid 2 lots for $3572
+2020-03-18 03:12:27,410 [INFO   ] [TRADER] (id: 294) Placing  bid 3 lots for $3571
+2020-03-18 03:12:27,410 [INFO   ] [TRADER] Order 286 cancelled
+2020-03-18 03:12:27,410 [INFO   ] [TRADER] Order 287 cancelled
+2020-03-18 03:12:27,410 [INFO   ] [TRADER] Order 288 cancelled
+2020-03-18 03:12:27,410 [INFO   ] [TRADER] Order 292 inserted
+2020-03-18 03:12:27,410 [INFO   ] [TRADER] Order 293 inserted
+2020-03-18 03:12:27,411 [INFO   ] [TRADER] Order 294 inserted
+2020-03-18 03:12:27,687 [INFO   ] [TRADER] Cancelling bid 290
+2020-03-18 03:12:27,688 [INFO   ] [TRADER] Cancelling bid 291
+2020-03-18 03:12:27,688 [INFO   ] [TRADER] (id: 295) Placing  ask 1 lots for $3577
+2020-03-18 03:12:27,688 [INFO   ] [TRADER] (id: 296) Placing  ask 2 lots for $3578
+2020-03-18 03:12:27,688 [INFO   ] [TRADER] (id: 297) Placing  ask 3 lots for $3579
+2020-03-18 03:12:27,689 [INFO   ] [TRADER] Order 290 cancelled
+2020-03-18 03:12:27,689 [INFO   ] [TRADER] Order 291 cancelled
+2020-03-18 03:12:27,690 [INFO   ] [TRADER] Order 295 inserted
+2020-03-18 03:12:27,690 [INFO   ] [TRADER] Order 296 inserted
+2020-03-18 03:12:27,691 [INFO   ] [TRADER] Order 297 inserted
+2020-03-18 03:12:28,698 [INFO   ] [TRADER] Cancelling bid 295
+2020-03-18 03:12:28,698 [INFO   ] [TRADER] Cancelling bid 296
+2020-03-18 03:12:28,698 [INFO   ] [TRADER] Cancelling bid 297
+2020-03-18 03:12:28,698 [INFO   ] [TRADER] (id: 298) Placing  ask 1 lots for $3576
+2020-03-18 03:12:28,698 [INFO   ] [TRADER] (id: 299) Placing  ask 2 lots for $3577
+2020-03-18 03:12:28,698 [INFO   ] [TRADER] (id: 300) Placing  ask 3 lots for $3578
+2020-03-18 03:12:28,698 [INFO   ] [TRADER] Order 295 cancelled
+2020-03-18 03:12:28,698 [INFO   ] [TRADER] Order 296 cancelled
+2020-03-18 03:12:28,699 [INFO   ] [TRADER] Order 297 cancelled
+2020-03-18 03:12:28,699 [INFO   ] [TRADER] Order 298 inserted
+2020-03-18 03:12:28,699 [INFO   ] [TRADER] Order 299 inserted
+2020-03-18 03:12:28,699 [INFO   ] [TRADER] Order 300 inserted
+2020-03-18 03:12:28,873 [INFO   ] [TRADER] Cancelling bid 292
+2020-03-18 03:12:28,873 [INFO   ] [TRADER] Cancelling bid 293
+2020-03-18 03:12:28,873 [INFO   ] [TRADER] Cancelling bid 294
+2020-03-18 03:12:28,873 [INFO   ] [TRADER] (id: 301) Placing  bid 1 lots for $3574
+2020-03-18 03:12:28,873 [INFO   ] [TRADER] (id: 302) Placing  bid 2 lots for $3573
+2020-03-18 03:12:28,873 [INFO   ] [TRADER] (id: 303) Placing  bid 3 lots for $3572
+2020-03-18 03:12:28,874 [INFO   ] [TRADER] Order 292 cancelled
+2020-03-18 03:12:28,874 [INFO   ] [TRADER] Order 293 cancelled
+2020-03-18 03:12:28,874 [INFO   ] [TRADER] Order 294 cancelled
+2020-03-18 03:12:28,874 [INFO   ] [TRADER] Order 301 inserted
+2020-03-18 03:12:28,874 [INFO   ] [TRADER] Order 302 inserted
+2020-03-18 03:12:28,874 [INFO   ] [TRADER] Order 303 inserted
+2020-03-18 03:12:28,980 [INFO   ] [TRADER] Order 301 cancelled
+2020-03-18 03:12:28,980 [INFO   ] [TRADER] Position changed to ETF: -13, FUTURE: 13
+2020-03-18 03:12:29,248 [INFO   ] [TRADER] Order 298 cancelled
+2020-03-18 03:12:29,248 [INFO   ] [TRADER] Position changed to ETF: -14, FUTURE: 14
+2020-03-18 03:12:29,987 [INFO   ] [TRADER] Cancelling bid 302
+2020-03-18 03:12:29,987 [INFO   ] [TRADER] Cancelling bid 303
+2020-03-18 03:12:29,988 [INFO   ] [TRADER] (id: 304) Placing  bid 1 lots for $3573
+2020-03-18 03:12:29,988 [INFO   ] [TRADER] (id: 305) Placing  bid 2 lots for $3572
+2020-03-18 03:12:29,988 [INFO   ] [TRADER] (id: 306) Placing  bid 3 lots for $3571
+2020-03-18 03:12:29,989 [INFO   ] [TRADER] Order 302 cancelled
+2020-03-18 03:12:29,991 [INFO   ] [TRADER] Order 303 cancelled
+2020-03-18 03:12:29,991 [INFO   ] [TRADER] Order 304 inserted
+2020-03-18 03:12:29,992 [INFO   ] [TRADER] Order 305 inserted
+2020-03-18 03:12:29,992 [INFO   ] [TRADER] Order 306 inserted
+2020-03-18 03:12:30,588 [INFO   ] [TRADER] Cancelling bid 299
+2020-03-18 03:12:30,589 [INFO   ] [TRADER] Cancelling bid 300
+2020-03-18 03:12:30,589 [INFO   ] [TRADER] (id: 307) Placing  ask 1 lots for $3575
+2020-03-18 03:12:30,589 [INFO   ] [TRADER] (id: 308) Placing  ask 2 lots for $3576
+2020-03-18 03:12:30,589 [INFO   ] [TRADER] (id: 309) Placing  ask 3 lots for $3577
+2020-03-18 03:12:30,591 [INFO   ] [TRADER] Order 299 cancelled
+2020-03-18 03:12:30,591 [INFO   ] [TRADER] Order 300 cancelled
+2020-03-18 03:12:30,591 [INFO   ] [TRADER] Order 307 inserted
+2020-03-18 03:12:30,592 [INFO   ] [TRADER] Order 308 inserted
+2020-03-18 03:12:30,592 [INFO   ] [TRADER] Order 309 inserted
+2020-03-18 03:12:30,837 [INFO   ] [TRADER] Order 307 cancelled
+2020-03-18 03:12:30,838 [INFO   ] [TRADER] Position changed to ETF: -15, FUTURE: 15
+2020-03-18 03:12:31,048 [INFO   ] [TRADER] Order 308 filled (1 / 2)
+2020-03-18 03:12:31,048 [INFO   ] [TRADER] Position changed to ETF: -16, FUTURE: 16
+2020-03-18 03:12:31,061 [INFO   ] [TRADER] Order 308 cancelled
+2020-03-18 03:12:31,061 [INFO   ] [TRADER] Position changed to ETF: -17, FUTURE: 17
+2020-03-18 03:12:31,574 [INFO   ] [TRADER] Cancelling bid 304
+2020-03-18 03:12:31,575 [INFO   ] [TRADER] Cancelling bid 305
+2020-03-18 03:12:31,575 [INFO   ] [TRADER] Cancelling bid 306
+2020-03-18 03:12:31,575 [INFO   ] [TRADER] (id: 310) Placing  bid 1 lots for $3572
+2020-03-18 03:12:31,575 [INFO   ] [TRADER] (id: 311) Placing  bid 2 lots for $3571
+2020-03-18 03:12:31,576 [INFO   ] [TRADER] (id: 312) Placing  bid 3 lots for $3570
+2020-03-18 03:12:31,576 [INFO   ] [TRADER] Order 304 cancelled
+2020-03-18 03:12:31,577 [INFO   ] [TRADER] Order 305 cancelled
+2020-03-18 03:12:31,577 [INFO   ] [TRADER] Order 306 cancelled
+2020-03-18 03:12:31,577 [INFO   ] [TRADER] Order 310 inserted
+2020-03-18 03:12:31,578 [INFO   ] [TRADER] Order 311 inserted
+2020-03-18 03:12:31,578 [INFO   ] [TRADER] Order 312 inserted
+2020-03-18 03:12:32,061 [INFO   ] [TRADER] Cancelling bid 309
+2020-03-18 03:12:32,062 [INFO   ] [TRADER] (id: 313) Placing  ask 1 lots for $3576
+2020-03-18 03:12:32,062 [INFO   ] [TRADER] (id: 314) Placing  ask 2 lots for $3577
+2020-03-18 03:12:32,062 [INFO   ] [TRADER] (id: 315) Placing  ask 3 lots for $3578
+2020-03-18 03:12:32,063 [INFO   ] [TRADER] Order 309 cancelled
+2020-03-18 03:12:32,064 [INFO   ] [TRADER] Order 313 inserted
+2020-03-18 03:12:32,065 [INFO   ] [TRADER] Order 314 inserted
+2020-03-18 03:12:32,065 [INFO   ] [TRADER] Order 315 inserted
+2020-03-18 03:12:32,586 [INFO   ] [TRADER] Cancelling bid 310
+2020-03-18 03:12:32,587 [INFO   ] [TRADER] Cancelling bid 311
+2020-03-18 03:12:32,587 [INFO   ] [TRADER] Cancelling bid 312
+2020-03-18 03:12:32,587 [INFO   ] [TRADER] (id: 316) Placing  bid 1 lots for $3573
+2020-03-18 03:12:32,587 [INFO   ] [TRADER] (id: 317) Placing  bid 2 lots for $3572
+2020-03-18 03:12:32,587 [INFO   ] [TRADER] (id: 318) Placing  bid 3 lots for $3571
+2020-03-18 03:12:32,588 [INFO   ] [TRADER] Order 310 cancelled
+2020-03-18 03:12:32,589 [INFO   ] [TRADER] Order 311 cancelled
+2020-03-18 03:12:32,589 [INFO   ] [TRADER] Order 312 cancelled
+2020-03-18 03:12:32,589 [INFO   ] [TRADER] Order 316 inserted
+2020-03-18 03:12:32,589 [INFO   ] [TRADER] Order 317 inserted
+2020-03-18 03:12:32,589 [INFO   ] [TRADER] Order 318 inserted
+2020-03-18 03:12:33,972 [INFO   ] [TRADER] Order 313 cancelled
+2020-03-18 03:12:33,972 [INFO   ] [TRADER] Position changed to ETF: -18, FUTURE: 18
+2020-03-18 03:12:34,973 [INFO   ] [TRADER] Cancelling bid 314
+2020-03-18 03:12:34,973 [INFO   ] [TRADER] Cancelling bid 315
+2020-03-18 03:12:34,973 [INFO   ] [TRADER] (id: 319) Placing  ask 1 lots for $3577
+2020-03-18 03:12:34,973 [INFO   ] [TRADER] (id: 320) Placing  ask 2 lots for $3578
+2020-03-18 03:12:34,973 [INFO   ] [TRADER] (id: 321) Placing  ask 3 lots for $3579
+2020-03-18 03:12:34,973 [INFO   ] [TRADER] Order 314 cancelled
+2020-03-18 03:12:34,973 [INFO   ] [TRADER] Order 315 cancelled
+2020-03-18 03:12:34,973 [INFO   ] [TRADER] Order 319 inserted
+2020-03-18 03:12:34,973 [INFO   ] [TRADER] Order 320 inserted
+2020-03-18 03:12:34,974 [INFO   ] [TRADER] Order 321 inserted
+2020-03-18 03:12:34,998 [INFO   ] [TRADER] Cancelling bid 316
+2020-03-18 03:12:34,998 [INFO   ] [TRADER] Cancelling bid 317
+2020-03-18 03:12:34,998 [INFO   ] [TRADER] Cancelling bid 318
+2020-03-18 03:12:34,998 [INFO   ] [TRADER] (id: 322) Placing  bid 1 lots for $3574
+2020-03-18 03:12:34,999 [INFO   ] [TRADER] (id: 323) Placing  bid 2 lots for $3573
+2020-03-18 03:12:34,999 [INFO   ] [TRADER] (id: 324) Placing  bid 3 lots for $3572
+2020-03-18 03:12:34,999 [INFO   ] [TRADER] Order 316 cancelled
+2020-03-18 03:12:34,999 [INFO   ] [TRADER] Order 317 cancelled
+2020-03-18 03:12:34,999 [INFO   ] [TRADER] Order 318 cancelled
+2020-03-18 03:12:34,999 [INFO   ] [TRADER] Order 322 inserted
+2020-03-18 03:12:34,999 [INFO   ] [TRADER] Order 323 inserted
+2020-03-18 03:12:34,999 [INFO   ] [TRADER] Order 324 inserted
+2020-03-18 03:12:35,663 [INFO   ] [TRADER] Order 322 cancelled
+2020-03-18 03:12:35,663 [INFO   ] [TRADER] Position changed to ETF: -17, FUTURE: 17
+2020-03-18 03:12:37,074 [INFO   ] [TRADER] Cancelling bid 323
+2020-03-18 03:12:37,075 [INFO   ] [TRADER] Cancelling bid 324
+2020-03-18 03:12:37,075 [INFO   ] [TRADER] (id: 325) Placing  bid 1 lots for $3575
+2020-03-18 03:12:37,075 [INFO   ] [TRADER] (id: 326) Placing  bid 2 lots for $3574
+2020-03-18 03:12:37,075 [INFO   ] [TRADER] (id: 327) Placing  bid 3 lots for $3573
+2020-03-18 03:12:37,075 [INFO   ] [TRADER] Cancelling bid 319
+2020-03-18 03:12:37,076 [INFO   ] [TRADER] Cancelling bid 320
+2020-03-18 03:12:37,076 [INFO   ] [TRADER] Cancelling bid 321
+2020-03-18 03:12:37,076 [INFO   ] [TRADER] (id: 328) Placing  ask 1 lots for $3578
+2020-03-18 03:12:37,076 [INFO   ] [TRADER] (id: 329) Placing  ask 2 lots for $3579
+2020-03-18 03:12:37,076 [INFO   ] [TRADER] (id: 330) Placing  ask 3 lots for $3580
+2020-03-18 03:12:37,077 [INFO   ] [TRADER] Order 323 cancelled
+2020-03-18 03:12:37,077 [INFO   ] [TRADER] Order 324 cancelled
+2020-03-18 03:12:37,077 [INFO   ] [TRADER] Order 325 inserted
+2020-03-18 03:12:37,078 [INFO   ] [TRADER] Order 326 inserted
+2020-03-18 03:12:37,078 [INFO   ] [TRADER] Order 327 inserted
+2020-03-18 03:12:37,078 [INFO   ] [TRADER] Order 319 cancelled
+2020-03-18 03:12:37,078 [INFO   ] [TRADER] Order 320 cancelled
+2020-03-18 03:12:37,078 [INFO   ] [TRADER] Order 321 cancelled
+2020-03-18 03:12:37,079 [INFO   ] [TRADER] Order 328 inserted
+2020-03-18 03:12:37,079 [INFO   ] [TRADER] Order 329 inserted
+2020-03-18 03:12:37,079 [INFO   ] [TRADER] Order 330 inserted
+2020-03-18 03:12:38,087 [INFO   ] [TRADER] Cancelling bid 325
+2020-03-18 03:12:38,087 [INFO   ] [TRADER] Cancelling bid 326
+2020-03-18 03:12:38,087 [INFO   ] [TRADER] Cancelling bid 327
+2020-03-18 03:12:38,088 [INFO   ] [TRADER] (id: 331) Placing  bid 1 lots for $3576
+2020-03-18 03:12:38,088 [INFO   ] [TRADER] (id: 332) Placing  bid 2 lots for $3575
+2020-03-18 03:12:38,088 [INFO   ] [TRADER] (id: 333) Placing  bid 3 lots for $3574
+2020-03-18 03:12:38,088 [INFO   ] [TRADER] Cancelling bid 328
+2020-03-18 03:12:38,088 [INFO   ] [TRADER] Cancelling bid 329
+2020-03-18 03:12:38,089 [INFO   ] [TRADER] Cancelling bid 330
+2020-03-18 03:12:38,089 [INFO   ] [TRADER] (id: 334) Placing  ask 1 lots for $3579
+2020-03-18 03:12:38,089 [INFO   ] [TRADER] (id: 335) Placing  ask 2 lots for $3580
+2020-03-18 03:12:38,089 [INFO   ] [TRADER] (id: 336) Placing  ask 3 lots for $3581
+2020-03-18 03:12:38,090 [INFO   ] [TRADER] Order 325 cancelled
+2020-03-18 03:12:38,090 [INFO   ] [TRADER] Order 326 cancelled
+2020-03-18 03:12:38,090 [INFO   ] [TRADER] Order 327 cancelled
+2020-03-18 03:12:38,090 [INFO   ] [TRADER] Order 331 inserted
+2020-03-18 03:12:38,090 [INFO   ] [TRADER] Order 332 inserted
+2020-03-18 03:12:38,090 [INFO   ] [TRADER] Order 333 inserted
+2020-03-18 03:12:38,090 [INFO   ] [TRADER] Order 328 cancelled
+2020-03-18 03:12:38,091 [INFO   ] [TRADER] Order 329 cancelled
+2020-03-18 03:12:38,091 [INFO   ] [TRADER] Order 330 cancelled
+2020-03-18 03:12:38,091 [INFO   ] [TRADER] Order 334 inserted
+2020-03-18 03:12:38,091 [INFO   ] [TRADER] Order 335 inserted
+2020-03-18 03:12:38,091 [INFO   ] [TRADER] Order 336 inserted
+2020-03-18 03:12:38,336 [INFO   ] [TRADER] Order 331 cancelled
+2020-03-18 03:12:38,336 [INFO   ] [TRADER] Position changed to ETF: -16, FUTURE: 16
+2020-03-18 03:12:40,286 [INFO   ] [TRADER] Cancelling bid 332
+2020-03-18 03:12:40,286 [INFO   ] [TRADER] Cancelling bid 333
+2020-03-18 03:12:40,287 [INFO   ] [TRADER] (id: 337) Placing  bid 1 lots for $3577
+2020-03-18 03:12:40,287 [INFO   ] [TRADER] (id: 338) Placing  bid 2 lots for $3576
+2020-03-18 03:12:40,287 [INFO   ] [TRADER] (id: 339) Placing  bid 3 lots for $3575
+2020-03-18 03:12:40,287 [INFO   ] [TRADER] Cancelling bid 334
+2020-03-18 03:12:40,287 [INFO   ] [TRADER] Cancelling bid 335
+2020-03-18 03:12:40,288 [INFO   ] [TRADER] Cancelling bid 336
+2020-03-18 03:12:40,288 [INFO   ] [TRADER] (id: 340) Placing  ask 1 lots for $3580
+2020-03-18 03:12:40,288 [INFO   ] [TRADER] (id: 341) Placing  ask 2 lots for $3581
+2020-03-18 03:12:40,288 [INFO   ] [TRADER] (id: 342) Placing  ask 3 lots for $3582
+2020-03-18 03:12:40,288 [INFO   ] [TRADER] Order 332 cancelled
+2020-03-18 03:12:40,289 [INFO   ] [TRADER] Order 333 cancelled
+2020-03-18 03:12:40,289 [INFO   ] [TRADER] Order 337 cancelled
+2020-03-18 03:12:40,289 [INFO   ] [TRADER] Position changed to ETF: -15, FUTURE: 15
+2020-03-18 03:12:40,290 [INFO   ] [TRADER] Order 338 inserted
+2020-03-18 03:12:40,291 [INFO   ] [TRADER] Order 339 inserted
+2020-03-18 03:12:40,291 [INFO   ] [TRADER] Order 334 cancelled
+2020-03-18 03:12:40,291 [INFO   ] [TRADER] Order 335 cancelled
+2020-03-18 03:12:40,292 [INFO   ] [TRADER] Order 336 cancelled
+2020-03-18 03:12:40,292 [INFO   ] [TRADER] Order 340 inserted
+2020-03-18 03:12:40,292 [INFO   ] [TRADER] Order 341 inserted
+2020-03-18 03:12:40,292 [INFO   ] [TRADER] Order 342 inserted
+2020-03-18 03:12:40,499 [INFO   ] [TRADER] Order 338 cancelled
+2020-03-18 03:12:40,499 [INFO   ] [TRADER] Position changed to ETF: -13, FUTURE: 13
+2020-03-18 03:12:43,297 [INFO   ] [TRADER] Order 339 cancelled
+2020-03-18 03:12:43,297 [INFO   ] [TRADER] Position changed to ETF: -10, FUTURE: 10
+2020-03-18 03:12:43,548 [INFO   ] [TRADER] Cancelling bid 340
+2020-03-18 03:12:43,549 [INFO   ] [TRADER] Cancelling bid 341
+2020-03-18 03:12:43,549 [INFO   ] [TRADER] Cancelling bid 342
+2020-03-18 03:12:43,549 [INFO   ] [TRADER] (id: 343) Placing  ask 1 lots for $3579
+2020-03-18 03:12:43,549 [INFO   ] [TRADER] (id: 344) Placing  ask 2 lots for $3580
+2020-03-18 03:12:43,550 [INFO   ] [TRADER] (id: 345) Placing  ask 3 lots for $3581
+2020-03-18 03:12:43,550 [INFO   ] [TRADER] Order 340 cancelled
+2020-03-18 03:12:43,550 [INFO   ] [TRADER] Order 341 cancelled
+2020-03-18 03:12:43,550 [INFO   ] [TRADER] Order 342 cancelled
+2020-03-18 03:12:43,551 [INFO   ] [TRADER] Order 343 inserted
+2020-03-18 03:12:43,551 [INFO   ] [TRADER] Order 344 inserted
+2020-03-18 03:12:43,552 [INFO   ] [TRADER] Order 345 inserted
+2020-03-18 03:12:44,299 [INFO   ] [TRADER] (id: 346) Placing  bid 1 lots for $3576
+2020-03-18 03:12:44,299 [INFO   ] [TRADER] (id: 347) Placing  bid 2 lots for $3575
+2020-03-18 03:12:44,299 [INFO   ] [TRADER] (id: 348) Placing  bid 3 lots for $3574
+2020-03-18 03:12:44,300 [INFO   ] [TRADER] Order 346 inserted
+2020-03-18 03:12:44,301 [INFO   ] [TRADER] Order 347 inserted
+2020-03-18 03:12:44,301 [INFO   ] [TRADER] Order 348 inserted
+2020-03-18 03:12:44,313 [INFO   ] [TRADER] Cancelling bid 346
+2020-03-18 03:12:44,313 [INFO   ] [TRADER] Cancelling bid 347
+2020-03-18 03:12:44,313 [INFO   ] [TRADER] Cancelling bid 348
+2020-03-18 03:12:44,313 [INFO   ] [TRADER] (id: 349) Placing  bid 1 lots for $3576
+2020-03-18 03:12:44,313 [INFO   ] [TRADER] (id: 350) Placing  bid 2 lots for $3575
+2020-03-18 03:12:44,313 [INFO   ] [TRADER] (id: 351) Placing  bid 3 lots for $3574
+2020-03-18 03:12:44,316 [INFO   ] [TRADER] Order 346 cancelled
+2020-03-18 03:12:44,316 [INFO   ] [TRADER] Order 347 cancelled
+2020-03-18 03:12:44,316 [INFO   ] [TRADER] Order 348 cancelled
+2020-03-18 03:12:44,316 [INFO   ] [TRADER] Order 349 inserted
+2020-03-18 03:12:44,317 [INFO   ] [TRADER] Order 350 inserted
+2020-03-18 03:12:44,317 [INFO   ] [TRADER] Order 351 inserted
+2020-03-18 03:12:44,686 [INFO   ] [TRADER] Order 349 cancelled
+2020-03-18 03:12:44,687 [INFO   ] [TRADER] Position changed to ETF: -9, FUTURE: 9
+2020-03-18 03:12:44,965 [INFO   ] [TRADER] Cancelling bid 343
+2020-03-18 03:12:44,965 [INFO   ] [TRADER] Cancelling bid 344
+2020-03-18 03:12:44,965 [INFO   ] [TRADER] Cancelling bid 345
+2020-03-18 03:12:44,965 [INFO   ] [TRADER] (id: 352) Placing  ask 1 lots for $3580
+2020-03-18 03:12:44,966 [INFO   ] [TRADER] (id: 353) Placing  ask 2 lots for $3581
+2020-03-18 03:12:44,966 [INFO   ] [TRADER] (id: 354) Placing  ask 3 lots for $3582
+2020-03-18 03:12:44,970 [INFO   ] [TRADER] Order 343 cancelled
+2020-03-18 03:12:44,971 [INFO   ] [TRADER] Order 344 cancelled
+2020-03-18 03:12:44,971 [INFO   ] [TRADER] Order 345 cancelled
+2020-03-18 03:12:44,971 [INFO   ] [TRADER] Order 352 inserted
+2020-03-18 03:12:44,971 [INFO   ] [TRADER] Order 353 inserted
+2020-03-18 03:12:44,971 [INFO   ] [TRADER] Order 354 inserted
+2020-03-18 03:12:45,973 [INFO   ] [TRADER] Cancelling bid 352
+2020-03-18 03:12:45,973 [INFO   ] [TRADER] Cancelling bid 353
+2020-03-18 03:12:45,973 [INFO   ] [TRADER] Cancelling bid 354
+2020-03-18 03:12:45,973 [INFO   ] [TRADER] (id: 355) Placing  ask 1 lots for $3579
+2020-03-18 03:12:45,973 [INFO   ] [TRADER] (id: 356) Placing  ask 2 lots for $3580
+2020-03-18 03:12:45,973 [INFO   ] [TRADER] (id: 357) Placing  ask 3 lots for $3581
+2020-03-18 03:12:45,973 [INFO   ] [TRADER] Order 352 cancelled
+2020-03-18 03:12:45,973 [INFO   ] [TRADER] Order 353 cancelled
+2020-03-18 03:12:45,973 [INFO   ] [TRADER] Order 354 cancelled
+2020-03-18 03:12:45,973 [INFO   ] [TRADER] Order 355 inserted
+2020-03-18 03:12:45,973 [INFO   ] [TRADER] Order 356 inserted
+2020-03-18 03:12:45,973 [INFO   ] [TRADER] Order 357 inserted
+2020-03-18 03:12:48,799 [INFO   ] [TRADER] Cancelling bid 350
+2020-03-18 03:12:48,800 [INFO   ] [TRADER] Cancelling bid 351
+2020-03-18 03:12:48,800 [INFO   ] [TRADER] (id: 358) Placing  bid 1 lots for $3577
+2020-03-18 03:12:48,800 [INFO   ] [TRADER] (id: 359) Placing  bid 2 lots for $3576
+2020-03-18 03:12:48,800 [INFO   ] [TRADER] (id: 360) Placing  bid 3 lots for $3575
+2020-03-18 03:12:48,801 [INFO   ] [TRADER] Cancelling bid 355
+2020-03-18 03:12:48,801 [INFO   ] [TRADER] Cancelling bid 356
+2020-03-18 03:12:48,801 [INFO   ] [TRADER] Cancelling bid 357
+2020-03-18 03:12:48,801 [INFO   ] [TRADER] (id: 361) Placing  ask 1 lots for $3580
+2020-03-18 03:12:48,801 [INFO   ] [TRADER] (id: 362) Placing  ask 2 lots for $3581
+2020-03-18 03:12:48,801 [INFO   ] [TRADER] (id: 363) Placing  ask 3 lots for $3582
+2020-03-18 03:12:48,802 [INFO   ] [TRADER] Order 350 cancelled
+2020-03-18 03:12:48,802 [INFO   ] [TRADER] Order 351 cancelled
+2020-03-18 03:12:48,802 [INFO   ] [TRADER] Order 358 inserted
+2020-03-18 03:12:48,803 [INFO   ] [TRADER] Order 359 inserted
+2020-03-18 03:12:48,803 [INFO   ] [TRADER] Order 360 inserted
+2020-03-18 03:12:48,804 [INFO   ] [TRADER] Order 355 cancelled
+2020-03-18 03:12:48,804 [INFO   ] [TRADER] Order 356 cancelled
+2020-03-18 03:12:48,805 [INFO   ] [TRADER] Order 357 cancelled
+2020-03-18 03:12:48,805 [INFO   ] [TRADER] Order 361 inserted
+2020-03-18 03:12:48,805 [INFO   ] [TRADER] Order 362 inserted
+2020-03-18 03:12:48,805 [INFO   ] [TRADER] Order 363 inserted
+2020-03-18 03:12:49,735 [INFO   ] [TRADER] Order 358 cancelled
+2020-03-18 03:12:49,735 [INFO   ] [TRADER] Position changed to ETF: -8, FUTURE: 8
+2020-03-18 03:12:49,865 [INFO   ] [TRADER] Cancelling bid 361
+2020-03-18 03:12:49,866 [INFO   ] [TRADER] Cancelling bid 362
+2020-03-18 03:12:49,866 [INFO   ] [TRADER] Cancelling bid 363
+2020-03-18 03:12:49,866 [INFO   ] [TRADER] (id: 364) Placing  ask 1 lots for $3581
+2020-03-18 03:12:49,866 [INFO   ] [TRADER] (id: 365) Placing  ask 2 lots for $3582
+2020-03-18 03:12:49,866 [INFO   ] [TRADER] (id: 366) Placing  ask 3 lots for $3583
+2020-03-18 03:12:49,867 [INFO   ] [TRADER] Order 361 cancelled
+2020-03-18 03:12:49,868 [INFO   ] [TRADER] Order 362 cancelled
+2020-03-18 03:12:49,868 [INFO   ] [TRADER] Order 363 cancelled
+2020-03-18 03:12:49,869 [INFO   ] [TRADER] Order 364 inserted
+2020-03-18 03:12:49,869 [INFO   ] [TRADER] Order 365 inserted
+2020-03-18 03:12:49,869 [INFO   ] [TRADER] Order 366 inserted
+2020-03-18 03:12:50,054 [INFO   ] [TRADER] Order 359 cancelled
+2020-03-18 03:12:50,054 [INFO   ] [TRADER] Position changed to ETF: -6, FUTURE: 6
+2020-03-18 03:12:50,686 [INFO   ] [TRADER] Order 360 cancelled
+2020-03-18 03:12:50,686 [INFO   ] [TRADER] Position changed to ETF: -3, FUTURE: 3
+2020-03-18 03:12:50,875 [INFO   ] [TRADER] Cancelling bid 364
+2020-03-18 03:12:50,876 [INFO   ] [TRADER] Cancelling bid 365
+2020-03-18 03:12:50,876 [INFO   ] [TRADER] Cancelling bid 366
+2020-03-18 03:12:50,876 [INFO   ] [TRADER] (id: 367) Placing  ask 1 lots for $3572
+2020-03-18 03:12:50,876 [INFO   ] [TRADER] (id: 368) Placing  ask 2 lots for $3573
+2020-03-18 03:12:50,877 [INFO   ] [TRADER] (id: 369) Placing  ask 3 lots for $3574
+2020-03-18 03:12:50,877 [INFO   ] [TRADER] Order 364 cancelled
+2020-03-18 03:12:50,878 [INFO   ] [TRADER] Order 365 cancelled
+2020-03-18 03:12:50,879 [INFO   ] [TRADER] Order 366 cancelled
+2020-03-18 03:12:50,879 [INFO   ] [TRADER] Order 367 cancelled
+2020-03-18 03:12:50,880 [INFO   ] [TRADER] Position changed to ETF: -4, FUTURE: 4
+2020-03-18 03:12:50,880 [INFO   ] [TRADER] Order 368 cancelled
+2020-03-18 03:12:50,880 [INFO   ] [TRADER] Position changed to ETF: -6, FUTURE: 6
+2020-03-18 03:12:50,880 [INFO   ] [TRADER] Order 369 cancelled
+2020-03-18 03:12:50,881 [INFO   ] [TRADER] Position changed to ETF: -9, FUTURE: 9
+2020-03-18 03:12:51,688 [INFO   ] [TRADER] (id: 370) Placing  bid 1 lots for $3567
+2020-03-18 03:12:51,689 [INFO   ] [TRADER] (id: 371) Placing  bid 2 lots for $3566
+2020-03-18 03:12:51,689 [INFO   ] [TRADER] (id: 372) Placing  bid 3 lots for $3565
+2020-03-18 03:12:51,692 [INFO   ] [TRADER] Order 370 inserted
+2020-03-18 03:12:51,694 [INFO   ] [TRADER] Order 371 inserted
+2020-03-18 03:12:51,695 [INFO   ] [TRADER] Order 372 inserted
+2020-03-18 03:12:51,699 [INFO   ] [TRADER] Cancelling bid 370
+2020-03-18 03:12:51,699 [INFO   ] [TRADER] Cancelling bid 371
+2020-03-18 03:12:51,699 [INFO   ] [TRADER] Cancelling bid 372
+2020-03-18 03:12:51,699 [INFO   ] [TRADER] (id: 373) Placing  bid 1 lots for $3567
+2020-03-18 03:12:51,700 [INFO   ] [TRADER] (id: 374) Placing  bid 2 lots for $3566
+2020-03-18 03:12:51,700 [INFO   ] [TRADER] (id: 375) Placing  bid 3 lots for $3565
+2020-03-18 03:12:51,700 [INFO   ] [TRADER] Order 370 cancelled
+2020-03-18 03:12:51,700 [INFO   ] [TRADER] Order 371 cancelled
+2020-03-18 03:12:51,700 [INFO   ] [TRADER] Order 372 cancelled
+2020-03-18 03:12:51,700 [INFO   ] [TRADER] Order 373 inserted
+2020-03-18 03:12:51,701 [INFO   ] [TRADER] Order 374 inserted
+2020-03-18 03:12:51,701 [INFO   ] [TRADER] Order 375 inserted
+2020-03-18 03:12:51,887 [INFO   ] [TRADER] (id: 376) Placing  ask 1 lots for $3569
+2020-03-18 03:12:51,888 [INFO   ] [TRADER] (id: 377) Placing  ask 2 lots for $3570
+2020-03-18 03:12:51,888 [INFO   ] [TRADER] (id: 378) Placing  ask 3 lots for $3571
+2020-03-18 03:12:51,891 [INFO   ] [TRADER] Order 376 cancelled
+2020-03-18 03:12:51,891 [INFO   ] [TRADER] Position changed to ETF: -10, FUTURE: 10
+2020-03-18 03:12:51,891 [INFO   ] [TRADER] Order 377 cancelled
+2020-03-18 03:12:51,891 [INFO   ] [TRADER] Position changed to ETF: -12, FUTURE: 12
+2020-03-18 03:12:51,892 [INFO   ] [TRADER] Order 378 cancelled
+2020-03-18 03:12:51,893 [INFO   ] [TRADER] Position changed to ETF: -15, FUTURE: 15
+2020-03-18 03:12:52,714 [INFO   ] [TRADER] Cancelling bid 373
+2020-03-18 03:12:52,715 [INFO   ] [TRADER] Cancelling bid 374
+2020-03-18 03:12:52,715 [INFO   ] [TRADER] Cancelling bid 375
+2020-03-18 03:12:52,715 [INFO   ] [TRADER] (id: 379) Placing  bid 1 lots for $3562
+2020-03-18 03:12:52,715 [INFO   ] [TRADER] (id: 380) Placing  bid 2 lots for $3561
+2020-03-18 03:12:52,715 [INFO   ] [TRADER] (id: 381) Placing  bid 3 lots for $3560
+2020-03-18 03:12:52,718 [INFO   ] [TRADER] Order 373 cancelled
+2020-03-18 03:12:52,721 [INFO   ] [TRADER] Order 374 cancelled
+2020-03-18 03:12:52,722 [INFO   ] [TRADER] Order 375 cancelled
+2020-03-18 03:12:52,722 [INFO   ] [TRADER] Order 379 inserted
+2020-03-18 03:12:52,723 [INFO   ] [TRADER] Order 380 inserted
+2020-03-18 03:12:52,724 [INFO   ] [TRADER] Order 381 inserted
+2020-03-18 03:12:52,902 [INFO   ] [TRADER] (id: 382) Placing  ask 1 lots for $3563
+2020-03-18 03:12:52,903 [INFO   ] [TRADER] (id: 383) Placing  ask 2 lots for $3564
+2020-03-18 03:12:52,903 [INFO   ] [TRADER] (id: 384) Placing  ask 3 lots for $3565
+2020-03-18 03:12:52,910 [INFO   ] [TRADER] Order 382 cancelled
+2020-03-18 03:12:52,910 [INFO   ] [TRADER] Position changed to ETF: -16, FUTURE: 16
+2020-03-18 03:12:52,910 [INFO   ] [TRADER] Order 383 cancelled
+2020-03-18 03:12:52,910 [INFO   ] [TRADER] Position changed to ETF: -18, FUTURE: 18
+2020-03-18 03:12:52,915 [INFO   ] [TRADER] Order 384 cancelled
+2020-03-18 03:12:52,915 [INFO   ] [TRADER] Position changed to ETF: -21, FUTURE: 21
+2020-03-18 03:12:53,723 [INFO   ] [TRADER] Cancelling bid 379
+2020-03-18 03:12:53,723 [INFO   ] [TRADER] Cancelling bid 380
+2020-03-18 03:12:53,723 [INFO   ] [TRADER] Cancelling bid 381
+2020-03-18 03:12:53,723 [INFO   ] [TRADER] (id: 385) Placing  bid 1 lots for $3565
+2020-03-18 03:12:53,723 [INFO   ] [TRADER] (id: 386) Placing  bid 2 lots for $3564
+2020-03-18 03:12:53,723 [INFO   ] [TRADER] (id: 387) Placing  bid 3 lots for $3563
+2020-03-18 03:12:53,723 [INFO   ] [TRADER] Order 379 cancelled
+2020-03-18 03:12:53,723 [INFO   ] [TRADER] Order 380 cancelled
+2020-03-18 03:12:53,723 [INFO   ] [TRADER] Order 381 cancelled
+2020-03-18 03:12:53,724 [INFO   ] [TRADER] Order 385 inserted
+2020-03-18 03:12:53,724 [INFO   ] [TRADER] Order 386 inserted
+2020-03-18 03:12:53,724 [INFO   ] [TRADER] Order 387 inserted
+2020-03-18 03:12:53,926 [INFO   ] [TRADER] (id: 388) Placing  ask 1 lots for $3566
+2020-03-18 03:12:53,926 [INFO   ] [TRADER] (id: 389) Placing  ask 2 lots for $3567
+2020-03-18 03:12:53,927 [INFO   ] [TRADER] (id: 390) Placing  ask 3 lots for $3568
+2020-03-18 03:12:53,935 [INFO   ] [TRADER] Order 388 cancelled
+2020-03-18 03:12:53,936 [INFO   ] [TRADER] Position changed to ETF: -22, FUTURE: 22
+2020-03-18 03:12:53,938 [INFO   ] [TRADER] Order 389 inserted
+2020-03-18 03:12:53,939 [INFO   ] [TRADER] Order 390 inserted
+2020-03-18 03:12:53,942 [INFO   ] [TRADER] Order 389 filled (1 / 2)
+2020-03-18 03:12:53,943 [INFO   ] [TRADER] Position changed to ETF: -23, FUTURE: 23
+2020-03-18 03:12:53,963 [INFO   ] [TRADER] Order 389 cancelled
+2020-03-18 03:12:53,963 [INFO   ] [TRADER] Position changed to ETF: -24, FUTURE: 24
+2020-03-18 03:12:54,064 [INFO   ] [TRADER] Order 385 cancelled
+2020-03-18 03:12:54,064 [INFO   ] [TRADER] Position changed to ETF: -23, FUTURE: 23
+2020-03-18 03:12:54,618 [INFO   ] [TRADER] Order 390 cancelled
+2020-03-18 03:12:54,618 [INFO   ] [TRADER] Position changed to ETF: -26, FUTURE: 26
+2020-03-18 03:12:55,077 [INFO   ] [TRADER] Cancelling bid 386
+2020-03-18 03:12:55,078 [INFO   ] [TRADER] Cancelling bid 387
+2020-03-18 03:12:55,078 [INFO   ] [TRADER] (id: 391) Placing  bid 1 lots for $3567
+2020-03-18 03:12:55,078 [INFO   ] [TRADER] (id: 392) Placing  bid 2 lots for $3566
+2020-03-18 03:12:55,078 [INFO   ] [TRADER] (id: 393) Placing  bid 3 lots for $3565
+2020-03-18 03:12:55,083 [INFO   ] [TRADER] Order 386 cancelled
+2020-03-18 03:12:55,084 [INFO   ] [TRADER] Order 387 cancelled
+2020-03-18 03:12:55,085 [INFO   ] [TRADER] Order 391 inserted
+2020-03-18 03:12:55,085 [INFO   ] [TRADER] Order 392 inserted
+2020-03-18 03:12:55,087 [INFO   ] [TRADER] Order 393 inserted
+2020-03-18 03:12:55,111 [INFO   ] [TRADER] Order 391 cancelled
+2020-03-18 03:12:55,112 [INFO   ] [TRADER] Position changed to ETF: -25, FUTURE: 25
+2020-03-18 03:12:55,623 [INFO   ] [TRADER] (id: 394) Placing  ask 1 lots for $3579
+2020-03-18 03:12:55,623 [INFO   ] [TRADER] (id: 395) Placing  ask 2 lots for $3580
+2020-03-18 03:12:55,623 [INFO   ] [TRADER] (id: 396) Placing  ask 3 lots for $3581
+2020-03-18 03:12:55,624 [INFO   ] [TRADER] Order 394 inserted
+2020-03-18 03:12:55,625 [INFO   ] [TRADER] Order 395 inserted
+2020-03-18 03:12:55,626 [INFO   ] [TRADER] Order 396 inserted
+2020-03-18 03:12:55,640 [INFO   ] [TRADER] Cancelling bid 394
+2020-03-18 03:12:55,641 [INFO   ] [TRADER] Cancelling bid 395
+2020-03-18 03:12:55,641 [INFO   ] [TRADER] Cancelling bid 396
+2020-03-18 03:12:55,641 [INFO   ] [TRADER] (id: 397) Placing  ask 1 lots for $3578
+2020-03-18 03:12:55,641 [INFO   ] [TRADER] (id: 398) Placing  ask 2 lots for $3579
+2020-03-18 03:12:55,641 [INFO   ] [TRADER] (id: 399) Placing  ask 3 lots for $3580
+2020-03-18 03:12:55,645 [INFO   ] [TRADER] Order 394 cancelled
+2020-03-18 03:12:55,647 [INFO   ] [TRADER] Order 395 cancelled
+2020-03-18 03:12:55,648 [INFO   ] [TRADER] Order 396 cancelled
+2020-03-18 03:12:55,649 [INFO   ] [TRADER] Order 397 inserted
+2020-03-18 03:12:55,649 [INFO   ] [TRADER] Order 398 inserted
+2020-03-18 03:12:55,649 [INFO   ] [TRADER] Order 399 inserted
+2020-03-18 03:12:56,124 [INFO   ] [TRADER] Cancelling bid 392
+2020-03-18 03:12:56,125 [INFO   ] [TRADER] Cancelling bid 393
+2020-03-18 03:12:56,125 [INFO   ] [TRADER] (id: 400) Placing  bid 1 lots for $3575
+2020-03-18 03:12:56,125 [INFO   ] [TRADER] (id: 401) Placing  bid 2 lots for $3574
+2020-03-18 03:12:56,125 [INFO   ] [TRADER] (id: 402) Placing  bid 3 lots for $3573
+2020-03-18 03:12:56,126 [INFO   ] [TRADER] Order 392 cancelled
+2020-03-18 03:12:56,127 [INFO   ] [TRADER] Order 393 cancelled
+2020-03-18 03:12:56,127 [INFO   ] [TRADER] Order 400 inserted
+2020-03-18 03:12:56,128 [INFO   ] [TRADER] Order 401 inserted
+2020-03-18 03:12:56,128 [INFO   ] [TRADER] Order 402 inserted
+2020-03-18 03:12:56,148 [INFO   ] [TRADER] Order 400 cancelled
+2020-03-18 03:12:56,148 [INFO   ] [TRADER] Position changed to ETF: -24, FUTURE: 24
+2020-03-18 03:12:56,648 [INFO   ] [TRADER] Cancelling bid 397
+2020-03-18 03:12:56,648 [INFO   ] [TRADER] Cancelling bid 398
+2020-03-18 03:12:56,648 [INFO   ] [TRADER] Cancelling bid 399
+2020-03-18 03:12:56,648 [INFO   ] [TRADER] (id: 403) Placing  ask 1 lots for $3576
+2020-03-18 03:12:56,648 [INFO   ] [TRADER] (id: 404) Placing  ask 2 lots for $3577
+2020-03-18 03:12:56,648 [INFO   ] [TRADER] (id: 405) Placing  ask 3 lots for $3578
+2020-03-18 03:12:56,649 [INFO   ] [TRADER] Order 397 cancelled
+2020-03-18 03:12:56,649 [INFO   ] [TRADER] Order 398 cancelled
+2020-03-18 03:12:56,649 [INFO   ] [TRADER] Order 399 cancelled
+2020-03-18 03:12:56,649 [INFO   ] [TRADER] Order 403 inserted
+2020-03-18 03:12:56,649 [INFO   ] [TRADER] Order 404 inserted
+2020-03-18 03:12:56,649 [INFO   ] [TRADER] Order 405 inserted
+2020-03-18 03:12:56,691 [INFO   ] [TRADER] Order 401 cancelled
+2020-03-18 03:12:56,691 [INFO   ] [TRADER] Position changed to ETF: -22, FUTURE: 22
+2020-03-18 03:12:56,863 [INFO   ] [TRADER] Order 403 cancelled
+2020-03-18 03:12:56,863 [INFO   ] [TRADER] Position changed to ETF: -23, FUTURE: 23
+2020-03-18 03:12:57,435 [INFO   ] [TRADER] Order 402 filled (2 / 3)
+2020-03-18 03:12:57,435 [INFO   ] [TRADER] Position changed to ETF: -21, FUTURE: 21
+2020-03-18 03:12:57,436 [INFO   ] [TRADER] Order 402 cancelled
+2020-03-18 03:12:57,436 [INFO   ] [TRADER] Position changed to ETF: -20, FUTURE: 20
+2020-03-18 03:12:57,868 [INFO   ] [TRADER] Cancelling bid 404
+2020-03-18 03:12:57,868 [INFO   ] [TRADER] Cancelling bid 405
+2020-03-18 03:12:57,868 [INFO   ] [TRADER] (id: 406) Placing  ask 1 lots for $3575
+2020-03-18 03:12:57,868 [INFO   ] [TRADER] (id: 407) Placing  ask 2 lots for $3576
+2020-03-18 03:12:57,869 [INFO   ] [TRADER] (id: 408) Placing  ask 3 lots for $3577
+2020-03-18 03:12:57,869 [INFO   ] [TRADER] Order 404 cancelled
+2020-03-18 03:12:57,869 [INFO   ] [TRADER] Order 405 cancelled
+2020-03-18 03:12:57,869 [INFO   ] [TRADER] Order 406 inserted
+2020-03-18 03:12:57,870 [INFO   ] [TRADER] Order 407 inserted
+2020-03-18 03:12:57,871 [INFO   ] [TRADER] Order 408 inserted
+2020-03-18 03:12:58,436 [INFO   ] [TRADER] (id: 409) Placing  bid 1 lots for $3569
+2020-03-18 03:12:58,436 [INFO   ] [TRADER] (id: 410) Placing  bid 2 lots for $3568
+2020-03-18 03:12:58,436 [INFO   ] [TRADER] (id: 411) Placing  bid 3 lots for $3567
+2020-03-18 03:12:58,437 [INFO   ] [TRADER] Order 409 inserted
+2020-03-18 03:12:58,437 [INFO   ] [TRADER] Order 410 inserted
+2020-03-18 03:12:58,438 [INFO   ] [TRADER] Order 411 inserted
+2020-03-18 03:12:58,448 [INFO   ] [TRADER] Cancelling bid 409
+2020-03-18 03:12:58,449 [INFO   ] [TRADER] Cancelling bid 410
+2020-03-18 03:12:58,449 [INFO   ] [TRADER] Cancelling bid 411
+2020-03-18 03:12:58,449 [INFO   ] [TRADER] (id: 412) Placing  bid 1 lots for $3569
+2020-03-18 03:12:58,449 [INFO   ] [TRADER] (id: 413) Placing  bid 2 lots for $3568
+2020-03-18 03:12:58,449 [INFO   ] [TRADER] (id: 414) Placing  bid 3 lots for $3567
+2020-03-18 03:12:58,449 [INFO   ] [TRADER] Order 409 cancelled
+2020-03-18 03:12:58,449 [INFO   ] [TRADER] Order 410 cancelled
+2020-03-18 03:12:58,449 [INFO   ] [TRADER] Order 411 cancelled
+2020-03-18 03:12:58,449 [INFO   ] [TRADER] Order 412 inserted
+2020-03-18 03:12:58,449 [INFO   ] [TRADER] Order 413 inserted
+2020-03-18 03:12:58,450 [INFO   ] [TRADER] Order 414 inserted
+2020-03-18 03:12:58,891 [INFO   ] [TRADER] Cancelling bid 406
+2020-03-18 03:12:58,891 [INFO   ] [TRADER] Cancelling bid 407
+2020-03-18 03:12:58,891 [INFO   ] [TRADER] Cancelling bid 408
+2020-03-18 03:12:58,891 [INFO   ] [TRADER] (id: 415) Placing  ask 1 lots for $3573
+2020-03-18 03:12:58,892 [INFO   ] [TRADER] (id: 416) Placing  ask 2 lots for $3574
+2020-03-18 03:12:58,892 [INFO   ] [TRADER] (id: 417) Placing  ask 3 lots for $3575
+2020-03-18 03:12:58,893 [INFO   ] [TRADER] Order 406 cancelled
+2020-03-18 03:12:58,894 [INFO   ] [TRADER] Order 407 cancelled
+2020-03-18 03:12:58,894 [INFO   ] [TRADER] Order 408 cancelled
+2020-03-18 03:12:58,894 [INFO   ] [TRADER] Order 415 inserted
+2020-03-18 03:12:58,895 [INFO   ] [TRADER] Order 416 inserted
+2020-03-18 03:12:58,895 [INFO   ] [TRADER] Order 417 inserted
+2020-03-18 03:12:58,935 [INFO   ] [TRADER] Order 415 cancelled
+2020-03-18 03:12:58,935 [INFO   ] [TRADER] Position changed to ETF: -21, FUTURE: 21
+2020-03-18 03:12:58,937 [INFO   ] [TRADER] Order 416 cancelled
+2020-03-18 03:12:58,937 [INFO   ] [TRADER] Position changed to ETF: -23, FUTURE: 23
+2020-03-18 03:12:59,044 [INFO   ] [TRADER] Order 417 cancelled
+2020-03-18 03:12:59,045 [INFO   ] [TRADER] Position changed to ETF: -26, FUTURE: 26
+2020-03-18 03:12:59,452 [INFO   ] [TRADER] Cancelling bid 412
+2020-03-18 03:12:59,452 [INFO   ] [TRADER] Cancelling bid 413
+2020-03-18 03:12:59,452 [INFO   ] [TRADER] Cancelling bid 414
+2020-03-18 03:12:59,453 [INFO   ] [TRADER] (id: 418) Placing  bid 1 lots for $3585
+2020-03-18 03:12:59,453 [INFO   ] [TRADER] (id: 419) Placing  bid 2 lots for $3584
+2020-03-18 03:12:59,453 [INFO   ] [TRADER] (id: 420) Placing  bid 3 lots for $3583
+2020-03-18 03:12:59,456 [INFO   ] [TRADER] Order 412 cancelled
+2020-03-18 03:12:59,456 [INFO   ] [TRADER] Order 413 cancelled
+2020-03-18 03:12:59,456 [INFO   ] [TRADER] Order 414 cancelled
+2020-03-18 03:12:59,456 [INFO   ] [TRADER] Order 418 cancelled
+2020-03-18 03:12:59,456 [INFO   ] [TRADER] Position changed to ETF: -25, FUTURE: 25
+2020-03-18 03:12:59,456 [INFO   ] [TRADER] Order 419 cancelled
+2020-03-18 03:12:59,456 [INFO   ] [TRADER] Position changed to ETF: -23, FUTURE: 23
+2020-03-18 03:12:59,456 [INFO   ] [TRADER] Order 420 cancelled
+2020-03-18 03:12:59,456 [INFO   ] [TRADER] Position changed to ETF: -20, FUTURE: 20
+2020-03-18 03:13:00,048 [INFO   ] [TRADER] (id: 421) Placing  ask 1 lots for $3587
+2020-03-18 03:13:00,048 [INFO   ] [TRADER] (id: 422) Placing  ask 2 lots for $3588
+2020-03-18 03:13:00,048 [INFO   ] [TRADER] (id: 423) Placing  ask 3 lots for $3589
+2020-03-18 03:13:00,049 [INFO   ] [TRADER] Order 421 inserted
+2020-03-18 03:13:00,049 [INFO   ] [TRADER] Order 422 inserted
+2020-03-18 03:13:00,049 [INFO   ] [TRADER] Order 423 inserted
+2020-03-18 03:13:00,061 [INFO   ] [TRADER] Cancelling bid 421
+2020-03-18 03:13:00,061 [INFO   ] [TRADER] Cancelling bid 422
+2020-03-18 03:13:00,061 [INFO   ] [TRADER] Cancelling bid 423
+2020-03-18 03:13:00,061 [INFO   ] [TRADER] (id: 424) Placing  ask 1 lots for $3587
+2020-03-18 03:13:00,061 [INFO   ] [TRADER] (id: 425) Placing  ask 2 lots for $3588
+2020-03-18 03:13:00,061 [INFO   ] [TRADER] (id: 426) Placing  ask 3 lots for $3589
+2020-03-18 03:13:00,062 [INFO   ] [TRADER] Order 421 cancelled
+2020-03-18 03:13:00,062 [INFO   ] [TRADER] Order 422 cancelled
+2020-03-18 03:13:00,062 [INFO   ] [TRADER] Order 423 cancelled
+2020-03-18 03:13:00,062 [INFO   ] [TRADER] Order 424 inserted
+2020-03-18 03:13:00,063 [INFO   ] [TRADER] Order 425 inserted
+2020-03-18 03:13:00,063 [INFO   ] [TRADER] Order 426 inserted
+2020-03-18 03:13:00,463 [INFO   ] [TRADER] (id: 427) Placing  bid 1 lots for $3585
+2020-03-18 03:13:00,463 [INFO   ] [TRADER] (id: 428) Placing  bid 2 lots for $3584
+2020-03-18 03:13:00,463 [INFO   ] [TRADER] (id: 429) Placing  bid 3 lots for $3583
+2020-03-18 03:13:00,466 [INFO   ] [TRADER] Order 427 cancelled
+2020-03-18 03:13:00,467 [INFO   ] [TRADER] Position changed to ETF: -19, FUTURE: 19
+2020-03-18 03:13:00,467 [INFO   ] [TRADER] Order 428 cancelled
+2020-03-18 03:13:00,468 [INFO   ] [TRADER] Position changed to ETF: -17, FUTURE: 17
+2020-03-18 03:13:00,468 [INFO   ] [TRADER] Order 429 cancelled
+2020-03-18 03:13:00,468 [INFO   ] [TRADER] Position changed to ETF: -14, FUTURE: 14
+2020-03-18 03:13:01,129 [INFO   ] [TRADER] Cancelling bid 424
+2020-03-18 03:13:01,130 [INFO   ] [TRADER] Cancelling bid 425
+2020-03-18 03:13:01,130 [INFO   ] [TRADER] Cancelling bid 426
+2020-03-18 03:13:01,130 [INFO   ] [TRADER] (id: 430) Placing  ask 1 lots for $3588
+2020-03-18 03:13:01,130 [INFO   ] [TRADER] (id: 431) Placing  ask 2 lots for $3589
+2020-03-18 03:13:01,130 [INFO   ] [TRADER] (id: 432) Placing  ask 3 lots for $3590
+2020-03-18 03:13:01,163 [INFO   ] [TRADER] Order 424 cancelled
+2020-03-18 03:13:01,163 [INFO   ] [TRADER] Order 425 cancelled
+2020-03-18 03:13:01,163 [INFO   ] [TRADER] Order 426 cancelled
+2020-03-18 03:13:01,163 [INFO   ] [TRADER] Order 430 inserted
+2020-03-18 03:13:01,163 [INFO   ] [TRADER] Order 431 inserted
+2020-03-18 03:13:01,165 [INFO   ] [TRADER] Order 432 inserted
+2020-03-18 03:13:01,473 [INFO   ] [TRADER] (id: 433) Placing  bid 1 lots for $3580
+2020-03-18 03:13:01,473 [INFO   ] [TRADER] (id: 434) Placing  bid 2 lots for $3579
+2020-03-18 03:13:01,474 [INFO   ] [TRADER] (id: 435) Placing  bid 3 lots for $3578
+2020-03-18 03:13:01,476 [INFO   ] [TRADER] Order 433 inserted
+2020-03-18 03:13:01,476 [INFO   ] [TRADER] Order 434 inserted
+2020-03-18 03:13:01,476 [INFO   ] [TRADER] Order 435 inserted
+2020-03-18 03:13:01,489 [INFO   ] [TRADER] Cancelling bid 433
+2020-03-18 03:13:01,489 [INFO   ] [TRADER] Cancelling bid 434
+2020-03-18 03:13:01,489 [INFO   ] [TRADER] Cancelling bid 435
+2020-03-18 03:13:01,489 [INFO   ] [TRADER] (id: 436) Placing  bid 1 lots for $3582
+2020-03-18 03:13:01,489 [INFO   ] [TRADER] (id: 437) Placing  bid 2 lots for $3581
+2020-03-18 03:13:01,489 [INFO   ] [TRADER] (id: 438) Placing  bid 3 lots for $3580
+2020-03-18 03:13:01,490 [INFO   ] [TRADER] Order 433 cancelled
+2020-03-18 03:13:01,490 [INFO   ] [TRADER] Order 434 cancelled
+2020-03-18 03:13:01,490 [INFO   ] [TRADER] Order 435 cancelled
+2020-03-18 03:13:01,490 [INFO   ] [TRADER] Order 436 inserted
+2020-03-18 03:13:01,491 [INFO   ] [TRADER] Order 437 inserted
+2020-03-18 03:13:01,492 [INFO   ] [TRADER] Order 438 inserted
+2020-03-18 03:13:01,500 [INFO   ] [TRADER] Order 436 cancelled
+2020-03-18 03:13:01,500 [INFO   ] [TRADER] Position changed to ETF: -13, FUTURE: 13
+2020-03-18 03:13:01,838 [INFO   ] [TRADER] Order 437 cancelled
+2020-03-18 03:13:01,838 [INFO   ] [TRADER] Position changed to ETF: -11, FUTURE: 11
+2020-03-18 03:13:02,173 [INFO   ] [TRADER] Cancelling bid 430
+2020-03-18 03:13:02,173 [INFO   ] [TRADER] Cancelling bid 431
+2020-03-18 03:13:02,173 [INFO   ] [TRADER] Cancelling bid 432
+2020-03-18 03:13:02,173 [INFO   ] [TRADER] (id: 439) Placing  ask 1 lots for $3581
+2020-03-18 03:13:02,173 [INFO   ] [TRADER] (id: 440) Placing  ask 2 lots for $3582
+2020-03-18 03:13:02,174 [INFO   ] [TRADER] (id: 441) Placing  ask 3 lots for $3583
+2020-03-18 03:13:02,174 [INFO   ] [TRADER] Order 430 cancelled
+2020-03-18 03:13:02,174 [INFO   ] [TRADER] Order 431 cancelled
+2020-03-18 03:13:02,174 [INFO   ] [TRADER] Order 432 cancelled
+2020-03-18 03:13:02,174 [INFO   ] [TRADER] Order 439 inserted
+2020-03-18 03:13:02,174 [INFO   ] [TRADER] Order 440 inserted
+2020-03-18 03:13:02,175 [INFO   ] [TRADER] Order 441 inserted
+2020-03-18 03:13:02,185 [INFO   ] [TRADER] Order 439 cancelled
+2020-03-18 03:13:02,185 [INFO   ] [TRADER] Position changed to ETF: -12, FUTURE: 12
+2020-03-18 03:13:02,211 [INFO   ] [TRADER] Order 440 cancelled
+2020-03-18 03:13:02,213 [INFO   ] [TRADER] Position changed to ETF: -14, FUTURE: 14
+2020-03-18 03:13:02,238 [INFO   ] [TRADER] Order 438 cancelled
+2020-03-18 03:13:02,240 [INFO   ] [TRADER] Position changed to ETF: -11, FUTURE: 11
+2020-03-18 03:13:03,211 [INFO   ] [TRADER] Cancelling bid 441
+2020-03-18 03:13:03,212 [INFO   ] [TRADER] (id: 442) Placing  ask 1 lots for $3585
+2020-03-18 03:13:03,212 [INFO   ] [TRADER] (id: 443) Placing  ask 2 lots for $3586
+2020-03-18 03:13:03,212 [INFO   ] [TRADER] (id: 444) Placing  ask 3 lots for $3587
+2020-03-18 03:13:03,213 [INFO   ] [TRADER] Order 441 cancelled
+2020-03-18 03:13:03,213 [INFO   ] [TRADER] Order 442 inserted
+2020-03-18 03:13:03,213 [INFO   ] [TRADER] Order 443 inserted
+2020-03-18 03:13:03,213 [INFO   ] [TRADER] Order 444 inserted
+2020-03-18 03:13:03,248 [INFO   ] [TRADER] (id: 445) Placing  bid 1 lots for $3581
+2020-03-18 03:13:03,248 [INFO   ] [TRADER] (id: 446) Placing  bid 2 lots for $3580
+2020-03-18 03:13:03,248 [INFO   ] [TRADER] (id: 447) Placing  bid 3 lots for $3579
+2020-03-18 03:13:03,249 [INFO   ] [TRADER] Order 445 inserted
+2020-03-18 03:13:03,249 [INFO   ] [TRADER] Order 446 inserted
+2020-03-18 03:13:03,249 [INFO   ] [TRADER] Order 447 inserted
+2020-03-18 03:13:03,262 [INFO   ] [TRADER] Cancelling bid 445
+2020-03-18 03:13:03,262 [INFO   ] [TRADER] Cancelling bid 446
+2020-03-18 03:13:03,262 [INFO   ] [TRADER] Cancelling bid 447
+2020-03-18 03:13:03,262 [INFO   ] [TRADER] (id: 448) Placing  bid 1 lots for $3580
+2020-03-18 03:13:03,262 [INFO   ] [TRADER] (id: 449) Placing  bid 2 lots for $3579
+2020-03-18 03:13:03,262 [INFO   ] [TRADER] (id: 450) Placing  bid 3 lots for $3578
+2020-03-18 03:13:03,264 [INFO   ] [TRADER] Order 445 cancelled
+2020-03-18 03:13:03,264 [INFO   ] [TRADER] Order 446 cancelled
+2020-03-18 03:13:03,264 [INFO   ] [TRADER] Order 447 cancelled
+2020-03-18 03:13:03,264 [INFO   ] [TRADER] Order 448 inserted
+2020-03-18 03:13:03,264 [INFO   ] [TRADER] Order 449 inserted
+2020-03-18 03:13:03,264 [INFO   ] [TRADER] Order 450 inserted
+2020-03-18 03:13:03,286 [INFO   ] [TRADER] Order 448 cancelled
+2020-03-18 03:13:03,286 [INFO   ] [TRADER] Position changed to ETF: -10, FUTURE: 10
+2020-03-18 03:13:03,562 [INFO   ] [TRADER] Order 449 cancelled
+2020-03-18 03:13:03,562 [INFO   ] [TRADER] Position changed to ETF: -8, FUTURE: 8
+2020-03-18 03:13:03,811 [INFO   ] [TRADER] Order 450 cancelled
+2020-03-18 03:13:03,812 [INFO   ] [TRADER] Position changed to ETF: -5, FUTURE: 5
+2020-03-18 03:13:04,224 [INFO   ] [TRADER] Cancelling bid 442
+2020-03-18 03:13:04,224 [INFO   ] [TRADER] Cancelling bid 443
+2020-03-18 03:13:04,224 [INFO   ] [TRADER] Cancelling bid 444
+2020-03-18 03:13:04,224 [INFO   ] [TRADER] (id: 451) Placing  ask 1 lots for $3583
+2020-03-18 03:13:04,224 [INFO   ] [TRADER] (id: 452) Placing  ask 2 lots for $3584
+2020-03-18 03:13:04,224 [INFO   ] [TRADER] (id: 453) Placing  ask 3 lots for $3585
+2020-03-18 03:13:04,225 [INFO   ] [TRADER] Order 442 cancelled
+2020-03-18 03:13:04,225 [INFO   ] [TRADER] Order 443 cancelled
+2020-03-18 03:13:04,225 [INFO   ] [TRADER] Order 444 cancelled
+2020-03-18 03:13:04,225 [INFO   ] [TRADER] Order 451 inserted
+2020-03-18 03:13:04,226 [INFO   ] [TRADER] Order 452 inserted
+2020-03-18 03:13:04,226 [INFO   ] [TRADER] Order 453 inserted
+2020-03-18 03:13:04,814 [INFO   ] [TRADER] (id: 454) Placing  bid 1 lots for $3577
+2020-03-18 03:13:04,814 [INFO   ] [TRADER] (id: 455) Placing  bid 2 lots for $3576
+2020-03-18 03:13:04,815 [INFO   ] [TRADER] (id: 456) Placing  bid 3 lots for $3575
+2020-03-18 03:13:04,818 [INFO   ] [TRADER] Order 454 inserted
+2020-03-18 03:13:04,819 [INFO   ] [TRADER] Order 455 inserted
+2020-03-18 03:13:04,819 [INFO   ] [TRADER] Order 456 inserted
+2020-03-18 03:13:04,824 [INFO   ] [TRADER] Cancelling bid 454
+2020-03-18 03:13:04,824 [INFO   ] [TRADER] Cancelling bid 455
+2020-03-18 03:13:04,824 [INFO   ] [TRADER] Cancelling bid 456
+2020-03-18 03:13:04,825 [INFO   ] [TRADER] (id: 457) Placing  bid 1 lots for $3577
+2020-03-18 03:13:04,825 [INFO   ] [TRADER] (id: 458) Placing  bid 2 lots for $3576
+2020-03-18 03:13:04,825 [INFO   ] [TRADER] (id: 459) Placing  bid 3 lots for $3575
+2020-03-18 03:13:04,826 [INFO   ] [TRADER] Order 454 cancelled
+2020-03-18 03:13:04,827 [INFO   ] [TRADER] Order 455 cancelled
+2020-03-18 03:13:04,827 [INFO   ] [TRADER] Order 456 cancelled
+2020-03-18 03:13:04,828 [INFO   ] [TRADER] Order 457 inserted
+2020-03-18 03:13:04,828 [INFO   ] [TRADER] Order 458 inserted
+2020-03-18 03:13:04,829 [INFO   ] [TRADER] Order 459 inserted
+2020-03-18 03:13:04,910 [INFO   ] [TRADER] Order 457 cancelled
+2020-03-18 03:13:04,911 [INFO   ] [TRADER] Position changed to ETF: -4, FUTURE: 4
+2020-03-18 03:13:04,974 [INFO   ] [TRADER] Order 458 cancelled
+2020-03-18 03:13:04,975 [INFO   ] [TRADER] Position changed to ETF: -2, FUTURE: 2
+2020-03-18 03:13:05,228 [INFO   ] [TRADER] Cancelling bid 451
+2020-03-18 03:13:05,228 [INFO   ] [TRADER] Cancelling bid 452
+2020-03-18 03:13:05,228 [INFO   ] [TRADER] Cancelling bid 453
+2020-03-18 03:13:05,229 [INFO   ] [TRADER] (id: 460) Placing  ask 1 lots for $3579
+2020-03-18 03:13:05,229 [INFO   ] [TRADER] (id: 461) Placing  ask 2 lots for $3580
+2020-03-18 03:13:05,229 [INFO   ] [TRADER] (id: 462) Placing  ask 3 lots for $3581
+2020-03-18 03:13:05,233 [INFO   ] [TRADER] Order 451 cancelled
+2020-03-18 03:13:05,233 [INFO   ] [TRADER] Order 452 cancelled
+2020-03-18 03:13:05,233 [INFO   ] [TRADER] Order 453 cancelled
+2020-03-18 03:13:05,234 [INFO   ] [TRADER] Order 460 inserted
+2020-03-18 03:13:05,234 [INFO   ] [TRADER] Order 461 inserted
+2020-03-18 03:13:05,234 [INFO   ] [TRADER] Order 462 inserted
+2020-03-18 03:13:05,699 [INFO   ] [TRADER] Order 459 cancelled
+2020-03-18 03:13:05,699 [INFO   ] [TRADER] Position changed to ETF: 1, FUTURE: -1
+2020-03-18 03:13:06,236 [INFO   ] [TRADER] Cancelling bid 460
+2020-03-18 03:13:06,237 [INFO   ] [TRADER] Cancelling bid 461
+2020-03-18 03:13:06,237 [INFO   ] [TRADER] Cancelling bid 462
+2020-03-18 03:13:06,237 [INFO   ] [TRADER] (id: 463) Placing  ask 1 lots for $3575
+2020-03-18 03:13:06,237 [INFO   ] [TRADER] (id: 464) Placing  ask 2 lots for $3576
+2020-03-18 03:13:06,238 [INFO   ] [TRADER] (id: 465) Placing  ask 3 lots for $3577
+2020-03-18 03:13:06,240 [INFO   ] [TRADER] Order 460 cancelled
+2020-03-18 03:13:06,241 [INFO   ] [TRADER] Order 461 cancelled
+2020-03-18 03:13:06,241 [INFO   ] [TRADER] Order 462 cancelled
+2020-03-18 03:13:06,242 [INFO   ] [TRADER] Order 463 inserted
+2020-03-18 03:13:06,242 [INFO   ] [TRADER] Order 464 inserted
+2020-03-18 03:13:06,243 [INFO   ] [TRADER] Order 465 inserted
+2020-03-18 03:13:06,298 [INFO   ] [TRADER] Order 463 cancelled
+2020-03-18 03:13:06,298 [INFO   ] [TRADER] Position changed to ETF: 0, FUTURE: 0
+2020-03-18 03:13:06,372 [INFO   ] [TRADER] Order 464 cancelled
+2020-03-18 03:13:06,375 [INFO   ] [TRADER] Position changed to ETF: -2, FUTURE: 2
+2020-03-18 03:13:06,526 [INFO   ] [TRADER] Order 465 cancelled
+2020-03-18 03:13:06,526 [INFO   ] [TRADER] Position changed to ETF: -5, FUTURE: 5
+2020-03-18 03:13:06,703 [INFO   ] [TRADER] (id: 466) Placing  bid 1 lots for $3578
+2020-03-18 03:13:06,703 [INFO   ] [TRADER] (id: 467) Placing  bid 2 lots for $3577
+2020-03-18 03:13:06,703 [INFO   ] [TRADER] (id: 468) Placing  bid 3 lots for $3576
+2020-03-18 03:13:06,705 [INFO   ] [TRADER] Order 466 cancelled
+2020-03-18 03:13:06,705 [INFO   ] [TRADER] Position changed to ETF: -4, FUTURE: 4
+2020-03-18 03:13:06,706 [INFO   ] [TRADER] Order 467 inserted
+2020-03-18 03:13:06,706 [INFO   ] [TRADER] Order 468 inserted
+2020-03-18 03:13:06,728 [INFO   ] [TRADER] Order 467 cancelled
+2020-03-18 03:13:06,728 [INFO   ] [TRADER] Position changed to ETF: -2, FUTURE: 2
+2020-03-18 03:13:07,531 [INFO   ] [TRADER] (id: 469) Placing  ask 1 lots for $3596
+2020-03-18 03:13:07,531 [INFO   ] [TRADER] (id: 470) Placing  ask 2 lots for $3597
+2020-03-18 03:13:07,531 [INFO   ] [TRADER] (id: 471) Placing  ask 3 lots for $3598
+2020-03-18 03:13:07,536 [INFO   ] [TRADER] Order 469 inserted
+2020-03-18 03:13:07,538 [INFO   ] [TRADER] Order 470 inserted
+2020-03-18 03:13:07,540 [INFO   ] [TRADER] Order 471 inserted
+2020-03-18 03:13:07,542 [INFO   ] [TRADER] Cancelling bid 469
+2020-03-18 03:13:07,542 [INFO   ] [TRADER] Cancelling bid 470
+2020-03-18 03:13:07,542 [INFO   ] [TRADER] Cancelling bid 471
+2020-03-18 03:13:07,542 [INFO   ] [TRADER] (id: 472) Placing  ask 1 lots for $3596
+2020-03-18 03:13:07,542 [INFO   ] [TRADER] (id: 473) Placing  ask 2 lots for $3597
+2020-03-18 03:13:07,543 [INFO   ] [TRADER] (id: 474) Placing  ask 3 lots for $3598
+2020-03-18 03:13:07,543 [INFO   ] [TRADER] Order 469 cancelled
+2020-03-18 03:13:07,543 [INFO   ] [TRADER] Order 470 cancelled
+2020-03-18 03:13:07,543 [INFO   ] [TRADER] Order 471 cancelled
+2020-03-18 03:13:07,544 [INFO   ] [TRADER] Order 472 inserted
+2020-03-18 03:13:07,544 [INFO   ] [TRADER] Order 473 inserted
+2020-03-18 03:13:07,544 [INFO   ] [TRADER] Order 474 inserted
+2020-03-18 03:13:07,790 [INFO   ] [TRADER] Cancelling bid 468
+2020-03-18 03:13:07,790 [INFO   ] [TRADER] (id: 475) Placing  bid 1 lots for $3590
+2020-03-18 03:13:07,790 [INFO   ] [TRADER] (id: 476) Placing  bid 2 lots for $3589
+2020-03-18 03:13:07,790 [INFO   ] [TRADER] (id: 477) Placing  bid 3 lots for $3588
+2020-03-18 03:13:07,793 [INFO   ] [TRADER] Order 468 cancelled
+2020-03-18 03:13:07,793 [INFO   ] [TRADER] Order 475 cancelled
+2020-03-18 03:13:07,793 [INFO   ] [TRADER] Position changed to ETF: -1, FUTURE: 1
+2020-03-18 03:13:07,793 [INFO   ] [TRADER] Order 476 cancelled
+2020-03-18 03:13:07,794 [INFO   ] [TRADER] Position changed to ETF: 1, FUTURE: -1
+2020-03-18 03:13:07,794 [INFO   ] [TRADER] Order 477 cancelled
+2020-03-18 03:13:07,795 [INFO   ] [TRADER] Position changed to ETF: 4, FUTURE: -4
+2020-03-18 03:13:08,548 [INFO   ] [TRADER] Cancelling bid 472
+2020-03-18 03:13:08,548 [INFO   ] [TRADER] Cancelling bid 473
+2020-03-18 03:13:08,548 [INFO   ] [TRADER] Cancelling bid 474
+2020-03-18 03:13:08,548 [INFO   ] [TRADER] (id: 478) Placing  ask 1 lots for $3600
+2020-03-18 03:13:08,549 [INFO   ] [TRADER] (id: 479) Placing  ask 2 lots for $3601
+2020-03-18 03:13:08,549 [INFO   ] [TRADER] (id: 480) Placing  ask 3 lots for $3602
+2020-03-18 03:13:08,549 [INFO   ] [TRADER] Order 472 cancelled
+2020-03-18 03:13:08,549 [INFO   ] [TRADER] Order 473 cancelled
+2020-03-18 03:13:08,549 [INFO   ] [TRADER] Order 474 cancelled
+2020-03-18 03:13:08,549 [INFO   ] [TRADER] Order 478 inserted
+2020-03-18 03:13:08,550 [INFO   ] [TRADER] Order 479 inserted
+2020-03-18 03:13:08,550 [INFO   ] [TRADER] Order 480 inserted
+2020-03-18 03:13:08,798 [INFO   ] [TRADER] (id: 481) Placing  bid 1 lots for $3593
+2020-03-18 03:13:08,798 [INFO   ] [TRADER] (id: 482) Placing  bid 2 lots for $3592
+2020-03-18 03:13:08,798 [INFO   ] [TRADER] (id: 483) Placing  bid 3 lots for $3591
+2020-03-18 03:13:08,798 [INFO   ] [TRADER] Order 481 inserted
+2020-03-18 03:13:08,798 [INFO   ] [TRADER] Order 482 inserted
+2020-03-18 03:13:08,798 [INFO   ] [TRADER] Order 483 inserted
+2020-03-18 03:13:08,811 [INFO   ] [TRADER] Cancelling bid 481
+2020-03-18 03:13:08,811 [INFO   ] [TRADER] Cancelling bid 482
+2020-03-18 03:13:08,811 [INFO   ] [TRADER] Cancelling bid 483
+2020-03-18 03:13:08,811 [INFO   ] [TRADER] (id: 484) Placing  bid 1 lots for $3593
+2020-03-18 03:13:08,811 [INFO   ] [TRADER] (id: 485) Placing  bid 2 lots for $3592
+2020-03-18 03:13:08,811 [INFO   ] [TRADER] (id: 486) Placing  bid 3 lots for $3591
+2020-03-18 03:13:08,811 [INFO   ] [TRADER] Order 481 cancelled
+2020-03-18 03:13:08,811 [INFO   ] [TRADER] Order 482 cancelled
+2020-03-18 03:13:08,811 [INFO   ] [TRADER] Order 483 cancelled
+2020-03-18 03:13:08,811 [INFO   ] [TRADER] Order 484 inserted
+2020-03-18 03:13:08,812 [INFO   ] [TRADER] Order 485 inserted
+2020-03-18 03:13:08,812 [INFO   ] [TRADER] Order 486 inserted
+2020-03-18 03:13:09,036 [INFO   ] [TRADER] Order 484 cancelled
+2020-03-18 03:13:09,036 [INFO   ] [TRADER] Position changed to ETF: 5, FUTURE: -5
+2020-03-18 03:13:09,561 [INFO   ] [TRADER] Cancelling bid 478
+2020-03-18 03:13:09,561 [INFO   ] [TRADER] Cancelling bid 479
+2020-03-18 03:13:09,561 [INFO   ] [TRADER] Cancelling bid 480
+2020-03-18 03:13:09,561 [INFO   ] [TRADER] (id: 487) Placing  ask 1 lots for $3593
+2020-03-18 03:13:09,561 [INFO   ] [TRADER] (id: 488) Placing  ask 2 lots for $3594
+2020-03-18 03:13:09,561 [INFO   ] [TRADER] (id: 489) Placing  ask 3 lots for $3595
+2020-03-18 03:13:09,561 [INFO   ] [TRADER] Order 478 cancelled
+2020-03-18 03:13:09,561 [INFO   ] [TRADER] Order 479 cancelled
+2020-03-18 03:13:09,562 [INFO   ] [TRADER] Order 480 cancelled
+2020-03-18 03:13:09,562 [INFO   ] [TRADER] Order 487 cancelled
+2020-03-18 03:13:09,562 [INFO   ] [TRADER] Position changed to ETF: 4, FUTURE: -4
+2020-03-18 03:13:09,562 [INFO   ] [TRADER] Order 488 inserted
+2020-03-18 03:13:09,562 [INFO   ] [TRADER] Order 489 inserted
+2020-03-18 03:13:09,573 [INFO   ] [TRADER] Order 488 cancelled
+2020-03-18 03:13:09,573 [INFO   ] [TRADER] Position changed to ETF: 2, FUTURE: -2
+2020-03-18 03:13:09,573 [INFO   ] [TRADER] Order 489 cancelled
+2020-03-18 03:13:09,573 [INFO   ] [TRADER] Position changed to ETF: -1, FUTURE: 1
+2020-03-18 03:13:09,585 [INFO   ] [TRADER] Order 485 cancelled
+2020-03-18 03:13:09,585 [INFO   ] [TRADER] Position changed to ETF: 1, FUTURE: -1
+2020-03-18 03:13:09,985 [INFO   ] [TRADER] Order 486 filled (2 / 3)
+2020-03-18 03:13:09,985 [INFO   ] [TRADER] Position changed to ETF: 3, FUTURE: -3
+2020-03-18 03:13:10,011 [INFO   ] [TRADER] Order 486 cancelled
+2020-03-18 03:13:10,012 [INFO   ] [TRADER] Position changed to ETF: 4, FUTURE: -4
+2020-03-18 03:13:10,586 [INFO   ] [TRADER] (id: 490) Placing  ask 1 lots for $3591
+2020-03-18 03:13:10,586 [INFO   ] [TRADER] (id: 491) Placing  ask 2 lots for $3592
+2020-03-18 03:13:10,586 [INFO   ] [TRADER] (id: 492) Placing  ask 3 lots for $3593
+2020-03-18 03:13:10,586 [INFO   ] [TRADER] Order 490 inserted
+2020-03-18 03:13:10,587 [INFO   ] [TRADER] Order 491 inserted
+2020-03-18 03:13:10,587 [INFO   ] [TRADER] Order 492 inserted
+2020-03-18 03:13:10,599 [INFO   ] [TRADER] Cancelling bid 490
+2020-03-18 03:13:10,599 [INFO   ] [TRADER] Cancelling bid 491
+2020-03-18 03:13:10,599 [INFO   ] [TRADER] Cancelling bid 492
+2020-03-18 03:13:10,599 [INFO   ] [TRADER] (id: 493) Placing  ask 1 lots for $3590
+2020-03-18 03:13:10,599 [INFO   ] [TRADER] (id: 494) Placing  ask 2 lots for $3591
+2020-03-18 03:13:10,599 [INFO   ] [TRADER] (id: 495) Placing  ask 3 lots for $3592
+2020-03-18 03:13:10,600 [INFO   ] [TRADER] Order 490 cancelled
+2020-03-18 03:13:10,600 [INFO   ] [TRADER] Order 491 cancelled
+2020-03-18 03:13:10,600 [INFO   ] [TRADER] Order 492 cancelled
+2020-03-18 03:13:10,601 [INFO   ] [TRADER] Order 493 inserted
+2020-03-18 03:13:10,601 [INFO   ] [TRADER] Order 494 inserted
+2020-03-18 03:13:10,601 [INFO   ] [TRADER] Order 495 inserted
+2020-03-18 03:13:11,024 [INFO   ] [TRADER] (id: 496) Placing  bid 1 lots for $3586
+2020-03-18 03:13:11,024 [INFO   ] [TRADER] (id: 497) Placing  bid 2 lots for $3585
+2020-03-18 03:13:11,024 [INFO   ] [TRADER] (id: 498) Placing  bid 3 lots for $3584
+2020-03-18 03:13:11,024 [INFO   ] [TRADER] Order 496 inserted
+2020-03-18 03:13:11,024 [INFO   ] [TRADER] Order 497 inserted
+2020-03-18 03:13:11,024 [INFO   ] [TRADER] Order 498 inserted
+2020-03-18 03:13:11,036 [INFO   ] [TRADER] Cancelling bid 496
+2020-03-18 03:13:11,036 [INFO   ] [TRADER] Cancelling bid 497
+2020-03-18 03:13:11,036 [INFO   ] [TRADER] Cancelling bid 498
+2020-03-18 03:13:11,036 [INFO   ] [TRADER] (id: 499) Placing  bid 1 lots for $3587
+2020-03-18 03:13:11,036 [INFO   ] [TRADER] (id: 500) Placing  bid 2 lots for $3586
+2020-03-18 03:13:11,036 [INFO   ] [TRADER] (id: 501) Placing  bid 3 lots for $3585
+2020-03-18 03:13:11,037 [INFO   ] [TRADER] Order 496 cancelled
+2020-03-18 03:13:11,037 [INFO   ] [TRADER] Order 497 cancelled
+2020-03-18 03:13:11,037 [INFO   ] [TRADER] Order 498 cancelled
+2020-03-18 03:13:11,037 [INFO   ] [TRADER] Order 499 inserted
+2020-03-18 03:13:11,037 [INFO   ] [TRADER] Order 500 inserted
+2020-03-18 03:13:11,037 [INFO   ] [TRADER] Order 501 inserted
+2020-03-18 03:13:11,172 [INFO   ] [TRADER] Order 493 cancelled
+2020-03-18 03:13:11,173 [INFO   ] [TRADER] Position changed to ETF: 3, FUTURE: -3
+2020-03-18 03:13:11,198 [INFO   ] [TRADER] Order 499 cancelled
+2020-03-18 03:13:11,198 [INFO   ] [TRADER] Position changed to ETF: 4, FUTURE: -4
+2020-03-18 03:13:11,386 [INFO   ] [TRADER] Order 500 cancelled
+2020-03-18 03:13:11,386 [INFO   ] [TRADER] Position changed to ETF: 6, FUTURE: -6
+2020-03-18 03:13:11,523 [INFO   ] [TRADER] Order 501 filled (1 / 3)
+2020-03-18 03:13:11,523 [INFO   ] [TRADER] Position changed to ETF: 7, FUTURE: -7
+2020-03-18 03:13:11,535 [INFO   ] [TRADER] Order 501 cancelled
+2020-03-18 03:13:11,535 [INFO   ] [TRADER] Position changed to ETF: 9, FUTURE: -9
+2020-03-18 03:13:12,173 [INFO   ] [TRADER] Cancelling bid 494
+2020-03-18 03:13:12,174 [INFO   ] [TRADER] Cancelling bid 495
+2020-03-18 03:13:12,174 [INFO   ] [TRADER] (id: 502) Placing  ask 1 lots for $3584
+2020-03-18 03:13:12,174 [INFO   ] [TRADER] (id: 503) Placing  ask 2 lots for $3585
+2020-03-18 03:13:12,174 [INFO   ] [TRADER] (id: 504) Placing  ask 3 lots for $3586
+2020-03-18 03:13:12,174 [INFO   ] [TRADER] Order 494 cancelled
+2020-03-18 03:13:12,174 [INFO   ] [TRADER] Order 495 cancelled
+2020-03-18 03:13:12,174 [INFO   ] [TRADER] Order 502 inserted
+2020-03-18 03:13:12,174 [INFO   ] [TRADER] Order 503 inserted
+2020-03-18 03:13:12,175 [INFO   ] [TRADER] Order 504 inserted
+2020-03-18 03:13:12,185 [INFO   ] [TRADER] Order 502 cancelled
+2020-03-18 03:13:12,186 [INFO   ] [TRADER] Position changed to ETF: 8, FUTURE: -8
+2020-03-18 03:13:12,424 [INFO   ] [TRADER] Order 503 cancelled
+2020-03-18 03:13:12,424 [INFO   ] [TRADER] Position changed to ETF: 6, FUTURE: -6
+2020-03-18 03:13:12,540 [INFO   ] [TRADER] (id: 505) Placing  bid 1 lots for $3583
+2020-03-18 03:13:12,540 [INFO   ] [TRADER] (id: 506) Placing  bid 2 lots for $3582
+2020-03-18 03:13:12,541 [INFO   ] [TRADER] (id: 507) Placing  bid 3 lots for $3581
+2020-03-18 03:13:12,543 [INFO   ] [TRADER] Order 505 inserted
+2020-03-18 03:13:12,545 [INFO   ] [TRADER] Order 506 inserted
+2020-03-18 03:13:12,545 [INFO   ] [TRADER] Order 507 inserted
+2020-03-18 03:13:12,549 [INFO   ] [TRADER] Cancelling bid 505
+2020-03-18 03:13:12,550 [INFO   ] [TRADER] Cancelling bid 506
+2020-03-18 03:13:12,550 [INFO   ] [TRADER] Cancelling bid 507
+2020-03-18 03:13:12,550 [INFO   ] [TRADER] (id: 508) Placing  bid 1 lots for $3582
+2020-03-18 03:13:12,550 [INFO   ] [TRADER] (id: 509) Placing  bid 2 lots for $3581
+2020-03-18 03:13:12,551 [INFO   ] [TRADER] (id: 510) Placing  bid 3 lots for $3580
+2020-03-18 03:13:12,551 [INFO   ] [TRADER] Order 505 cancelled
+2020-03-18 03:13:12,551 [INFO   ] [TRADER] Order 506 cancelled
+2020-03-18 03:13:12,552 [INFO   ] [TRADER] Order 507 cancelled
+2020-03-18 03:13:12,552 [INFO   ] [TRADER] Order 508 inserted
+2020-03-18 03:13:12,553 [INFO   ] [TRADER] Order 509 inserted
+2020-03-18 03:13:12,553 [INFO   ] [TRADER] Order 510 inserted
+2020-03-18 03:13:13,041 [INFO   ] [TRADER] Order 504 cancelled
+2020-03-18 03:13:13,043 [INFO   ] [TRADER] Position changed to ETF: 3, FUTURE: -3
+2020-03-18 03:13:13,589 [INFO   ] [TRADER] Cancelling bid 508
+2020-03-18 03:13:13,589 [INFO   ] [TRADER] Cancelling bid 509
+2020-03-18 03:13:13,590 [INFO   ] [TRADER] Cancelling bid 510
+2020-03-18 03:13:13,590 [INFO   ] [TRADER] (id: 511) Placing  bid 1 lots for $3583
+2020-03-18 03:13:13,590 [INFO   ] [TRADER] (id: 512) Placing  bid 2 lots for $3582
+2020-03-18 03:13:13,590 [INFO   ] [TRADER] (id: 513) Placing  bid 3 lots for $3581
+2020-03-18 03:13:13,595 [INFO   ] [TRADER] Order 508 cancelled
+2020-03-18 03:13:13,597 [INFO   ] [TRADER] Order 509 cancelled
+2020-03-18 03:13:13,597 [INFO   ] [TRADER] Order 510 cancelled
+2020-03-18 03:13:13,598 [INFO   ] [TRADER] Order 511 inserted
+2020-03-18 03:13:13,598 [INFO   ] [TRADER] Order 512 inserted
+2020-03-18 03:13:13,599 [INFO   ] [TRADER] Order 513 inserted
+2020-03-18 03:13:13,907 [INFO   ] [TRADER] Order 511 cancelled
+2020-03-18 03:13:13,909 [INFO   ] [TRADER] Position changed to ETF: 4, FUTURE: -4
+2020-03-18 03:13:14,048 [INFO   ] [TRADER] (id: 514) Placing  ask 1 lots for $3585
+2020-03-18 03:13:14,048 [INFO   ] [TRADER] (id: 515) Placing  ask 2 lots for $3586
+2020-03-18 03:13:14,049 [INFO   ] [TRADER] (id: 516) Placing  ask 3 lots for $3587
+2020-03-18 03:13:14,049 [INFO   ] [TRADER] Order 514 inserted
+2020-03-18 03:13:14,049 [INFO   ] [TRADER] Order 515 inserted
+2020-03-18 03:13:14,049 [INFO   ] [TRADER] Order 516 inserted
+2020-03-18 03:13:14,060 [INFO   ] [TRADER] Cancelling bid 514
+2020-03-18 03:13:14,060 [INFO   ] [TRADER] Cancelling bid 515
+2020-03-18 03:13:14,061 [INFO   ] [TRADER] Cancelling bid 516
+2020-03-18 03:13:14,061 [INFO   ] [TRADER] (id: 517) Placing  ask 1 lots for $3585
+2020-03-18 03:13:14,061 [INFO   ] [TRADER] (id: 518) Placing  ask 2 lots for $3586
+2020-03-18 03:13:14,061 [INFO   ] [TRADER] (id: 519) Placing  ask 3 lots for $3587
+2020-03-18 03:13:14,061 [INFO   ] [TRADER] Order 514 cancelled
+2020-03-18 03:13:14,062 [INFO   ] [TRADER] Order 515 cancelled
+2020-03-18 03:13:14,062 [INFO   ] [TRADER] Order 516 cancelled
+2020-03-18 03:13:14,062 [INFO   ] [TRADER] Order 517 inserted
+2020-03-18 03:13:14,062 [INFO   ] [TRADER] Order 518 inserted
+2020-03-18 03:13:14,062 [INFO   ] [TRADER] Order 519 inserted
+2020-03-18 03:13:14,092 [INFO   ] [TRADER] Order 517 cancelled
+2020-03-18 03:13:14,092 [INFO   ] [TRADER] Position changed to ETF: 3, FUTURE: -3
+2020-03-18 03:13:14,092 [INFO   ] [TRADER] Order 518 filled (1 / 2)
+2020-03-18 03:13:14,092 [INFO   ] [TRADER] Position changed to ETF: 2, FUTURE: -2
+2020-03-18 03:13:14,098 [INFO   ] [TRADER] Order 518 cancelled
+2020-03-18 03:13:14,098 [INFO   ] [TRADER] Position changed to ETF: 1, FUTURE: -1
+2020-03-18 03:13:14,472 [INFO   ] [TRADER] Order 519 cancelled
+2020-03-18 03:13:14,472 [INFO   ] [TRADER] Position changed to ETF: -2, FUTURE: 2
+2020-03-18 03:13:14,922 [INFO   ] [TRADER] Cancelling bid 512
+2020-03-18 03:13:14,923 [INFO   ] [TRADER] Cancelling bid 513
+2020-03-18 03:13:14,923 [INFO   ] [TRADER] (id: 520) Placing  bid 1 lots for $3589
+2020-03-18 03:13:14,923 [INFO   ] [TRADER] (id: 521) Placing  bid 2 lots for $3588
+2020-03-18 03:13:14,923 [INFO   ] [TRADER] (id: 522) Placing  bid 3 lots for $3587
+2020-03-18 03:13:14,924 [INFO   ] [TRADER] Order 512 cancelled
+2020-03-18 03:13:14,925 [INFO   ] [TRADER] Order 513 cancelled
+2020-03-18 03:13:14,925 [INFO   ] [TRADER] Order 520 cancelled
+2020-03-18 03:13:14,925 [INFO   ] [TRADER] Position changed to ETF: -1, FUTURE: 1
+2020-03-18 03:13:14,925 [INFO   ] [TRADER] Order 521 inserted
+2020-03-18 03:13:14,925 [INFO   ] [TRADER] Order 522 inserted
+2020-03-18 03:13:15,011 [INFO   ] [TRADER] Order 521 cancelled
+2020-03-18 03:13:15,011 [INFO   ] [TRADER] Position changed to ETF: 1, FUTURE: -1
+2020-03-18 03:13:15,474 [INFO   ] [TRADER] (id: 523) Placing  ask 1 lots for $3590
+2020-03-18 03:13:15,475 [INFO   ] [TRADER] (id: 524) Placing  ask 2 lots for $3591
+2020-03-18 03:13:15,475 [INFO   ] [TRADER] (id: 525) Placing  ask 3 lots for $3592
+2020-03-18 03:13:15,477 [INFO   ] [TRADER] Order 523 inserted
+2020-03-18 03:13:15,477 [INFO   ] [TRADER] Order 524 inserted
+2020-03-18 03:13:15,477 [INFO   ] [TRADER] Order 525 inserted
+2020-03-18 03:13:15,487 [INFO   ] [TRADER] Cancelling bid 523
+2020-03-18 03:13:15,487 [INFO   ] [TRADER] Cancelling bid 524
+2020-03-18 03:13:15,487 [INFO   ] [TRADER] Cancelling bid 525
+2020-03-18 03:13:15,487 [INFO   ] [TRADER] (id: 526) Placing  ask 1 lots for $3590
+2020-03-18 03:13:15,488 [INFO   ] [TRADER] (id: 527) Placing  ask 2 lots for $3591
+2020-03-18 03:13:15,488 [INFO   ] [TRADER] (id: 528) Placing  ask 3 lots for $3592
+2020-03-18 03:13:15,489 [INFO   ] [TRADER] Order 523 cancelled
+2020-03-18 03:13:15,489 [INFO   ] [TRADER] Order 524 cancelled
+2020-03-18 03:13:15,490 [INFO   ] [TRADER] Order 525 cancelled
+2020-03-18 03:13:15,491 [INFO   ] [TRADER] Order 526 inserted
+2020-03-18 03:13:15,491 [INFO   ] [TRADER] Order 527 inserted
+2020-03-18 03:13:15,492 [INFO   ] [TRADER] Order 528 inserted
+2020-03-18 03:13:15,886 [INFO   ] [TRADER] Order 522 cancelled
+2020-03-18 03:13:15,886 [INFO   ] [TRADER] Position changed to ETF: 4, FUTURE: -4
+2020-03-18 03:13:16,498 [INFO   ] [TRADER] Cancelling bid 526
+2020-03-18 03:13:16,499 [INFO   ] [TRADER] Cancelling bid 527
+2020-03-18 03:13:16,499 [INFO   ] [TRADER] Cancelling bid 528
+2020-03-18 03:13:16,499 [INFO   ] [TRADER] (id: 529) Placing  ask 1 lots for $3585
+2020-03-18 03:13:16,499 [INFO   ] [TRADER] (id: 530) Placing  ask 2 lots for $3586
+2020-03-18 03:13:16,499 [INFO   ] [TRADER] (id: 531) Placing  ask 3 lots for $3587
+2020-03-18 03:13:16,499 [INFO   ] [TRADER] Order 526 cancelled
+2020-03-18 03:13:16,499 [INFO   ] [TRADER] Order 527 cancelled
+2020-03-18 03:13:16,499 [INFO   ] [TRADER] Order 528 cancelled
+2020-03-18 03:13:16,499 [INFO   ] [TRADER] Order 529 cancelled
+2020-03-18 03:13:16,500 [INFO   ] [TRADER] Position changed to ETF: 3, FUTURE: -3
+2020-03-18 03:13:16,500 [INFO   ] [TRADER] Order 530 cancelled
+2020-03-18 03:13:16,500 [INFO   ] [TRADER] Position changed to ETF: 1, FUTURE: -1
+2020-03-18 03:13:16,500 [INFO   ] [TRADER] Order 531 cancelled
+2020-03-18 03:13:16,500 [INFO   ] [TRADER] Position changed to ETF: -2, FUTURE: 2
+2020-03-18 03:13:16,899 [INFO   ] [TRADER] (id: 532) Placing  bid 1 lots for $3592
+2020-03-18 03:13:16,899 [INFO   ] [TRADER] (id: 533) Placing  bid 2 lots for $3591
+2020-03-18 03:13:16,899 [INFO   ] [TRADER] (id: 534) Placing  bid 3 lots for $3590
+2020-03-18 03:13:16,901 [INFO   ] [TRADER] Order 532 cancelled
+2020-03-18 03:13:16,901 [INFO   ] [TRADER] Position changed to ETF: -1, FUTURE: 1
+2020-03-18 03:13:16,903 [INFO   ] [TRADER] Order 533 cancelled
+2020-03-18 03:13:16,903 [INFO   ] [TRADER] Position changed to ETF: 1, FUTURE: -1
+2020-03-18 03:13:16,903 [INFO   ] [TRADER] Order 534 inserted
+2020-03-18 03:13:16,948 [INFO   ] [TRADER] Order 534 cancelled
+2020-03-18 03:13:16,948 [INFO   ] [TRADER] Position changed to ETF: 4, FUTURE: -4
+2020-03-18 03:13:17,517 [INFO   ] [TRADER] (id: 535) Placing  ask 1 lots for $3589
+2020-03-18 03:13:17,518 [INFO   ] [TRADER] (id: 536) Placing  ask 2 lots for $3590
+2020-03-18 03:13:17,518 [INFO   ] [TRADER] (id: 537) Placing  ask 3 lots for $3591
+2020-03-18 03:13:17,521 [INFO   ] [TRADER] Order 535 inserted
+2020-03-18 03:13:17,522 [INFO   ] [TRADER] Order 536 inserted
+2020-03-18 03:13:17,523 [INFO   ] [TRADER] Order 537 inserted
+2020-03-18 03:13:17,525 [INFO   ] [TRADER] Cancelling bid 535
+2020-03-18 03:13:17,525 [INFO   ] [TRADER] Cancelling bid 536
+2020-03-18 03:13:17,525 [INFO   ] [TRADER] Cancelling bid 537
+2020-03-18 03:13:17,526 [INFO   ] [TRADER] (id: 538) Placing  ask 1 lots for $3589
+2020-03-18 03:13:17,526 [INFO   ] [TRADER] (id: 539) Placing  ask 2 lots for $3590
+2020-03-18 03:13:17,526 [INFO   ] [TRADER] (id: 540) Placing  ask 3 lots for $3591
+2020-03-18 03:13:17,527 [INFO   ] [TRADER] Order 535 cancelled
+2020-03-18 03:13:17,527 [INFO   ] [TRADER] Order 536 cancelled
+2020-03-18 03:13:17,527 [INFO   ] [TRADER] Order 537 cancelled
+2020-03-18 03:13:17,527 [INFO   ] [TRADER] Order 538 inserted
+2020-03-18 03:13:17,527 [INFO   ] [TRADER] Order 539 inserted
+2020-03-18 03:13:17,528 [INFO   ] [TRADER] Order 540 inserted
+2020-03-18 03:13:17,949 [INFO   ] [TRADER] (id: 541) Placing  bid 1 lots for $3583
+2020-03-18 03:13:17,949 [INFO   ] [TRADER] (id: 542) Placing  bid 2 lots for $3582
+2020-03-18 03:13:17,949 [INFO   ] [TRADER] (id: 543) Placing  bid 3 lots for $3581
+2020-03-18 03:13:17,951 [INFO   ] [TRADER] Order 541 inserted
+2020-03-18 03:13:17,951 [INFO   ] [TRADER] Order 542 inserted
+2020-03-18 03:13:17,951 [INFO   ] [TRADER] Order 543 inserted
+2020-03-18 03:13:17,963 [INFO   ] [TRADER] Cancelling bid 541
+2020-03-18 03:13:17,963 [INFO   ] [TRADER] Cancelling bid 542
+2020-03-18 03:13:17,963 [INFO   ] [TRADER] Cancelling bid 543
+2020-03-18 03:13:17,963 [INFO   ] [TRADER] (id: 544) Placing  bid 1 lots for $3583
+2020-03-18 03:13:17,964 [INFO   ] [TRADER] (id: 545) Placing  bid 2 lots for $3582
+2020-03-18 03:13:17,964 [INFO   ] [TRADER] (id: 546) Placing  bid 3 lots for $3581
+2020-03-18 03:13:17,964 [INFO   ] [TRADER] Order 541 cancelled
+2020-03-18 03:13:17,965 [INFO   ] [TRADER] Order 542 cancelled
+2020-03-18 03:13:17,965 [INFO   ] [TRADER] Order 543 cancelled
+2020-03-18 03:13:17,966 [INFO   ] [TRADER] Order 544 inserted
+2020-03-18 03:13:17,967 [INFO   ] [TRADER] Order 545 inserted
+2020-03-18 03:13:17,968 [INFO   ] [TRADER] Order 546 inserted
+2020-03-18 03:13:18,499 [INFO   ] [TRADER] Order 544 cancelled
+2020-03-18 03:13:18,500 [INFO   ] [TRADER] Position changed to ETF: 5, FUTURE: -5
+2020-03-18 03:13:18,540 [INFO   ] [TRADER] Cancelling bid 538
+2020-03-18 03:13:18,540 [INFO   ] [TRADER] Cancelling bid 539
+2020-03-18 03:13:18,540 [INFO   ] [TRADER] Cancelling bid 540
+2020-03-18 03:13:18,540 [INFO   ] [TRADER] (id: 547) Placing  ask 1 lots for $3584
+2020-03-18 03:13:18,541 [INFO   ] [TRADER] (id: 548) Placing  ask 2 lots for $3585
+2020-03-18 03:13:18,541 [INFO   ] [TRADER] (id: 549) Placing  ask 3 lots for $3586
+2020-03-18 03:13:18,542 [INFO   ] [TRADER] Order 538 cancelled
+2020-03-18 03:13:18,542 [INFO   ] [TRADER] Order 539 cancelled
+2020-03-18 03:13:18,542 [INFO   ] [TRADER] Order 540 cancelled
+2020-03-18 03:13:18,543 [INFO   ] [TRADER] Order 547 inserted
+2020-03-18 03:13:18,543 [INFO   ] [TRADER] Order 548 inserted
+2020-03-18 03:13:18,543 [INFO   ] [TRADER] Order 549 inserted
+2020-03-18 03:13:18,588 [INFO   ] [TRADER] Order 547 cancelled
+2020-03-18 03:13:18,590 [INFO   ] [TRADER] Position changed to ETF: 4, FUTURE: -4
+2020-03-18 03:13:18,636 [INFO   ] [TRADER] Order 548 filled (1 / 2)
+2020-03-18 03:13:18,637 [INFO   ] [TRADER] Position changed to ETF: 3, FUTURE: -3
+2020-03-18 03:13:18,648 [INFO   ] [TRADER] Order 548 cancelled
+2020-03-18 03:13:18,649 [INFO   ] [TRADER] Position changed to ETF: 2, FUTURE: -2
+2020-03-18 03:13:18,904 [INFO   ] [TRADER] Order 545 cancelled
+2020-03-18 03:13:18,905 [INFO   ] [TRADER] Position changed to ETF: 4, FUTURE: -4
+2020-03-18 03:13:19,370 [INFO   ] [TRADER] Order 546 cancelled
+2020-03-18 03:13:19,370 [INFO   ] [TRADER] Position changed to ETF: 7, FUTURE: -7
+2020-03-18 03:13:19,669 [INFO   ] [TRADER] Cancelling bid 549
+2020-03-18 03:13:19,669 [INFO   ] [TRADER] (id: 550) Placing  ask 1 lots for $3576
+2020-03-18 03:13:19,669 [INFO   ] [TRADER] (id: 551) Placing  ask 2 lots for $3577
+2020-03-18 03:13:19,670 [INFO   ] [TRADER] (id: 552) Placing  ask 3 lots for $3578
+2020-03-18 03:13:19,675 [INFO   ] [TRADER] Order 549 cancelled
+2020-03-18 03:13:19,676 [INFO   ] [TRADER] Order 550 cancelled
+2020-03-18 03:13:19,677 [INFO   ] [TRADER] Position changed to ETF: 6, FUTURE: -6
+2020-03-18 03:13:19,677 [INFO   ] [TRADER] Order 551 cancelled
+2020-03-18 03:13:19,678 [INFO   ] [TRADER] Position changed to ETF: 4, FUTURE: -4
+2020-03-18 03:13:19,678 [INFO   ] [TRADER] Order 552 cancelled
+2020-03-18 03:13:19,678 [INFO   ] [TRADER] Position changed to ETF: 1, FUTURE: -1
+2020-03-18 03:13:20,373 [INFO   ] [TRADER] (id: 553) Placing  bid 1 lots for $3579
+2020-03-18 03:13:20,373 [INFO   ] [TRADER] (id: 554) Placing  bid 2 lots for $3578
+2020-03-18 03:13:20,374 [INFO   ] [TRADER] (id: 555) Placing  bid 3 lots for $3577
+2020-03-18 03:13:20,374 [INFO   ] [TRADER] Order 553 inserted
+2020-03-18 03:13:20,374 [INFO   ] [TRADER] Order 554 inserted
+2020-03-18 03:13:20,374 [INFO   ] [TRADER] Order 555 inserted
+2020-03-18 03:13:20,387 [INFO   ] [TRADER] Cancelling bid 553
+2020-03-18 03:13:20,387 [INFO   ] [TRADER] Cancelling bid 554
+2020-03-18 03:13:20,387 [INFO   ] [TRADER] Cancelling bid 555
+2020-03-18 03:13:20,387 [INFO   ] [TRADER] (id: 556) Placing  bid 1 lots for $3579
+2020-03-18 03:13:20,387 [INFO   ] [TRADER] (id: 557) Placing  bid 2 lots for $3578
+2020-03-18 03:13:20,388 [INFO   ] [TRADER] (id: 558) Placing  bid 3 lots for $3577
+2020-03-18 03:13:20,389 [INFO   ] [TRADER] Order 553 cancelled
+2020-03-18 03:13:20,389 [INFO   ] [TRADER] Order 554 cancelled
+2020-03-18 03:13:20,389 [INFO   ] [TRADER] Order 555 cancelled
+2020-03-18 03:13:20,390 [INFO   ] [TRADER] Order 556 inserted
+2020-03-18 03:13:20,390 [INFO   ] [TRADER] Order 557 inserted
+2020-03-18 03:13:20,390 [INFO   ] [TRADER] Order 558 inserted
+2020-03-18 03:13:20,701 [INFO   ] [TRADER] (id: 559) Placing  ask 1 lots for $3583
+2020-03-18 03:13:20,701 [INFO   ] [TRADER] (id: 560) Placing  ask 2 lots for $3584
+2020-03-18 03:13:20,701 [INFO   ] [TRADER] (id: 561) Placing  ask 3 lots for $3585
+2020-03-18 03:13:20,703 [INFO   ] [TRADER] Order 559 inserted
+2020-03-18 03:13:20,707 [INFO   ] [TRADER] Order 560 inserted
+2020-03-18 03:13:20,718 [INFO   ] [TRADER] Cancelling bid 559
+2020-03-18 03:13:20,718 [INFO   ] [TRADER] Cancelling bid 560
+2020-03-18 03:13:20,718 [INFO   ] [TRADER] Cancelling bid 561
+2020-03-18 03:13:20,719 [INFO   ] [TRADER] (id: 562) Placing  ask 1 lots for $3584
+2020-03-18 03:13:20,719 [INFO   ] [TRADER] (id: 563) Placing  ask 2 lots for $3585
+2020-03-18 03:13:20,719 [INFO   ] [TRADER] (id: 564) Placing  ask 3 lots for $3586
+2020-03-18 03:13:20,719 [INFO   ] [TRADER] Order 561 inserted
+2020-03-18 03:13:20,721 [INFO   ] [TRADER] Order 559 cancelled
+2020-03-18 03:13:20,721 [INFO   ] [TRADER] Order 560 cancelled
+2020-03-18 03:13:20,725 [INFO   ] [TRADER] Order 561 cancelled
+2020-03-18 03:13:20,726 [INFO   ] [TRADER] Order 562 inserted
+2020-03-18 03:13:20,726 [INFO   ] [TRADER] Order 563 inserted
+2020-03-18 03:13:20,727 [INFO   ] [TRADER] Order 564 inserted
+2020-03-18 03:13:21,038 [INFO   ] [TRADER] Order 562 cancelled
+2020-03-18 03:13:21,038 [INFO   ] [TRADER] Position changed to ETF: 0, FUTURE: 0
+2020-03-18 03:13:21,230 [INFO   ] [TRADER] Order 563 cancelled
+2020-03-18 03:13:21,230 [INFO   ] [TRADER] Position changed to ETF: -2, FUTURE: 2
+2020-03-18 03:13:21,275 [INFO   ] [TRADER] Order 564 cancelled
+2020-03-18 03:13:21,276 [INFO   ] [TRADER] Position changed to ETF: -5, FUTURE: 5
+2020-03-18 03:13:21,401 [INFO   ] [TRADER] Cancelling bid 556
+2020-03-18 03:13:21,401 [INFO   ] [TRADER] Cancelling bid 557
+2020-03-18 03:13:21,401 [INFO   ] [TRADER] Cancelling bid 558
+2020-03-18 03:13:21,401 [INFO   ] [TRADER] (id: 565) Placing  bid 1 lots for $3588
+2020-03-18 03:13:21,401 [INFO   ] [TRADER] (id: 566) Placing  bid 2 lots for $3587
+2020-03-18 03:13:21,402 [INFO   ] [TRADER] (id: 567) Placing  bid 3 lots for $3586
+2020-03-18 03:13:21,404 [INFO   ] [TRADER] Order 556 cancelled
+2020-03-18 03:13:21,405 [INFO   ] [TRADER] Order 557 cancelled
+2020-03-18 03:13:21,408 [INFO   ] [TRADER] Order 558 cancelled
+2020-03-18 03:13:21,413 [INFO   ] [TRADER] Order 565 cancelled
+2020-03-18 03:13:21,413 [INFO   ] [TRADER] Position changed to ETF: -4, FUTURE: 4
+2020-03-18 03:13:21,415 [INFO   ] [TRADER] Order 566 cancelled
+2020-03-18 03:13:21,417 [INFO   ] [TRADER] Position changed to ETF: -2, FUTURE: 2
+2020-03-18 03:13:21,424 [INFO   ] [TRADER] Order 567 inserted
+2020-03-18 03:13:21,475 [INFO   ] [TRADER] Order 567 cancelled
+2020-03-18 03:13:21,476 [INFO   ] [TRADER] Position changed to ETF: 1, FUTURE: -1
+2020-03-18 03:13:22,276 [INFO   ] [TRADER] (id: 568) Placing  ask 1 lots for $3590
+2020-03-18 03:13:22,276 [INFO   ] [TRADER] (id: 569) Placing  ask 2 lots for $3591
+2020-03-18 03:13:22,276 [INFO   ] [TRADER] (id: 570) Placing  ask 3 lots for $3592
+2020-03-18 03:13:22,279 [INFO   ] [TRADER] Order 568 inserted
+2020-03-18 03:13:22,280 [INFO   ] [TRADER] Order 569 inserted
+2020-03-18 03:13:22,281 [INFO   ] [TRADER] Order 570 inserted
+2020-03-18 03:13:22,286 [INFO   ] [TRADER] Cancelling bid 568
+2020-03-18 03:13:22,287 [INFO   ] [TRADER] Cancelling bid 569
+2020-03-18 03:13:22,287 [INFO   ] [TRADER] Cancelling bid 570
+2020-03-18 03:13:22,287 [INFO   ] [TRADER] (id: 571) Placing  ask 1 lots for $3591
+2020-03-18 03:13:22,287 [INFO   ] [TRADER] (id: 572) Placing  ask 2 lots for $3592
+2020-03-18 03:13:22,288 [INFO   ] [TRADER] (id: 573) Placing  ask 3 lots for $3593
+2020-03-18 03:13:22,289 [INFO   ] [TRADER] Order 568 cancelled
+2020-03-18 03:13:22,289 [INFO   ] [TRADER] Order 569 cancelled
+2020-03-18 03:13:22,289 [INFO   ] [TRADER] Order 570 cancelled
+2020-03-18 03:13:22,289 [INFO   ] [TRADER] Order 571 inserted
+2020-03-18 03:13:22,290 [INFO   ] [TRADER] Order 572 inserted
+2020-03-18 03:13:22,290 [INFO   ] [TRADER] Order 573 inserted
+2020-03-18 03:13:22,476 [INFO   ] [TRADER] (id: 574) Placing  bid 1 lots for $3587
+2020-03-18 03:13:22,476 [INFO   ] [TRADER] (id: 575) Placing  bid 2 lots for $3586
+2020-03-18 03:13:22,477 [INFO   ] [TRADER] (id: 576) Placing  bid 3 lots for $3585
+2020-03-18 03:13:22,477 [INFO   ] [TRADER] Order 574 inserted
+2020-03-18 03:13:22,477 [INFO   ] [TRADER] Order 575 inserted
+2020-03-18 03:13:22,478 [INFO   ] [TRADER] Order 576 inserted
+2020-03-18 03:13:22,499 [INFO   ] [TRADER] Cancelling bid 574
+2020-03-18 03:13:22,499 [INFO   ] [TRADER] Cancelling bid 575
+2020-03-18 03:13:22,499 [INFO   ] [TRADER] Cancelling bid 576
+2020-03-18 03:13:22,499 [INFO   ] [TRADER] (id: 577) Placing  bid 1 lots for $3589
+2020-03-18 03:13:22,499 [INFO   ] [TRADER] (id: 578) Placing  bid 2 lots for $3588
+2020-03-18 03:13:22,500 [INFO   ] [TRADER] (id: 579) Placing  bid 3 lots for $3587
+2020-03-18 03:13:22,501 [INFO   ] [TRADER] Order 574 cancelled
+2020-03-18 03:13:22,501 [INFO   ] [TRADER] Order 575 cancelled
+2020-03-18 03:13:22,501 [INFO   ] [TRADER] Order 576 cancelled
+2020-03-18 03:13:22,502 [INFO   ] [TRADER] Order 577 cancelled
+2020-03-18 03:13:22,502 [INFO   ] [TRADER] Position changed to ETF: 2, FUTURE: -2
+2020-03-18 03:13:22,502 [INFO   ] [TRADER] Order 578 inserted
+2020-03-18 03:13:22,502 [INFO   ] [TRADER] Order 579 inserted
+2020-03-18 03:13:22,960 [INFO   ] [TRADER] Order 578 cancelled
+2020-03-18 03:13:22,960 [INFO   ] [TRADER] Position changed to ETF: 4, FUTURE: -4
+2020-03-18 03:13:23,305 [INFO   ] [TRADER] Cancelling bid 571
+2020-03-18 03:13:23,306 [INFO   ] [TRADER] Cancelling bid 572
+2020-03-18 03:13:23,306 [INFO   ] [TRADER] Cancelling bid 573
+2020-03-18 03:13:23,306 [INFO   ] [TRADER] (id: 580) Placing  ask 1 lots for $3590
+2020-03-18 03:13:23,306 [INFO   ] [TRADER] (id: 581) Placing  ask 2 lots for $3591
+2020-03-18 03:13:23,306 [INFO   ] [TRADER] (id: 582) Placing  ask 3 lots for $3592
+2020-03-18 03:13:23,313 [INFO   ] [TRADER] Order 571 cancelled
+2020-03-18 03:13:23,317 [INFO   ] [TRADER] Order 572 cancelled
+2020-03-18 03:13:23,318 [INFO   ] [TRADER] Order 573 cancelled
+2020-03-18 03:13:23,318 [INFO   ] [TRADER] Order 580 inserted
+2020-03-18 03:13:23,319 [INFO   ] [TRADER] Order 581 inserted
+2020-03-18 03:13:23,319 [INFO   ] [TRADER] Order 582 inserted
+2020-03-18 03:13:23,436 [INFO   ] [TRADER] Order 579 cancelled
+2020-03-18 03:13:23,436 [INFO   ] [TRADER] Position changed to ETF: 7, FUTURE: -7
+2020-03-18 03:13:23,799 [INFO   ] [TRADER] Order 580 cancelled
+2020-03-18 03:13:23,800 [INFO   ] [TRADER] Position changed to ETF: 6, FUTURE: -6
+2020-03-18 03:13:23,986 [INFO   ] [TRADER] Order 581 cancelled
+2020-03-18 03:13:23,986 [INFO   ] [TRADER] Position changed to ETF: 4, FUTURE: -4
+2020-03-18 03:13:24,105 [INFO   ] [TRADER] Order 582 cancelled
+2020-03-18 03:13:24,110 [INFO   ] [TRADER] Position changed to ETF: 1, FUTURE: -1
+2020-03-18 03:13:24,437 [INFO   ] [TRADER] (id: 583) Placing  bid 1 lots for $3595
+2020-03-18 03:13:24,438 [INFO   ] [TRADER] (id: 584) Placing  bid 2 lots for $3594
+2020-03-18 03:13:24,438 [INFO   ] [TRADER] (id: 585) Placing  bid 3 lots for $3593
+2020-03-18 03:13:24,440 [INFO   ] [TRADER] Order 583 cancelled
+2020-03-18 03:13:24,440 [INFO   ] [TRADER] Position changed to ETF: 2, FUTURE: -2
+2020-03-18 03:13:24,441 [INFO   ] [TRADER] Order 584 cancelled
+2020-03-18 03:13:24,442 [INFO   ] [TRADER] Position changed to ETF: 4, FUTURE: -4
+2020-03-18 03:13:24,443 [INFO   ] [TRADER] Order 585 cancelled
+2020-03-18 03:13:24,443 [INFO   ] [TRADER] Position changed to ETF: 7, FUTURE: -7
+2020-03-18 03:13:25,113 [INFO   ] [TRADER] (id: 586) Placing  ask 1 lots for $3599
+2020-03-18 03:13:25,113 [INFO   ] [TRADER] (id: 587) Placing  ask 2 lots for $3600
+2020-03-18 03:13:25,113 [INFO   ] [TRADER] (id: 588) Placing  ask 3 lots for $3601
+2020-03-18 03:13:25,117 [INFO   ] [TRADER] Order 586 inserted
+2020-03-18 03:13:25,120 [INFO   ] [TRADER] Order 587 inserted
+2020-03-18 03:13:25,121 [INFO   ] [TRADER] Order 588 inserted
+2020-03-18 03:13:25,123 [INFO   ] [TRADER] Cancelling bid 586
+2020-03-18 03:13:25,123 [INFO   ] [TRADER] Cancelling bid 587
+2020-03-18 03:13:25,124 [INFO   ] [TRADER] Cancelling bid 588
+2020-03-18 03:13:25,124 [INFO   ] [TRADER] (id: 589) Placing  ask 1 lots for $3599
+2020-03-18 03:13:25,124 [INFO   ] [TRADER] (id: 590) Placing  ask 2 lots for $3600
+2020-03-18 03:13:25,124 [INFO   ] [TRADER] (id: 591) Placing  ask 3 lots for $3601
+2020-03-18 03:13:25,124 [INFO   ] [TRADER] Order 586 cancelled
+2020-03-18 03:13:25,125 [INFO   ] [TRADER] Order 587 cancelled
+2020-03-18 03:13:25,125 [INFO   ] [TRADER] Order 588 cancelled
+2020-03-18 03:13:25,125 [INFO   ] [TRADER] Order 589 inserted
+2020-03-18 03:13:25,126 [INFO   ] [TRADER] Order 590 inserted
+2020-03-18 03:13:25,126 [INFO   ] [TRADER] Order 591 inserted
+2020-03-18 03:13:25,450 [INFO   ] [TRADER] (id: 592) Placing  bid 1 lots for $3597
+2020-03-18 03:13:25,451 [INFO   ] [TRADER] (id: 593) Placing  bid 2 lots for $3596
+2020-03-18 03:13:25,451 [INFO   ] [TRADER] (id: 594) Placing  bid 3 lots for $3595
+2020-03-18 03:13:25,454 [INFO   ] [TRADER] Order 592 cancelled
+2020-03-18 03:13:25,455 [INFO   ] [TRADER] Position changed to ETF: 8, FUTURE: -8
+2020-03-18 03:13:25,455 [INFO   ] [TRADER] Order 593 cancelled
+2020-03-18 03:13:25,455 [INFO   ] [TRADER] Position changed to ETF: 10, FUTURE: -10
+2020-03-18 03:13:25,456 [INFO   ] [TRADER] Order 594 cancelled
+2020-03-18 03:13:25,456 [INFO   ] [TRADER] Position changed to ETF: 13, FUTURE: -13
+2020-03-18 03:13:26,138 [INFO   ] [TRADER] Cancelling bid 589
+2020-03-18 03:13:26,138 [INFO   ] [TRADER] Cancelling bid 590
+2020-03-18 03:13:26,138 [INFO   ] [TRADER] Cancelling bid 591
+2020-03-18 03:13:26,138 [INFO   ] [TRADER] (id: 595) Placing  ask 1 lots for $3603
+2020-03-18 03:13:26,139 [INFO   ] [TRADER] (id: 596) Placing  ask 2 lots for $3604
+2020-03-18 03:13:26,139 [INFO   ] [TRADER] (id: 597) Placing  ask 3 lots for $3605
+2020-03-18 03:13:26,140 [INFO   ] [TRADER] Order 589 cancelled
+2020-03-18 03:13:26,140 [INFO   ] [TRADER] Order 590 cancelled
+2020-03-18 03:13:26,141 [INFO   ] [TRADER] Order 591 cancelled
+2020-03-18 03:13:26,141 [INFO   ] [TRADER] Order 595 inserted
+2020-03-18 03:13:26,141 [INFO   ] [TRADER] Order 596 inserted
+2020-03-18 03:13:26,141 [INFO   ] [TRADER] Order 597 inserted
+2020-03-18 03:13:26,461 [INFO   ] [TRADER] (id: 598) Placing  bid 1 lots for $3599
+2020-03-18 03:13:26,461 [INFO   ] [TRADER] (id: 599) Placing  bid 2 lots for $3598
+2020-03-18 03:13:26,461 [INFO   ] [TRADER] (id: 600) Placing  bid 3 lots for $3597
+2020-03-18 03:13:26,461 [INFO   ] [TRADER] Order 598 cancelled
+2020-03-18 03:13:26,461 [INFO   ] [TRADER] Position changed to ETF: 14, FUTURE: -14
+2020-03-18 03:13:26,462 [INFO   ] [TRADER] Order 599 cancelled
+2020-03-18 03:13:26,462 [INFO   ] [TRADER] Position changed to ETF: 16, FUTURE: -16
+2020-03-18 03:13:26,462 [INFO   ] [TRADER] Order 600 inserted
+2020-03-18 03:13:26,736 [INFO   ] [TRADER] Order 600 cancelled
+2020-03-18 03:13:26,736 [INFO   ] [TRADER] Position changed to ETF: 19, FUTURE: -19
+2020-03-18 03:13:27,149 [INFO   ] [TRADER] Cancelling bid 595
+2020-03-18 03:13:27,149 [INFO   ] [TRADER] Cancelling bid 596
+2020-03-18 03:13:27,149 [INFO   ] [TRADER] Cancelling bid 597
+2020-03-18 03:13:27,149 [INFO   ] [TRADER] (id: 601) Placing  ask 1 lots for $3605
+2020-03-18 03:13:27,150 [INFO   ] [TRADER] (id: 602) Placing  ask 2 lots for $3606
+2020-03-18 03:13:27,150 [INFO   ] [TRADER] (id: 603) Placing  ask 3 lots for $3607
+2020-03-18 03:13:27,150 [INFO   ] [TRADER] Order 595 cancelled
+2020-03-18 03:13:27,150 [INFO   ] [TRADER] Order 596 cancelled
+2020-03-18 03:13:27,151 [INFO   ] [TRADER] Order 597 cancelled
+2020-03-18 03:13:27,151 [INFO   ] [TRADER] Order 601 inserted
+2020-03-18 03:13:27,152 [INFO   ] [TRADER] Order 602 inserted
+2020-03-18 03:13:27,152 [INFO   ] [TRADER] Order 603 inserted
+2020-03-18 03:13:27,737 [INFO   ] [TRADER] (id: 604) Placing  bid 1 lots for $3605
+2020-03-18 03:13:27,737 [INFO   ] [TRADER] (id: 605) Placing  bid 2 lots for $3604
+2020-03-18 03:13:27,738 [INFO   ] [TRADER] (id: 606) Placing  bid 3 lots for $3603
+2020-03-18 03:13:27,738 [WARNING] [TRADER] error with order 604: order rejected: in cross with an existing order
+2020-03-18 03:13:27,738 [INFO   ] [TRADER] Order 604 cancelled
+2020-03-18 03:13:27,739 [INFO   ] [TRADER] Order 605 cancelled
+2020-03-18 03:13:27,739 [INFO   ] [TRADER] Position changed to ETF: 21, FUTURE: -21
+2020-03-18 03:13:27,739 [INFO   ] [TRADER] Order 606 cancelled
+2020-03-18 03:13:27,740 [INFO   ] [TRADER] Position changed to ETF: 24, FUTURE: -24
+2020-03-18 03:13:28,161 [INFO   ] [TRADER] Cancelling bid 601
+2020-03-18 03:13:28,161 [INFO   ] [TRADER] Cancelling bid 602
+2020-03-18 03:13:28,161 [INFO   ] [TRADER] Cancelling bid 603
+2020-03-18 03:13:28,162 [INFO   ] [TRADER] (id: 607) Placing  ask 1 lots for $3609
+2020-03-18 03:13:28,162 [INFO   ] [TRADER] (id: 608) Placing  ask 2 lots for $3610
+2020-03-18 03:13:28,162 [INFO   ] [TRADER] (id: 609) Placing  ask 3 lots for $3611
+2020-03-18 03:13:28,162 [INFO   ] [TRADER] Order 601 cancelled
+2020-03-18 03:13:28,162 [INFO   ] [TRADER] Order 602 cancelled
+2020-03-18 03:13:28,162 [INFO   ] [TRADER] Order 603 cancelled
+2020-03-18 03:13:28,162 [INFO   ] [TRADER] Order 607 inserted
+2020-03-18 03:13:28,162 [INFO   ] [TRADER] Order 608 inserted
+2020-03-18 03:13:28,162 [INFO   ] [TRADER] Order 609 inserted
+2020-03-18 03:13:28,749 [INFO   ] [TRADER] (id: 610) Placing  bid 1 lots for $3608
+2020-03-18 03:13:28,750 [INFO   ] [TRADER] (id: 611) Placing  bid 2 lots for $3607
+2020-03-18 03:13:28,750 [INFO   ] [TRADER] (id: 612) Placing  bid 3 lots for $3606
+2020-03-18 03:13:28,751 [INFO   ] [TRADER] Order 610 cancelled
+2020-03-18 03:13:28,751 [INFO   ] [TRADER] Position changed to ETF: 25, FUTURE: -25
+2020-03-18 03:13:28,751 [INFO   ] [TRADER] Order 611 cancelled
+2020-03-18 03:13:28,752 [INFO   ] [TRADER] Position changed to ETF: 27, FUTURE: -27
+2020-03-18 03:13:28,752 [INFO   ] [TRADER] Order 612 cancelled
+2020-03-18 03:13:28,753 [INFO   ] [TRADER] Position changed to ETF: 30, FUTURE: -30
+2020-03-18 03:13:29,162 [INFO   ] [TRADER] Cancelling bid 607
+2020-03-18 03:13:29,163 [INFO   ] [TRADER] Cancelling bid 608
+2020-03-18 03:13:29,163 [INFO   ] [TRADER] Cancelling bid 609
+2020-03-18 03:13:29,163 [INFO   ] [TRADER] (id: 613) Placing  ask 1 lots for $3611
+2020-03-18 03:13:29,163 [INFO   ] [TRADER] (id: 614) Placing  ask 2 lots for $3612
+2020-03-18 03:13:29,163 [INFO   ] [TRADER] (id: 615) Placing  ask 3 lots for $3613
+2020-03-18 03:13:29,165 [INFO   ] [TRADER] Order 607 cancelled
+2020-03-18 03:13:29,166 [INFO   ] [TRADER] Order 608 cancelled
+2020-03-18 03:13:29,166 [INFO   ] [TRADER] Order 609 cancelled
+2020-03-18 03:13:29,167 [INFO   ] [TRADER] Order 613 inserted
+2020-03-18 03:13:29,167 [INFO   ] [TRADER] Order 614 inserted
+2020-03-18 03:13:29,167 [INFO   ] [TRADER] Order 615 inserted
+2020-03-18 03:13:29,761 [INFO   ] [TRADER] (id: 616) Placing  bid 1 lots for $3609
+2020-03-18 03:13:29,761 [INFO   ] [TRADER] (id: 617) Placing  bid 2 lots for $3608
+2020-03-18 03:13:29,761 [INFO   ] [TRADER] (id: 618) Placing  bid 3 lots for $3607
+2020-03-18 03:13:29,761 [INFO   ] [TRADER] Order 616 cancelled
+2020-03-18 03:13:29,761 [INFO   ] [TRADER] Position changed to ETF: 31, FUTURE: -31
+2020-03-18 03:13:29,761 [INFO   ] [TRADER] Order 617 cancelled
+2020-03-18 03:13:29,761 [INFO   ] [TRADER] Position changed to ETF: 33, FUTURE: -33
+2020-03-18 03:13:29,762 [INFO   ] [TRADER] Order 618 inserted
+2020-03-18 03:13:29,860 [INFO   ] [TRADER] Order 618 cancelled
+2020-03-18 03:13:29,860 [INFO   ] [TRADER] Position changed to ETF: 36, FUTURE: -36
+2020-03-18 03:13:30,364 [INFO   ] [TRADER] Cancelling bid 613
+2020-03-18 03:13:30,365 [INFO   ] [TRADER] Cancelling bid 614
+2020-03-18 03:13:30,365 [INFO   ] [TRADER] Cancelling bid 615
+2020-03-18 03:13:30,365 [INFO   ] [TRADER] (id: 619) Placing  ask 1 lots for $3612
+2020-03-18 03:13:30,365 [INFO   ] [TRADER] (id: 620) Placing  ask 2 lots for $3613
+2020-03-18 03:13:30,366 [INFO   ] [TRADER] (id: 621) Placing  ask 3 lots for $3614
+2020-03-18 03:13:30,366 [INFO   ] [TRADER] Order 613 cancelled
+2020-03-18 03:13:30,367 [INFO   ] [TRADER] Order 614 cancelled
+2020-03-18 03:13:30,368 [INFO   ] [TRADER] Order 615 cancelled
+2020-03-18 03:13:30,368 [INFO   ] [TRADER] Order 619 inserted
+2020-03-18 03:13:30,368 [INFO   ] [TRADER] Order 620 inserted
+2020-03-18 03:13:30,368 [INFO   ] [TRADER] Order 621 inserted
+2020-03-18 03:13:30,863 [INFO   ] [TRADER] (id: 622) Placing  bid 1 lots for $3608
+2020-03-18 03:13:30,864 [INFO   ] [TRADER] (id: 623) Placing  bid 2 lots for $3607
+2020-03-18 03:13:30,864 [INFO   ] [TRADER] (id: 624) Placing  bid 3 lots for $3606
+2020-03-18 03:13:30,865 [INFO   ] [TRADER] Order 622 inserted
+2020-03-18 03:13:30,865 [INFO   ] [TRADER] Order 623 inserted
+2020-03-18 03:13:30,866 [INFO   ] [TRADER] Order 624 inserted
+2020-03-18 03:13:30,873 [INFO   ] [TRADER] Cancelling bid 622
+2020-03-18 03:13:30,874 [INFO   ] [TRADER] Cancelling bid 623
+2020-03-18 03:13:30,874 [INFO   ] [TRADER] Cancelling bid 624
+2020-03-18 03:13:30,874 [INFO   ] [TRADER] (id: 625) Placing  bid 1 lots for $3608
+2020-03-18 03:13:30,874 [INFO   ] [TRADER] (id: 626) Placing  bid 2 lots for $3607
+2020-03-18 03:13:30,875 [INFO   ] [TRADER] (id: 627) Placing  bid 3 lots for $3606
+2020-03-18 03:13:30,875 [INFO   ] [TRADER] Order 622 cancelled
+2020-03-18 03:13:30,875 [INFO   ] [TRADER] Order 623 cancelled
+2020-03-18 03:13:30,875 [INFO   ] [TRADER] Order 624 cancelled
+2020-03-18 03:13:30,878 [INFO   ] [TRADER] Order 625 inserted
+2020-03-18 03:13:30,879 [INFO   ] [TRADER] Order 626 inserted
+2020-03-18 03:13:30,880 [INFO   ] [TRADER] Order 627 inserted
+2020-03-18 03:13:30,987 [INFO   ] [TRADER] Order 625 cancelled
+2020-03-18 03:13:30,987 [INFO   ] [TRADER] Position changed to ETF: 37, FUTURE: -37
+2020-03-18 03:13:31,086 [INFO   ] [TRADER] Order 626 filled (1 / 2)
+2020-03-18 03:13:31,086 [INFO   ] [TRADER] Position changed to ETF: 38, FUTURE: -38
+2020-03-18 03:13:31,087 [INFO   ] [TRADER] Order 626 cancelled
+2020-03-18 03:13:31,087 [INFO   ] [TRADER] Position changed to ETF: 39, FUTURE: -39
+2020-03-18 03:13:31,375 [INFO   ] [TRADER] Cancelling bid 619
+2020-03-18 03:13:31,375 [INFO   ] [TRADER] Cancelling bid 620
+2020-03-18 03:13:31,376 [INFO   ] [TRADER] Cancelling bid 621
+2020-03-18 03:13:31,376 [INFO   ] [TRADER] (id: 628) Placing  ask 1 lots for $3609
+2020-03-18 03:13:31,376 [INFO   ] [TRADER] (id: 629) Placing  ask 2 lots for $3610
+2020-03-18 03:13:31,376 [INFO   ] [TRADER] (id: 630) Placing  ask 3 lots for $3611
+2020-03-18 03:13:31,377 [INFO   ] [TRADER] Order 619 cancelled
+2020-03-18 03:13:31,377 [INFO   ] [TRADER] Order 620 cancelled
+2020-03-18 03:13:31,377 [INFO   ] [TRADER] Order 621 cancelled
+2020-03-18 03:13:31,378 [INFO   ] [TRADER] Order 628 inserted
+2020-03-18 03:13:31,378 [INFO   ] [TRADER] Order 629 inserted
+2020-03-18 03:13:31,379 [INFO   ] [TRADER] Order 630 inserted
+2020-03-18 03:13:31,385 [INFO   ] [TRADER] Order 627 cancelled
+2020-03-18 03:13:31,386 [INFO   ] [TRADER] Position changed to ETF: 42, FUTURE: -42
+2020-03-18 03:13:32,387 [INFO   ] [TRADER] (id: 631) Placing  bid 1 lots for $3604
+2020-03-18 03:13:32,387 [INFO   ] [TRADER] (id: 632) Placing  bid 2 lots for $3603
+2020-03-18 03:13:32,387 [INFO   ] [TRADER] (id: 633) Placing  bid 3 lots for $3602
+2020-03-18 03:13:32,387 [INFO   ] [TRADER] Cancelling bid 628
+2020-03-18 03:13:32,387 [INFO   ] [TRADER] Cancelling bid 629
+2020-03-18 03:13:32,387 [INFO   ] [TRADER] Cancelling bid 630
+2020-03-18 03:13:32,387 [INFO   ] [TRADER] (id: 634) Placing  ask 1 lots for $3607
+2020-03-18 03:13:32,387 [INFO   ] [TRADER] (id: 635) Placing  ask 2 lots for $3608
+2020-03-18 03:13:32,387 [INFO   ] [TRADER] (id: 636) Placing  ask 3 lots for $3609
+2020-03-18 03:13:32,387 [INFO   ] [TRADER] Order 631 inserted
+2020-03-18 03:13:32,387 [INFO   ] [TRADER] Order 632 inserted
+2020-03-18 03:13:32,387 [INFO   ] [TRADER] Order 633 inserted
+2020-03-18 03:13:32,387 [INFO   ] [TRADER] Order 628 cancelled
+2020-03-18 03:13:32,387 [INFO   ] [TRADER] Order 629 cancelled
+2020-03-18 03:13:32,387 [INFO   ] [TRADER] Order 630 cancelled
+2020-03-18 03:13:32,387 [INFO   ] [TRADER] Order 634 inserted
+2020-03-18 03:13:32,388 [INFO   ] [TRADER] Order 635 inserted
+2020-03-18 03:13:32,388 [INFO   ] [TRADER] Order 636 inserted
+2020-03-18 03:13:32,398 [INFO   ] [TRADER] Cancelling bid 631
+2020-03-18 03:13:32,399 [INFO   ] [TRADER] Cancelling bid 632
+2020-03-18 03:13:32,399 [INFO   ] [TRADER] Cancelling bid 633
+2020-03-18 03:13:32,399 [INFO   ] [TRADER] (id: 637) Placing  bid 1 lots for $3604
+2020-03-18 03:13:32,399 [INFO   ] [TRADER] (id: 638) Placing  bid 2 lots for $3603
+2020-03-18 03:13:32,399 [INFO   ] [TRADER] (id: 639) Placing  bid 3 lots for $3602
+2020-03-18 03:13:32,399 [INFO   ] [TRADER] Order 631 cancelled
+2020-03-18 03:13:32,399 [INFO   ] [TRADER] Order 632 cancelled
+2020-03-18 03:13:32,399 [INFO   ] [TRADER] Order 633 cancelled
+2020-03-18 03:13:32,399 [INFO   ] [TRADER] Order 637 inserted
+2020-03-18 03:13:32,399 [INFO   ] [TRADER] Order 638 inserted
+2020-03-18 03:13:32,399 [INFO   ] [TRADER] Order 639 inserted
+2020-03-18 03:13:32,511 [INFO   ] [TRADER] Order 634 cancelled
+2020-03-18 03:13:32,512 [INFO   ] [TRADER] Position changed to ETF: 41, FUTURE: -41
+2020-03-18 03:13:32,998 [INFO   ] [TRADER] Order 635 filled (1 / 2)
+2020-03-18 03:13:32,998 [INFO   ] [TRADER] Position changed to ETF: 40, FUTURE: -40
+2020-03-18 03:13:33,011 [INFO   ] [TRADER] Order 635 cancelled
+2020-03-18 03:13:33,011 [INFO   ] [TRADER] Position changed to ETF: 39, FUTURE: -39
+2020-03-18 03:13:33,911 [INFO   ] [TRADER] Order 637 cancelled
+2020-03-18 03:13:33,911 [INFO   ] [TRADER] Position changed to ETF: 40, FUTURE: -40
+2020-03-18 03:13:34,176 [INFO   ] [TRADER] Cancelling bid 636
+2020-03-18 03:13:34,176 [INFO   ] [TRADER] (id: 640) Placing  ask 1 lots for $3606
+2020-03-18 03:13:34,177 [INFO   ] [TRADER] (id: 641) Placing  ask 2 lots for $3607
+2020-03-18 03:13:34,177 [INFO   ] [TRADER] (id: 642) Placing  ask 3 lots for $3608
+2020-03-18 03:13:34,179 [INFO   ] [TRADER] Order 636 cancelled
+2020-03-18 03:13:34,180 [INFO   ] [TRADER] Order 640 inserted
+2020-03-18 03:13:34,180 [INFO   ] [TRADER] Order 641 inserted
+2020-03-18 03:13:34,180 [INFO   ] [TRADER] Order 642 inserted
+2020-03-18 03:13:34,298 [INFO   ] [TRADER] Order 638 cancelled
+2020-03-18 03:13:34,298 [INFO   ] [TRADER] Position changed to ETF: 42, FUTURE: -42
+2020-03-18 03:13:34,435 [INFO   ] [TRADER] Order 640 cancelled
+2020-03-18 03:13:34,435 [INFO   ] [TRADER] Position changed to ETF: 41, FUTURE: -41
+2020-03-18 03:13:35,300 [INFO   ] [TRADER] Cancelling bid 639
+2020-03-18 03:13:35,300 [INFO   ] [TRADER] (id: 643) Placing  bid 1 lots for $3602
+2020-03-18 03:13:35,300 [INFO   ] [TRADER] (id: 644) Placing  bid 2 lots for $3601
+2020-03-18 03:13:35,300 [INFO   ] [TRADER] (id: 645) Placing  bid 3 lots for $3600
+2020-03-18 03:13:35,302 [INFO   ] [TRADER] Order 639 cancelled
+2020-03-18 03:13:35,304 [INFO   ] [TRADER] Order 643 inserted
+2020-03-18 03:13:35,305 [INFO   ] [TRADER] Order 644 inserted
+2020-03-18 03:13:35,306 [INFO   ] [TRADER] Order 645 inserted
+2020-03-18 03:13:35,436 [INFO   ] [TRADER] Cancelling bid 641
+2020-03-18 03:13:35,437 [INFO   ] [TRADER] Cancelling bid 642
+2020-03-18 03:13:35,437 [INFO   ] [TRADER] (id: 646) Placing  ask 1 lots for $3605
+2020-03-18 03:13:35,437 [INFO   ] [TRADER] (id: 647) Placing  ask 2 lots for $3606
+2020-03-18 03:13:35,437 [INFO   ] [TRADER] (id: 648) Placing  ask 3 lots for $3607
+2020-03-18 03:13:35,438 [INFO   ] [TRADER] Order 641 cancelled
+2020-03-18 03:13:35,438 [INFO   ] [TRADER] Order 642 cancelled
+2020-03-18 03:13:35,439 [INFO   ] [TRADER] Order 646 inserted
+2020-03-18 03:13:35,439 [INFO   ] [TRADER] Order 647 inserted
+2020-03-18 03:13:35,440 [INFO   ] [TRADER] Order 648 inserted
+2020-03-18 03:13:35,498 [INFO   ] [TRADER] Order 646 cancelled
+2020-03-18 03:13:35,499 [INFO   ] [TRADER] Position changed to ETF: 40, FUTURE: -40
+2020-03-18 03:13:35,561 [INFO   ] [TRADER] Order 647 cancelled
+2020-03-18 03:13:35,561 [INFO   ] [TRADER] Position changed to ETF: 38, FUTURE: -38
+2020-03-18 03:13:36,586 [INFO   ] [TRADER] Cancelling bid 643
+2020-03-18 03:13:36,587 [INFO   ] [TRADER] Cancelling bid 644
+2020-03-18 03:13:36,587 [INFO   ] [TRADER] Cancelling bid 645
+2020-03-18 03:13:36,587 [INFO   ] [TRADER] (id: 649) Placing  bid 1 lots for $3603
+2020-03-18 03:13:36,587 [INFO   ] [TRADER] (id: 650) Placing  bid 2 lots for $3602
+2020-03-18 03:13:36,587 [INFO   ] [TRADER] (id: 651) Placing  bid 3 lots for $3601
+2020-03-18 03:13:36,588 [INFO   ] [TRADER] Cancelling bid 648
+2020-03-18 03:13:36,588 [INFO   ] [TRADER] (id: 652) Placing  ask 1 lots for $3606
+2020-03-18 03:13:36,588 [INFO   ] [TRADER] (id: 653) Placing  ask 2 lots for $3607
+2020-03-18 03:13:36,588 [INFO   ] [TRADER] (id: 654) Placing  ask 3 lots for $3608
+2020-03-18 03:13:36,588 [INFO   ] [TRADER] Order 643 cancelled
+2020-03-18 03:13:36,589 [INFO   ] [TRADER] Order 644 cancelled
+2020-03-18 03:13:36,589 [INFO   ] [TRADER] Order 645 cancelled
+2020-03-18 03:13:36,589 [INFO   ] [TRADER] Order 649 inserted
+2020-03-18 03:13:36,589 [INFO   ] [TRADER] Order 650 inserted
+2020-03-18 03:13:36,590 [INFO   ] [TRADER] Order 651 inserted
+2020-03-18 03:13:36,590 [INFO   ] [TRADER] Order 648 cancelled
+2020-03-18 03:13:36,590 [INFO   ] [TRADER] Order 652 inserted
+2020-03-18 03:13:36,590 [INFO   ] [TRADER] Order 653 inserted
+2020-03-18 03:13:36,590 [INFO   ] [TRADER] Order 654 inserted
+2020-03-18 03:13:37,011 [INFO   ] [TRADER] Order 649 cancelled
+2020-03-18 03:13:37,011 [INFO   ] [TRADER] Position changed to ETF: 39, FUTURE: -39
+2020-03-18 03:13:37,585 [INFO   ] [TRADER] Order 652 cancelled
+2020-03-18 03:13:37,586 [INFO   ] [TRADER] Position changed to ETF: 38, FUTURE: -38
+2020-03-18 03:13:38,012 [INFO   ] [TRADER] Cancelling bid 650
+2020-03-18 03:13:38,012 [INFO   ] [TRADER] Cancelling bid 651
+2020-03-18 03:13:38,013 [INFO   ] [TRADER] (id: 655) Placing  bid 1 lots for $3602
+2020-03-18 03:13:38,013 [INFO   ] [TRADER] (id: 656) Placing  bid 2 lots for $3601
+2020-03-18 03:13:38,013 [INFO   ] [TRADER] (id: 657) Placing  bid 3 lots for $3600
+2020-03-18 03:13:38,013 [INFO   ] [TRADER] Order 650 cancelled
+2020-03-18 03:13:38,013 [INFO   ] [TRADER] Order 651 cancelled
+2020-03-18 03:13:38,013 [INFO   ] [TRADER] Order 655 inserted
+2020-03-18 03:13:38,014 [INFO   ] [TRADER] Order 656 inserted
+2020-03-18 03:13:38,014 [INFO   ] [TRADER] Order 657 inserted
+2020-03-18 03:13:38,587 [INFO   ] [TRADER] Cancelling bid 653
+2020-03-18 03:13:38,588 [INFO   ] [TRADER] Cancelling bid 654
+2020-03-18 03:13:38,588 [INFO   ] [TRADER] (id: 658) Placing  ask 1 lots for $3605
+2020-03-18 03:13:38,588 [INFO   ] [TRADER] (id: 659) Placing  ask 2 lots for $3606
+2020-03-18 03:13:38,588 [INFO   ] [TRADER] (id: 660) Placing  ask 3 lots for $3607
+2020-03-18 03:13:38,590 [INFO   ] [TRADER] Order 653 cancelled
+2020-03-18 03:13:38,590 [INFO   ] [TRADER] Order 654 cancelled
+2020-03-18 03:13:38,592 [INFO   ] [TRADER] Order 658 inserted
+2020-03-18 03:13:38,592 [INFO   ] [TRADER] Order 659 inserted
+2020-03-18 03:13:38,592 [INFO   ] [TRADER] Order 660 inserted
+2020-03-18 03:13:38,649 [INFO   ] [TRADER] Order 658 cancelled
+2020-03-18 03:13:38,650 [INFO   ] [TRADER] Position changed to ETF: 37, FUTURE: -37
+2020-03-18 03:13:39,311 [INFO   ] [TRADER] Cancelling bid 655
+2020-03-18 03:13:39,311 [INFO   ] [TRADER] Cancelling bid 656
+2020-03-18 03:13:39,312 [INFO   ] [TRADER] Cancelling bid 657
+2020-03-18 03:13:39,312 [INFO   ] [TRADER] (id: 661) Placing  bid 1 lots for $3601
+2020-03-18 03:13:39,312 [INFO   ] [TRADER] (id: 662) Placing  bid 2 lots for $3600
+2020-03-18 03:13:39,312 [INFO   ] [TRADER] (id: 663) Placing  bid 3 lots for $3599
+2020-03-18 03:13:39,313 [INFO   ] [TRADER] Order 655 cancelled
+2020-03-18 03:13:39,313 [INFO   ] [TRADER] Order 656 cancelled
+2020-03-18 03:13:39,313 [INFO   ] [TRADER] Order 657 cancelled
+2020-03-18 03:13:39,314 [INFO   ] [TRADER] Order 661 inserted
+2020-03-18 03:13:39,314 [INFO   ] [TRADER] Order 662 inserted
+2020-03-18 03:13:39,314 [INFO   ] [TRADER] Order 663 inserted
+2020-03-18 03:13:39,660 [INFO   ] [TRADER] Cancelling bid 659
+2020-03-18 03:13:39,660 [INFO   ] [TRADER] Cancelling bid 660
+2020-03-18 03:13:39,660 [INFO   ] [TRADER] (id: 664) Placing  ask 1 lots for $3604
+2020-03-18 03:13:39,661 [INFO   ] [TRADER] (id: 665) Placing  ask 2 lots for $3605
+2020-03-18 03:13:39,661 [INFO   ] [TRADER] (id: 666) Placing  ask 3 lots for $3606
+2020-03-18 03:13:39,661 [INFO   ] [TRADER] Order 659 cancelled
+2020-03-18 03:13:39,661 [INFO   ] [TRADER] Order 660 cancelled
+2020-03-18 03:13:39,661 [INFO   ] [TRADER] Order 664 inserted
+2020-03-18 03:13:39,661 [INFO   ] [TRADER] Order 665 inserted
+2020-03-18 03:13:39,661 [INFO   ] [TRADER] Order 666 inserted
+2020-03-18 03:13:39,937 [INFO   ] [TRADER] Order 664 cancelled
+2020-03-18 03:13:39,937 [INFO   ] [TRADER] Position changed to ETF: 36, FUTURE: -36
+2020-03-18 03:13:40,411 [INFO   ] [TRADER] Cancelling bid 661
+2020-03-18 03:13:40,412 [INFO   ] [TRADER] Cancelling bid 662
+2020-03-18 03:13:40,412 [INFO   ] [TRADER] Cancelling bid 663
+2020-03-18 03:13:40,412 [INFO   ] [TRADER] (id: 667) Placing  bid 1 lots for $3602
+2020-03-18 03:13:40,412 [INFO   ] [TRADER] (id: 668) Placing  bid 2 lots for $3601
+2020-03-18 03:13:40,412 [INFO   ] [TRADER] (id: 669) Placing  bid 3 lots for $3600
+2020-03-18 03:13:40,413 [INFO   ] [TRADER] Order 661 cancelled
+2020-03-18 03:13:40,413 [INFO   ] [TRADER] Order 662 cancelled
+2020-03-18 03:13:40,416 [INFO   ] [TRADER] Order 663 cancelled
+2020-03-18 03:13:40,416 [INFO   ] [TRADER] Order 667 inserted
+2020-03-18 03:13:40,416 [INFO   ] [TRADER] Order 668 inserted
+2020-03-18 03:13:40,416 [INFO   ] [TRADER] Order 669 inserted
+2020-03-18 03:13:40,662 [INFO   ] [TRADER] Order 665 filled (1 / 2)
+2020-03-18 03:13:40,663 [INFO   ] [TRADER] Position changed to ETF: 35, FUTURE: -35
+2020-03-18 03:13:40,699 [INFO   ] [TRADER] Order 665 cancelled
+2020-03-18 03:13:40,701 [INFO   ] [TRADER] Position changed to ETF: 34, FUTURE: -34
+2020-03-18 03:13:41,700 [INFO   ] [TRADER] Cancelling bid 666
+2020-03-18 03:13:41,701 [INFO   ] [TRADER] (id: 670) Placing  ask 1 lots for $3605
+2020-03-18 03:13:41,701 [INFO   ] [TRADER] (id: 671) Placing  ask 2 lots for $3606
+2020-03-18 03:13:41,701 [INFO   ] [TRADER] (id: 672) Placing  ask 3 lots for $3607
+2020-03-18 03:13:41,702 [INFO   ] [TRADER] Order 666 cancelled
+2020-03-18 03:13:41,702 [INFO   ] [TRADER] Order 670 inserted
+2020-03-18 03:13:41,703 [INFO   ] [TRADER] Order 671 inserted
+2020-03-18 03:13:41,704 [INFO   ] [TRADER] Order 672 inserted
+2020-03-18 03:13:41,749 [INFO   ] [TRADER] Order 670 cancelled
+2020-03-18 03:13:41,749 [INFO   ] [TRADER] Position changed to ETF: 33, FUTURE: -33
+2020-03-18 03:13:42,014 [INFO   ] [TRADER] Cancelling bid 667
+2020-03-18 03:13:42,014 [INFO   ] [TRADER] Cancelling bid 668
+2020-03-18 03:13:42,014 [INFO   ] [TRADER] Cancelling bid 669
+2020-03-18 03:13:42,015 [INFO   ] [TRADER] (id: 673) Placing  bid 1 lots for $3601
+2020-03-18 03:13:42,015 [INFO   ] [TRADER] (id: 674) Placing  bid 2 lots for $3600
+2020-03-18 03:13:42,015 [INFO   ] [TRADER] (id: 675) Placing  bid 3 lots for $3599
+2020-03-18 03:13:42,015 [INFO   ] [TRADER] Order 667 cancelled
+2020-03-18 03:13:42,015 [INFO   ] [TRADER] Order 668 cancelled
+2020-03-18 03:13:42,018 [INFO   ] [TRADER] Order 669 cancelled
+2020-03-18 03:13:42,018 [INFO   ] [TRADER] Order 673 inserted
+2020-03-18 03:13:42,019 [INFO   ] [TRADER] Order 674 inserted
+2020-03-18 03:13:42,019 [INFO   ] [TRADER] Order 675 inserted
+2020-03-18 03:13:42,749 [INFO   ] [TRADER] Cancelling bid 671
+2020-03-18 03:13:42,749 [INFO   ] [TRADER] Cancelling bid 672
+2020-03-18 03:13:42,750 [INFO   ] [TRADER] (id: 676) Placing  ask 1 lots for $3602
+2020-03-18 03:13:42,750 [INFO   ] [TRADER] (id: 677) Placing  ask 2 lots for $3603
+2020-03-18 03:13:42,750 [INFO   ] [TRADER] (id: 678) Placing  ask 3 lots for $3604
+2020-03-18 03:13:42,751 [INFO   ] [TRADER] Order 671 cancelled
+2020-03-18 03:13:42,751 [INFO   ] [TRADER] Order 672 cancelled
+2020-03-18 03:13:42,752 [INFO   ] [TRADER] Order 676 cancelled
+2020-03-18 03:13:42,752 [INFO   ] [TRADER] Position changed to ETF: 32, FUTURE: -32
+2020-03-18 03:13:42,753 [INFO   ] [TRADER] Order 677 inserted
+2020-03-18 03:13:42,753 [INFO   ] [TRADER] Order 678 inserted
+2020-03-18 03:13:42,824 [INFO   ] [TRADER] Order 677 cancelled
+2020-03-18 03:13:42,825 [INFO   ] [TRADER] Position changed to ETF: 30, FUTURE: -30
+2020-03-18 03:13:43,023 [INFO   ] [TRADER] Cancelling bid 673
+2020-03-18 03:13:43,023 [INFO   ] [TRADER] Cancelling bid 674
+2020-03-18 03:13:43,023 [INFO   ] [TRADER] Cancelling bid 675
+2020-03-18 03:13:43,023 [INFO   ] [TRADER] (id: 679) Placing  bid 1 lots for $3599
+2020-03-18 03:13:43,024 [INFO   ] [TRADER] (id: 680) Placing  bid 2 lots for $3598
+2020-03-18 03:13:43,024 [INFO   ] [TRADER] (id: 681) Placing  bid 3 lots for $3597
+2020-03-18 03:13:43,024 [INFO   ] [TRADER] Order 673 cancelled
+2020-03-18 03:13:43,024 [INFO   ] [TRADER] Order 674 cancelled
+2020-03-18 03:13:43,024 [INFO   ] [TRADER] Order 675 cancelled
+2020-03-18 03:13:43,024 [INFO   ] [TRADER] Order 679 inserted
+2020-03-18 03:13:43,025 [INFO   ] [TRADER] Order 680 inserted
+2020-03-18 03:13:43,025 [INFO   ] [TRADER] Order 681 inserted
+2020-03-18 03:13:43,649 [INFO   ] [TRADER] Order 678 filled (2 / 3)
+2020-03-18 03:13:43,649 [INFO   ] [TRADER] Position changed to ETF: 28, FUTURE: -28
+2020-03-18 03:13:43,674 [INFO   ] [TRADER] Order 678 cancelled
+2020-03-18 03:13:43,674 [INFO   ] [TRADER] Position changed to ETF: 27, FUTURE: -27
+2020-03-18 03:13:43,851 [INFO   ] [TRADER] lost connection on execution channel
+2020-03-18 03:13:43,851 [INFO   ] [APP] closing event loop

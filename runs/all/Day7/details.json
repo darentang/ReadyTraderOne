@@ -1,0 +1,12 @@
+{
+    "path": "all",
+    "day": "7",
+    "bots": [
+        "Tradies",
+        "SusumBot",
+        "LilAkuma",
+        "NowUCMe",
+        "TeamJ"
+    ],
+    "speed": 20.0
+}

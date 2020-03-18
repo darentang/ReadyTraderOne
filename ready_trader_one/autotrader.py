@@ -4,8 +4,7 @@ from typing import List, Tuple
 import itertools
 import numpy as np
 
-# TODO: Change in final version
-from config import speed
+
 
 from ready_trader_one import BaseAutoTrader, Instrument, Lifespan, Side
 
@@ -27,7 +26,7 @@ class Constants:
 
 
     # TODO: Change in final version
-    SPEED = speed
+    SPEED = 1.0
     # maximum message per second
     MAX_MESSAGE = 20
     GRADIENT_LENGTH = 25

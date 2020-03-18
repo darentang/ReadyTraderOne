@@ -4,9 +4,6 @@ from typing import List, Tuple
 import itertools
 import numpy as np
 
-import matplotlib
-import matplotlib.pyplot as plt
-
 # TODO: Change in final version
 from config import speed
 

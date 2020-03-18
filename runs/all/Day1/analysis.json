@@ -1,77 +1,77 @@
 {
     "LilAkuma":{
         "InventoryControl":{
-            "avg":-23.14,
-            "std":20.05
+            "avg":-10.97,
+            "std":67.79
         },
         "Liquidity":{
-            "fill_rate":0.47,
-            "fill_time_avg":5.99
+            "fill_rate":0.14,
+            "fill_time_avg":0.56
         },
         "PnL":{
-            "avg":251.28,
-            "last":726.62,
-            "std":239.09
+            "avg":1890.04,
+            "last":4299.48,
+            "std":1352.07
         }
     },
     "NowUCMe":{
         "InventoryControl":{
-            "avg":-3.61,
-            "std":58.1
+            "avg":-5.6,
+            "std":48.87
         },
         "Liquidity":{
-            "fill_rate":0.1,
-            "fill_time_avg":2.15
+            "fill_rate":0.15,
+            "fill_time_avg":1.56
         },
         "PnL":{
-            "avg":3206.96,
-            "last":6846.31,
-            "std":1829.46
+            "avg":3809.8,
+            "last":6104.41,
+            "std":1631.13
         }
     },
     "SusumBot":{
         "InventoryControl":{
-            "avg":-5.05,
-            "std":50.66
+            "avg":1.75,
+            "std":76.1
         },
         "Liquidity":{
-            "fill_rate":0.79,
-            "fill_time_avg":4.98
+            "fill_rate":0.13,
+            "fill_time_avg":0.39
         },
         "PnL":{
-            "avg":1910.22,
-            "last":4246.59,
-            "std":1318.57
+            "avg":2928.25,
+            "last":4497.2,
+            "std":1183.54
         }
     },
     "TeamJ":{
         "InventoryControl":{
-            "avg":-5.63,
-            "std":31.97
+            "avg":-6.75,
+            "std":29.37
         },
         "Liquidity":{
-            "fill_rate":0.42,
-            "fill_time_avg":8.77
+            "fill_rate":0.28,
+            "fill_time_avg":2.41
         },
         "PnL":{
-            "avg":2456.34,
-            "last":5566.02,
-            "std":1821.31
+            "avg":2894.82,
+            "last":8712.39,
+            "std":2984.8
         }
     },
     "Tradies":{
         "InventoryControl":{
-            "avg":-83.33,
-            "std":41.61
+            "avg":2.86,
+            "std":42.48
         },
         "Liquidity":{
-            "fill_rate":0.38,
-            "fill_time_avg":4.2
+            "fill_rate":0.26,
+            "fill_time_avg":2.52
         },
         "PnL":{
-            "avg":-319.11,
-            "last":-531.43,
-            "std":346.36
+            "avg":2649.02,
+            "last":7092.09,
+            "std":2098.33
         }
     }
 }

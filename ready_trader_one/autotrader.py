@@ -15,7 +15,7 @@ from ready_trader_one import BaseAutoTrader, Instrument, Lifespan, Side
 
 class Constants:
     MAX_ORDER = 30
-    MAX_VOLUME = 90
+    MAX_VOLUME = 70
     TIMEOUT = 1.0
 
     # TWEAKABLE
@@ -322,7 +322,11 @@ class AutoTrader(BaseAutoTrader):
         Look at volume detection later
 
         """
-
+        if self.etf_ub > self.constants.MAX_VOLUME:
+            self.cancel(self.bid_id)
+        
+        if self.etf_lb < -self.constants.MAX_VOLUME:
+            self.cancel(self.ask_id)
         
 
         if np.sum(ask_volumes) + np.sum(bid_volumes) == 0:
@@ -418,6 +422,11 @@ class AutoTrader(BaseAutoTrader):
             elif client_order_id == self.ask_id:
                 self.ask_changed = True
             
+        if self.etf_ub > self.constants.MAX_VOLUME:
+            self.cancel(self.bid_id)
+        
+        if self.etf_lb < -self.constants.MAX_VOLUME:
+            self.cancel(self.ask_id)
 
 
     def on_position_change_message(self, future_position: int, etf_position: int) -> None:
@@ -433,7 +442,12 @@ class AutoTrader(BaseAutoTrader):
 
         self.etf_ub = self.etf_position + self.bid_volume
         self.etf_lb = self.etf_position - self.ask_volume
-                    
+        
+        if self.etf_ub > self.constants.MAX_VOLUME:
+            self.cancel(self.bid_id)
+        
+        if self.etf_lb < -self.constants.MAX_VOLUME:
+            self.cancel(self.ask_id)
         
 
     def on_trade_ticks_message(self, instrument: int, trade_ticks: List[Tuple[int, int]]) -> None:

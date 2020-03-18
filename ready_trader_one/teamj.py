@@ -308,7 +308,12 @@ class AutoTrader(BaseAutoTrader):
         Look at volume detection later
 
         """
-
+        if self.etf_ub > self.constants.MAX_VOLUME:
+            self.cancel(self.bid_id)
+        
+        if self.etf_lb < -self.constants.MAX_VOLUME:
+            self.cancel(self.ask_id)
+                            
         
 
         if np.sum(ask_volumes) + np.sum(bid_volumes) == 0:
@@ -361,6 +366,9 @@ class AutoTrader(BaseAutoTrader):
 
         self.etf_ub = self.etf_position + self.bid_volume
         self.etf_lb = self.etf_position - self.ask_volume
+
+
+
         self.update_buffer()
 
 
@@ -406,7 +414,11 @@ class AutoTrader(BaseAutoTrader):
             elif client_order_id == self.ask_id:
                 self.ask_changed = True
             
-
+        if self.etf_ub > self.constants.MAX_VOLUME:
+            self.cancel(self.bid_id)
+        
+        if self.etf_lb < -self.constants.MAX_VOLUME:
+            self.cancel(self.ask_id)
 
     def on_position_change_message(self, future_position: int, etf_position: int) -> None:
         """Called when your position changes.
@@ -421,6 +433,12 @@ class AutoTrader(BaseAutoTrader):
 
         self.etf_ub = self.etf_position + self.bid_volume
         self.etf_lb = self.etf_position - self.ask_volume
+
+        if self.etf_ub > self.constants.MAX_VOLUME:
+            self.cancel(self.bid_id)
+        
+        if self.etf_lb < -self.constants.MAX_VOLUME:
+            self.cancel(self.ask_id)
                     
         
 

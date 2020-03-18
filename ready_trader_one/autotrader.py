@@ -40,7 +40,6 @@ class Orderbook:
         self.ask_prices = None
         self.constants = Constants
         self.name = name
-        self.figure = plt.figure()
         self.max_length = 50
         self.history = np.zeros((self.max_length, 2))
         self.gradient_length = self.constants.GRADIENT_LENGTH

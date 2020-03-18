@@ -15,13 +15,13 @@ from ready_trader_one import BaseAutoTrader, Instrument, Lifespan, Side
 
 class Constants:
     MAX_ORDER = 30
-    MAX_VOLUME = 95
+    MAX_VOLUME = 70
     TIMEOUT = 1.0
 
     # TWEAKABLE
     
     ONE_LEVEL_POINT = 25 # inventory volume to reach 1 penalisation level
-    END_LEVEL = 7 # penalisation level at maximum allowable volume
+    END_LEVEL = 6 # penalisation level at maximum allowable volume
 
     # Spread
     KAPPA = 1

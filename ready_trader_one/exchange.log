@@ -1749,3 +1749,25 @@
 2020-03-18 13:56:54,758 [INFO   ] [CONTROLLER] shutting down the match: time=2490.016847 reason='match complete'
 2020-03-18 13:56:54,760 [INFO   ] [MATCH_EVENTS] writer thread complete after processing 105541 match events
 2020-03-18 13:56:54,760 [INFO   ] [APP] closing event loop
+2020-03-18 14:58:02,497 [INFO   ] [APP] exchange started with arguments={run.py}
+2020-03-18 14:58:02,497 [INFO   ] [APP] configuration={"Engine":{"MarketDataFile":"/home/darentang/projects/readytraderone/ready_trader_one/data/day5.csv","MatchEventsFile":"match_events.csv","Speed":20.0,"TickInterval":0.25},"Execution":{"ListenAddress":"127.0.0.1","Port":12345},"Fees":{"Maker":-0.0001,"Taker":0.0002},"Information":{"AllowBroadcast":false,"Host":"239.255.1.1","Interface":"0.0.0.0","Port":12346},"Instrument":{"EtfClamp":0.002,"TickSize":1.0},"Limits":{"ActiveOrderCountLimit":10,"ActiveVolumeLimit":200,"MessageFrequencyInterval":1.0,"MessageFrequencyLimit":20,"PositionLimit":100},"Traders":{"FusionBot":"12345","AlecBot":"12345","Baseline":"12345","AlecBotV2":"12345","DynamicInventory":"abcde","IgnoreMe":"12345","SusumBot":"12345","Tradies":"12345","LilAkuma":"12345","NowUCMe":"12345","TeamJ":"12345"}}
+2020-03-18 14:58:02,497 [INFO   ] [CONTROLLER] starting the match
+2020-03-18 14:58:03,112 [INFO   ] [EXECUTION] fd=19 accepted a new connection: peer=127.0.0.1:50428
+2020-03-18 14:58:03,112 [INFO   ] [CONTROLLER] 'SusumBot' is ready!
+2020-03-18 14:58:03,112 [INFO   ] [EXECUTION] fd=19 login successful: name='SusumBot'
+2020-03-18 14:58:03,112 [INFO   ] [EXECUTION] fd=20 accepted a new connection: peer=127.0.0.1:50430
+2020-03-18 14:58:03,113 [INFO   ] [CONTROLLER] 'TeamJ' is ready!
+2020-03-18 14:58:03,113 [INFO   ] [EXECUTION] fd=20 login successful: name='TeamJ'
+2020-03-18 14:58:03,114 [INFO   ] [EXECUTION] fd=21 accepted a new connection: peer=127.0.0.1:50432
+2020-03-18 14:58:03,114 [INFO   ] [CONTROLLER] 'LilAkuma' is ready!
+2020-03-18 14:58:03,114 [INFO   ] [EXECUTION] fd=21 login successful: name='LilAkuma'
+2020-03-18 14:58:03,118 [INFO   ] [EXECUTION] fd=22 accepted a new connection: peer=127.0.0.1:50434
+2020-03-18 14:58:03,119 [INFO   ] [CONTROLLER] 'NowUCMe' is ready!
+2020-03-18 14:58:03,119 [INFO   ] [EXECUTION] fd=22 login successful: name='NowUCMe'
+2020-03-18 14:58:03,120 [INFO   ] [EXECUTION] fd=23 accepted a new connection: peer=127.0.0.1:50436
+2020-03-18 14:58:03,120 [INFO   ] [CONTROLLER] 'Tradies' is ready!
+2020-03-18 14:58:03,120 [INFO   ] [EXECUTION] fd=23 login successful: name='Tradies'
+2020-03-18 14:58:07,506 [INFO   ] [CONTROLLER] market open
+2020-03-18 14:58:07,545 [INFO   ] [COMPETITOR] 'NowUCMe' sent error message: time=0.762983 client_order_id=3 message='order rejected: in cross with an existing order'
+2020-03-18 14:58:09,975 [INFO   ] [APP] SIGINT signal received - shutting down...
+2020-03-18 14:58:09,975 [INFO   ] [APP] closing event loop

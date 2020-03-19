@@ -254,7 +254,6 @@ class AutoTrader(BaseAutoTrader):
         future_best_ask = self.future_orderbook.best_ask()
         future_best_bid = self.future_orderbook.best_bid()
 
-        print(future, future_best_ask, future_best_bid)
         diff = int( (future + discount) // 100) * 100
 
 

@@ -7,14 +7,10 @@ import numpy as np
 
 
 bots = {
-    "Tradies": np.array([0, 150, 0]), 
+    # "Tradies": np.array([0, 150, 0]), 
     "TeamJ": np.array([150, 0, 0]),
-    "NowUCMe": np.array([0, 0, 150]),
-    # "SMCtrading": np.array([0, 150, 150]),
-    # "LilAkuma": np.array([150, 150, 0]),
-    # "SMCtrading": np.array([150, 0, 150]),
-
-    # "AlecBotV2": np.array([0, 0, 150]),
+    "SusumBot": np.array([0, 150, 0]),
+    # "TeaMaster": np.array([0, 150, 150]),
 }
 
 
@@ -96,8 +92,8 @@ for i, bot_name in enumerate(bots.keys()):
             else:
                 marker = "^"
             ax.scatter(insert_time, insert_price, marker=marker, color=invert(bot_name, side), zorder=2)
-            # ax.text(insert_time + 0.02, insert_price - 0.02, str(int(insert_volume)))
-            ax.text(insert_time + 0.02, insert_price - 0.02, str(int(order_id)))
+            ax.text(insert_time + 0.02, insert_price - 0.02, str(int(insert_volume)))
+            # ax.text(insert_time + 0.02, insert_price - 0.02, str(int(order_id)))
             if len(cancel) == 1:
                 cancel_time = cancel["Time"].values[-1]
                 ax.plot([insert_time, cancel_time], [insert_price, insert_price], linestyle=linestyle[side], color=side_color(bot_name, side), linewidth=t, zorder=1)
@@ -127,7 +123,8 @@ for bot, color in bots.items():
     legend_elements.append(Line2D([0], [0], color=side_color(bot, "B"), label=bot + " bids"))
     legend_elements.append(Line2D([0], [0], color=side_color(bot, "S"), label=bot + " asks"))
 legend_elements.append(Line2D([0], [0], marker="x", color=c, label="Cancel"))
-legend_elements.append(Line2D([0], [0], marker="v", color=c, label="Insert"))
+legend_elements.append(Line2D([0], [0], marker="v", color=c, label="Buy"))
+legend_elements.append(Line2D([0], [0], marker="^", color=c, label="Sell"))
 legend_elements.append(Line2D([0], [0], marker="*", color=c, label="Fill"))
 
 

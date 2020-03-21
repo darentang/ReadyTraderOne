@@ -276,19 +276,15 @@ class AutoTrader(BaseAutoTrader):
         if self.future_orderbook.total_volume == 0 or self.etf_orderbook.total_volume == 0:
             return
 
-        f = 1
+        fee_proportion = 0.01e-2
 
 
         gradient = self.future_orderbook.gradient(self.get_time())
         buy, sell = self.inventory(Side.BUY), self.inventory(Side.SELL)
 
-        dif_ask = self.future_orderbook.best_ask() - self.etf_orderbook.best_ask()
-        dif_bid = self.future_orderbook.best_bid() - self.etf_orderbook.best_bid()
-
-
         # If future price is equal or lower than etf
         # if self.future_orderbook.midpoint() <= self.etf_orderbook.midpoint() and sell > 0:
-        if self.etf_orderbook.best_bid() >= self.future_orderbook.midpoint() + 100 and sell > 0 and self.ask_id == 0 and self.time_out(Side.SELL):
+        if self.etf_orderbook.best_bid() * (1 - fee_proportion) >= self.future_orderbook.midpoint() + 100 and sell > 0 and self.ask_id == 0 and self.time_out(Side.SELL):
 
             # Asking
             self.logger.info("%.2f %s", gradient, "SELLING")
@@ -300,7 +296,7 @@ class AutoTrader(BaseAutoTrader):
 
         # If future price is larger than midpoint by at least 2 levels
         # if self.future_orderbook.midpoint() >= self.etf_orderbook.midpoint() + 200 and buy > 0:
-        if self.etf_orderbook.best_ask() <= self.future_orderbook.midpoint() - 100 and buy > 0 and self.bid_id == 0 and self.time_out(Side.BUY):
+        if self.etf_orderbook.best_ask() * (1 + fee_proportion) <= self.future_orderbook.midpoint() and buy > 0 and self.bid_id == 0 and self.time_out(Side.BUY):
 
             # Bidding
             self.logger.info("%.2f %s", gradient, "BUYING")

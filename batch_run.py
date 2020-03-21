@@ -33,7 +33,7 @@ speed = 20.0
 
 sessions = []
 for day in range(1, 11):
-    sessions.append(Session("20Speed", str(day), ["SusumBot", "LilAkuma", "NowUCMe", "TeamJ"], speed))
+    sessions.append(Session("20Speed", str(day), ["SusumBot", "TeamChank", "TeaMaster", "TeamJ", "AlecBotV2", "Tradies", "NowUCMe"], speed))
 
 # for day in range(1, 11):
 #     sessions.append(Session("susum", str(day), ["SusumBot", "DynamicInventory"], speed))

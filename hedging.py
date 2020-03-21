@@ -11,11 +11,17 @@ for team in teams:
     hedges = df.query("Operation == 'Hedge'")
 
     for (_, fill), (_,hedge) in zip(fills.iterrows(), hedges.iterrows()):
-    
-
-
-        fill_total = (fill["Price"] * fill["Volume"])
+        fill_total = - (fill["Price"] * fill["Volume"])
         hedge_total = (hedge["Price"] * hedge["Volume"])
 
-        print(fill_total + hedge_total)
+        if fill["Side"] == "B":
+            profit = hedge_total - fill_total
+        elif fill["Side"] == "S":
+            profit = fill_total - hedge_total
+
+        fee = fill["Fee"]
+
+        if profit - fee < 0:
+            print("\n       --Net Loss--        $%.2f" % (profit-fee))
+            print(pd.concat([fill, hedge], axis=1))
 

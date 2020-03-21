@@ -12,7 +12,7 @@ from ready_trader_one import BaseAutoTrader, Instrument, Lifespan, Side
 
 class Constants:
     MAX_ORDER = 30
-    MAX_VOLUME = 100
+    MAX_VOLUME = 90
     TIMEOUT = 1.0
 
     # Spread
@@ -215,6 +215,11 @@ class AutoTrader(BaseAutoTrader):
         return elapsed_time
 
     def insert(self, side, volume, price, lifspan=Lifespan.GOOD_FOR_DAY):
+        
+        if len(self.command_buffer) + 1 >= self.constants.MAX_MESSAGE:
+            self.logger.info("Order not placed because of frequency limit")
+            return
+
         order_id = 0
         if volume <= 0 or price <= 0:
             self.logger.info("Invalid volume or price. V: %d P: %d", volume, price)
@@ -235,12 +240,10 @@ class AutoTrader(BaseAutoTrader):
             self.logger.info("Invalid side %d", side)
             return
 
-        if len(self.command_buffer) + 1 < self.constants.MAX_MESSAGE:
-            self.send_insert_order(order_id, side, price, volume, lifspan)
-            self.command_buffer.append(self.get_time())
-            self.logger.info("(id: %d) Placing  %s %d lots for $%d", order_id, "bid" if side == Side.BUY else "ask", volume, price // 100)
-        else:
-            self.logger.info("Order not placed because of frequency limit")
+        self.send_insert_order(order_id, side, price, volume, lifspan)
+        self.command_buffer.append(self.get_time())
+        self.logger.info("(id: %d) Placing  %s %d lots for $%d", order_id, "bid" if side == Side.BUY else "ask", volume, price // 100)
+
 
 
     def cancel(self, order_id):
@@ -258,21 +261,22 @@ class AutoTrader(BaseAutoTrader):
 
 
     def pricing(self, side):
-        if self.etf_orderbook.best_bid() >= self.future_orderbook.midpoint() + 200 and side == Side.SELL:
+        fee_proportion = 0.01e-2
+        if self.etf_orderbook.best_bid() * (1 - fee_proportion) >= self.future_orderbook.midpoint() + 200 and side == Side.SELL:
             # Pricing
             self.logger.info("Free money ask")
             self.cancel(self.bid_id)
             return self.etf_orderbook.best_bid()
             
 
-        if self.etf_orderbook.best_ask() <= self.future_orderbook.midpoint() - 200 and side == Side.BUY:
+        if self.etf_orderbook.best_ask() * (1 + fee_proportion) <= self.future_orderbook.midpoint() - 200 and side == Side.BUY:
             # Pricing
             self.logger.info("Free money bid")
             self.cancel(self.ask_id)
             return self.etf_orderbook.best_ask()
 
 
-        discount = - np.sign(self.etf_position) * np.floor( np.abs(self.etf_position) * 6 / 100 ) * 100
+        discount = - np.sign(self.etf_position) * np.floor( np.abs(self.etf_position) * 4 / 100 ) * 100
 
 
         etf = self.etf_orderbook.midpoint()

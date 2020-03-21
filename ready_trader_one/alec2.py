@@ -21,7 +21,7 @@ class Constants:
     # TODO: Change in final version
     SPEED = speed
     # maximum message per second
-    MAX_MESSAGE = 20
+    MAX_MESSAGE = 15
     GRADIENT_LENGTH = 25
 
 class Orderbook:
@@ -267,11 +267,11 @@ class AutoTrader(BaseAutoTrader):
             self.logger.info("Free money ask")
             return self.etf_orderbook.best_bid(), Lifespan.FILL_AND_KILL
 
+
         if self.etf_orderbook.best_ask() * (1 + fee_proportion) <= self.future_orderbook.midpoint() - 200 and side == Side.BUY:
             # Pricing
             self.logger.info("Free money bid")
             return self.etf_orderbook.best_ask(), Lifespan.FILL_AND_KILL
-
 
 
         discount = - np.sign(self.etf_position) * np.floor( np.abs(self.etf_position) * 4 / 100 ) * 100
@@ -338,6 +338,9 @@ class AutoTrader(BaseAutoTrader):
 
         bid_price, bid_lifespan = self.pricing(Side.BUY)
         ask_price, ask_lifespan = self.pricing(Side.SELL)
+
+        if bid_price >= ask_price:
+            bid_price = ask_price - 100
 
         crossed = (bid_price >= self.ask_price) or (ask_price <= self.bid_price)
 

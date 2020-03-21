@@ -21,7 +21,7 @@ class Constants:
     # TODO: Change in final version
     SPEED = speed
     # maximum message per second
-    MAX_MESSAGE = 20
+    MAX_MESSAGE = 15
     GRADIENT_LENGTH = 25
 
 class Orderbook:

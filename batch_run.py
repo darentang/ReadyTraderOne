@@ -29,11 +29,11 @@ template_file = "exchange_template.json"
 with open(template_file, "r") as f:
     exchange = json.loads(f.read())
 
-speed = 20.0
+speed = 1.0
 
 sessions = []
 for day in range(1, 11):
-    sessions.append(Session("20Speed", str(day), ["SusumBot", "TeamChank", "TeaMaster", "TeamJ", "AlecBotV2", "Tradies", "NowUCMe"], speed))
+    sessions.append(Session("realtime", str(day), ["SusumBot", "TeamChank", "TeaMaster", "TeamJ", "AlecBotV2", "Tradies", "NowUCMe"], speed))
 
 # for day in range(1, 11):
 #     sessions.append(Session("susum", str(day), ["SusumBot", "DynamicInventory"], speed))

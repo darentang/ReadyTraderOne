@@ -21,7 +21,7 @@ class Constants:
     # TODO: Change in final version
     SPEED = speed
     # maximum message per second
-    MAX_MESSAGE = 20
+    MAX_MESSAGE = 15
     GRADIENT_LENGTH = 25
 
 class Orderbook:
@@ -178,27 +178,6 @@ class AutoTrader(BaseAutoTrader):
         self.logger.warning("error with order %d: %s", client_order_id, error_message.decode())
         self.on_order_status_message(client_order_id, 0, 0, 0)
 
-
-    # def inventory_curves(self, q):
-    #     if 0 <= q <= 20:
-    #             return 20
-    #     elif 20 < q <= 100:
-    #         return 20 + (q - 20) / 70 * 70
-    #     elif -80 <= q < 0:
-    #         return 10
-    #     elif -90 <= q < -80:
-    #         return 10 + (q + 80) 
-    #     else:
-    #         return 0
-
-
-    # def inventory(self, side):
-    #     q = self.etf_position
-    #     if side == Side.SELL:
-    #         return int(self.inventory_curves(q))
-    #     else:
-    #         return int(self.inventory_curves(-q))
-
     def inventory(self, side):
         if side == Side.BUY:
             q = self.etf_ub
@@ -215,7 +194,7 @@ class AutoTrader(BaseAutoTrader):
         return elapsed_time
 
     def insert(self, side, volume, price, lifspan=Lifespan.GOOD_FOR_DAY):
-        
+
         if len(self.command_buffer) + 1 >= self.constants.MAX_MESSAGE:
             self.logger.info("Order not placed because of frequency limit")
             return

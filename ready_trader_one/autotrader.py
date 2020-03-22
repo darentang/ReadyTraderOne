@@ -4,31 +4,22 @@ from typing import List, Tuple
 import itertools
 import numpy as np
 
-from config import speed
 
 from ready_trader_one import BaseAutoTrader, Instrument, Lifespan, Side
 
 
 class Constants:
-    MAX_ORDER = 30
-    MAX_VOLUME = 70
-    TIMEOUT = 1.0
-
-    # TWEAKABLE
-    INVENTORY_THRESHOLD_FACTOR = 0.5
-    INVENTORY_THRESHOLD = 50
-
-    ONE_LEVEL_POINT = 50 # inventory volume to reach 1 penalisation level
-    END_LEVEL = 3 # penalisation level at maximum allowable volume
+    MAX_ORDER = 50
+    MAX_VOLUME = 90
+    TIMEOUT = 0.5
 
     # Spread
     KAPPA = 1
 
-
     # TODO: Change in final version
-    SPEED = speed
+    SPEED = 1.0
     # maximum message per second
-    MAX_MESSAGE = 20
+    MAX_MESSAGE = 15
     GRADIENT_LENGTH = 25
 
 class Orderbook:
@@ -45,6 +36,8 @@ class Orderbook:
         self.fit_degree = 1
         self.fit_coeff = np.zeros(self.fit_degree + 1)
         self.total_volume = 0
+        self.bid_dict = {}
+        self.ask_dict = {}
         self.i = 0
 
     def get_table(self):
@@ -55,6 +48,10 @@ class Orderbook:
         self.ask_volumes = ask_volumes
         self.bid_prices = bid_prices
         self.ask_prices = ask_prices
+
+        self.bid_dict = dict(zip(bid_prices, bid_volumes))
+        self.ask_dict = dict(zip(ask_prices, ask_volumes))
+
         self.total_volume = np.sum([bid_volumes, ask_volumes])
 
         self.update(self.midpoint(), time)
@@ -170,9 +167,6 @@ class AutoTrader(BaseAutoTrader):
         }
 
 
-        self.n = np.log(1.0 / self.constants.END_LEVEL) / np.log(self.constants.ONE_LEVEL_POINT / self.constants.MAX_VOLUME)
-        self.a = 1 / (self.constants.ONE_LEVEL_POINT) ** self.n
-
     def on_error_message(self, client_order_id: int, error_message: bytes) -> None:
         """Called when the exchange detects an error.
 
@@ -183,6 +177,25 @@ class AutoTrader(BaseAutoTrader):
         self.on_order_status_message(client_order_id, 0, 0, 0)
 
 
+    # def inventory_curves(self, q):
+    #     if 0 <= q <= 20:
+    #             return 20
+    #     elif 20 < q <= 100:
+    #         return 20 + (q - 20) / 70 * 70
+    #     elif -80 <= q < 0:
+    #         return 10
+    #     elif -90 <= q < -80:
+    #         return 10 + (q + 80) 
+    #     else:
+    #         return 0
+
+    # def inventory(self, side):
+    #     q = self.etf_position
+    #     if side == Side.SELL:
+    #         return int(self.inventory_curves(q))
+    #     else:
+    #         return int(self.inventory_curves(-q))
+
     def inventory(self, side):
         if side == Side.BUY:
             q = self.etf_ub
@@ -192,20 +205,22 @@ class AutoTrader(BaseAutoTrader):
             return np.min((self.constants.MAX_ORDER, q + self.constants.MAX_VOLUME))
 
 
-
-
     def get_time(self):
         # not accounting for speed of the engine tho....
         elapsed_time = self.event_loop.time() - self.start_time
         elapsed_time *= self.speed
         return elapsed_time
 
-    def insert(self, side, volume, price, lifspan=Lifespan.GOOD_FOR_DAY):
+    def insert(self, side, volume, price, lifespan=Lifespan.GOOD_FOR_DAY):
+        
+        if len(self.command_buffer) + 1 >= self.constants.MAX_MESSAGE:
+            self.logger.info("Order not placed because of frequency limit")
+            return
+
         order_id = 0
         if volume <= 0 or price <= 0:
             self.logger.info("Invalid volume or price. V: %d P: %d", volume, price)
             return
-
         if side == Side.BUY:
             self.bid_id = next(self.order_ids)
             self.bid_price = price
@@ -222,10 +237,10 @@ class AutoTrader(BaseAutoTrader):
             self.logger.info("Invalid side %d", side)
             return
 
-        if len(self.command_buffer) + 1 < self.constants.MAX_MESSAGE:
-            self.send_insert_order(order_id, side, price, volume, lifspan)
-            self.command_buffer.append(self.get_time())
-            self.logger.info("(id: %d) Placing  %s %d lots for $%d", order_id, "bid" if side == Side.BUY else "ask", volume, price // 100)
+        self.send_insert_order(order_id, side, price, volume, lifespan)
+        self.command_buffer.append(self.get_time())
+        self.logger.info("(id: %d) Placing  %s %d lots for $%d", order_id, "bid" if side == Side.BUY else "ask", volume, price // 100)
+
 
 
     def cancel(self, order_id):
@@ -234,6 +249,8 @@ class AutoTrader(BaseAutoTrader):
                 self.send_cancel_order(order_id)
                 self.command_buffer.append(self.get_time())
                 self.logger.info("Cancelling %d", order_id)
+            else:
+                self.logger.info("Cancel not placed because of frequency limit")
 
     @staticmethod
     def sigmoid(k, mu, x):
@@ -241,54 +258,49 @@ class AutoTrader(BaseAutoTrader):
 
 
     def pricing(self, side):
-        gradient = self.etf_orderbook.gradient(self.get_time())
-        discount = - np.sign(self.etf_position) * np.floor(np.abs(self.etf_position) ** self.n * self.a) * 100
-        # print(discount, self.etf_position)
+        fee_proportion = 0.01e-2
+    
+        if self.etf_orderbook.best_bid() * (1 - fee_proportion) >= self.future_orderbook.midpoint() + 200 and side == Side.SELL:
+            # Pricing
+            self.logger.info("Free money ask")
+            return self.etf_orderbook.best_bid(), Lifespan.FILL_AND_KILL
 
-        etf = self.etf_orderbook.midpoint()
+
+        if self.etf_orderbook.best_ask() * (1 + fee_proportion) <= self.future_orderbook.midpoint() - 200 and side == Side.BUY:
+            # Pricing
+            self.logger.info("Free money bid")
+            return self.etf_orderbook.best_ask(), Lifespan.FILL_AND_KILL
+
+
+        discount = - np.sign(self.etf_position) * np.floor( np.abs(self.etf_position) * 4 / 100 ) * 100
+
+
         etf_best_ask = self.etf_orderbook.best_ask()
         etf_best_bid = self.etf_orderbook.best_bid()
 
         future = self.future_orderbook.midpoint()
-        future_best_ask = self.future_orderbook.best_ask()
-        future_best_bid = self.future_orderbook.best_bid()
 
+        diff = int( (future + discount) // 100) * 100
 
-        threshold = np.min((self.constants.INVENTORY_THRESHOLD,  np.abs(gradient) * self.constants.INVENTORY_THRESHOLD_FACTOR))
-        threshold = self.constants.INVENTORY_THRESHOLD
+        if diff > etf_best_ask:
+            ask = diff
+            bid = etf_best_bid
 
+        elif etf_best_bid <= diff <= etf_best_ask:
+            ask = etf_best_ask
+            bid = etf_best_bid
 
-        if self.etf_position < self.constants.INVENTORY_THRESHOLD:
-            price1 = np.max((etf_best_ask + discount, future_best_ask ))
         else:
-            price1 = np.min((etf_best_ask, future_best_ask))
-
-        if self.etf_position > -self.constants.INVENTORY_THRESHOLD:
-            price2 = np.min((etf_best_bid, future_best_bid + discount))
-        else:
-            price2 = np.max((etf_best_bid, future_best_bid))
-
-        price1 = int(price1 // 100) * 100
-        price2 = int(price2 // 100) * 100
-
-        if price1 == price2:
-            price1 = price2 + 100
+            ask = etf_best_ask
+            bid = diff
 
         # ask
         if side == Side.SELL:
-            # Lambda = self.sigmoid(self.constants.KAPPA, self.etf_position, threshold)
-            # price = Lambda * np.max((etf_best_ask, future_best_ask + discount)) + (1 - Lambda) * np.min((etf_best_ask, future_best_ask))
-
-            time = self.ask_time
-            return np.max((price1, price2))
+            return ask, Lifespan.GOOD_FOR_DAY
 
         # bid
         elif side == Side.BUY:
-            # Lambda = self.sigmoid(self.constants.KAPPA, -self.etf_position, threshold)
-            # price = Lambda * np.min((etf_best_bid, future_best_bid + discount)) + (1 - Lambda) * np.max((etf_best_bid, future_best_bid))
-
-            time = self.bid_time
-            return np.min((price1, price2))
+            return bid, Lifespan.GOOD_FOR_DAY
 
     def time_out(self, side):
         if side == Side.SELL:
@@ -305,25 +317,7 @@ class AutoTrader(BaseAutoTrader):
         prices are reported along with the volume available at each of those
         price levels.
 
-        TeamJ Strategy:
-
-        Put in orders when there are changes to the highs and lows
-
-        Update orders if something has been fileld?
-
-        If gradient is negative, increase spread but maintain ask price
-
-        If gradient is positive, increase spread but maintain bid price
-
-        Look at volume detection later
-
         """
-        if self.etf_ub > self.constants.MAX_VOLUME:
-            self.cancel(self.bid_id)
-
-        if self.etf_lb < -self.constants.MAX_VOLUME:
-            self.cancel(self.ask_id)
-
 
         if np.sum(ask_volumes) + np.sum(bid_volumes) == 0:
             return
@@ -336,43 +330,36 @@ class AutoTrader(BaseAutoTrader):
         if self.future_orderbook.total_volume == 0 or self.etf_orderbook.total_volume == 0:
             return
 
-        if self.bid_id == 0 or self.bid_changed or self.ask_changed or self.time_out(Side.BUY) or self.etf_ub > self.constants.MAX_VOLUME or self.crossed:
-            pricing = self.pricing(Side.BUY)
-            self.logger.info("Quoting bid price %d (Existing %d)", pricing // 100, self.bid_price // 100)
-            if pricing >= self.ask_price:
-                self.logger.info("Bid crosses ask")
-                self.cancel(self.ask_id)
-                self.crossed = True
-            else:
-                self.crossed = False
-            if pricing != self.bid_price:
-                self.logger.info("placing bid")
-                self.cancel(self.bid_id)
-                self.insert(Side.BUY, self.inventory(Side.BUY), pricing)
-            else:
-                self.logger.info("Same price as existing bid")
+        # buy and sell volumes
+        bid_volume = self.inventory(Side.BUY)
+        ask_volume = self.inventory(Side.SELL)
 
-        if self.ask_id == 0 or self.bid_changed or self.ask_changed or self.time_out(Side.SELL) or self.etf_lb < - self.constants.MAX_VOLUME or self.crossed:
-            pricing = self.pricing(Side.SELL)
-            self.logger.info("Quoting ask price %d (Existing %d)", pricing // 100, self.ask_price // 100)
-            if pricing <= self.bid_price:
-                self.logger.info("Ask crosses bid")
+        bid_price, bid_lifespan = self.pricing(Side.BUY)
+        ask_price, ask_lifespan = self.pricing(Side.SELL)
+
+        if bid_price >= ask_price:
+            bid_price = ask_price - 100
+
+        crossed = (bid_price >= self.ask_price) or (ask_price <= self.bid_price)
+
+        # cancel all bids if changed or crossed
+        if bid_price != self.bid_price or crossed or bid_lifespan == Lifespan.FILL_AND_KILL:
+            if self.bid_id != 0:
                 self.cancel(self.bid_id)
-                self.crossed = True
-            else:
-                self.crossed = False
-            if pricing != self.ask_price:
-                self.logger.info("placing ask")
+            self.insert(Side.BUY, bid_volume, bid_price, bid_lifespan)
+
+        # cancel all asks if changed or crossed
+        if ask_price != self.ask_price or crossed or ask_lifespan == Lifespan.FILL_AND_KILL:
+            if self.ask_id != 0:
                 self.cancel(self.ask_id)
-                self.insert(Side.SELL, self.inventory(Side.SELL), pricing)
-            else:
-                self.logger.info("Same price as existing ask")
+            self.insert(Side.SELL, ask_volume, ask_price, ask_lifespan)
 
         self.ask_changed = self.bid_changed = False
         # print(self.orderbook.history)
 
         self.etf_ub = self.etf_position + self.bid_volume
         self.etf_lb = self.etf_position - self.ask_volume
+
         self.update_buffer()
 
 
@@ -418,12 +405,6 @@ class AutoTrader(BaseAutoTrader):
             elif client_order_id == self.ask_id:
                 self.ask_changed = True
 
-        if self.etf_ub > self.constants.MAX_VOLUME:
-            self.cancel(self.bid_id)
-
-        if self.etf_lb < -self.constants.MAX_VOLUME:
-            self.cancel(self.ask_id)
-
 
     def on_position_change_message(self, future_position: int, etf_position: int) -> None:
         """Called when your position changes.
@@ -438,12 +419,6 @@ class AutoTrader(BaseAutoTrader):
 
         self.etf_ub = self.etf_position + self.bid_volume
         self.etf_lb = self.etf_position - self.ask_volume
-
-        if self.etf_ub > self.constants.MAX_VOLUME:
-            self.cancel(self.bid_id)
-
-        if self.etf_lb < -self.constants.MAX_VOLUME:
-            self.cancel(self.ask_id)
 
 
     def on_trade_ticks_message(self, instrument: int, trade_ticks: List[Tuple[int, int]]) -> None:
@@ -464,3 +439,8 @@ class AutoTrader(BaseAutoTrader):
         self.prices[instrument]['mean'] = mean
         self.prices[instrument]['high'] = high
         self.prices[instrument]['low'] = low
+
+        # self.update_time = self.get_time()
+
+        # if instrument == Instrument.ETF:
+        #     self.orderbook.update(mean, self.update_time)

@@ -1,2 +1,0 @@
-2020-03-22 11:15:40,352 [INFO   ] [APP] TeaMaster started with arguments={run.py}
-2020-03-22 11:15:40,352 [INFO   ] [APP] configuration={"Execution":{"Host":"127.0.0.1","Port":12345},"Information":{"AllowBroadcast":false,"Interface":"0.0.0.0","ListenAddress":"239.255.1.1","Port":12346},"TeamName":"TeaMaster","Secret":"12345"}

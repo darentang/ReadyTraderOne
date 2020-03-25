@@ -7,6 +7,7 @@ import numpy as np
 
 from ready_trader_one import BaseAutoTrader, Instrument, Lifespan, Side
 
+from config import speed
 
 class Constants:
     MAX_ORDER = 50
@@ -17,7 +18,7 @@ class Constants:
     KAPPA = 1
 
     # TODO: Change in final version
-    SPEED = 1.0
+    SPEED = speed
     # maximum message per second
     MAX_MESSAGE = 15
     GRADIENT_LENGTH = 25

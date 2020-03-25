@@ -52,12 +52,12 @@ def side_color(bots, name, side):
     return tuple(rgb)
 
 def normalise(rgb):
-    return rgb / np.max((np.max(rgb) , 255))
+    return np.abs(rgb) / np.max((np.max(rgb) , 255))
 
 
 def invert(bots, name, side):
     rgb = bots[name]
-    rgb = 255 - rgb
+    rgb = (255 - rgb) - 100
 
     return normalise(rgb)
 
@@ -118,13 +118,13 @@ def surgery(df, time_range, bots, outfile, nums=None):
                 if len(cancel) == 1:
                     cancel_time = cancel["Time"].values[-1]
                     ax.plot([insert_time, cancel_time], [insert_price, insert_price], color=side_color(bots, bot_name, side), linewidth=t, zorder=1)
-                    ax.scatter(cancel_time, insert_price, marker="x", color=c, zorder=2)
+                    ax.scatter(cancel_time, insert_price, marker="x", color=invert(bots, bot_name, side), zorder=2)
                 elif len(fill) > 0:
                     fill_time = fill["Time"].values[-1]
                     ax.plot([insert_time, fill_time], [insert_price, insert_price], color=side_color(bots, bot_name, side), linewidth=t, zorder=1)
 
                     for time in fill["Time"].values:
-                        ax.scatter(time, insert_price, marker="*", color=c, zorder=2)
+                        ax.scatter(time, insert_price, marker="*", color="r", zorder=2)
 
 
     ax.plot(bot_data["Time"], bot_data["EtfPrice"], color='orange')
@@ -135,6 +135,8 @@ def surgery(df, time_range, bots, outfile, nums=None):
 
 
     ax2.legend()
+    ax2.yaxis.set_ticks([-100, -75, -50, -25, 0 ,25, 50, 75, 100])
+    ax2.grid(axis='y')
     pnl.legend()
 
     legend_elements = []
@@ -152,3 +154,5 @@ def surgery(df, time_range, bots, outfile, nums=None):
     ax.legend(handles=legend_elements, loc=0)
 
     plt.savefig(outfile)
+
+

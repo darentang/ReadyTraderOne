@@ -10,7 +10,7 @@ from ready_trader_one import BaseAutoTrader, Instrument, Lifespan, Side
 from config import speed
 
 class Constants:
-    MAX_ORDER = 30
+    MAX_ORDER = 50
     MAX_VOLUME = 90
     TIMEOUT = 0.5
 
@@ -267,8 +267,6 @@ class AutoTrader(BaseAutoTrader):
         elif future < etf_best_bid - 200:
             etf_best_ask = etf
 
-
-
         if future > etf:
             diff = future_best_bid + discount
         else:
@@ -296,9 +294,6 @@ class AutoTrader(BaseAutoTrader):
         # tie break
         bid = self.round(bid)
         ask = self.round(ask)
-
-        if bid == ask:
-            print(bid, ask)
 
         # ask
         if side == Side.SELL:
@@ -347,9 +342,7 @@ class AutoTrader(BaseAutoTrader):
         #     bid_price = ask_price - 100
 
         crossed = (bid_price >= self.ask_price and self.ask_id != 0) or (ask_price <= self.bid_price and self.bid_id != 0)
-        if crossed:
-            print(bid_price, ask_price)
-
+        
         # cancel all bids if changed or crossed
         if bid_price != self.bid_price or crossed:
             if self.bid_id != 0:

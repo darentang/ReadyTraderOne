@@ -21,7 +21,7 @@ class Constants:
     SPEED = speed
     # maximum message per second
     MAX_MESSAGE = 15
-    GRADIENT_LENGTH = 25
+    GRADIENT_LENGTH = 5
 
 class Orderbook:
     def __init__(self, name):
@@ -116,6 +116,8 @@ class Orderbook:
         else:
             return 0
 
+    def halfspread(self):
+        return (self.best_ask() - self.best_bid()) / 2
 
 
 class AutoTrader(BaseAutoTrader):
@@ -177,26 +179,6 @@ class AutoTrader(BaseAutoTrader):
         self.logger.warning("error with order %d: %s", client_order_id, error_message.decode())
         self.on_order_status_message(client_order_id, 0, 0, 0)
 
-
-    # def inventory_curves(self, q):
-    #     if 0 <= q <= 20:
-    #             return 20
-    #     elif 20 < q <= 100:
-    #         return 20 + (q - 20) / 70 * 70
-    #     elif -80 <= q < 0:
-    #         return 10
-    #     elif -90 <= q < -80:
-    #         return 10 + (q + 80) 
-    #     else:
-    #         return 0
-
-    # def inventory(self, side):
-    #     q = self.etf_position
-    #     if side == Side.SELL:
-    #         return int(self.inventory_curves(q))
-    #     else:
-    #         return int(self.inventory_curves(-q))
-
     def inventory(self, side):
         if side == Side.BUY:
             q = self.etf_ub
@@ -238,6 +220,8 @@ class AutoTrader(BaseAutoTrader):
             self.logger.info("Invalid side %d", side)
             return
 
+        price = int(price // 100) * 100
+
         self.send_insert_order(order_id, side, price, volume, lifespan)
         self.command_buffer.append(self.get_time())
         self.logger.info("(id: %d) Placing  %s %d lots for $%d", order_id, "bid" if side == Side.BUY else "ask", volume, price // 100)
@@ -253,35 +237,40 @@ class AutoTrader(BaseAutoTrader):
             else:
                 self.logger.info("Cancel not placed because of frequency limit")
 
+    def round(self, x):
+        return int(np.round(x / 100) * 100)
+
     @staticmethod
     def sigmoid(k, mu, x):
         return 1 / (1 + np.exp(-k * (x - mu)))
 
 
     def pricing(self, side):
-        fee_proportion = 0.01e-2
-    
-        if self.etf_orderbook.best_bid() * (1 - fee_proportion) >= self.future_orderbook.midpoint() + 200 and side == Side.SELL:
-            # Pricing
-            self.logger.info("Free money ask")
-            return self.etf_orderbook.best_bid(), Lifespan.FILL_AND_KILL
+        discount = - np.sign(self.etf_position) * np.abs(self.etf_position) * 6 / self.constants.MAX_VOLUME * 100
 
-
-        if self.etf_orderbook.best_ask() * (1 + fee_proportion) <= self.future_orderbook.midpoint() - 200 and side == Side.BUY:
-            # Pricing
-            self.logger.info("Free money bid")
-            return self.etf_orderbook.best_ask(), Lifespan.FILL_AND_KILL
-
-
-        discount = - np.sign(self.etf_position) * np.floor( np.abs(self.etf_position) * 4 / 100 ) * 100
-
-
+        etf = self.etf_orderbook.midpoint()
         etf_best_ask = self.etf_orderbook.best_ask()
         etf_best_bid = self.etf_orderbook.best_bid()
-
         future = self.future_orderbook.midpoint()
+        future_best_bid = self.future_orderbook.best_bid()
+        future_best_ask = self.future_orderbook.best_ask()
 
-        diff = int( (future + discount) // 100) * 100
+        if self.etf_orderbook.halfspread() > self.future_orderbook.halfspread():
+            if future > etf:
+                etf_best_bid = etf_best_ask - 2 * self.future_orderbook.halfspread()
+            else:
+                etf_best_ask = etf_best_bid + 2 * self.future_orderbook.halfspread()
+        # gradient = self.future_orderbook.gradient(self.get_time()) / 2 
+
+        if future > etf_best_ask + 200:
+            etf_best_bid = etf
+        elif future < etf_best_bid - 200:
+            etf_best_ask = etf
+
+        if future > etf:
+            diff = future_best_bid + discount
+        else:
+            diff = future_best_ask + discount
 
         if diff > etf_best_ask:
             ask = diff
@@ -294,6 +283,17 @@ class AutoTrader(BaseAutoTrader):
         else:
             ask = etf_best_ask
             bid = diff
+
+        # tie break
+        bid = self.round(bid)
+        ask = self.round(ask)
+
+        if bid == ask:
+            ask = ask + 100 
+
+        # tie break
+        bid = self.round(bid)
+        ask = self.round(ask)
 
         # ask
         if side == Side.SELL:
@@ -338,19 +338,19 @@ class AutoTrader(BaseAutoTrader):
         bid_price, bid_lifespan = self.pricing(Side.BUY)
         ask_price, ask_lifespan = self.pricing(Side.SELL)
 
-        if bid_price >= ask_price:
-            bid_price = ask_price - 100
+        # if bid_price >= ask_price:
+        #     bid_price = ask_price - 100
 
-        crossed = (bid_price >= self.ask_price) or (ask_price <= self.bid_price)
-
+        crossed = (bid_price >= self.ask_price and self.ask_id != 0) or (ask_price <= self.bid_price and self.bid_id != 0)
+        
         # cancel all bids if changed or crossed
-        if bid_price != self.bid_price or crossed or bid_lifespan == Lifespan.FILL_AND_KILL:
+        if bid_price != self.bid_price or crossed:
             if self.bid_id != 0:
                 self.cancel(self.bid_id)
             self.insert(Side.BUY, bid_volume, bid_price, bid_lifespan)
 
         # cancel all asks if changed or crossed
-        if ask_price != self.ask_price or crossed or ask_lifespan == Lifespan.FILL_AND_KILL:
+        if ask_price != self.ask_price or crossed:
             if self.ask_id != 0:
                 self.cancel(self.ask_id)
             self.insert(Side.SELL, ask_volume, ask_price, ask_lifespan)

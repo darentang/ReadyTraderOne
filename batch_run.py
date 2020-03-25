@@ -32,8 +32,10 @@ with open(template_file, "r") as f:
 speed = 1.0
 
 sessions = []
-for day in range(1, 11):
-    sessions.append(Session("final", str(day), ["SusumBot", "TeamChank", "TeaMaster", "Tradies"], speed))
+days = [2, 4, 5, 6, 7, 8, 9, 10]
+
+for day in days:
+    sessions.append(Session("final", str(day), ["SusumBot", "TeamChank", "NPTrivial", "Tradies"], speed))
 
 # for day in range(1, 11):
 #     sessions.append(Session("susum", str(day), ["SusumBot", "DynamicInventory"], speed))
